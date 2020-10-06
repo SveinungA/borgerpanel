@@ -1,5 +1,5 @@
-book_filename: "bookdown-demo"
+book_filename: "Demokratisk innovasjon i norske kommuner"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Kapittel "
 delete_merged_file: true
