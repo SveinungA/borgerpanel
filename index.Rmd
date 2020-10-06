@@ -14,9 +14,13 @@ description: "Dette er en håndbok for å gjennomføre borgerpaneler i norske ko
 
 # Om
 
-Denne håndboken er et resultat av forskningsprosjektet "Demokratisk innovasjon i praksis: forskning på medvirkning og legitimitet i kommunale beslutningsprosesser." med prosjektnummer 295892.
 
-Prosjektet er et samarbeid mellom Bergen kommune, NORCE, og Universitetet i Bergen, og varer i perioden fra 1. september 2019 til 30. november 2022.
+Hvordan kan demokratiet fornyes slik at flest mulig støtter opp om det? 
+Nye og alternative former for involvering og medvirkning er i dag viktige tema i den internasjonale diskusjonen om demokratiets tilstand. 
+Denne håndboken er et resultat av forskningsprosjektet DEMOVATE - "Demokratisk innovasjon i praksis: forskning på medvirkning og legitimitet i kommunale beslutningsprosesser.".
+DEMOVATE-prosjektet prøver ut medvirkning i praksis ved å invitere et tilfeldig utvalg innbyggere i Bergen til å diskutere og gi råd til politikerne i bestemte saker i det såkalte "Byborgerpanelet". 
+I samarbeid med internasjonalt ledende forskere blant annet fra Stanford University skal prosjektet studere demokratisk innovasjon og dens effekt på demokratisk legitimitet i norske kommuner. 
+Sentrale forskningsspørsmål i prosjektet handler om hvem som deltar i Byborgerpanelet, hvordan panelet bør organiseres, samt hvordan deres råd følges opp av politikere og administrasjon i kommunen.
 
-Populærvitenskapelig beskrivelse av prosjektet:
-Hvordan kan demokratiet fornyes slik at flest mulig støtter opp om det? Nye og alternative former for involvering og medvirkning er i dag viktige tema i den internasjonale diskusjonen om demokratiets tilstand. DEMOVATE-prosjektet prøver ut medvirkning i praksis ved å invitere et tilfeldig utvalg innbyggere i Bergen til å diskutere og gi råd til politikerne i bestemte saker i det såkalte "Byborgerpanelet". I samarbeid med internasjonalt ledende forskere blant annet fra Stanford University skal prosjektet studere demokratisk innovasjon og dens effekt på demokratisk legitimitet i norske kommuner. Sentrale forskningsspørsmål i prosjektet handler om hvem som deltar i Byborgerpanelet, hvordan panelet bør organiseres, samt hvordan deres råd følges opp av politikere og administrasjon i kommunen. Med støtte fra Norges forskningsråd viderefører og formaliserer prosjektet samarbeidet om demokratisk innovasjon i kommunal sektor mellom Bergen kommune, NORCE - Norwegian Research Centre, og Universitetet i Bergen. Den konkrete gjennomføringen vil dokumenteres for å kunne nyttiggjøres av andre interesserte kommuner.
+Med støtte fra Norges forskningsråd viderefører og formaliserer prosjektet samarbeidet om demokratisk innovasjon i kommunal sektor mellom Bergen kommune, NORCE - Norwegian Research Centre, og Universitetet i Bergen. 
+Det varer i perioden fra 1. september 2019 til 30. november 2022, og har prosjektnummer 295892.
