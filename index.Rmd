@@ -12,7 +12,7 @@ github-repo: rstudio/bookdown-demo
 description: "Dette er en håndbok for å gjennomføre borgerpaneler i norske kommuner."
 ---
 
-# Les meg
+# Forord
 
 Hvordan kan demokratiet fornyes slik at flest mulig støtter opp om det? 
 Nye og alternative former for involvering og medvirkning er i dag viktige tema i den internasjonale diskusjonen om demokratiets tilstand. 

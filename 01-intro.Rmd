@@ -1,4 +1,4 @@
-# Introduksjon {#intro}
+# Innledning {#intro}
 
 Dette er ment å bli et verktøy for norske kommuner som ønsker å gjennomføre borgerpaneler.
 I skrivende stund er den et levende arbeidsdokument til bruk i DEMOVATE-prosjektet.
