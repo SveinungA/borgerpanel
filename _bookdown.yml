@@ -1,5 +1,9 @@
 book_filename: "Demokratisk innovasjon i norske kommuner"
+lang: es
 language:
+  label:
+    fig: 'Figur '
+    tab: 'Tabell '
   ui:
     chapter_name: "Kapittel "
 delete_merged_file: true
