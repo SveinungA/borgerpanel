@@ -1,5 +1,16 @@
 # Rekruttering av deltakere
 
+```{r dp-rekrutt-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("naniar")){install.packages("naniar");  library(naniar)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
 ## Søke folkeregisteret
 Rekrutteringen av deltakere til den deliberative meningsmålingen foreår ved å trekke ut et tilfeldig utvalg av innbyggerne som i Folkeregisteret er registrert å bo i Bergen.
 Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
@@ -27,9 +38,31 @@ Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
 Svar på invitasjonsbrevet utbedes innen en gitt frist.
 De som ikke har svart får et nytt brev med påminnelse, og en endelig frist for å svare.
 
+## Tidsplan
+```{r dp-rekrutt-gantt, fig.width=9, fig.height=5}
 
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Start_date)) %>% 
+  pivot_longer(., Start_date:End_date, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Action = as_factor(Action))  
 
-```{r tidsplan_03-dp-rekrutt}
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
-
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Rekruttering av deltakere") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Type") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
 ```
