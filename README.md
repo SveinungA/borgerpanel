@@ -1,3 +1,14 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "[Get Started](https://bookdown.org/yihui/bookdown/get-started.html)" at https://bookdown.org/yihui/bookdown/ for how to compile this example into HTML. You may generate a copy of the book in `bookdown::pdf_book` format by calling `bookdown::render_book('index.Rmd', 'bookdown::pdf_book')`. More detailed instructions are available here https://bookdown.org/yihui/bookdown/build-the-book.html.
+Hvordan kan demokratiet fornyes slik at flest mulig støtter opp om det? 
+Nye og alternative former for involvering og medvirkning er i dag viktige tema i den internasjonale diskusjonen om demokratiets tilstand. 
 
-You can find the preview of this example at https://bookdown.org/yihui/bookdown-demo/.
+DEMOVATE-prosjektet prøver ut medvirkning i praksis ved å invitere et tilfeldig utvalg innbyggere i Bergen til å diskutere og gi råd til politikerne i bestemte saker i det såkalte "Byborgerpanelet". 
+Denne håndboken skal bli resultatet av dette arbeidet.
+I samarbeid med internasjonalt ledende forskere blant annet fra Stanford University studerer vi demokratisk innovasjon og dens effekt på demokratisk legitimitet i norske kommuner. 
+Sentrale forskningsspørsmål handler om hvem som deltar i Byborgerpanelet, hvordan panelet bør organiseres, samt hvordan deres råd følges opp av politikere og administrasjon i kommunen.
+
+Med støtte fra Norges forskningsråd viderefører og formaliserer prosjektet samarbeidet om demokratisk innovasjon i kommunal sektor mellom Bergen kommune, NORCE - Norwegian Research Centre, og Universitetet i Bergen. 
+Full prosjekttittel er "Demokratisk innovasjon i praksis: forskning på medvirkning og legitimitet i kommunale beslutningsprosesser."
+Det varer i perioden fra 1. september 2019 til 30. november 2022, og har prosjektnummer 295892.
+
+Admnistrativ prosjektleder er Seksjonssjef for Byrådsleders avdeling i Bergen kommune, Richard Taule.
+Faglig prosjektleder er Forsker I Sveinung Arnesen ved NORCE -- Norwegian Research Centre.
