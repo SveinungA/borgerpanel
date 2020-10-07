@@ -1,21 +1,26 @@
-# Introduction {#intro}
+# Introduksjon {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+Denne boken er ment å bli et verktøy for norske kommuner som ønsker å gjennomføre borgerpaneler.
+I skrivende stund er den et levende arbeidsdokument til bruk i DEMOVATE-prosjektet.
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## Hva er et borgerpanel?
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+Et borgerpanel er en samling av innbyggere i en kommune som kommer sammen og diskuterer en eller flere politiske saker.
+Som vi skal komme inn på seinere er det en rekke måter man kan organisere et borgerpanel.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+En variant av borgerpaneler er Deliberativ meningsmåling.
+Vi gjennomfører våren 2021 en deliberativ meningsmåling i samarbeid med grunnleggeren av prosedyren, Professor James F. Fishkin ved Stanford University.
+På grunn av situasjonen med koronapandemien blir denne gjennomført online.
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+Det må ikke være en kommune; borgerpanelet kan også bestå av innbyggere fra en fylkeskommune, eller fra hele landet for den saks skyld.
+Vi skal imidlertid fokusere på det kommunale nivået, og situasjoner hvor politikerne i kommunen ønsker å ta initiativ til borgerpanel som et redskap for å lytte til innbyggerne.
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+I tillegg gjennomfører vi to andre borgerpaneler som ikke er deliberative meningsmålinger høsten 2021.
+Disse tar vi sikte på kan bli arrangert hvor deltakerne er fysisk tilstedeværende.
+
+## Organisering av håndboken
+Etter introduksjonen følger et kapittel som diskuterer motivasjonen for å gjennomføre et borgerpanel.
+Vi kommer inn på både dets styrker og svakheter, og borgerpanelets rolle i det demokratiske systemet.
+Kapittel fire beskriver gjennomføringen av en online deliberativ meningsmåling i Bergen kommune, våren 2021.
+Kapittel fem beskriver gjennomføringen av to fysiske borgerpaneler høsten 2021.
+

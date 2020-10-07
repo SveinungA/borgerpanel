@@ -1,0 +1,18 @@
+# Om Deliberativ meningsmåling
+
+Konseptet *Deliberativ meningsmåling* er utviklet av Prof. James F. Fishkin ved Stanford University.
+Deliberativ meningsmåling kan ses på som en krysning av fokusgruppe og spørreundersøkelse:
+Metoden ligner på en vanlig meningsmåling i den forstand at et representativt utvalg av innbyggerne inviteres til å svare på en undersøkelse om politiske holdninger.
+En viktig forskjell er imidlertid at respondentene i en deliberativ meningsmåling får anledning til å sette seg inn i sakene de skal ha en mening om, og diskutere de med andre respondenter i mindre grupper.
+
+Det er vanlig å ha en kontrollgruppe med respondenter som svarer på samme undersøkelse som deltakerne i den deliberative meningsmålingen.
+Dette for å måle hvilken effekt det har å diskutere sakene med andre på deltakernes holdninger.
+
+Mens en meningsmåling typisk samler inn svar fra tusen respondenter, ligger deltakerantallet i en deliberativ meningsmåling som regel i intervallet 200-300.
+I tillegg kommer en kontrollgruppe på tilsvarende størrelse.
+
+
+Det stilles de samme kravene til utforming av spørreskjema som ved vanlige undersøkelser, og det samme gjelder rekruttering av respondenter.
+I Norge har vi den fordelen at vi kan rekruttere respondenter via Folkeregisteret.
+Dette sikrer at alle innbyggerne har like stor sannsynlighet for å bli invitert til å delta i spørreundersøkelsen.
+Slike sannsynlighetsbaserte utvalg er veldig viktige for å sikre at 

@@ -1,0 +1,35 @@
+# Rekruttering av deltakere
+
+## Søke folkeregisteret
+Rekrutteringen av deltakere til den deliberative meningsmålingen foreår ved å trekke ut et tilfeldig utvalg av innbyggerne som i Folkeregisteret er registrert å bo i Bergen.
+Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
+Siden en deliberativ meningsmåling ikke er gjennomført tidligere, knyttes det en viss usikkerhet til hvor mange av de inviterte som takker ja til å delta.
+For å ta høyde for dette søker vi om et supplerende utvalg i tillegg til hovedutvalget.
+Vi har som utgangspunkt at 20 prosent av de inviterte faktisk deltar i den deliberative meningsmålingen, noe som betyr at 1000 personer blir invitert i hovedutvalget.
+I tillegg har vi et tilleggsutvalg på 500 som blir invitert dersom vi ikke får tilstrekkelig med positive svar fra de inviterte i bruttoutvalget.
+Kontrollgruppen følger samme prosedyre som gruppen som blir invitert til den deliberative meningsmålingen.
+
+Totalt søker vi derfor om å trekke et utvalg på *3000* fra populasjonen av personer som er folkeregistrert i Bergen kommune. 
+
+Vi må være forberedt på at flere enn forventet takker ja, og dimensjonere etter det. 
+Ettersom arrangementet gjennomføres online vil det være en enklere oppgave enn ved en fysisk gjennomføring.
+
+## Invitasjonsbrev
+
+Alle i hovedutvalget får tilsendt et brev i posten fra Bergen kommune på samme tidspunkt.
+Det vil være fire varianter av brevet, avhengig av hvilken gruppe deltakerne blir delt inn i.
+Se kapitlet om *design* for nærmere informasjon om hvorfor det legges opp på denne måten.
+
+Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
+
+## Påminnelse
+
+Svar på invitasjonsbrevet utbedes innen en gitt frist.
+De som ikke har svart får et nytt brev med påminnelse, og en endelig frist for å svare.
+
+
+
+```{r tidsplan_03-dp-rekrutt}
+
+
+```
