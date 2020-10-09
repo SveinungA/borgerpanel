@@ -1,5 +1,16 @@
 # Om Deliberativ meningsmåling
 
+```{r dp-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
 Konseptet *Deliberativ meningsmåling* er utviklet av Prof. James F. Fishkin ved Stanford University.
 Deliberativ meningsmåling kan ses på som en krysning av fokusgruppe og spørreundersøkelse:
 Metoden ligner på en vanlig meningsmåling i den forstand at et representativt utvalg av innbyggerne inviteres til å svare på en undersøkelse om politiske holdninger.
@@ -11,8 +22,40 @@ Dette for å måle hvilken effekt det har å diskutere sakene med andre på delt
 Mens en meningsmåling typisk samler inn svar fra tusen respondenter, ligger deltakerantallet i en deliberativ meningsmåling som regel i intervallet 200-300.
 I tillegg kommer en kontrollgruppe på tilsvarende størrelse.
 
-
 Det stilles de samme kravene til utforming av spørreskjema som ved vanlige undersøkelser, og det samme gjelder rekruttering av respondenter.
 I Norge har vi den fordelen at vi kan rekruttere respondenter via Folkeregisteret.
 Dette sikrer at alle innbyggerne har like stor sannsynlighet for å bli invitert til å delta i spørreundersøkelsen.
 Slike sannsynlighetsbaserte utvalg er veldig viktige for å sikre at 
+
+## Tidsplan
+
+```{r dp-gantt, fig.width=9, fig.height=5}
+
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Start_date)) %>% 
+  pivot_longer(., Start_date:End_date, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Action = as_factor(Action))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "2020-2021") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Type") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+
+d %>% select(Start_date, End_date, Action) %>% filter(!is.na(Start_date)) %>% kable()
+
+```

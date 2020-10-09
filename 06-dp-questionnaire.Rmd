@@ -1,0 +1,54 @@
+# Spørreundersøkelse
+```{r dp-questionnaire-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+Å utvikle en god spørreundersøkelse tar tid.
+Det er viktig å formulere spørsmålene på en måte som gjør at vi får svar på spørsmålene vi lurer på, at respondentene føler de får uttrykt sine holdninger på en tilfredsstillende måte, og at spørsmålsstillingen er nøytral.
+Spørreskjemaet bør først diskuteres i en prosjektgruppe, før det blir prøvd ut på et knippe utenforstående personer som gir fyldige tilbakemeldinger.
+
+Undersøkelsen er nettbasert, og blir programmert i surveyprogrammet Qualtrics.
+Når den er ferdig programmert bør undersøkelsen prøves ut på en større gruppe respondenter for å se til at alt det tekniske fungerer etter hensikten.
+Respondentene må kunne fullføre undersøkelsen uten problemer, og filtrering og randomisering av spørsmål må være korrekte, og dataene som blir lagret må sjekkes.
+
+Respondentene får tilgang til undersøkelsen via en lenke i invitasjonsbrevet.
+
+
+## Tidsplan
+```{r dp-questionnaire-gantt, fig.width=9, fig.height=2}
+
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Start_date),
+         Type == 'Questionnaire development') %>% 
+  pivot_longer(., Start_date:End_date, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Action = as_factor(Action))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Spørreundersøkelse") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Type") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+d %>% filter(!is.na(Start_date), Type == 'Questionnaire development') %>% select(Start_date, End_date, Action) %>% kable()
+
+```

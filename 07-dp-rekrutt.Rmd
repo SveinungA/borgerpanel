@@ -2,7 +2,7 @@
 
 ```{r dp-rekrutt-setup, include=FALSE}
 if(!require("haven")){install.packages("haven");  library(haven)}
-if(!require("naniar")){install.packages("naniar");  library(naniar)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
 if(!require("readxl")){install.packages("readxl");  library(readxl)}
 if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
 
@@ -33,17 +33,25 @@ Se kapitlet om *design* for nærmere informasjon om hvorfor det legges opp på d
 
 Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
 
+Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberative meningsmålingen skal få i posten et formelt invitasjonsbrev fra Bergen kommune og NORCE  med informasjon om 
+  1. Hvorfor de blir kontaktet  
+  2. Hva spørsmålene skal brukes til  
+  3. Hvem som står bak undersøkelsen  
+  4. Personvernhensyn  
+  5. Hvordan de kan finne ut mer  
+
 ## Påminnelse
 
 Svar på invitasjonsbrevet utbedes innen en gitt frist.
 De som ikke har svart får et nytt brev med påminnelse, og en endelig frist for å svare.
 
 ## Tidsplan
-```{r dp-rekrutt-gantt, fig.width=9, fig.height=5}
+```{r dp-rekrutt-gantt, fig.width=9, fig.height=2}
 
 #Gantt
 gantt <- d %>% 
-  filter(!is.na(Start_date)) %>% 
+  filter(!is.na(Start_date),
+         Type == 'Recruitment') %>% 
   pivot_longer(., Start_date:End_date, names_to = "period") %>% 
   mutate(value = as.Date(value, "%Y.%m.%d"),
          Action = as_factor(Action))  
@@ -65,4 +73,6 @@ plot1 <-
                  legend.position = "bottom"
                 ) 
 plot1
+d %>% filter(!is.na(Start_date), Type == 'Recruitment') %>% select(Start_date, End_date, Action) %>% kable()
+
 ```
