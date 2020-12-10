@@ -1,5 +1,5 @@
 --- 
-title: "Demokratisk innovasjon i norske kommuner"
+title: "DEMOVATE"
 author: ""
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -9,7 +9,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "Dette er en håndbok for å gjennomføre borgerpaneler i norske kommuner."
+description: ""
 ---
 
 # Forord

@@ -1,0 +1,12 @@
+# Demokratiundersøkelsen 2020
+
+
+Å utvikle en god spørreundersøkelse tar tid.
+Det er viktig å formulere spørsmålene på en måte som gjør at vi får svar på spørsmålene vi lurer på, at respondentene føler de får uttrykt sine holdninger på en tilfredsstillende måte, og at spørsmålsstillingen er nøytral.
+Spørreskjemaet bør først diskuteres i en prosjektgruppe, før det blir prøvd ut på et knippe utenforstående personer som gir fyldige tilbakemeldinger.
+
+Undersøkelsen er nettbasert, og blir programmert i surveyprogrammet Qualtrics.
+Når den er ferdig programmert bør undersøkelsen prøves ut på en større gruppe respondenter for å se til at alt det tekniske fungerer etter hensikten.
+Respondentene må kunne fullføre undersøkelsen uten problemer, og filtrering og randomisering av spørsmål må være korrekte, og dataene som blir lagret må sjekkes.
+
+Respondentene får tilgang til undersøkelsen via en lenke i invitasjonsbrevet.

@@ -1,0 +1,309 @@
+# (PART) DELIBERATIV MENINGSMÅLING {-}
+
+# Fase I: Bestemme metode, målgruppe, og tema
+
+```{r dp-sodp-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+Den første fasen består i å sette rammeverket for borgerpanelet.
+Hvilke eller hvilket tema skal man fokusere på?
+Hva er målgruppen?
+Og hvilken form skal borgerpanelet ta?
+
+Metode, målgruppe og tema henger sammen med hverandre.
+I vårt tilfelle er metoden bestemt på forhånd, da prosjektet er et samarbeid med Center for Deliberative Democracy ved Stanford University om å gjennomføre en delibetativ meningsmåling i Norge. 
+Det var imidlertid ikke bestemt på forhånd at vi skulle arrangere det online; dette valget tok seg selv, da vi var midt oppi en pandemi som ikke tillot oss å planlegge for store fysiske ansamlinger av deltakere.
+
+Vi landet på to temaer.
+Bilfrie soner i bydelene og arealutvikling på Dokken.
+<!-- Veien var imidlertid lang før vi landet på disse to temaene, og man bør være forberedt på at denne prosessen kan ta tid. -->
+<!-- Derfor er det viktig å bruke god tid i denne første fasen, som ellers ikke er så intensiv med tanke på rent praktiske oppgaver. -->
+
+Målgruppen i vårt tilfelle var innbyggerne i Bergen kommune.
+Målgruppen er delvis avhengig av tematikken, og kunne også ha vært et utvalg av innbyggerne, for eksempel ungdom, innbyggerne i en bestemt bydel, brukere av et tilbud, og så videre.
+
+## Tema
+For å få til et vellykket arrangement bør sakene som velges tilfredsstille følgende kriterier.
+De bør være
+
+1. Nyttige for kommunen
+
+2. Velegnet for metoden
+
+3. Interessante for deltakerne
+
+Sakene bør være **nyttige for kommunen** slik at svarene deres faktisk blir brukt inn i den politiske prosessen.
+Spørsmålene bør være konkrete nok til at det er mulig for deltakerne å ta stilling til dem og for politikerne å følge dem opp med vedtak.
+Som regel settes en deliberativ meningsmåling opp slik at deltakerne kommer med anbefalinger til politikerne, som i sin tur har siste ordet i saken.
+Det er til syvende og sist politikerne som har ansvaret for beslutningene som taes, og også der den endelige beslutningen må fattes.
+Det er likevel svært viktig at innspillene deltakerne kommer med blir hørt og tatt hensyn til.
+
+En god start er å velge saker hvor politikerne er genuint interessert i innbyggernes holdninger og villige til å la seg påvirke av svarene de gir.
+Om beslutningen går motsatt vei av det deltakerne anbefaler er det en fare for at de opplever prosessen som en *skinn-prosess*.
+Med "skinn-prosess" mener vi at deltakerne kan oppfatte at beslutningen var bestemt på forhånd, og at deres involvering og engasjement uansett ikke ville ha hatt noen innvirkning på utfallet.
+Om en slik oppfatning sprer seg, risikerer man at denne typen demokratitiltak skader mer enn den gagner tiltroen til det politiske systemet.
+
+At sakene er **velegnet for metoden** betyr at man kan anta at man får bedre svar om man snakker sammen først enn om man bare spør på direkten. 
+Folks holdninger i enkelte saker er sterkt innarbeidet og vanskelig å rikke på, mens i andre saker kan folk være mer mottakelige for innspill og diskusjon.
+
+Dessuten er det mange saker som velgerne simpelthen ikke har hatt tid eller interesse nok til å sette seg inn i.
+I vanlige meningsmålinger slår dette ut i en høy andel som svarer "vet ikke" eller som plasserer svaret sitt midt på svarskalaen.
+For beslutningstakere vil det ofte ha begrenset verdi hva innbyggerne mener før de har nok kunnskap om saken.
+
+Til sist bør sakene også være interessante nok for deltakerne til at de tar seg bryet med å delta.
+Om sakene blir for snevre eller lite engasjerende, risikerer man at kun spesielt interesserte deltar.
+Det er ikke alltid deres meninger reflekterer godt innbyggernes mening, og da kan tiltaket i verste fall virke mot sin hensikt.
+Når det er sagt er alle demokratiske prosesser - inkludert valg - dessverre preget av at enkelte samfunnsgrupper deltar mindre enn andre.
+Vi kan ikke forvente at en deliberativ meningsmåling skal rette opp i alle skjevheter i politisk deltakelse, men man bør i alle fall ha i bakhodet denne problematikken i alle deler av prosessen, inkludert ved valg av saker.
+
+Om deltakerne skal diskutere flere saker kan disse utfylle hverandre, slik at de samlet sett oppfyller disse tre kriteriene.
+
+Siden oppstarten av prosjektet har vi vært innom en rekke saker som kan være aktuelle.
+Vi anbefaler at man bruker god tid på å velge saker, og sikrer forankring i kommunen.
+Dette er viktig for å sikre god gjennomføring av borgerpanelet.
+
+De involverte partene kommer med forslag som diskuteres internt blant prosjektmedlemmene.
+I våre forberedelser til den deliberative meningsmålingen diskuterte vi en rekke saker.
+De mest aktuelle var i starten turistskatt, boligbygging på Store Lungegårdsvann (på sjøen i sentrum av Bergen), terrorbekjempelse versus personvern, redusering av økonomiske forskjeller, og tiggerforbud.
+
+For å skaffe oss et godt informasjonsgrunnlag gjennomførte vi også en spørreundersøkelse i byen for å se hva innbyggerne mente om disse sakene i dag; hvilke saker hvor folk flest var enige; hvilke saker som splittet innbyggerne, og hvilke saker de ikke brydde seg særlig om.
+Undersøkelsen kan du lese mer om i kapittel \@ref(demokratiundersøkelsen-2020)
+
+Undersøkelsen ble gjennomført i januar 2020, like før Norge og verden ble rammet av koronapandemien.
+Våre planer måtte endres på, og prosessen måtte starte mer eller mindre på nytt.
+Etter diskusjoner internt i kommunen kom det opp to forslag som vi endte opp med å jobbe videre med.
+Den ene saken var bilfrie soner i bydelene, og den andre saken var en arealstrategi for det sentralt plasserte havneområdet Dokken.
+
+```{r tema}
+Medlem <- tibble(Involverte = c('Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+### Bilfrie soner i bydelene
+
+Dette prosjektet er nylig startet opp, skal bygge kunnskap i tiden fremover, og konkretiserer arbeidet først i 2022. 
+Med forbehold om endringer i skissen, så skal det etter planen velges en pilot i en av de ytre bydelene innen februar 2021.
+For å løse oppdraget om å realisere bilfrie soner i bydelene har det blitt definert behov for to hovedprosesser; kartlegging og utvikling. 
+I tillegg vil det gjennom hele prosjektet ha fokus på kunnskapsbygging for å utvikle metoder og strategier for å velge ut områder og utvikle bilfrie soner. 
+Med andre ord handler prosjektet både om prosess og innhold. 
+
+### Arealstrategi for Dokken 
+
+Dette delprosjektet skal utarbeide en arealstrategi som er i tråd med den overordnede strategien for Dokken.
+
+-	Vise hoveddisponering av området og gi grunnlag for politisk prinsippvedtak om byplangrep i 2021.  
+-	Være en konkretisering av de overordnede visjonene, i form av byutviklingskonsept.  
+-	Legge grunnlag for byutviklingsgrep i kommende juridisk arealplan(er).  
+-	Legge et grunnlag for trinnvis omsetning av eiendommer innenfor området, fortrinnsvis de kommunale.  
+-	Muliggjøre trinnvis utvikling av området. 
+
+
+## Metode: Deliberativ meningsmåling
+Deliberativ meningsmåling er en viktig type demokratisk medvirkning DEMOVATE-prosjektet utforsker i norsk kontekst. 
+Vi diskuterer metoden i lys av demokratisk medvirkning mer generelt. 
+
+Deliberasjon er å veie og utforske alle sider i en sak opp mot hverandre i en grundig, åpen og kritisk drøfting av et tema.
+Det finnes flere ulike måter å få innbyggere til å delta i deliberasjon av politiske saker.
+Internasjonalt har vi sett en økende bruk av såkalte deliberative meningsmålinger. 
+Denne formen for demokratisk medvirkning har blitt beskrevet som en gullstandard for å undersøke hva en reflektert og informert befolkning mener om politiske saker og beslutninger (Mansbridge 2010).
+Per dags dato har deliberative meningsmålinger blitt gjennomført over hundre ganger i 29 land (Stanford Centre for Deliberative Democracy). 
+Slike meningsmålinger har imidlertid ikke blitt gjennomført i noen utstrakt grad i Norge, med unntak av i Nordland Fylkeskommune (Klausen et at. 2013, 70).
+
+Utgangspunktet for deliberativ meningsmåling er at det i et demokrati, i sin faktiske betydning, bør være en kobling mellom folkets vilje og politiske beslutninger (Fishkin 2018). 
+Vi vet imidlertid at mange ikke vet mye om eller tenker mye på politikk (Converse 1964, Luskin 1987, Delli Carpini og Keeter 1996, Kinder 1998, Price 1999). 
+Derfor er det rimelig å anta at de holdningene og meningene som avdekkes gjennom vanlige meningsmålinger som regel verken er spesielt informerte eller spesielt gjennomtenkte.
+Men dersom vi ser for oss at folk visste og tenkte mer på politikk, hva ville den offentlige opinionen om en politisk sak eller beslutning være? Det er dette spørsmålet deliberative meningsmålinger er ment å svare på. 
+
+En vanlig fremgangsmåte for å undersøke folks synspunkter på politiske saker og beslutninger er å gjennomføre representative meningsmålinger i befolkningen.
+Vi vet imidlertid at folk i slike målinger ofte kan være uinformerte eller lite engasjerte. 
+Generelt sett, viser en stor mengde forskning at folks grad av informasjon om politiske saker er ganske begrenset (Delli Carpini and Keeter 1997). 
+Med andre ord er folk flest «rasjonelt uvitende» (Downs 1957):
+Dersom man kun utgjør én stemme av én million andre, hvorfor skal man da investere mye tid og innsats i å sette seg grundig inn i politiske saker? 
+For de fleste er det andre ting i livet, som for eksempel som jobb og familie, hvor vår innsats vil utgjøre en mer merkbar forskjell. 
+Videre er det ofte slik at de som faktisk gjør en innsats for å holde seg oppdatert og informert om politiske beslutninger hovedsakelig diskuterer dette med folk de er enig med, leser nettsider og artikler de er enig med, eller oppsøker nyhetskilder de er enige med. 
+Når politiske saker eller beslutninger som regel bare blir diskutert med likesinnede, risikerer man å gå fullstendig glipp av den andre sidens argumenter (ref). 
+Andre årsaker til at innbyggere kan få et skjevt bilde av en politisk sak eller beslutninger er spredning av falsk eller misledende informasjon på sosiale medier, eller at lobbygrupper kan spre villedende informasjon til offentligheten på vegne av for eksempel politiske partier og interesserorganisasjoner (Fishkin 2018). 
+
+Deliberativ meningsmåling et forsøk på å bruke offentlig opinion og meningsmålinger på en ny og konstruktiv måte gjennom å legge til rette for god og åpen diskusjon rundt politiske saker eller beslutninger (Fishkin 2018). 
+I forbindelse med deliberativ meningsmåling blir et tilfeldig og representativt utvalg av befolkningen først bedt om å gjennomføre en spørreundersøkelse om deres synspunkter på en politisk sak eller beslutning. 
+Etter denne spørreundersøkelsen blir medlemmene av utvalget invitert til å samles på et sted for en-tre dager eller en helg for å diskutere saken eller beslutningen. 
+Nøyaktig og balansert informasjon om saken eller beslutningen blir sendt til deltakerne og gjort offentlig tilgjengelig. Under samlingen tar deltakerne del i små gruppediskusjoner som ledes av trente moderatorer. 
+I gruppediskusjonen utvikler deltakerne spørsmål som danner grunnlag for dialog med politiske ledere og eksperter fra hver side av saken. Etter deliberasjonene blir deltakerne igjen bedt om å ta den samme spørreundersøkelsen som de svarte på innledningsvis. 
+De resulterende meningsendringene representerer de konklusjonene utvalget (og dermed også befolkningen) ville ha kommet frem til dersom de hadde hatt mulighet til å bli mer informert og mer engasjert i den politiske saken eller beslutningen som er til diskusjon under deliberasjonene. Generelt sett viser resultatene av de mange eksperimentene med deliberativ meningsmåling at det som regel er et ganske stort skifte i holdninger blant deltakerne etter gjennomføring (ref). 
+
+Deliberativ meningsmåling kan brukes til en rekke ulike typer saker, men denne fremgangsmåten egner seg nok best for komplekse saker som befolkningen kan ha lite kunnskap eller informasjon om.
+*[Eksempler her]* 
+Fordelene med deliberativ meningsmåling er at deltakerne vil ha tilgang til god og velbalansert informasjon om saken, samt at de får muligheten til å kunne rette oppmerksomheten mot saken over lengre tid. 
+Dette gir en mulighet til å involvere innbyggere i saker som er komplekse og som befolkningen i utgangspunktet ikke har så mye oversikt over. 
+Et av hovedfunnene fra de mange eksperimentene med deliberativ meningsmåling er at, gitt informasjonen deltakerne blir gitt før deliberasjonen, så er deltakerne ofte mer informerte etter at prosessen er ferdig (ref). 
+
+Deliberativ meningsmåling kan ses på som en krysning av fokusgruppe og spørreundersøkelse:
+Metoden ligner på en vanlig meningsmåling i den forstand at et representativt utvalg av innbyggerne inviteres til å svare på en undersøkelse om politiske holdninger.
+En viktig forskjell er imidlertid at respondentene i en deliberativ meningsmåling får anledning til å sette seg inn i sakene de skal ha en mening om, og diskutere de med andre respondenter i mindre grupper.
+
+Det er vanlig å ha en kontrollgruppe med respondenter som svarer på samme undersøkelse som deltakerne i den deliberative meningsmålingen.
+Dette for å måle hvilken effekt det har å diskutere sakene med andre på deltakernes holdninger.
+
+Mens en meningsmåling typisk samler inn svar fra tusen respondenter, ligger deltakerantallet i en deliberativ meningsmåling som regel i intervallet 200-300.
+I tillegg kommer en kontrollgruppe på tilsvarende størrelse.
+
+Det stilles de samme kravene til utforming av spørreskjema som ved vanlige undersøkelser, og det samme gjelder rekruttering av respondenter.
+I Norge har vi den fordelen at vi kan rekruttere respondenter via Folkeregisteret.
+Dette sikrer at alle innbyggerne har like stor sannsynlighet for å bli invitert til å delta i spørreundersøkelsen.
+
+```{r metode}
+Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Richard', 'Pål'))
+kable(Medlem)
+```
+
+### Online
+
+Online deliberativ meningsmåling er en relativt ny innovasjon muliggjort av teknologiske fremskritt og økt internettilgang. 
+I følge Luskin, Fishkin og Iyengar (2004) er det noen sentrale fordeler med online deliberativ meningsmåling sammenliknet med deliberativ meningsmåling ansikt til ansikt:
+
+*	Kostnader:
+Det koster mye å fysisk samle deltakere for å gjennomføre en deliberativ meningsmåling.
+Vanlige kostander til transport, hotell, overnatting, og måltider uteblir når deltakerne kan delta hjemmefra. 
+En kostnad som øker er imidlertid at de som ikke har tilgang til PC må få tilgang til en, hvilket vil være finansiert av arrangør. Disse kostnadene vil derimot være lave sammenliknet med de som kreves for å gjennomføre et fysisk møte. 
+
+*	Varighet: 
+For mange vil det være vanskelig i en travel hverdag å finne tid til å delta i en deliberativ meningsmåling som varer over flere dager eller en helg. 
+En fordel med online deliberativ meningsmåling er at man kan være mer fleksibel med tanke på varighet, når på dagen deliberasjonen skal finne sted, etc. 
+
+*	Effektivitet: 
+Det krever store forberedelser for å gjennomføre en deliberativ meningsmåling ansikt til ansikt.
+Online deliberative meningsmålinger kan organiseres mye raskere. 
+Fordelen med dette er at man i større grad kan ta i bruk deliberativ meningsmåling for å diskutere hendelser og beslutninger som er mye nærmere i sanntid.
+
+*	Instrumentering: 
+Online deliberativ meningsmåling gjør det enklere å registrere (mer av) det deltakerne gjør.
+Dette åpner for nye muligheter for å analysere effekten av deliberasjonen.
+
+Det finnes også ulemper ved online deliberativ meningsmåling.
+For det første kan det være vanskelige å oppnå full representativitet (Fishkin et al. 2004). 
+En viktig forutsetning for deliberativ meningsmåling er at man kan nå et representativt utvalg av hele befolkningen, ikke bare et utvalg av befolkningen som er online.
+Tilgang til teknologi og internett er ofte knyttet til sosioøkonomisk status.
+Når det gjelder Norge, bør imidlertid den høye andelen av populasjonen som er online gi gode muligheter for å oppnå representativitet. 
+For grupper som ikke er online i like stor grad som andre, bør det legges til rette for tilgang til teknologi og deltakelse. 
+
+For det andre er det ulikheter i hvordan deltakerne kommuniserer og omgås hverandre i en online deliberasjon. 
+For eksempel vil interaksjonen mellom deltakerne online være begrenset til de formelle diskusjonene, mens det i de tradisjonelle deliberative meningsmålingene også vil være mer uformell kontakt mellom deltakerne i forbindelse med måltider og arrangementer utenom deliberasjonene.
+Det er usikkert i hvilken grad dette påvirker for eksempel hvor involverte deltakerne blir i prosessen. 
+
+Hva er resultatene av allerede gjennomførte online deliberative meningsmålinger vis-a-vis tradisjonelle deliberative meningsmålinger? 
+Det har blitt gjennomført flere online deliberative meningsmålinger i USA, blant annet om amerikansk utenrikspolitikk knyttet til Irak krigen i 2002, og i tilknytning til primær- og presidentvalgene i 2004. 
+Samtidig har det blir gjennomført tilsvarende deliberative meningsmålinger ansikt til ansikt.
+Basert på analyser av disse argumenterer Luskin, Fishkin og Iyengar (2004) for at online deliberasjon kan skape en positiv effekt på offentlig opinion som er sammenlignbar med deliberativ meningsmåling gjennomført ansikt til ansikt. 
+Det er imidlertid viktig å påpeke at de eksperimentelle kontekstene for deliberasjonene gjennomført online og ansikt-til-ansikt ikke var identiske. 
+For eksempel ble det brukt ulike eksperter, moderatorer og (til dels) spørreskjemaer for å måle effekten av overveielse i de to kontekstene, hvilket gjør sammenlikningen av effekten av de to typene deliberasjonene mindre presis (Min 2007). 
+
+#### Programvare: Stanford Online Deliberation Platform
+
+I den tiden deliberativ meningsmåling har eksistert som metode har arrangementene som regel blitt gjennomført ansikt til ansikt.
+I 2019 utviklet forskere ved Stanford en online plattform kalt Stanford Online Deliberation Platform (SODP).
+Programmet har blitt brukt i Japan og i California, og har etter koronapandemien opplevd en sterk økning i oppmerksomhet.
+Nettopp på grunn av pandemien valgte vi å bytte til den nettbaserte løsningen i vårt prosjekt.
+
+På overflaten ligner programmet på det folk er vant med fra videokonferanseløsninger som Zoom, Microsoft Teams, Google Hangout og Skype.
+Forskjellen ligger i at SODP har innebygd automatisk moderator som styrer samtalen mellom deltakerne.
+
+Deltakerne må trykke på en knapp for å stille seg i kø for å snakke, eller for å bryte inn med en kort replikk.
+Alle deltakerne får like mye tid til rådighet, som de kan velge å bruke eller ikke.
+Agendaen for diskusjonen er synlig på skjermen, og den automatiske moderatoren sørger for at progresjonen blir holdt.
+
+[Les mer om SODP her (ekstern lenke)](https://cdd.stanford.edu/2019/automateddeliberationplatform/).
+[Klikk her for å komme til den norske versjonen av programmet](https://stanforddeliberate.org/demo-no).
+
+Fordeler med SODP:
+
+* Kompetanse: Et svært kompetent lag med programvareutviklere og demokratiforskere på Stanford University deltar aktivt i gjennomføringen av den deliberative meningsmålingen. 
+Fram til nå har SODP-teamet vært tett på hver enkelt gjennomføring av online deliberativ meningsmåling, og det vil de også være i vårt tilfelle.
+Alice Siu, Lodewijk Gelauff, og en person til vil være med under selve gjennomføringen av den deliberative meningsmålingen.
+
+* Kredibilitet: Stanford University er et anerkjent universitet som gjenkjennes av de fleste.
+
+Ulemper med SODP: 
+
+* Bruk er avhengig av kapasitet og interesse fra eierne av programvaren.
+
+* Programvaren har (per i dag) ikke åpen kildekode.
+For vår del er det en fordel om det er det på sikt, både av prinsipielle hensyn knyttet til åpen tilgang på infrastruktur som benyttes til forskningsformål, og fordi det kan være praktiske grunner til at man ønsker å tilpassse programmet til eget bruk.
+Første gang vi gjennomfører en deliberativ meningsmåling vil det imidlertid ikke være aktuelt for oss å gå inn i kildekoden og gjøre endringer, så det er ingen stor ulempe i denne omgang.
+Om man skal gå over til mer hyppig bruk av programvaren vil det derimot være nyttig å kunne ha administrativ tilgang til programmet.
+Programvaren er fortsatt under utvikling, og dette er ett av punktene hvor vi kan se endringer i framtiden.
+
+### Alternativer 
+*	Plassere DM i en større kontekst av innbyggermedvirkning
+
+*	Fremheve positive og negative sider ved DM i kontrast til de andre formene for medvirkning
+
+*	Se Mansbridge 
+
+*	Alternativer til DM
+
+*	Political forums with deliberative elements are being instituted across the globe (ref first chapter + several chapters in handbook)
+
+*	Deliberative Mini-Publics
+
+*	Citizen dialogue (https://participedia.net/method/631)
+
+*	Planleggingscelle (se side 67 i rapport)
+
+*	Borgerjury (se side 68 i rapport)
+
+*	Lav representativitet (gjelder nok også andre mini-publics)
+
+*	Press for å oppnå enstemmighet (dette er det ikke i DM)
+
+*	Dette gjelder også for de Europeiske consensus-møtene 
+
+
+## Målgruppe
+Målgruppen er alle innbyggerne i Bergen.
+Mer kommer.
+
+```{r målgruppe}
+Medlem <- tibble(Involverte = c('Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Richard', 'Pål'))
+kable(Medlem)
+```
+
+<!-- ## Tidsplan -->
+<!-- ```{r dp-gantt, fig.width=9, fig.height=5} -->
+
+<!-- #Gantt -->
+<!-- gantt <- d %>%  -->
+<!--   filter(!is.na(Start_date)) %>%  -->
+<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
+<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
+<!--          Action = as_factor(Action))   -->
+
+<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
+
+<!-- plot1 <-  -->
+<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
+<!--     geom_line(size = 3) + -->
+<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "2020-2021") +  -->
+<!--   scale_colour_manual(values=cbbPalette) + -->
+<!--   labs(color = "Type") + -->
+<!--      theme_light() + -->
+<!--   theme(axis.line.y=element_blank(), -->
+<!--                   axis.title.x=element_blank(), -->
+<!--                  axis.title.y=element_blank(), -->
+<!--                  axis.ticks.y=element_blank(), -->
+<!--                                   axis.line.x =element_blank(), -->
+<!--                  legend.position = "bottom" -->
+<!--                 )  -->
+<!-- plot1 -->
+
+<!-- d %>% select(Start_date, End_date, Action) %>% filter(!is.na(Start_date)) %>% kable() -->
+
+<!-- ``` -->
+

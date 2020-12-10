@@ -1,0 +1,141 @@
+# Fase II: Forberedelser
+```{r faseII-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+## Tilpasse programvare
+Enkelte tilpasninger av programvaren må gjøres til norske forhold. 
+Den ene tilpasningen er å oversette språket til norsk, og den andre er å sikre at programvaren er innenfor regelverket om personvern.
+```{r tilpasse}
+Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Øyvind Straume (for personvernrelaterte saker)', 'Sveinung', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+### Oversettelse
+Programmet er nå oversatt til norsk.
+Vi brukte profesjonelle oversettere (Semantix), og SODP-teamet implementerte oversettelsen i november 2020.
+Programmet har vært gjennom noen testrunder med prosjektleder Sveinung Arnesen.
+Teksten som leses opp på norsk i programmet gjøres per i dag av en automatisert stemme.
+Denne stemmen skal senere erstattes av en ekte person.
+Sveinung skaffer noen som kan lese inn norsk voice-over.
+
+I programmet er det også en rubrikk som punktvis går gjennom diskusjonstemaene underveis.
+Denne teksten skal også være på norsk, og blir lagt inn når tematikken er spikret.
+
+### Personvern
+Personvernregler varierer fra land til land. 
+Prosjektet er i dialog med NORCE sitt personvernombud Øyvind Straume, for å sikre at vi holder oss innenfor lovverket.
+Vi melder også prosjektet inn til NSD vinteren 2021.
+
+For å få tilgang til Folkeregisteret for å rekruttere deltakere trenger vi godkjennelse fra norske myndigheter.
+I sammenligning med offline deliberativ meningsmåling er det noen flere personvernhensyn som må avklares.
+For det første bruker deltakerne eget webkamera, som kan sees av andre deltakere, observatører og organisatorer så lenge arrangementet pågår.
+Video lagres ikke i etterkant.
+
+Det gjør imidlertid lydopptakene.
+Grunnen til dette er at teksten transkriberes og lagres i etterkant.
+Etter at teksten er kvalitetssjekket opp mot lydopptakene kan all audio slettes permanent.
+
+Deltakerne registreres med deres ekte navn.
+Navnene kobles til deres brukernavn, som de selv lager.
+Denne koblingen oppbevares kryptert på et sikkert sted.
+I vårt tilfelle blir de lagret i Universitetet i Bergens datalagringsløsning som heter S.A.F.E.
+
+Når vi ikke lenger har behov for å koble dataene til deltakerne, vil dataene anonymiseres.
+Anonymiserte data er ikke innbefattet like strenge krav som personidentifiserbare data.
+
+## Teknisk veiledning
+For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurser på å forberede deltakerne på selve gjennomføringen:
+
+1. Vi lager en kort **informasjonsvideo** som viser hvordan programvaren ser ut, og hva som venter dem når arrangementet settes i gang.
+
+2. Skriftlig informasjon om deliberativ meningsmåling som metode gjøres tilgjengelig for deltakerne **på nettsidene**.
+
+3. Vi setter opp et eget **online prøverom** som deltakerne kan gå inn i og gjøre seg kjent med programvaren. 
+
+```{r veiledning}
+Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Sveinung', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+### Informasjonsvideo
+'YouTube'-stil: 5-10 minutter hvor vi klikker oss rundt i programmet og forklarer opplegget.
+
+### Skriftlig informasjon
+De får også tilgang på skriftlig informasjon om hvilke tekniske krav som stilles for at de kan delta.
+Deltakere som ikke oppfyller disse kravene oppfordres til å ta direkte kontakt med representanter for Bergen kommune.
+Bergen kommune oppretter en hotline for denne type henvendelser.
+
+### Online prøverom
+
+De som har takket ja til å delta får tilgang til en prøveversjon av programmet.
+Der kan de gå inn og gjøre seg kjent med brukergrensesnittet før selve dagen.
+
+## Lage spørreundersøkelse
+
+En spørreundersøkelse skal gå ut til deltakerne i forkant og i etterkant av deliberasjonsarrangementet.
+Den varer i 15-20 minutter, og skal ta opp spørsmål som dreier seg om de utvalgte sakene bilfrie soner i bydelene og arealutvikling på Dokken.
+I tillegg skal respondentene svare på bakgrunnsspørsmål om seg selv.
+
+```{r spørreundersøkelse}
+Medlem <- tibble(Involverte = c('Alice', 'Jon Kåre', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+## Rekruttere deltakere
+Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
+
+```{r rekruttere}
+Medlem <- tibble(Involverte = c('Henrik', 'Sveinung', 'Anne Lise', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+### Søke folkeregisteret
+Rekrutteringen av deltakere til den deliberative meningsmålingen foreår ved å trekke ut et **tilfeldig utvalg** av innbyggerne som i Folkeregisteret er registrert å bo i Bergen.
+Siden en deliberativ meningsmåling ikke er gjennomført tidligere, knyttes det en viss usikkerhet til hvor mange av de inviterte som takker ja til å delta.
+For å ta høyde for dette søker vi om et supplerende utvalg i tillegg til hovedutvalget.
+Vi har som utgangspunkt at 20 prosent av de inviterte faktisk deltar i den deliberative meningsmålingen, noe som betyr at 1000 personer blir invitert i hovedutvalget.
+I tillegg har vi et tilleggsutvalg på 500 som blir invitert dersom vi ikke får tilstrekkelig med positive svar fra de inviterte i bruttoutvalget.
+Kontrollgruppen følger samme prosedyre som gruppen som blir invitert til den deliberative meningsmålingen.
+
+Totalt søker vi derfor om å trekke et utvalg på *3000* fra populasjonen av personer som er folkeregistrert i Bergen kommune. 
+
+Vi må være forberedt på at flere enn forventet takker ja, og dimensjonere etter det. 
+Ettersom arrangementet gjennomføres online vil det være en enklere oppgave enn ved en fysisk gjennomføring.
+
+Vi må også være forberedt på frafall blant de som takker ja.
+Erfaringer fra tidligere deliberative meningsmålinger viser at så mye som halvparten i enkelt tilfeller sier de skal delta, men så ikke dukker opp.
+Imidlertid er vår erfaring med Byborgerpanelet i 2018 at så godt som alle som takket ja også dukket opp.
+
+### Invitasjonsbrev
+
+Alle i hovedutvalget får tilsendt et **brev i posten** fra Bergen kommune på samme tidspunkt.
+Det vil være fire varianter av brevet, avhengig av hvilken gruppe deltakerne blir delt inn i.
+Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
+
+Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberative meningsmålingen skal få i posten et formelt invitasjonsbrev fra Bergen kommune og NORCE  med informasjon om  
+  1. Hvorfor de blir kontaktet  
+  2. Hva spørsmålene skal brukes til  
+  3. Hvem som står bak undersøkelsen  
+  4. Personvernhensyn  
+  5. Hvordan de kan finne ut mer  
+
+Svar på invitasjonsbrevet utbedes innen en gitt frist.
+De som ikke har svart får et nytt brev med **påminnelse**, og en endelig frist for å svare.
+
+## Faglig informasjonsmateriale 
+De som deltar i den deliberative meningsmålingen får tilgang til balansert informasjonsmateriale om sakene de skal diskutere.
+Materialet blir kommunisert ut på forhånd, og gjort tilgjengelig på prosjektets nettsider.
+Dette materialet må formidles etter at den første undersøkelsen har stengt, slik at svarene der ikke påvirkes av informasjonsmaterialet de får utdelt.
+
+```{r informasjonsmateriale}
+Medlem <- tibble(Involverte = c('Jacob', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
+kable(Medlem)
+```

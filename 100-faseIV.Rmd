@@ -1,0 +1,76 @@
+# Fase IV: Bearbeiding
+```{r faseIV-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+Like etter feltarbeidet er avsluttet, og samme dag som den deliberative meningsmålingen er gjennomført, holder vi en kort debrief om hvordan gjennomføringen gikk.
+Om det er konkrete saker som oppstår og må løses raskt blir dette tatt hånd om da.
+
+I ukene etterpå blir dataene bearbeidet og gjort tilgjengelig for analyse.
+Når dataene er klare og analysert, presenteres disse for prosjektgruppen.
+
+Seinere, og før sommerferien, blir dataene presentert til et videre publikum.
+Vi er også beredt til å presentere resultatene i andre kommuner eller organisasjoner som er interessert i å høre om prosjektet.
+
+## Debrief
+Debriefen vil være et to timer langt møte like i etterkant av arrangementet, hvor vi gjør en evaluering av gjennomføringen.
+```{r debrief}
+Medlem <- tibble(Involverte = c('Anne Lise', 'Alice', 'Jacob', 'Jim', 'Henrik', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+## Dataanalyse
+Vi analyserer spørreundersøkelsene, og leverer resultatene i et rapportformat.
+Hele prosjektgruppen deltar på seminar der resultatene blir presentert og formidlet internt.
+```{r dataanalyse}
+Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Sveinung', 'Jon Kåre'))
+kable(Medlem)
+```
+
+## Formidling av resultater
+Resultatene og erfaringene fra den deliberative meningsmålingen formidles til Bergen kommune.
+Andre interesserte kommuner samt media og publikum generelt får også tilgang på resultatene etter at de er presentert til Bergen kommune.
+```{r formidling}
+Medlem <- tibble(Involverte = c('Anne Lise', 'Jacob', 'Jon Kåre', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+<!-- ## Tidsplan -->
+<!-- ```{r faseIV-tidsplan, fig.width=9, fig.height=2} -->
+
+<!-- #Gantt -->
+<!-- gantt <- d %>%  -->
+<!--   filter(!is.na(Start_date), -->
+<!--          Type == 'Post processing') %>%  -->
+<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
+<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
+<!--          Action = as_factor(Action))   -->
+
+<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
+
+<!-- plot1 <-  -->
+<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
+<!--     geom_line(size = 3) + -->
+<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Etterarbeid") +  -->
+<!--   scale_colour_manual(values=cbbPalette) + -->
+<!--   labs(color = "Type") + -->
+<!--      theme_light() + -->
+<!--   theme(axis.line.y=element_blank(), -->
+<!--                   axis.title.x=element_blank(), -->
+<!--                  axis.title.y=element_blank(), -->
+<!--                  axis.ticks.y=element_blank(), -->
+<!--                                   axis.line.x =element_blank(), -->
+<!--                  legend.position = "bottom" -->
+<!--                 )  -->
+<!-- plot1 -->
+<!-- d %>% filter(!is.na(Start_date), Type == 'Post processing') %>% select(Start_date, End_date, Action) %>% kable() -->
+
+<!-- ``` -->

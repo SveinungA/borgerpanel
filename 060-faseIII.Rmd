@@ -1,0 +1,100 @@
+# Fase III: Feltarbeid
+```{r faseIII-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+Fase III er feltarbeidsperioden.
+Med feltarbeid mener vi perioden hvor data er i ferd med å samles inn. 
+Den starter med utsendelsen av den første spørreundersøkelsen i forkant av den deliberative meningsmålingen, og slutter med den andre spørreundersøkelsen i etterkant av arrangementet.
+
+I vårt tilfelle har vi tre slike hendelser.
+
+1. Første spørreundersøkelse  
+2. Deliberasjon  
+3. Andre spørreundersøkelse
+
+Strengt tatt foregår punkt 2. og 3. til samme tid, men ettersom det er en kontrollgruppe som ikke er del av den deliberative meningsmålingen men likevel svarer på den andre spørrundersøkelsen, er det greit å skille de fra hverandre på denne måten.
+
+
+## Første spørreundersøkelse 
+
+Første spørreundersøkelse går både til deltakerne og til en kontrollgruppe som ikke inviteres til å delta.
+Undersøkelsen er web-basert, og laget i programmet Qualtrics.
+Deltakerne får invitasjonsbrevet (se kapittel \@ref(fase-II:-forberedelser)) i posten med en lenke med invitasjon til å delta.
+
+```{r første-spørreundersøkelse}
+Medlem <- tibble(Involverte = c('Alice', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+## Deliberasjon
+
+```{r deliberasjon}
+Medlem <- tibble(Involverte = c('Alice', 'Jacob', 'Jon Kåre', 'Henrik', 'Anne Lise', 'Sveinung', 'Fageksperter', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+### Brukerstøtte
+
+Mye av det tekniske vil forhåpentlig være luket ut under pretesten, men det vil alltid være noe som dukker opp underveis.
+
+Under selve gjennomføringen av den deliberative meningsmålingen vil det være tilgjengelig personer fra Stanford som er med på den tekniske siden.
+I tillegg trenger vi 3-4 dedikerte personer fra Bergen kommune som yter teknisk støtte til deltakerne via nettsidens *helpdesk* samt over telefon.
+Deres oppgaver blir å gi støtte til deltakere som har tekniske problemer mens den deliberative meningsmålingen pågår.
+Vanlige problemer som oppstår er bruk av feil nettleser (Chrome er eneste som kan brukes), brukerenhet (Ipad eller Iphone kan ikke brukes), og problemer med lyd.
+Det meste vil dreie seg om forholdsvis enkel teknisk støtte som å koble til øretelefoner eller bruke riktig nettleser.
+Det er altså ikke behov for at de som er brukerstøtte selv har veldig høy teknisk kompetanse.
+
+Helpdesken har begrenset med mulighet for å hjelpe deltakerne ut over å gi noen enkle råd.
+De fleste problemer bør være luket bort i pretesten, for det er liten tid til å gjøre feilsøking og -retting når arrangementet først er i gang.
+
+## Andre spørreundersøkelse
+
+Andre spørreundersøkelse er identisk i utforming til den første.
+Den skal sendes ut etter at deltakerne har deltatt i den deliberative arrangementet.
+
+```{r andre-spørreundersøkelse}
+Medlem <- tibble(Involverte = c('Alice', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
+kable(Medlem)
+```
+
+<!-- ## Tidsplan -->
+
+<!-- ```{r dp-feltarbeid-gantt, fig.width=9, fig.height=2} -->
+
+<!-- #Gantt -->
+<!-- gantt <- d %>%  -->
+<!--   filter(!is.na(Start_date), -->
+<!--          Type == 'Fieldwork') %>%  -->
+<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
+<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
+<!--          Action = as_factor(Action))   -->
+
+<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
+
+<!-- plot1 <-  -->
+<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
+<!--     geom_line(size = 3) + -->
+<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Feltarbeid") +  -->
+<!--   scale_colour_manual(values=cbbPalette) + -->
+<!--   labs(color = "Type") + -->
+<!--      theme_light() + -->
+<!--   theme(axis.line.y=element_blank(), -->
+<!--                   axis.title.x=element_blank(), -->
+<!--                  axis.title.y=element_blank(), -->
+<!--                  axis.ticks.y=element_blank(), -->
+<!--                                   axis.line.x =element_blank(), -->
+<!--                  legend.position = "bottom" -->
+<!--                 )  -->
+<!-- plot1 -->
+<!-- d %>% filter(!is.na(Start_date), Type == 'Fieldwork') %>% select(Start_date, End_date, Action) %>% kable() -->
+
+<!-- ``` -->

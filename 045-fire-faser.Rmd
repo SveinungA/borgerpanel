@@ -1,0 +1,50 @@
+# Fire faser
+```{r firefaser-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+Vi deler borgerpanelene inn i fire faser.
+I fase I bestemmes metode, målgruppe og tema.
+Til fase II tilfaller de praktiske oppgavene knyttet til forberedelsene av feltarbeidet.
+Fase III er selve feltarbeidet - datainnsamlingsperioden.
+Debrief og bearbeiding av data kommer i fase IV.
+
+Til dels er fasene overlappende i tid, men i hovedsak blir aktivitetene knyttet til fase I gjennomført før aktivitetene i fase II, og så videre.
+
+Tidsplanen under viser hvor de ulike fasene faller i tid for den deliberative meningsmålingen som gjennomføres i 2021.
+
+```{r dp-sodp-gantt, fig.width=9, fig.height=4}
+
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Start_date)) %>% 
+  pivot_longer(., Start_date:End_date, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Type = as_factor(Type))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Type, desc(Item)), group=Item, color=as_factor(Fase)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ Meningsmåling, 2021") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Fase") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+# d %>% filter(!is.na(Start_date)) %>% select(Start_date, End_date, Type) %>% kable()
+```
