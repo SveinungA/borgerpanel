@@ -75,7 +75,6 @@ I våre forberedelser til den deliberative meningsmålingen diskuterte vi en rek
 De mest aktuelle var i starten turistskatt, boligbygging på Store Lungegårdsvann (på sjøen i sentrum av Bergen), terrorbekjempelse versus personvern, redusering av økonomiske forskjeller, og tiggerforbud.
 
 For å skaffe oss et godt informasjonsgrunnlag gjennomførte vi også en spørreundersøkelse i byen for å se hva innbyggerne mente om disse sakene i dag; hvilke saker hvor folk flest var enige; hvilke saker som splittet innbyggerne, og hvilke saker de ikke brydde seg særlig om.
-Undersøkelsen kan du lese mer om i kapittel \@ref(demokratiundersøkelsen-2020)
 
 Undersøkelsen ble gjennomført i januar 2020, like før Norge og verden ble rammet av koronapandemien.
 Våre planer måtte endres på, og prosessen måtte starte mer eller mindre på nytt.
@@ -274,36 +273,3 @@ Mer kommer.
 Medlem <- tibble(Involverte = c('Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Richard', 'Pål'))
 kable(Medlem)
 ```
-
-<!-- ## Tidsplan -->
-<!-- ```{r dp-gantt, fig.width=9, fig.height=5} -->
-
-<!-- #Gantt -->
-<!-- gantt <- d %>%  -->
-<!--   filter(!is.na(Start_date)) %>%  -->
-<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
-<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
-<!--          Action = as_factor(Action))   -->
-
-<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
-
-<!-- plot1 <-  -->
-<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
-<!--     geom_line(size = 3) + -->
-<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "2020-2021") +  -->
-<!--   scale_colour_manual(values=cbbPalette) + -->
-<!--   labs(color = "Type") + -->
-<!--      theme_light() + -->
-<!--   theme(axis.line.y=element_blank(), -->
-<!--                   axis.title.x=element_blank(), -->
-<!--                  axis.title.y=element_blank(), -->
-<!--                  axis.ticks.y=element_blank(), -->
-<!--                                   axis.line.x =element_blank(), -->
-<!--                  legend.position = "bottom" -->
-<!--                 )  -->
-<!-- plot1 -->
-
-<!-- d %>% select(Start_date, End_date, Action) %>% filter(!is.na(Start_date)) %>% kable() -->
-
-<!-- ``` -->
-

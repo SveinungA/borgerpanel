@@ -28,11 +28,14 @@ Strengt tatt foregår punkt 2. og 3. til samme tid, men ettersom det er en kontr
 
 Første spørreundersøkelse går både til deltakerne og til en kontrollgruppe som ikke inviteres til å delta.
 Undersøkelsen er web-basert, og laget i programmet Qualtrics.
-Deltakerne får invitasjonsbrevet (se kapittel \@ref(fase-II:-forberedelser)) i posten med en lenke med invitasjon til å delta.
+Deltakerne får invitasjonsbrevet i posten med en lenke med invitasjon til å delta.
+Feltperioden for undersøkelsen er fra `r d %>% filter(Type == 'Første spørreundersøkelse', Aktivitet == 'Feltperiode') %>% select(Startdato)` til `r d %>% filter(Type == 'Første spørreundersøkelse', Aktivitet == 'Feltperiode') %>% select(Sluttdato)`.
 
 ```{r første-spørreundersøkelse}
 Medlem <- tibble(Involverte = c('Alice', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
 kable(Medlem)
+d %>% filter(Type== 'Første spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+
 ```
 
 ## Deliberasjon
@@ -40,6 +43,8 @@ kable(Medlem)
 ```{r deliberasjon}
 Medlem <- tibble(Involverte = c('Alice', 'Jacob', 'Jon Kåre', 'Henrik', 'Anne Lise', 'Sveinung', 'Fageksperter', 'Hvem fra kommunen?'))
 kable(Medlem)
+d %>% filter(Type== 'Deliberasjon', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+
 ```
 
 ### Brukerstøtte
@@ -56,45 +61,25 @@ Det er altså ikke behov for at de som er brukerstøtte selv har veldig høy tek
 Helpdesken har begrenset med mulighet for å hjelpe deltakerne ut over å gi noen enkle råd.
 De fleste problemer bør være luket bort i pretesten, for det er liten tid til å gjøre feilsøking og -retting når arrangementet først er i gang.
 
+### Paneldiskusjon
+Fageksperter diskuterer seg i mellom og svarer på spørsmål fra deltakerne.
+
+### Observatører
+Observatører har anledning til å se på mens deltakerne diskuterer sakene som kommer opp.
+Disse har fått instrukser på forhånd om innlogging, og brukerstøtte til denne gruppen er lavt prioritert under selve gjennomføringen.
+
 ## Andre spørreundersøkelse
 
 Andre spørreundersøkelse er identisk i utforming til den første.
 Den skal sendes ut etter at deltakerne har deltatt i den deliberative arrangementet.
 
+Deltakerne svarer på undersøkelsen samme dag som den deliberative meningsmålingen arrangeres.
+Kontrollgruppen, derimot, trenger noe lengre tid for å fullføre undersøkelsen.
+Vi har derfor satt feltperioden fra `r d %>% filter(Type == 'Andre spørreundersøkelse', Aktivitet == 'Feltperiode') %>% select(Startdato)` til `r d %>% filter(Type == 'Andre spørreundersøkelse', Aktivitet == 'Feltperiode') %>% select(Sluttdato)`.
+
 ```{r andre-spørreundersøkelse}
 Medlem <- tibble(Involverte = c('Alice', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
 kable(Medlem)
+d %>% filter(Type== 'Andre spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+
 ```
-
-<!-- ## Tidsplan -->
-
-<!-- ```{r dp-feltarbeid-gantt, fig.width=9, fig.height=2} -->
-
-<!-- #Gantt -->
-<!-- gantt <- d %>%  -->
-<!--   filter(!is.na(Start_date), -->
-<!--          Type == 'Fieldwork') %>%  -->
-<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
-<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
-<!--          Action = as_factor(Action))   -->
-
-<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
-
-<!-- plot1 <-  -->
-<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
-<!--     geom_line(size = 3) + -->
-<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Feltarbeid") +  -->
-<!--   scale_colour_manual(values=cbbPalette) + -->
-<!--   labs(color = "Type") + -->
-<!--      theme_light() + -->
-<!--   theme(axis.line.y=element_blank(), -->
-<!--                   axis.title.x=element_blank(), -->
-<!--                  axis.title.y=element_blank(), -->
-<!--                  axis.ticks.y=element_blank(), -->
-<!--                                   axis.line.x =element_blank(), -->
-<!--                  legend.position = "bottom" -->
-<!--                 )  -->
-<!-- plot1 -->
-<!-- d %>% filter(!is.na(Start_date), Type == 'Fieldwork') %>% select(Start_date, End_date, Action) %>% kable() -->
-
-<!-- ``` -->

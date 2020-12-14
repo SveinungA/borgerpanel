@@ -4,6 +4,7 @@ bookdown::gitbook:
     toc:
       before: |
         <li><a href="./">Demokratisk innovasjon i norske kommuner</a></li>
+      after:  <li><a href="./">Sveinung Arnesen</a></li>
 
     download: ["pdf", "epub"]
 bookdown::pdf_book:

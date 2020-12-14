@@ -21,11 +21,10 @@ Til dels er fasene overlappende i tid, men i hovedsak blir aktivitetene knyttet 
 Tidsplanen under viser hvor de ulike fasene faller i tid for den deliberative meningsmålingen som gjennomføres i 2021.
 
 ```{r dp-sodp-gantt, fig.width=9, fig.height=4}
-
 #Gantt
 gantt <- d %>% 
-  filter(!is.na(Start_date)) %>% 
-  pivot_longer(., Start_date:End_date, names_to = "period") %>% 
+  filter(!is.na(Startdato)) %>% 
+  pivot_longer(., Startdato:Sluttdato, names_to = "period") %>% 
   mutate(value = as.Date(value, "%Y.%m.%d"),
          Type = as_factor(Type))  
 
@@ -46,5 +45,5 @@ plot1 <-
                  legend.position = "bottom"
                 ) 
 plot1
-# d %>% filter(!is.na(Start_date)) %>% select(Start_date, End_date, Type) %>% kable()
+# d %>% filter(!is.na(Startdato)) %>% select(Startdato, Sluttdato, Type) %>% kable()
 ```

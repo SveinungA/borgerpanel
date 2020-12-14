@@ -10,15 +10,73 @@ d <- read_excel("Data/DeliberativePoll-planning.xlsx")
 
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
 ```
+## Lage spørreundersøkelse
+
+En spørreundersøkelse skal gå ut til deltakerne i forkant og i etterkant av deliberasjonsarrangementet.
+Den varer i 15-20 minutter, og skal ta opp spørsmål som dreier seg om de utvalgte sakene bilfrie soner i bydelene og arealutvikling på Dokken.
+I tillegg skal respondentene svare på bakgrunnsspørsmål om seg selv.
+
+```{r spørreundersøkelse}
+Medlem <- tibble(Involverte = c('Alice', 'Jon Kåre', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
+kable(Medlem)
+d %>% filter(Type== 'Lage spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+
+```
+### Bestemme spørsmål
+
+#### Bakgrunn
+
+Kjønn  
+Alder  
+Utdanning  
+Bosted (Bydel)  
+
+#### Politiske spørsmål
+
+Selvplassering på høyre/venstre-skalaen  
+Partipreferanse i kommunevalg  
+Holdningsspørsmål til sentrale politiske saker  
+Interesse for politikk  
+Politikk er komplisert  
+Folk som meg har ikke innflytelse på politikken som føres  
+Tillit til lokale myndigheter    
+Tillit til sentrale myndigheter  
+
+#### Spørsmål om bilfrie soner
+
+#### Spørsmål om arealutvikling på Dokken
+
+### Oversette til engelsk
+Spørreundersøkelsen må foreligge også på engelsk.
+Grunnen til det er at våre internasjonale partnere også deltar i utformingen av undersøkelsen.
+
+I første omgang gjør vi en egen, uformell oversettelse.
+Når spørreundersøkelsen er fastsatt bruker vi profesjonelle aktører til å oversette den endelige versjonen.
+
+### Programmere spørreundersøkelse
+Undersøkelsen skal programmeres til å kunne gjennomføres på nett.
+Vi har valget mellom å gjøre dette arbeidet selv, eller hyre eksterne aktører for å gjøre arbeidet.
+Fordelene med å gjøre det selv er at det er mye rimeligere; at vi har relevant kompetanse internt i prosjektet; og at vi har full kontroll på designprosessen.
+Ulempen er at det tar timeressurser fra prosjektet.
+Det kan være aktuelt å hyre inn en vitenskapelig assistent for å kompensere for dette.
+Programvare som er aktuelt å benytte er Qualtrics, Surveyexact, Limesurvey, eller andre.
+
+Om vi setter ut arbeidet må det antakelig ut på en minikonkurranse til aktører i bransjen (Respons Analyse, TNS Gallup, Ideas2Evidence, eller andre).
+Dette valget sikrer profesjonell gjennomføring, rask levering, og noe mindre arbeid for prosjektets medlemmer.
+Det er imidlertid en vesentlig dyrere løsning, og prosjektmedlemmene må uansett bruke tid på å utforme spørsmålene, og det kan være kompliserende å bringe inn flere aktører som skal orienteres og involveres i prosessen.
+
+Etter en samlet vurdering vurderes den beste løsningen til å programmere spørreundersøkelsen selv i dette tilfellet.
+
 ## Tilpasse programvare
 Enkelte tilpasninger av programvaren må gjøres til norske forhold. 
 Den ene tilpasningen er å oversette språket til norsk, og den andre er å sikre at programvaren er innenfor regelverket om personvern.
 ```{r tilpasse}
 Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Øyvind Straume (for personvernrelaterte saker)', 'Sveinung', 'Hvem fra kommunen?'))
 kable(Medlem)
+d %>% filter(Type== 'Tilpasse programvare', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
 
-### Oversettelse
+### Oversette til norsk
 Programmet er nå oversatt til norsk.
 Vi brukte profesjonelle oversettere (Semantix), og SODP-teamet implementerte oversettelsen i november 2020.
 Programmet har vært gjennom noen testrunder med prosjektleder Sveinung Arnesen.
@@ -51,6 +109,85 @@ I vårt tilfelle blir de lagret i Universitetet i Bergens datalagringsløsning s
 Når vi ikke lenger har behov for å koble dataene til deltakerne, vil dataene anonymiseres.
 Anonymiserte data er ikke innbefattet like strenge krav som personidentifiserbare data.
 
+## Rekruttere deltakere
+Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
+
+```{r rekruttere}
+Medlem <- tibble(Involverte = c('Henrik', 'Sveinung', 'Anne Lise', 'Hvem fra kommunen?'))
+kable(Medlem)
+d %>% filter(Type== 'Rekruttere deltakere', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+
+```
+
+### Trekke utvalg
+Rekrutteringen av deltakere til den deliberative meningsmålingen foregår ved å trekke ut et **tilfeldig utvalg** av innbyggerne som i Folkeregisteret er registrert å bo i Bergen.
+Siden en deliberativ meningsmåling ikke er gjennomført tidligere, knyttes det en viss usikkerhet til hvor mange av de inviterte som takker ja til å delta.
+For å ta høyde for dette søker vi om et supplerende utvalg i tillegg til hovedutvalget.
+
+Vi har som utgangspunkt at 20 prosent av de inviterte faktisk deltar i den deliberative meningsmålingen, noe som betyr at 1000 personer blir invitert i hovedutvalget.
+Erfaringen vi har å trekke på er forsøket med Byborgerpanelet i 2018, hvor 433 personer ble invitert og 82 personer møtte opp til slutt
+I tillegg har vi et tilleggsutvalg på 500 som blir invitert dersom vi ikke får tilstrekkelig med positive svar fra de inviterte i bruttoutvalget.
+Kontrollgruppen følger samme prosedyre som gruppen som blir invitert til den deliberative meningsmålingen.
+
+Vi må også være forberedt på frafall blant de som takker ja.
+Erfaringer fra tidligere deliberative meningsmålinger viser at så mye som halvparten i enkelt tilfeller sier de skal delta, men så ikke dukker opp.
+Imidlertid er vår erfaring med Byborgerpanelet i 2018 at så godt som alle som takket ja også dukket opp.
+
+Totalt *søker vi Folkeregisteret* om å trekke et utvalg på opptil *4000* fra populasjonen av personer som er folkeregistrert i Bergen kommune. 
+Dette gir oss 1000 ekstra personer å invitere dersom anslaget på 20 prosent responsrate viser seg å være for høyt.
+
+Vi må være forberedt på at flere enn forventet takker ja, og dimensjonere etter det. 
+Ettersom arrangementet gjennomføres online vil det være en enklere oppgave enn ved en fysisk gjennomføring.
+
+
+### Invitasjonsbrev
+Alle får tilsendt et **brev i posten** fra Bergen kommune på samme tidspunkt.
+Det vil være fire varianter av brevet, avhengig av hvilken gruppe deltakerne blir delt inn i.
+
+Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberative meningsmålingen skal få i posten et formelt invitasjonsbrev fra Bergen kommune og NORCE  med informasjon om  
+  1. Hvorfor de blir kontaktet  
+  2. Hva spørsmålene skal brukes til  
+  3. Hvem som står bak undersøkelsen  
+  4. Personvernhensyn  
+  5. Hvordan de kan finne ut mer  
+
+Svar på invitasjonsbrevet utbedes innen en gitt frist.
+De som ikke har svart får et nytt brev med **påminnelse**, og en endelig frist for å svare.
+
+
+#### Hovedutvalg
+
+Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Utsending til hovedutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+
+#### Tilleggsutvalg
+
+Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
+Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Utsending til tilleggsutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutvalg') %>% select(Startdato)`.
+
+### Registrere deltakere
+Deltakerne som takker ja registreres av kommunen med kontaktinformasjon.
+
+## Faglig informasjonsmateriale 
+De som deltar i den deliberative meningsmålingen får tilgang til balansert informasjonsmateriale om sakene de skal diskutere.
+Materialet blir kommunisert ut på forhånd, og gjort tilgjengelig på prosjektets nettsider.
+Dette materialet må formidles etter at den første undersøkelsen har stengt, slik at svarene der ikke påvirkes av informasjonsmaterialet de får utdelt.
+
+```{r informasjonsmateriale}
+Medlem <- tibble(Involverte = c('Jacob', 'Sveinung', 'Anne Lise', 'Lea', 'Håvard Haarstad', 'Andre fageksperter', 'Hvem fra kommunen?'))
+kable(Medlem)
+d %>% filter(Type== 'Faglig informasjonsmateriale', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+```
+
+### Bilfrie soner 
+Lea Toska Oppedal leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
+Håvard Haarstad har sagt ja til å stille som fagekspert og til å rekruttere andre fageksperter.
+Det er viktig å finne personer som kan representere bredden i synspunkter på bilfrie soner i bydelene.
+
+### Arealplanlegging Dokken
+Laura Ve leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
+
 ## Teknisk veiledning
 For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurser på å forberede deltakerne på selve gjennomføringen:
 
@@ -63,79 +200,19 @@ For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurs
 ```{r veiledning}
 Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Sveinung', 'Hvem fra kommunen?'))
 kable(Medlem)
+d %>% filter(Type== 'Teknisk veiledning', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
-
 ### Informasjonsvideo
 'YouTube'-stil: 5-10 minutter hvor vi klikker oss rundt i programmet og forklarer opplegget.
 
 ### Skriftlig informasjon
 De får også tilgang på skriftlig informasjon om hvilke tekniske krav som stilles for at de kan delta.
-Deltakere som ikke oppfyller disse kravene oppfordres til å ta direkte kontakt med representanter for Bergen kommune.
-Bergen kommune oppretter en hotline for denne type henvendelser.
 
 ### Online prøverom
-
 De som har takket ja til å delta får tilgang til en prøveversjon av programmet.
 Der kan de gå inn og gjøre seg kjent med brukergrensesnittet før selve dagen.
 
-## Lage spørreundersøkelse
+### Åpen linje
+Deltakere som ikke oppfyller de tekniske kravene eller har spørsmål de ikke har fått svar på oppfordres til å ta direkte kontakt med representanter for Bergen kommune.
+Bergen kommune oppretter en hotline for denne type henvendelser.
 
-En spørreundersøkelse skal gå ut til deltakerne i forkant og i etterkant av deliberasjonsarrangementet.
-Den varer i 15-20 minutter, og skal ta opp spørsmål som dreier seg om de utvalgte sakene bilfrie soner i bydelene og arealutvikling på Dokken.
-I tillegg skal respondentene svare på bakgrunnsspørsmål om seg selv.
-
-```{r spørreundersøkelse}
-Medlem <- tibble(Involverte = c('Alice', 'Jon Kåre', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
-kable(Medlem)
-```
-
-## Rekruttere deltakere
-Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
-
-```{r rekruttere}
-Medlem <- tibble(Involverte = c('Henrik', 'Sveinung', 'Anne Lise', 'Hvem fra kommunen?'))
-kable(Medlem)
-```
-
-### Søke folkeregisteret
-Rekrutteringen av deltakere til den deliberative meningsmålingen foreår ved å trekke ut et **tilfeldig utvalg** av innbyggerne som i Folkeregisteret er registrert å bo i Bergen.
-Siden en deliberativ meningsmåling ikke er gjennomført tidligere, knyttes det en viss usikkerhet til hvor mange av de inviterte som takker ja til å delta.
-For å ta høyde for dette søker vi om et supplerende utvalg i tillegg til hovedutvalget.
-Vi har som utgangspunkt at 20 prosent av de inviterte faktisk deltar i den deliberative meningsmålingen, noe som betyr at 1000 personer blir invitert i hovedutvalget.
-I tillegg har vi et tilleggsutvalg på 500 som blir invitert dersom vi ikke får tilstrekkelig med positive svar fra de inviterte i bruttoutvalget.
-Kontrollgruppen følger samme prosedyre som gruppen som blir invitert til den deliberative meningsmålingen.
-
-Totalt søker vi derfor om å trekke et utvalg på *3000* fra populasjonen av personer som er folkeregistrert i Bergen kommune. 
-
-Vi må være forberedt på at flere enn forventet takker ja, og dimensjonere etter det. 
-Ettersom arrangementet gjennomføres online vil det være en enklere oppgave enn ved en fysisk gjennomføring.
-
-Vi må også være forberedt på frafall blant de som takker ja.
-Erfaringer fra tidligere deliberative meningsmålinger viser at så mye som halvparten i enkelt tilfeller sier de skal delta, men så ikke dukker opp.
-Imidlertid er vår erfaring med Byborgerpanelet i 2018 at så godt som alle som takket ja også dukket opp.
-
-### Invitasjonsbrev
-
-Alle i hovedutvalget får tilsendt et **brev i posten** fra Bergen kommune på samme tidspunkt.
-Det vil være fire varianter av brevet, avhengig av hvilken gruppe deltakerne blir delt inn i.
-Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
-
-Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberative meningsmålingen skal få i posten et formelt invitasjonsbrev fra Bergen kommune og NORCE  med informasjon om  
-  1. Hvorfor de blir kontaktet  
-  2. Hva spørsmålene skal brukes til  
-  3. Hvem som står bak undersøkelsen  
-  4. Personvernhensyn  
-  5. Hvordan de kan finne ut mer  
-
-Svar på invitasjonsbrevet utbedes innen en gitt frist.
-De som ikke har svart får et nytt brev med **påminnelse**, og en endelig frist for å svare.
-
-## Faglig informasjonsmateriale 
-De som deltar i den deliberative meningsmålingen får tilgang til balansert informasjonsmateriale om sakene de skal diskutere.
-Materialet blir kommunisert ut på forhånd, og gjort tilgjengelig på prosjektets nettsider.
-Dette materialet må formidles etter at den første undersøkelsen har stengt, slik at svarene der ikke påvirkes av informasjonsmaterialet de får utdelt.
-
-```{r informasjonsmateriale}
-Medlem <- tibble(Involverte = c('Jacob', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
-kable(Medlem)
-```

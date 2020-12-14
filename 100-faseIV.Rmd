@@ -11,7 +11,7 @@ d <- read_excel("Data/DeliberativePoll-planning.xlsx")
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
 ```
 
-Like etter feltarbeidet er avsluttet, og samme dag som den deliberative meningsmålingen er gjennomført, holder vi en kort debrief om hvordan gjennomføringen gikk.
+Like etter feltarbeidet er avsluttet, og samme dag som den deliberative meningsmålingen er gjennomført (altså `r d %>% filter(Aktivitet == 'Debrief') %>% select(Startdato)`), holder vi en kort debrief om hvordan gjennomføringen gikk.
 Om det er konkrete saker som oppstår og må løses raskt blir dette tatt hånd om da.
 
 I ukene etterpå blir dataene bearbeidet og gjort tilgjengelig for analyse.
@@ -28,49 +28,30 @@ kable(Medlem)
 ```
 
 ## Dataanalyse
-Vi analyserer spørreundersøkelsene, og leverer resultatene i et rapportformat.
-Hele prosjektgruppen deltar på seminar der resultatene blir presentert og formidlet internt.
+Vi analyserer spørreundersøkelsene, med formål å levere resultatene i et rapportformat til politikerne i Bergen kommune.
+Resultatene presenteres først internt i prosjektet, før de formidles til omverdenen.
 ```{r dataanalyse}
 Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Sveinung', 'Jon Kåre'))
 kable(Medlem)
 ```
 
 ## Formidling av resultater
-Resultatene og erfaringene fra den deliberative meningsmålingen formidles til Bergen kommune.
+Resultatene og erfaringene fra den deliberative meningsmålingen formidles til prosjektgruppen i et internseminar.
 Andre interesserte kommuner samt media og publikum generelt får også tilgang på resultatene etter at de er presentert til Bergen kommune.
 ```{r formidling}
 Medlem <- tibble(Involverte = c('Anne Lise', 'Jacob', 'Jon Kåre', 'Sveinung', 'Jon Kåre', 'Hvem fra kommunen?'))
 kable(Medlem)
 ```
 
-<!-- ## Tidsplan -->
-<!-- ```{r faseIV-tidsplan, fig.width=9, fig.height=2} -->
+### Internseminar
+Prosjektdeltakerne går gjennom analysene av første og andre spørreundersøkelse.
+Internseminaret arrangeres i NORCE sine lokaler i Nygårdsgaten 112, dersom forholdene tillater det.
+Alternativt blir seminaret arrangert online.
 
-<!-- #Gantt -->
-<!-- gantt <- d %>%  -->
-<!--   filter(!is.na(Start_date), -->
-<!--          Type == 'Post processing') %>%  -->
-<!--   pivot_longer(., Start_date:End_date, names_to = "period") %>%  -->
-<!--   mutate(value = as.Date(value, "%Y.%m.%d"), -->
-<!--          Action = as_factor(Action))   -->
+Vi tar sikte på å holde seminaret en gang i tidsrommet `r d %>% filter(Aktivitet == 'Internseminar') %>% select(Startdato)` til `r d %>% filter(Aktivitet == 'Internseminar') %>% select(Sluttdato)`.
 
-<!-- cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7") -->
-
-<!-- plot1 <-  -->
-<!--   ggplot(gantt, aes(x=value, y=fct_reorder(Action, desc(Item)), group=Item, color=as_factor(Type)))+ -->
-<!--     geom_line(size = 3) + -->
-<!--   labs(x="Year", y=NULL, title="Deliberativ meningsmåling", subtitle = "Etterarbeid") +  -->
-<!--   scale_colour_manual(values=cbbPalette) + -->
-<!--   labs(color = "Type") + -->
-<!--      theme_light() + -->
-<!--   theme(axis.line.y=element_blank(), -->
-<!--                   axis.title.x=element_blank(), -->
-<!--                  axis.title.y=element_blank(), -->
-<!--                  axis.ticks.y=element_blank(), -->
-<!--                                   axis.line.x =element_blank(), -->
-<!--                  legend.position = "bottom" -->
-<!--                 )  -->
-<!-- plot1 -->
-<!-- d %>% filter(!is.na(Start_date), Type == 'Post processing') %>% select(Start_date, End_date, Action) %>% kable() -->
-
-<!-- ``` -->
+### Eksternseminar
+Analysene og erfaringene fra den deliberative meningsmålingen presenteres for politikerne i Bergen kommune i et av Bergen kommunes lokaler.
+Media, andre kommuner og andre interesserte er velkomne til å delta.
+En rapport med resultatene overrekkes kommunen.
+Vi tar sikte på å holde seminaret en gang i tidsrommet `r d %>% filter(Aktivitet == 'Eksternseminar') %>% select(Startdato)` til `r d %>% filter(Aktivitet == 'Eksternseminar') %>% select(Sluttdato)`
