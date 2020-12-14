@@ -67,6 +67,9 @@ Det er imidlertid en vesentlig dyrere løsning, og prosjektmedlemmene må uanset
 
 Etter en samlet vurdering vurderes den beste løsningen til å programmere spørreundersøkelsen selv i dette tilfellet.
 
+### Pilotere
+Undersøkelsen piloteres på kollegaer og eventuelt studenter.
+
 ## Tilpasse programvare
 Enkelte tilpasninger av programvaren må gjøres til norske forhold. 
 Den ene tilpasningen er å oversette språket til norsk, og den andre er å sikre at programvaren er innenfor regelverket om personvern.
@@ -88,6 +91,8 @@ I programmet er det også en rubrikk som punktvis går gjennom diskusjonstemaene
 Denne teksten skal også være på norsk, og blir lagt inn når tematikken er spikret.
 
 ### Personvern
+Det må avklares hvem som er databehandler i prosjektet, og hva det må søkes om godkjenning for i prosjektet.
+
 Personvernregler varierer fra land til land. 
 Prosjektet er i dialog med NORCE sitt personvernombud Øyvind Straume, for å sikre at vi holder oss innenfor lovverket.
 Vi melder også prosjektet inn til NSD vinteren 2021.
@@ -108,6 +113,9 @@ I vårt tilfelle blir de lagret i Universitetet i Bergens datalagringsløsning s
 
 Når vi ikke lenger har behov for å koble dataene til deltakerne, vil dataene anonymiseres.
 Anonymiserte data er ikke innbefattet like strenge krav som personidentifiserbare data.
+
+### Etisk godkjenning av studie (Stanford)
+Stanford University krever at alle studier hvor de er partner blir godkjent i deres etiske komite.
 
 ## Rekruttere deltakere
 Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
