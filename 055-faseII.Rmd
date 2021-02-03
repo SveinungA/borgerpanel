@@ -22,12 +22,18 @@ kable(Medlem)
 d %>% filter(Type== 'Lage spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
 
-### Bestemme spørsmål
+## Spørreundersøkelse før arrangementet
 
 ```{r child='survey/presurvey.Rmd'}
 ```
 
+### Spørreundersøkelse etter arrangementet
 
+> Undersøkelsen er nesten identisk med den første, men har i tillegg noen spørsmål knyttet til vurderinger av arrangementet.
+ 
+```{r child='survey/postsurvey.Rmd'}
+```
+ 
 ### Oversette til engelsk
 Spørreundersøkelsen må foreligge også på engelsk.
 Grunnen til det er at våre internasjonale partnere også deltar i utformingen av undersøkelsen.
@@ -243,7 +249,11 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg')
 
 
 ### Registrere deltakere
-Deltakerne som takker ja registreres av kommunen med kontaktinformasjon.
+Deltakerne som ønsker å delta registrerer seg på [Nettskjema](https://nettskjema.no/a/183040).
+Nettskjema er en påmeldingsløsning utviklet av Universitetet i Oslo, og som ivaretar alle personvernhensyn.
+Mer informasjon om løsningen [finnes her](https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/).
+
+
 
 ## Faglig informasjonsmateriale 
 De som deltar i den deliberative meningsmålingen får tilgang til balansert informasjonsmateriale om sakene de skal diskutere.
