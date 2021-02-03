@@ -1,0 +1,377 @@
+---
+title: "Forundersøkelse"
+date: "1/31/2021"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+always_allow_html: yes
+---
+```{r setup_presurvey, include=FALSE, warning=FALSE, echo=FALSE}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+#### Bilfrie soner
+
+##### R2DEMOVATEBILFRI1
+
+> Merkelapp: Transport til arbeid.
+
+Hvordan kommer du deg til jobb og andre daglige gjøremål i dag (når det ikke er koronarestriksjoner)? 
+
+-	Kjører bil
+
+-	Tar buss eller bybane
+
+-	Går og/eller sykler
+
+##### R2DEMOVATEBILFRI2
+
+> Merkelapp: Nabolagsbeskrivelse.
+
+Hvilken beskrivelse passer best på nabolaget der du bor i dag? 
+
+-	Eneboliger med hager og/eller egne parkeringsplasser
+
+-	Eneboliger i tettbebygd strøk i nærhet til sentrum eller tettsted 
+
+-	Leiligheter i tettsted 
+
+-	(flere alternativer, eventuelt…)
+
+##### R2DEMOVATEBILFRI3
+
+>Info: spørsmålsbatteri, med en svarskala som går fra 0 (ikke viktig i det hele tatt) til 10 (ekstremt viktig)
+Merkelapp: Attraktive nabolag II. 
+
+Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo? 
+
+-	God plass til parkering for bil
+
+- Gangavstand til daglige gjøremål (skole, jobb, matbutikk)
+
+-	Offentlige grøntarealer, som parker
+
+-	Tilgang til offentlig transport, som buss og bybane
+
+-	Muligheter for å treffe naboer og ha godt naboskap
+
+##### R2DEMOVATEBILFRI4-8
+
+>Merkelapp: Attraktive nabolag I-V.
+Info: Conjoint-eksperiment som ber respondenten velge ett av to nabolag som oppleves som mest attraktivt å bo i.
+To nabolag settes opp mot hverandre, og varierer etter følgende faktorer:
+
+```{r nabolag-conjoint}
+table <- tibble(Dimensjon = c('Bilparkering', 'Offentlige grøntområder', 'Egen hage', 'Avstand til skole og matbutikk', 'Avstand til bybane eller buss'),
+                Verdi = c('Egen parkering på tomten / Offentlig parkering inntil 150 meter fra boligen / Offentlig parkering mer enn 150 meter fra boligen',
+                               'Under 100 meter fra boligen / Mellom 100-500 meter fra boligen / Mer enn 500 meter fra boligen',
+                               'Ja / Nei',
+                               'Under 500 meter fra boligen / Over 500 meter fra boligen',
+                               'Under 500 meter fra boligen / Over 500 meter fra boligen'
+                               ))
+
+ table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Beskrivelser av nabolag", col.names = linebreak(c("Dimensjon", "Verdi"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+```
+
+Eksempel på hvordan spørsmålet framstår for respondenten:
+
+Vi er opptatt av hvilken type nabolag innbyggerne i Bergen mener er mest attraktivt å bo i.
+Vi ber deg nå ta stilling til to tenkte nabolag, hvor du ut fra beskrivelsen velger det nabolaget du selv mener det er mest attraktivt å bo i.
+Du får i alt fem slike sammenlikninger, hvor beskrivelsene varierer fra gang til gang.
+
+```{r nabolag-conjoint-eksempel}
+table <- tibble(Dimensjon = c('Bilparkering', 'Offentlige grøntområder', 'Egen hage', 'Avstand til skole og matbutikk', 'Avstand til bybane eller buss'),
+                Nabolag1 = c('Egen parkering på tomten', 'Mellom 100-500 meter fra boligen', 'Nei', 'Over 500 meter fra boligen', 'Under 500 meter fra boligen'),
+                Nabolag2 = c('Offentlig parkering inntil 150 meter fra boligen', 'Under 100 meter fra boligen', 'Nei', 'Under 500 meter fra boligen', 'Under 500 meter fra boligen'))
+table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Mest attraktivt nabolag", col.names = linebreak(c("", "Nabolag 1", "Nabolag 2"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+
+```
+
+##### R2DEMOVATEBILFRI9
+
+> Merkelapp: Attraktive nabolag VI.
+
+Så ber vi deg velge det alternativet du mener er mest attraktivt å bo i av disse tre alternativene (velg alternativet som passer best):
+
+-	Under 500 meter til skole, matbutikk og offentlige grøntområder, men kun offentlig bilparkering mer enn 150 meter fra boligen.
+
+-	Egen hage og parkeringsplass til bilen på tomten, men mer enn 500 meter til skole, matbutikk og offentlige grøntområder.
+
+-	Over 500 meter til skole, matbutikk og offentlige grøntområder, men med under 500 meter til buss og bybane, og til offentlige grøntarealer i nærområdet.
+
+##### R2DEMOVATEBILFRI10
+
+>Info: Spørsmålsbatteri. Randomisér påstandende.
+Merkelapp: Oppfatning om bilfrie soner
+
+Bergen kommune har planer om å lage bilfrie soner både i sentrum og i bydelene.
+*(Her en setning eller to om hva planene innebærer.)*
+Hvor sterkt støtter eller motsetter du deg disse planene?
+
+0 Motsetter meg svært sterkt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Støtter svært sterkt
+
+
+##### R2DEMOVATEBILFRI11
+
+> Merkelapp: Bilfri effekt på nabolaget.
+
+Hvordan tror du en bilfri sone *i ditt nabolag* ville ha påvirket deg?
+Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 ("stemmer ikke i det hele tatt") til 10 ("stemmer fullt og helt")
+
+-	Det hadde blitt lettere å bevege seg trygt for fotgjengere og/eller syklister.
+
+-	Det hadde blitt lettere å leve miljøvennlig.
+
+-	Det hadde blitt vanskeligere å komme seg til jobb og daglige gjøremål.
+
+-	Det hadde ikke blitt store endringer fra dagens situasjon.
+
+##### R2DEMOVATEBILFRI12
+
+>Info: Spørsmålsbatteri. Randomisér påstandene.
+Merkelapp: Bilfri effekt på Bergen
+
+Og hva mener du effekten av bilfrie soner vil være for *Bergen*?
+Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 ("stemmer ikke i det hele tatt") til 10 ("stemmer fullt og helt")
+
+-	Byen vil bli mer klima- og miljøvennlig. 
+
+-	Det vil bli lettere for folk å bevege seg rundt i byen.
+
+-	Det vil bli vanskeligere for folk å komme seg dit de skal. 
+
+-	Kommunen blander seg for mye inn i folk sine hverdagsliv.
+
+##### R2DEMOVATEBILFRI13
+
+>Info: Spørsmålsbatteri. Ps: Egner seg også for conjoint-eksperiment.
+Merkelapp: Hva påvirker bilkjøring.
+
+Hvor viktig er følgende faktorer for at du kan kjøre mindre bil i hverdagen?
+Vennligst angi på en skala fra 0 ("Ikke viktig i det hele tatt") til 10 ("Ekstremt viktig")
+
+-	Bedre tilgang til offentlig transport, som buss og bybane.
+
+-	At buss og bybane går oftere.
+
+-	Bedre og tryggere sykkelveier.
+
+-	Tilgang på delebil.
+
+-	Tryggere gangvei.
+
+-	Bompenger (hvis bompengene øker mer vil jeg ikke lengre ha råd til å kjøre bil).
+
+##### R2DEMOVATEBILFRI14 
+
+> Merkelapp: Alternativer til bil.
+
+Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjengelig?
+
+- Sykle
+
+-	Gå
+
+-	Delebil
+
+-	Buss og bybane
+
+-	Jobbe mer hjemmefra
+
+-	Jeg har ingen alternativer
+
+#### Spørsmål om arealutvikling på Dokken
+
+N/A 
+
+#### Spørsmål knyttet til arrangementet
+
+N/A
+
+#### Generelle politikkspørsmål
+##### R2DEMOVATE10  
+
+> Merkelapp: Mulighet til å påvirke politikk
+
+I hvilken grad vil du si at det politiske systemet i Bergen gir folk som deg innflytelse på det lokale myndigheter gjør? Vennligst velg blant alternativene under hvor 0 betyr «ikke i det hele tatt» og 10 betyr «fullt og helt».
+
+0 Ikke i det hele tatt  
+1  
+2  
+3  
+4  
+5   
+6  
+7  
+8  
+9  
+10 Fullt og helt  
+
+##### R2DEMOVATE11: 
+
+> Merkelapp: Politikk er komplisert
+
+Hvor godt passer følgende utsagn, slik du ser det: Lokalpolitikken er i blant så innviklet at folk som meg ikke forstår hva den dreier seg om. Vennligst velg blant alternativene under hvor 0 betyr «passer ikke i det hele tatt» og 10 betyr «fullt og helt».
+
+0 Ikke i det hele tatt  
+1  
+2  
+3  
+4  
+5   
+6  
+7  
+8  
+9  
+10 Fullt og helt  
+
+##### R2DEMOVATE12
+
+> Merkelapp: Plassering på politisk skala>  
+
+I politikken snakker man ofte om "venstresiden" og "høyresiden". Nedenfor er en skala der 0 representerer de som står helt til venstre politisk, og 10 representerer de som står helt til høyre politisk.  
+
+Hvordan vil du plassere deg selv på en slik skala?  
+  
+0 Venstre  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Høyre  
+
+##### R2DEMOVATE20
+
+> Info: Spørsmålsbatteri. 
+Merkelapp: Hjertesak
+
+Hvor viktig vil du si at følgende saker var for velgernes stemmegivning ved kommunevalget i din kommune?
+
+Skole
+Eldreomsorg
+Kommunesammenslåinger
+Eiendomsskatt
+Kultur/idrett
+Miljø/klima
+Kollektivtilbud
+Sammenslåing av fylkeskommuner
+Innvandring 
+Arealutnyttelse
+
+0 Svært lite viktig
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 Svært viktig
+
+#### Bakgrunnsspørsmål
+
+##### R2DEMOVATE26
+
+Merkelapp: Bydel
+
+Hvor i Bergen bor du?
+1.	Arna
+2.	Åsane
+3.	Ytrebygda
+4.	Fana
+5.	Laksevåg
+6.	Fyllingsdalen
+7.	Årstad
+8.	Bergenhus
+
+##### R2DEMOVATE18
+
+> Merkelapp: Høyest fullførte utdanning>
+
+Hva er din høyest fullførte utdanning?
+
+- Ingen utdanning/grunnskole  
+- Videregående skole  
+- Høgskole/Universitet (minst 2 år)  
+
+
+##### R2DEMOVATE19
+
+> Merkelapp: Inntekt
+
+Hva er inntekten din for tiden? Brutto årsinntekt i kroner er:
+
+- Under 150 000  
+- 150 001 - 300 000  
+- 300 001 - 400 000  
+- 400 001 - 500 000  
+- 500 001 - 600 000  
+- 600 001 - 700 000  
+- 700 001 - 1 000 000   
+- Over 1 000 000
+
+
+##### R2DEMOVATEaldrkat
+
+> Merkelapp: Alderskategori.
+
+Hva er din alder?
+
+1.	Under 30 år
+2.	30-44 år
+3.	45-59 år
+4.	60 år eller eldre
+
+
+##### R2DEMOVATE21
+
+> Merkelapp: Kjønn. Randomisér svaralternativene.
+
+Hva er ditt folkeregistrerte kjønn?
+
+- Kvinne
+
+- Mann
+
+##### R2DEMOVATEaldrkat
+
+> Merkelapp: Alder
+
+Hva er din alder?
+
+1.	Under 30 år
+2.	30-44 år
+3.	45-59 år
+4.	60 år eller eldre
+
+

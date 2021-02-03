@@ -1,0 +1,210 @@
+---
+title: "Untitled"
+author: "Sveinung Arnesen"
+date: "2/2/2021"
+output: html_document
+---
+#### Politiske spørsmål
+
+En smørbrødliste av spørsmål hentet fra Norsk medborgerpanel.
+Ikke alle skal med i den endelige versjonen.
+Prosjektmedlemmene kan komme med innspill.
+
+##### Selvplassering på høyre/venstre-skalaen  
+
+##### 	Hvor tilfreds er du med måten demokratiet fungerer på i Norge?
+Hvor tilfreds er du med måten demokratiet fungerer på i Norge?
+
+1	Svært tilfreds	 
+2	Tilfreds			
+3	Noe tilfreds		
+4	Lite tilfreds			
+5	Ikke tilfreds i det hele tatt	 
+97	Ikke svart	
+
+##### Din mening om flyktningers adgang til opphold i Norge
+Hva er din mening om flyktninger som kommer til Norge og søker asyl og deres adgang til å få opphold her? Sammenlignet med slik det er i dag, mener du det bør bli:
+
+1	Mye lettere		
+2	Lettere			
+3	Noe lettere		
+4	Som i dag			
+5	Noe vanskeligere		
+6	Vanskeligere		
+7	Mye vanskeligere		
+
+
+##### Generelt sett, i hvilken grad har du tillit til bergenske politikere?
+Generelt sett, i hvilken grad har du tillit til norske politikere?
+
+1	I svært stor grad		
+2	I stor grad		
+3	I noen grad		
+4	I liten grad	 	
+5	Ikke i det hele tatt		
+
+
+#####	I hvilken grad har du tillit til bergenske nyhetsmedier
+I hvilken grad har du tillit til bergenkse nyhetsmedier?
+
+1	I svært stor grad		
+2	I stor grad		
+3	I noen grad		
+4	I liten grad	 	
+5	Ikke i det hele tatt		
+
+
+##### Påstand: Lokale myndigheter tar for lite hensyn til områder utenfor Bergen sentrum
+
+1	Svært enig		
+2	Enig		
+3	Noe enig		
+4	Verken enig eller uenig		
+5	Noe uenig		
+6	Uenig		
+7	Svært uenig		
+
+
+##### 	Påstand: Foreldre bør kunne få sende sine barn til muslimske skoler
+
+I dag er det mulig for foreldre å sende sine barn til kristne skoler som følger den nasjonale læreplanen, men også underviser i kristendom.
+Hvor enig eller uenig er du i at det bør være mulig for foreldre å sende sine barn til muslimske skoler som følger den nasjonale læreplanen, men også underviser i islam?
+
+1	Svært enig		
+2	Enig		
+3	Noe enig		
+4	Verken enig eller uenig		
+5	Noe uenig		
+6	Uenig		
+7	Svært uenig		
+
+
+##### Påstand: Regjeringen bør jobbe for å i større grad redusere inntektsforskjeller
+Hvor enig eller uenig er du i følgende påstand:
+Regjeringen bør jobbe for å i større grad redusere inntektsforskjeller i samfunnet.
+
+1	Svært enig		
+2	Enig		
+3	Noe enig		
+4	Verken enig eller uenig		
+5	Noe uenig		
+6	Uenig		
+7	Svært uenig		
+
+
+##### Hvor bekymret er du for klimaendringer?
+Hvor bekymret er du for klimaendringer?
+
+1	Ikke bekymret i det hele tatt		
+2	Lite bekymret		
+3	Noe bekymret		
+4	Bekymret			
+5	Svært bekymret		
+
+
+##### Påstand: Politikken kan være så innviklet at den er vanskelig å forstå
+Hvor enig eller uenig er du i følgende utsagn:
+Politikken er i blant så innviklet at folk som meg ikke forstår hva den dreier seg om.
+
+1	Svært enig		
+2	Enig		
+3	Noe enig		
+4	Verken enig eller uenig		
+5	Noe uenig		
+6	Uenig		
+7	Svært uenig		
+
+
+##### Hvorvidt det politiske systemet i Norge gir deg innflytelse
+I hvilken grad vil du si at det politiske systemet i Norge gir folk som deg innflytelse på det myndighetene gjør?
+
+1	I svært stor grad		
+2	I stor grad		
+3	I noen grad		
+4	I liten grad	 	
+5	Ikke i det hele tatt		
+97	Ikke svart	
+
+##### Interesse for politikk  
+Hvor interessert vil du si at du er i politikk?
+
+1 Veldig interessert  
+2 Ganske interessert  
+3 Litt interessert  
+4 Ikke interessert i det hele tatt  
+
+##### Din plassering på den politiske venstre/høyre-aksen
+I politikken snakker man ofte om “venstresiden” og “høyresiden”. Nedenfor er en skala der 0 representerer de som står helt til venstre politisk, og 10 representerer de som står helt til høyre politisk.
+	
+0 - Venstresiden  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 - Høyresiden
+
+
+
+
+##### Ville stemt på hvilket parti dersom det var stortingsvalg i morgen
+Hvilket parti ville du ha stemt på dersom det var stortingsvalg i morgen?
+
+1	Kristelig Folkeparti  
+2	Høyre  
+3	Fremskrittspartiet  
+4	Venstre		 
+5	Sosialistisk Venstreparti	 
+6	Senterpartiet   
+7	Miljøpartiet de Grønne  
+8	Arbeiderpartiet	 
+9	Rødt	 
+10	Ville ikke stemt  
+11	Ville stemt blankt  	
+12	Har ikke stemmerett	 
+13	Annet   
+
+##### Ville stemt på hvilket parti dersom det var fylkesvalg i morgen
+Hvilket parti ville du stemt på om det var fylkestingsvalg i morgen?
+
+1	Kristelig Folkeparti  
+2	Høyre	  
+3	Fremskrittspartiet  
+4	Venstre	  
+5	Sosialistisk Venstreparti	  
+6	Senterpartiet	 
+7	Miljøpartiet De Grønne  
+8	Arbeiderpartiet  
+9	Rødt	  
+10	Folkeaksjonen Nei til mer bompenger (eller lignende bompenge-initiativ)	  
+11	Fellesliste	 
+12	Lokal liste	 	
+13	Ville stemt blankt	 
+14	Ville ikke stemt	 
+15	Har ikke stemmerett  	
+16	Annet  
+
+##### Ville stemt på hvilket parti om det var kommunevalg i morgen
+Hvilket parti ville du stemt på om det var kommunevalg i morgen?
+
+1	Kristelig Folkeparti	 
+2	Høyre	 
+3	Fremskrittspartiet  
+4	Venstre	 
+5	Sosialistisk Venstreparti	 
+6	Senterpartiet	 
+7	Miljøpartiet De Grønne	 
+8	Arbeiderpartiet		 
+9	Rødt	 
+10	Folkeaksjonen Nei til mer bompenger (eller lignende bompenge-initiativ)  
+11	Fellesliste	  
+12	Lokal liste	 
+13	Ville stemt blankt	 
+14	Ville ikke stemt	 
+15	Har ikke stemmerett  	
+16	Annet   
+

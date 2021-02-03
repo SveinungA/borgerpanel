@@ -14,43 +14,27 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 En spørreundersøkelse skal gå ut til deltakerne i forkant og i etterkant av deliberasjonsarrangementet.
 Den varer i 15-20 minutter, og skal ta opp spørsmål som dreier seg om de utvalgte sakene bilfrie soner i bydelene og arealutvikling på Dokken.
-I tillegg skal respondentene svare på bakgrunnsspørsmål om seg selv.
+I tillegg skal respondentene svare på bakgrunnsspørsmål om seg selv, politiske holdningsspørsmål, samt noen vurderinger av arrangementet de har vært med på.
 
 ```{r spørreundersøkelse}
-Medlem <- tibble(Involverte = c('Alice', 'Jon Kåre', 'Sveinung', 'Anne Lise', 'Fageksperter', 'Hvem fra kommunen?'))
+Medlem <- tibble(Involverte = c('Alice', 'Jon Kåre', 'Sveinung', 'Anne Lise', 'Lea Toska Oppedal',  'Laura Ve', 'Hvem andre fra kommunen?'))
 kable(Medlem)
 d %>% filter(Type== 'Lage spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
-
 ```
+
 ### Bestemme spørsmål
 
-#### Bakgrunn
+```{r child='survey/presurvey.Rmd'}
+```
 
-Kjønn  
-Alder  
-Utdanning  
-Bosted (Bydel)  
-
-#### Politiske spørsmål
-
-Selvplassering på høyre/venstre-skalaen  
-Partipreferanse i kommunevalg  
-Holdningsspørsmål til sentrale politiske saker  
-Interesse for politikk  
-Politikk er komplisert  
-Folk som meg har ikke innflytelse på politikken som føres  
-Tillit til lokale myndigheter    
-Tillit til sentrale myndigheter  
-
-#### Spørsmål om bilfrie soner
-
-#### Spørsmål om arealutvikling på Dokken
 
 ### Oversette til engelsk
 Spørreundersøkelsen må foreligge også på engelsk.
 Grunnen til det er at våre internasjonale partnere også deltar i utformingen av undersøkelsen.
 
 I første omgang gjør vi en egen, uformell oversettelse.
+Denne gjennomføres av våre forskningsassistenter Sara Gåsbakk og Malene Nesse.
+Vær obs på at for spørsmålene som hentes fra Norsk medborgerpanel finnes det allerede engelske oversettelser. 
 Når spørreundersøkelsen er fastsatt bruker vi profesjonelle aktører til å oversette den endelige versjonen.
 
 ### Programmere spørreundersøkelse
@@ -73,6 +57,7 @@ Undersøkelsen piloteres på kollegaer og eventuelt studenter.
 ## Tilpasse programvare
 Enkelte tilpasninger av programvaren må gjøres til norske forhold. 
 Den ene tilpasningen er å oversette språket til norsk, og den andre er å sikre at programvaren er innenfor regelverket om personvern.
+
 ```{r tilpasse}
 Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Øyvind Straume (for personvernrelaterte saker)', 'Sveinung', 'Hvem fra kommunen?'))
 kable(Medlem)
@@ -91,11 +76,14 @@ I programmet er det også en rubrikk som punktvis går gjennom diskusjonstemaene
 Denne teksten skal også være på norsk, og blir lagt inn når tematikken er spikret.
 
 ### Personvern
-Det må avklares hvem som er databehandler i prosjektet, og hva det må søkes om godkjenning for i prosjektet.
+Det må avklares hvem som er databehandleransvarlig i prosjektet, og hva det må søkes om godkjenning for i prosjektet.
+Et forslag er sent rundt til partnerne i prosjektet, hvor alle fire (Bergen kommune, NORCE, UiB og Stanford) er felles databehandlingsansvarlige.
+Forslaget er basert på NORCE sin mal for denne typen avtaler.
 
 Personvernregler varierer fra land til land. 
 Prosjektet er i dialog med NORCE sitt personvernombud Øyvind Straume, for å sikre at vi holder oss innenfor lovverket.
-Vi melder også prosjektet inn til NSD vinteren 2021.
+Prosessen med å levere meldeskjema til NSD er i gang, og er en prioritert arbeidsoppgave.
+
 
 For å få tilgang til Folkeregisteret for å rekruttere deltakere trenger vi godkjennelse fra norske myndigheter.
 I sammenligning med offline deliberativ meningsmåling er det noen flere personvernhensyn som må avklares.
@@ -114,11 +102,15 @@ I vårt tilfelle blir de lagret i Universitetet i Bergens datalagringsløsning s
 Når vi ikke lenger har behov for å koble dataene til deltakerne, vil dataene anonymiseres.
 Anonymiserte data er ikke innbefattet like strenge krav som personidentifiserbare data.
 
+Data som NORCE, Bergen kommune og UiB er ansvarlige for lagres i S.A.F.E, som er en kryptert lagringsløsning drevet av UiB.
+
 ### Etisk godkjenning av studie (Stanford)
 Stanford University krever at alle studier hvor de er partner blir godkjent i deres etiske komite.
+Dette sørger våre partnere på Stanford for at blir gjennomført.
 
 ## Rekruttere deltakere
 Målet er å ha 200 deltakere i den deliberative meningsmålingen, og tilsvarende antall respondenter i kontrollgruppen.
+Det vil si 400 deltakere til sammen
 
 ```{r rekruttere}
 Medlem <- tibble(Involverte = c('Henrik', 'Sveinung', 'Anne Lise', 'Hvem fra kommunen?'))
@@ -145,11 +137,12 @@ Totalt *søker vi Folkeregisteret* om å trekke et utvalg på opptil *4000* fra 
 Dette gir oss 1000 ekstra personer å invitere dersom anslaget på 20 prosent responsrate viser seg å være for høyt.
 
 Vi må være forberedt på at flere enn forventet takker ja, og dimensjonere etter det. 
-Ettersom arrangementet gjennomføres online vil det være en enklere oppgave enn ved en fysisk gjennomføring.
+Ettersom arrangementet gjennomføres online vil dette være en enklere oppgave å løse enn ved en fysisk gjennomføring.
 
 
 ### Invitasjonsbrev
 Alle får tilsendt et **brev i posten** fra Bergen kommune på samme tidspunkt.
+Brevene blir først distriburet med Digipost, og deretter vanlig brev for de som ikke leser det digitale brevet inne 48 timer.
 Det vil være fire varianter av brevet, avhengig av hvilken gruppe deltakerne blir delt inn i.
 
 Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberative meningsmålingen skal få i posten et formelt invitasjonsbrev fra Bergen kommune og NORCE  med informasjon om  
@@ -158,21 +151,96 @@ Innbyggerne som inviteres til å delta i undersøkelsen og/eller den deliberativ
   3. Hvem som står bak undersøkelsen  
   4. Personvernhensyn  
   5. Hvordan de kan finne ut mer  
-
+  6. Informasjon om at det blir gjort en frafallsanalyse hvor de som ikke deltar også blir tatt med i undersøkelsen. Deres identitet er anonymisert, og for de som motsetter seg å være del av analysen vil det være mulig å reservere seg.  
+  7. Noen av dataene blir sendt ut av landet og behandlet av Stanford University.  
+  8. Dataene blir ikke brukt til noe annet enn i forbindelse med dette forskningsprosjektet, og slettet etter bruk (seinest 31.12.2026).  
+  9. Det er frivillig å delta, og deltakerne kan når som helst trekke seg fra deltakelsen.  
+  
+  
 Svar på invitasjonsbrevet utbedes innen en gitt frist.
 De som ikke har svart får et nytt brev med **påminnelse**, og en endelig frist for å svare.
 
 
 #### Hovedutvalg
 
+
 Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Utsending til hovedutvalg') %>% select(Startdato)`.
+
+##### Deltakere i deliberativ meningsmåling
+
+> Forslag til brevtekst:
+
+```{r child = 'Invitasjon/invitasjonsbrev-deltaker-hovedutvalg.Rmd'}
+```
+
 Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+
+> Forslag til påminnelse: 
+
+```{r child = 'Invitasjon/påminnelsesbrev-deltaker-hovedutvalg.Rmd'}
+```
+
+##### Respondenter i kontrollgruppen
+
+> Forslag til brevtekst:
+
+```{r child = 'Invitasjon/invitasjonsbrev-respondent-hovedutvalg.Rmd'}
+```
+
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+
+> Forslag til påminnelse: 
+
+```{r child = 'Invitasjon/påminnelsesbrev-respondent-hovedutvalg.Rmd'}
+```
+
 
 #### Tilleggsutvalg
 
 Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
 Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Utsending til tilleggsutvalg') %>% select(Startdato)`.
 Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutvalg') %>% select(Startdato)`.
+
+##### Deltakere i deliberativ meningsmåling
+
+> Forslag til brevtekst:
+
+```{r child = 'Invitasjon/invitasjonsbrev-deltaker-tilleggsutvalg.Rmd'}
+```
+
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+
+> Forslag til påminnelse:  
+
+```{r child = 'Invitasjon/påminnelsesbrev-deltaker-tilleggsutvalg.Rmd'}
+```
+
+##### Respondenter i kontrollgruppen
+Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
+Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Utsending til tilleggsutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutvalg') %>% select(Startdato)`.
+
+##### Deltakere i deliberativ meningsmåling
+
+> Forslag til brevtekst:
+
+```{r child = 'Invitasjon/invitasjonsbrev-respondent-tilleggsutvalg.Rmd'}
+```
+
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+
+> Forslag til påminnelse:  
+
+```{r child = 'Invitasjon/påminnelsesbrev-respondent-tilleggsutvalg.Rmd'}
+```
+
+#### Personvernerklæring
+
+> I alle brevene følger en personvernerklæring:
+
+```{r child= 'Invitasjon/Personvernerklæring.Rmd'}
+```
+
 
 ### Registrere deltakere
 Deltakerne som takker ja registreres av kommunen med kontaktinformasjon.
@@ -189,9 +257,9 @@ d %>% filter(Type== 'Faglig informasjonsmateriale', is.na(Oppgave)) %>% select(S
 ```
 
 ### Bilfrie soner 
+
 Lea Toska Oppedal leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
 Håvard Haarstad har sagt ja til å stille som fagekspert og til å rekruttere andre fageksperter.
-Det er viktig å finne personer som kan representere bredden i synspunkter på bilfrie soner i bydelene.
 
 ### Arealplanlegging Dokken
 Laura Ve leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
@@ -199,11 +267,13 @@ Laura Ve leder dette prosjektet fra kommunens side, og vil bidra inn med informa
 ## Teknisk veiledning
 For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurser på å forberede deltakerne på selve gjennomføringen:
 
-1. Vi lager en kort **informasjonsvideo** som viser hvordan programvaren ser ut, og hva som venter dem når arrangementet settes i gang.
+1. Vi lager en kort **informasjonsvideo** som viser hvordan programvaren ser ut, og hva som venter dem når arrangementet settes i gang. (Sveinung)
 
-2. Skriftlig informasjon om deliberativ meningsmåling som metode gjøres tilgjengelig for deltakerne **på nettsidene**.
+2. Skriftlig informasjon om deliberativ meningsmåling som metode gjøres tilgjengelig for deltakerne **på nettsidene**. (Sveinung)
 
-3. Vi setter opp et eget **online prøverom** som deltakerne kan gå inn i og gjøre seg kjent med programvaren. 
+3. Vi setter opp et eget **online prøverom** som deltakerne kan gå inn i og gjøre seg kjent med programvaren. (Lodewijk)
+
+4. Åpen linje. (Pål)
 
 ```{r veiledning}
 Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Sveinung', 'Hvem fra kommunen?'))
@@ -211,10 +281,10 @@ kable(Medlem)
 d %>% filter(Type== 'Teknisk veiledning', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
 ### Informasjonsvideo
-'YouTube'-stil: 5-10 minutter hvor vi klikker oss rundt i programmet og forklarer opplegget.
+'YouTube'-stil: 5-10 minutter hvor vi klikker oss rundt i programmet og forklarer opplegget. (Sveinung)
 
 ### Skriftlig informasjon
-De får også tilgang på skriftlig informasjon om hvilke tekniske krav som stilles for at de kan delta.
+De får også tilgang på skriftlig informasjon om hvilke tekniske krav som stilles for at de kan delta. (Sveinung/Lodewijk)
 
 ### Online prøverom
 De som har takket ja til å delta får tilgang til en prøveversjon av programmet.
@@ -223,4 +293,21 @@ Der kan de gå inn og gjøre seg kjent med brukergrensesnittet før selve dagen.
 ### Åpen linje
 Deltakere som ikke oppfyller de tekniske kravene eller har spørsmål de ikke har fått svar på oppfordres til å ta direkte kontakt med representanter for Bergen kommune.
 Bergen kommune oppretter en hotline for denne type henvendelser.
+
+## Mediehåndtering
+
+Vi ønsker oppmerksomhet i media om dette arrangementet, både før, under og gjerne etter gjennomføring.
+
+Vi  forsøker å få oppslag om arrangementet når vi sender ut invitasjonen.
+Bergensmedia inviteres videre til å observere selve den deliberative meningsmålingen mens den foregår.
+Når resultatene foreligger formidles disse til pressen.
+
+```{r media}
+Medlem <- tibble(Involverte = c('Anne Lise', 'Sveinung', 'Hvem fra kommunen?'))
+kable(Medlem)
+d %>% filter(Type== 'Mediehåndtering', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
+```
+
+
+
 

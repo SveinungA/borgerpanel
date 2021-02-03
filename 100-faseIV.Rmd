@@ -35,6 +35,10 @@ Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Sveinung', 'Jon Kåre'))
 kable(Medlem)
 ```
 
+Dataene lagres i S.A.F.E, som er UiBs sikre datalagringssystem.
+Alle analyser må gjøres i SAFE.
+Nettsiden heter edmond.uib.no, og rettmessige brukere får tilgang ved å kontakte faglig prosjektleder (Sveinung).
+
 ## Formidling av resultater
 Resultatene og erfaringene fra den deliberative meningsmålingen formidles til prosjektgruppen i et internseminar.
 Andre interesserte kommuner samt media og publikum generelt får også tilgang på resultatene etter at de er presentert til Bergen kommune.

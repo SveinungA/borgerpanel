@@ -13,6 +13,7 @@ d <- read_excel("Data/DeliberativePoll-planning.xlsx")
 
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
 ```
+
 Den første fasen består i å sette rammeverket for borgerpanelet.
 Hvilke eller hvilket tema skal man fokusere på?
 Hva er målgruppen?
@@ -24,8 +25,6 @@ Det var imidlertid ikke bestemt på forhånd at vi skulle arrangere det online; 
 
 Vi landet på to temaer.
 Bilfrie soner i bydelene og arealutvikling på Dokken.
-<!-- Veien var imidlertid lang før vi landet på disse to temaene, og man bør være forberedt på at denne prosessen kan ta tid. -->
-<!-- Derfor er det viktig å bruke god tid i denne første fasen, som ellers ikke er så intensiv med tanke på rent praktiske oppgaver. -->
 
 Målgruppen i vårt tilfelle var innbyggerne i Bergen kommune.
 Målgruppen er delvis avhengig av tematikken, og kunne også ha vært et utvalg av innbyggerne, for eksempel ungdom, innbyggerne i en bestemt bydel, brukere av et tilbud, og så videre.
@@ -159,7 +158,7 @@ I Norge har vi den fordelen at vi kan rekruttere respondenter via Folkeregistere
 Dette sikrer at alle innbyggerne har like stor sannsynlighet for å bli invitert til å delta i spørreundersøkelsen.
 
 ```{r metode}
-Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Richard', 'Pål'))
+Medlem <- tibble(Involverte = c('Jim', 'Alice', 'Jacob', 'Anne Lise', 'Henrik', 'Jon Kåre', 'Sveinung', 'Hvem fra kommunen?'))
 kable(Medlem)
 ```
 

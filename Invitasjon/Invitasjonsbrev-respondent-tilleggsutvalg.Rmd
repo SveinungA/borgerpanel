@@ -1,0 +1,62 @@
+---
+title: "Vær med å diskutere Bergens framtid!"
+
+output: word_document
+#   pagedown::html_letter:
+#     self_contained: false
+# links-to-footnotes: true
+# paged-footnotes: true
+# # uncomment this line to produce HTML and PDF in RStudio:
+# knit: pagedown::chrome_print
+---
+
+```{r setup_letter_respondent_invitation_sample2, echo = FALSE, warning = FALSE, message = FALSE}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("C://Users/svein/Documents/borgerpanel/Data/DeliberativePoll-planning.xlsx")
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+
+```
+
+<!-- ![Bergen kommune Logo](Bg_logo.png){.logo} -->
+<!-- ![NORCE Logo](NORCE_logo.png){.logo} -->
+
+<!-- ![UiB Logo](UiB_logo.png){.logo} -->
+
+
+::: date
+Bergen, xx.xx, 2021
+:::
+
+**Vil du være med å påvirke Bergens framtid?**
+
+Du er trukket ut til å motta denne invitasjonen om å delta i en bergensk studie som handler om hva folk mener om spørsmål som er viktige for Bergen. 
+Hvis du takker ja får du mulighet til å gi tilbakemeldinger til politikerne i form av en spørreundersøkelse om hvordan byen vår skal styres.
+
+To av sakene som blir tatt opp er fornyingen av havneområdet Dokken i Bergen sentrum og bilfrie soner i bydelene.
+I tillegg ber vi deg svare på noen andre spørsmål om tillit til politikerne og andre samfunnsaktører i Bergen.
+
+Studien er et samarbeid mellom Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen, og Stanford University.
+Det er frivillig å delta.
+De fleste som deltar i studien synes at den både er interessant og morsom, og vi håper at du også kommer til å synes det.
+Det er også en unik mulighet til å bli hørt av politikerne og påvirke deres beslutninger knyttet til utviklingen av byen.
+
+Du er trukket ut fra Folkeregisteret ved hjelp av statistiske metoder for å sikre at undersøkelsen gir et representativt bilde av Bergens befolkning. 
+Vi kan derfor ikke erstatte deg med noen andre.
+Man behøver ingen spesiell forkunnskap for å delta. 
+
+Alle som deltar er med i trekningen av et sentrumsgavekort på kr. 25000,-.
+
+Alle svar du gir oss blir behandlet strengt konfidensielt og i samsvar med personvernforordningen (GDPR).
+Se vedlagte personvernerklæring.
+Mer informasjon om opplegget får du når du takker ja til å delta.
+
+Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
+www.qualtrics.com
+
+Obs: I spørreundersøkelsen skal du oppgi ditt referansenummer. Det trenger vi blant annet for å utbetale gavekortet til den som vinner:
+```{r referenceID_letter_respondent_invitation_sample2}
+set.seed(100)
+referanse <- sample(1000:5000, replace = FALSE)
+```

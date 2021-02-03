@@ -1,0 +1,72 @@
+---
+---
+title: "Vær med å diskutere Bergens framtid!"
+
+output: word_document
+#   pagedown::html_letter:
+#     self_contained: false
+# links-to-footnotes: true
+# paged-footnotes: true
+# # uncomment this line to produce HTML and PDF in RStudio:
+# knit: pagedown::chrome_print
+---
+
+```{r setup_letter_participant_reminder_sample2, echo = FALSE, warning = FALSE, message = FALSE}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("C://Users/svein/Documents/borgerpanel/Data/DeliberativePoll-planning.xlsx")
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+
+```
+
+<!-- ![Bergen kommune Logo](Bg_logo.png){.logo} -->
+<!-- ![NORCE Logo](NORCE_logo.png){.logo} -->
+
+<!-- ![UiB Logo](UiB_logo.png){.logo} -->
+
+
+::: date
+Bergen, xx.xx, 2021
+:::
+
+**Vil du være med å påvirke Bergens framtid?**
+
+Vi minner om at du er trukket ut til å motta denne invitasjonen om å delta i en bergensk studie som handler om hva folk mener om spørsmål som er viktige for Bergen. 
+Vi oppfordrer deg til å registrere deg dersom du ikke allerede har gjort det.
+Siste frist for å melde seg på er 26.03.2021.
+Hvis du takker ja blir du en av om lag 200 bergensere som får mulighet til å gi tilbakemeldinger til politikerne om hvordan byen vår skal styres.
+
+Metoden som benyttes går ut på at man skal diskutere utvalgte saker med andre innbyggere og svare på spørreundersøkelser om disse og andre politiske spørsmål.
+På grunn av Covid-19 legger vi opp til at hele arrangementet skal foregå over internett. 
+Sakene som skal diskuteres er fornyingen av havneområdet Dokken i Bergen sentrum og bilfrie soner i bydelene.
+
+Studien er et samarbeid mellom Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen, og Stanford University, og gjennomføres den 10. april 2021.
+Det er frivillig å delta.
+De fleste som deltar i studien synes at den både er interessant og morsom, og vi håper at du også kommer til å synes det.
+Det er også en unik mulighet til å bli hørt av politikerne og påvirke deres beslutninger knyttet til utviklingen av byen.
+
+Du er trukket ut fra Folkeregisteret ved hjelp av statistiske metoder for å sikre at undersøkelsen gir et representativt bilde av Bergens befolkning. 
+Vi kan derfor ikke erstatte deg med noen andre.
+Man behøver ingen spesiell forkunnskap for å delta. 
+Om du velger å delta må du sette av dagen for arrangementet. 
+
+Som takk for deltakelsen din får du et sentrumsgavekort pålydende kr. 500,-. 
+I tillegg er du med i trekningen av et sentrumsgavekort på kr. 25000,- .
+
+Alle svar du gir oss blir behandlet strengt konfidensielt og i samsvar med personvernforordningen (GDPR).
+Se vedlagte personvernerklæring.
+Mer informasjon om opplegget får du når du takker ja til å delta.
+
+Bruk denne lenken for å registrere deg som deltaker:
+https://nettskjema.no/a/183040
+
+Alle som deltar skal først svare på en spørreundersøkelse.
+Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
+www.qualtrics.com
+
+Obs: Både i påmeldingen og spørreundersøkelsen skal du oppgi følgende referansenummer:
+```{r referenceID_letter_participant_reminder_sample2}
+set.seed(100)
+referanse <- sample(1000:5000, replace = FALSE)
+```
