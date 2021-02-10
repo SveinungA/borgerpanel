@@ -1,3 +1,8 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
 **Hvorfor kontakter vi deg? **
 
 Vi kontakter deg for å invitere deg til å delta i dette arrangementet. 

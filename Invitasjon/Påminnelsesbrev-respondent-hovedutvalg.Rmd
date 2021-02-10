@@ -1,5 +1,5 @@
 ---
-title: "Vær med å diskutere Bergens framtid!"
+title: "Diskutér Bergens fremtid"
 
 output: word_document
 #   pagedown::html_letter:
@@ -25,37 +25,47 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 <!-- ![UiB Logo](UiB_logo.png){.logo} -->
 
 
-::: date
-Bergen, xx.xx, 2021
-:::
+<!-- ::: date -->
+<!-- Bergen, xx.xx, 2021 -->
+<!-- ::: -->
 
-**Vil du være med å påvirke Bergens framtid?**
+Kjære innbygger!
 
-Vi minner om at du er trukket ut til å motta denne invitasjonen om å delta i en bergensk studie som handler om hva folk mener om spørsmål som er viktige for Bergen. 
-Siste frist for å svare er 26.03.2021.
+Vi minner om at Bergen kommune ønsker å invitere deg med i et forskningsprosjekt der vi vil ha innbyggerne mer involvert i politiske prosesser.
+Studien er et samarbeid mellom Bergen kommune, Norwegian Research Centre (NORCE), Universitetet i Bergen og Stanford University i USA.
+Vi oppfordrer deg til å svare på undersøkelsen dersom du ikke allerede har gjort det.
+Siste frist er 26.03.2021.
 
-To av sakene som blir tatt opp er fornyingen av havneområdet Dokken i Bergen sentrum og bilfrie soner i bydelene.
-I tillegg ber vi deg svare på noen andre spørsmål om tillit til politikerne og andre samfunnsaktører i Bergen.
+Hva mener innbyggerne i viktige saker for Bergen? 
+Det er det vi vil vite. 
+Derfor inviterer vi blant andre deg til å delta i en digital spørreundersøkelse.
 
-Studien er et samarbeid mellom Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen, og Stanford University.
-Det er frivillig å delta.
-De fleste som deltar i studien synes at den både er interessant og morsom, og vi håper at du også kommer til å synes det.
-Det er også en unik mulighet til å bli hørt av politikerne og påvirke deres beslutninger knyttet til utviklingen av byen.
+Resultatene fra spørreundersøkelsen blir samlet opp og formidlet videre til politikerne som skal treffe beslutninger. 
+Svarene dine blir anonymisert.
 
-Du er trukket ut fra Folkeregisteret ved hjelp av statistiske metoder for å sikre at undersøkelsen gir et representativt bilde av Bergens befolkning. 
-Vi kan derfor ikke erstatte deg med noen andre.
-Man behøver ingen spesiell forkunnskap for å delta. 
+**Saker som spørreundersøkelsen dreier seg i hovedsak om: **
 
-Alle som deltar er med i trekningen av et sentrumsgavekort på kr. 25000,-.
+-	Fornyingen av havneområdet Dokken i Bergen sentrum. 
 
-Alle svar du gir oss blir behandlet strengt konfidensielt og i samsvar med personvernforordningen (GDPR).
-Se vedlagte personvernerklæring.
-Mer informasjon om opplegget får du når du takker ja til å delta.
+-	Utvikling av bilfrie soner i bydelene.
+
+**Om deltakelse**
+
+Det er selvsagt frivillig å delta i spørreundersøkelsen.
+Vi håper du blir med, og at også du finner det interessant og meningsfylt å uttrykke dine meninger til politikerne i kommunen.
+Alle som deltar er med i trekningen av et sentrumsgavekort på kr. xx 000,-.
+
+Du og de andre deltakerne er tilfeldig trukket ut fra Folkeregisteret. 
+Dette gjør vi for at alle deler av bergenssamfunnet skal være representert. 
+Det kreves ingen forkunnskap for å delta, og spørreundersøkelsen tar om lag 25 minutter å fullføre.
+
+Alle svar du gir oss, blir behandlet i samsvar med reglene for personvern. 
+Se vedlagte personvernerklæring. 
 
 Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
 www.qualtrics.com
 
-Obs: I spørreundersøkelsen skal du oppgi ditt referansenummer. Det trenger vi blant annet for å utbetale gavekortet til den som vinner:
+Obs: Det er viktig at du oppgir følgende referansenummer i undersøkelsen når du blir bedt om det: (sett inn referanse-ID, fire siffer)
 ```{r referenceID_letter_survey_reminder_sample1}
 set.seed(100)
 referanse <- sample(1000:5000, replace = FALSE)

@@ -2,9 +2,9 @@
 title: "Forundersøkelse"
 date: "1/31/2021"
 output:
-  html_document: default
-  pdf_document: default
   word_document: default
+  pdf_document: default
+  html_document: default
 always_allow_html: yes
 ---
 ```{r setup_presurvey, include=FALSE, warning=FALSE, echo=FALSE}
@@ -205,7 +205,8 @@ Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjen
 
 #### Spørsmål om arealutvikling på Dokken
 
-N/A 
+Spørsmål kommer.
+
 
 
 #### Generelle politikkspørsmål
@@ -371,4 +372,28 @@ Hva er din alder?
 3.	45-59 år
 4.	60 år eller eldre
 
+##### R2DEMOVATEStatsborgerskap
+
+Statsborgerskap. Er du:  
+
+1 Norsk statsborger  
+2 Statsborger i annet land. Vennligst skriv hvilket  
+
+##### R2DEMOVATEinnvandret
+
+Har du eller dine foreldre (mor, far eller begge foreldre) innvandret til Norge?
+ 
+Nei  
+Jeg har selv innvandret til Norge  
+Begge mine foreldre har innvandret til Norge, men jeg er født i Norge  
+Mor har innvandret til Norge, men jeg og min far har ikke innvandret  
+Far har innvandret til Norge, men jeg og min mor har ikke innvandret  
+
+##### R2DEMOVATEstemmerett
+ 
+Hadde du stemmerett ved Kommunestyrevalget i 2019?
+
+Ja  
+Nei  
+Vet ikke
 

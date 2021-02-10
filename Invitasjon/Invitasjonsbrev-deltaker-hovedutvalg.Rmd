@@ -1,5 +1,5 @@
 ---
-title: "Vær med å diskutere Bergens framtid!"
+title: "Diskutér Bergens fremtid"
 
 output: word_document
 #   pagedown::html_letter:
@@ -25,45 +25,59 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 <!-- ![UiB Logo](UiB_logo.png){.logo} -->
 
 
-::: date
-Bergen, xx.xx, 2021
-:::
+<!-- ::: date -->
+<!-- Bergen, xx.xx, 2021 -->
+<!-- ::: -->
 
-**Vil du være med å påvirke Bergens framtid?**
+Kjære innbygger!
 
-Du er trukket ut til å motta denne invitasjonen om å delta i en bergensk studie som handler om hva folk mener om spørsmål som er viktige for Bergen. 
-Hvis du takker ja blir du en av om lag 200 bergensere som får mulighet til å gi tilbakemeldinger til politikerne om hvordan byen vår skal styres.
+Bergen kommune ønsker å invitere deg med i et forskningsprosjekt der vi vil ha innbyggerne mer involvert i politiske prosesser.
+Studien er et samarbeid mellom Bergen kommune, Norwegian Research Centre (NORCE), Universitetet i Bergen og Stanford University i USA.
 
-Metoden som benyttes går ut på at man skal diskutere utvalgte saker med andre innbyggere og svare på spørreundersøkelser om disse og andre politiske spørsmål.
-På grunn av Covid-19 legger vi opp til at hele arrangementet skal foregå over internett. 
-Sakene som skal diskuteres er fornyingen av havneområdet Dokken i Bergen sentrum og bilfrie soner i bydelene.
+Hva mener innbyggerne i viktige saker for Bergen? 
+Det er det vi vil vite. 
+Derfor inviterer vi blant andre deg til å delta i et digitalt borgerpanel lørdag 10. april 2021.
 
-Studien er et samarbeid mellom Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen, og Stanford University, og gjennomføres den 10. april 2021.
-Det er frivillig å delta.
-De fleste som deltar i studien synes at den både er interessant og morsom, og vi håper at du også kommer til å synes det.
-Det er også en unik mulighet til å bli hørt av politikerne og påvirke deres beslutninger knyttet til utviklingen av byen.
+**Hva er et borgerpanel?** 
 
-Du er trukket ut fra Folkeregisteret ved hjelp av statistiske metoder for å sikre at undersøkelsen gir et representativt bilde av Bergens befolkning. 
-Vi kan derfor ikke erstatte deg med noen andre.
-Man behøver ingen spesiell forkunnskap for å delta. 
-Om du velger å delta må du sette av dagen for arrangementet. 
+Borgerpanelet skal bestå av mennesker med ulik bakgrunn, alder og kjønn fra Bergen. 
+Formålet er at alle deler av befolkningen skal være representert. 
 
-Som takk for deltakelsen din får du et sentrumsgavekort pålydende kr. 500,-. 
-I tillegg er du med i trekningen av et sentrumsgavekort på kr. 25000,- .
+I panelet skal du og de andre deltakerne diskutere utvalgte saker. 
+I tillegg skal du også svare på spørreundersøkelser om politiske saker før og etter paneldiskusjonen. 
+Resultatene fra diskusjonen og spørreundersøkelsen blir samlet opp og formidlet videre til politikerne som skal treffe beslutninger. 
+Svarene dine blir anonymisert.
 
-Alle svar du gir oss blir behandlet strengt konfidensielt og i samsvar med personvernforordningen (GDPR).
-Se vedlagte personvernerklæring.
-Mer informasjon om opplegget får du når du takker ja til å delta.
+**Sakene som skal opp til diskusjon i borgerpanelet er: **
+
+-	Fornyingen av havneområdet Dokken i Bergen sentrum. 
+
+-	Utvikling av bilfrie soner i bydelene.
+
+**Om deltakelse**
+
+Det er selvsagt frivillig å delta.
+De fleste som deltar synes det er interessant og meningsfylt. 
+Vi håper du blir med, og at også du finner det givende.
+
+Du og de andre deltakerne er tilfeldig trukket ut fra Folkeregisteret. 
+Dette gjør vi for at alle deler av bergenssamfunnet skal være representert. 
+Det kreves ingen forkunnskap for å delta, og du må kunne sette av foreløpig tid fra 10.00–15.00.
+
+Alle svar du gir oss, blir behandlet i samsvar med reglene for personvern. 
+Se vedlagte personvernerklæring. 
 
 Bruk denne lenken for å registrere deg som deltaker:
 https://nettskjema.no/a/183040
 
-Alle som deltar skal først svare på en spørreundersøkelse.
+Alle som deltar skal svarer først på en spørreundersøkelse.
 Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
 www.qualtrics.com
 
-Obs: Både i påmeldingen og spørreundersøkelsen skal du oppgi følgende referansenummer:
+Obs: Både i påmeldingen og spørreundersøkelsen er det viktig at du oppgir følgende referansenummer: (sett inn referanse-ID, fire siffer)
 ```{r referenceID_letter_participant_invitation_sample1}
 set.seed(100)
 referanse <- sample(1000:5000, replace = FALSE)
 ```
+
+Som takk for din innsats, får du et sentrumsgavekort på x00 kroner.
