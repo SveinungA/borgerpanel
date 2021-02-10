@@ -1,22 +1,51 @@
 ---
 title: "info-bilfriesoner"
-author: "Sveinung Arnesen"
-date: "2/10/2021"
 output: html_document
 ---
+#### Sammendrag
+
+Bergen kommune har vedtatt at privatbilismen skal reduseres med 20 prosent innen 2030.
+For å redusere biltrafikk vil Bergen kommune i tillegg til å styrke kollektivtrafikk, sykkel og gange, ta i bruk restriktive tiltak i form av f.eks. parkeringsbegrensninger. 
+Ett av tiltakene er å utvikle bilfrie soner både i sentrumsområdet og bydelene. 
+
+Spørsmålet vi stiller til dere som representanter for alle innbyggerne i Bergen er hvordan dere mener dette skal gjøres.
+Dere skal diskutere og ta stilling til flere forslag:
+
+```{r forslag-bilfri-samlet}
+
+table <- tibble(Forslag = c(rep('', 5)),
+                  For = c(rep(' ', 5)),
+                  Mot = c(rep(' ', 5)))
+kable(table)
+```
+
+#### Bilfrie soner
 
 Grønn strategi ble vedtatt av bystyret 21. september 2016, og slår fast at privatbilismen i Bergen skal reduseres med minst 10 prosent innen 2020, og 20 prosent innen 2030. 
-For å redusere biltrafikk vil Bergen kommune i tillegg til å styrke kollektivtrafikk, sykkel og gange, ta i bruk restriktive tiltak i form
-av f.eks. parkeringsbegrensninger. 
-Grønn strategi slår også fast at Bergen skal fremme delt mobilitet, og redusere antall biler pr husholdning. 
-Det skal settes av tilstrekkelig antall parkeringsplasser til bildeleordninger i sentrale strøk, og bildelingsordninger skal prioriteres ved utbygging av offentlig ladeinfrastruktur.
+Innen desember 2022 skal Bergen kommune utrede muligheter for å utvikle bilfrie soner i bydelene, kartlegge egnede områder i hver bydel og levere en rapport som vil danne grunnlaget for neste fase av prosjektet med anbefalinger om hvordan bilfrie soner kan utvikles i de ulike bydelene.
+
+I denne perioden skal vi videreutvikle fire pågående prosjekter i sentrumsområdet. 
+I tillegg skal vi rigge oss for å kunne utvikle bilfrie soner i alle bydeler, gjennom kartlegging av egnede områder i hver bydel og et pilotprosjekt i en ytre bydel. 
+Pilotprosjektet vil gi oss kunnskap og erfaringer som vi kan bygge videre på når vi skal utvikle bilfrie soner i andre bydeler. 
+
+Våren 2021 starter vi arbeidet med et pilotprosjekt i en ytre bydel for å skaffe kunnskap og erfaring fra områder som i stor grad er planlagt for bilkjøring, i motsetning til sentrumsområdet som i utgangspunktet er bygget for gange. 
+Pilotprosjektet vil gi oss muligheter til å identifisere utfordringer, evaluere typen område som egner seg, og prøve ut og vurdere ulike tiltak for å styrke byliv og fremme grønn mobilitet på bekostning av privatbilisme. 
+For å kunne måle effekten av tiltak vil vi hente inn eksisterende og nye data på reisevaner, bruk av byrom, opplevelse av attraktivitet og trygghet i byrom og på gang- og sykkelnettet i bydelen, med mer. 
+ 
+
+![Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein](C:\Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png)
+
+Bymiljøetaten har i dag fire pågående prosjekter i sentrumsområdet. 
+I tillegg er vi i startfasen av et prosjekt der vi skal kartlegge og utvikle bilfrie soner i bydelene, og samarbeide med Byrådsavdeling for kultur, mangfold og likestilling om bilfritt byliv i bydelene. 
 
 Byrådet viser i Prinsippsak om parkering (465/16) til at vi er inne i en overgangsperiode. 
 Bilen er fortsatt viktig som fremkomstmiddel for mange av oss, både i næring og privat. 
 Samtidig vokser det frem ulike typer bildelingsordninger i byene som gir folk lønnsomme og fleksible alternativer til det å eie egen bil.
 Det er samtidig et ønske om å omdisponere mye av det arealet som i dag brukes av biler, og legge til rette for byrom hvor mennesker kan samles, utfolde og oppholde seg. 
 
-Byen må ha et forsvarlig og egnet parkeringstilbud. Ved vurdering av behov, må hensynet til ulike trafikantgrupper og beredskap - i form av fremkommelighet for utrykning, renovasjonsbiler, brøyting og busser - vektlegges. 
+
+Byen må ha et forsvarlig og egnet parkeringstilbud.
+Ved vurdering av behov, må hensynet til ulike trafikantgrupper og beredskap - i form av fremkommelighet for utrykning, renovasjonsbiler, brøyting og busser - vektlegges. 
 Behovsvurderingen kan ikke utelukkende baseres på dagens reisevaner og bilhold. 
 Vi må se framover.
 Mål om redusert antall biler per husholdning og reduksjon av trafikk og utslipp må også ivaretas. 
@@ -67,3 +96,11 @@ Bergen vil møte utfordringene frem mot 2030 med å utvikle en mer kompakt og ve
 Når Skansedammen parkeringsanlegg ble etablert var det et mål at tilsvarende antall parkeringsplasser skulle fjernes fra gategrunn i en del av gatene langs fjellsiden. 
 Dette ble gjennomført og det er i disse gatene ikke lenger parkerte biler. 
 Møhlenpris bydel har fått det så langt nest siste beboeranlegget under tak som er bygget i Bergen, i tilknytning til Vitalitetssenteret. 
+
+#### Ordforklaringer
+```{r ordbok-bilfri}
+
+table <- tibble(Begrep = c(rep(' ', 5)),
+                Forklaring = c(rep(' ', 5)))
+kable(table)
+```

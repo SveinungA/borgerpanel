@@ -230,7 +230,7 @@ Hvor viktig er de følgende argumentene for din holdning til ekspansjon i sjøen
 
 - Skape nytt byggeland for å sikre fremtidig havnedrift i byen
 
-- Skape nytt byggeland for å sikre en samfunnsnyttig bruk av tunellmasser fra vei-, tog og baneprosjekter i regionen
+- Skape nytt byggeland for å sikre en samfunnsnyttig bruk av tunnellmasser fra vei-, tog og baneprosjekter i regionen
 
 - Unngå utfylling med masser for å spare dyreliv i sjø
 
@@ -242,6 +242,170 @@ Svarskala:
 - Lite viktig  
 - Ikke viktig i det hele tatt
 
+##### R2DEMOVATEDOKKEN2
+> Havneoppgaver i Bergen sentrum
+
+Bergen er en havneby med lang sjøfartshistorie og området på Dokken har over lengre tid hatt en viktig rolle som industriell havn. 
+Nå er det besluttet at havneaktivitet knyttet til gods skal re-etableres i nytt anlegg på Ågotnes. 
+
+Selv om godshavnen flyttes er det fremdeles flere havnerelaterte aktiviteter som kan bli liggende igjen på Dokken eller et annet sted i Bergen sentrum.
+Alternativet er å flytte oppgavene ut av sentrum til andre områder i Bergen, eller i regionen.
+
+Hvilke havneaktiviteter bør etter din mening bli værende i sentrum, og hvilke bør flyttes ut av sentrum?
+
+- Cruisetrafikken
+
+- Utenlands fergetilbud (som "Danskebåten")
+
+- Transport av gods for videre distribusjon til sentrum og bydelene utenfor sentrum
+
+- Hurtigruten og Kystruten
+
+Svaralternativ:
+
+- Bli værende i sentrum
+
+- Flytte ut av sentrum
+
+##### R2DEMOVATEDOKKEN3-8
+
+Hvor viktig er de følgende argumentene for din holdning til om [havneaktivitet] skulle bli værende eller flyttes ut av sentrum?
+
+- Miljøhensyn
+
+- Tradisjon / historie / byens identitet
+
+- Økonomiske hensyn
+
+- Plasshensyn
+
+##### R2DEMOVATEDOKKEN9
+> Tilgjengelig sjøfront
+
+Sentrale deler av Bergen har en lang sjøfront som til dels er utilgjengelig og bebygd med boligbygg, næringsvirksomhet og havnerelatert bruk med sikkerhetsbegrensninger som gjør at sjøkanten og vannet er utilgjengelig for byens innbyggere og besøkende. 
+
+Dokken har 1 km lang sjølinje som i dag disponeres til havneaktivitet, men i forslag til Arealstrategi for Dokken foreslås det at vel to tredjedeler av sjølinjen omdisponeres til rekreasjonsformål.
+Deler av kailengdene foreslås benyttet til rekreasjon i kombinasjon med skipstrafikk mens deler av kaiene foreslås videreført til ren havnerelatert bruk med tilhørende sikkerhetsbegrensninger.
+
+Hvilken bruk av sjøfronten mener du det er viktigst å legge til rette for på Dokken? Velg ett svaralternativ
+
+- Kaianleggene bør i hovedsak bevares til videre havnedrift / ankomst og liggeplass for større skip og bedrifter med behov for kaitilkomst/ havnerelaterte bedrifter
+
+- Sjøfronten bør prioriteres til rekreasjon som for eksempel sjøpromenade, badeplasser, sjøhus, brygger for utsetting av båt- og kajakk, ol.
+
+- Sjøfronten bør prioriteres til naturformål for å øke byens naturmangfold
+
+##### R2DEMOVATEDOKKEN10
+> Samlokalisering
+
+Anbefaling av tomtevalg for samlokaliseringsprosjektet for Havforskningsinstituttet og Fiskeridirektoratet er et sentralt tema i forslag til Arealstrategi for Dokken.
+
+##### R2DEMOVATEDOKKEN11
+> Merkelapp: Nabolag Dokken
+
+ Nabolag - se også variabler for bilfri by 4-8 + noen av spm fra bokvalitetsundersøkelse
+
+##### R2DEMOVATEDOKKEN12
+
+Andre formål og bruk av arealene på Dokken
+
+Hva bør vi prioritere å etablere på Dokken som kan supplere innholdet i Bergen? (flere svaralternativer mulig? Inntil 4 valg?)
+
+- Bergen har det meste kommunen / regionen trenger
+
+- Boliger
+
+- Butikker, handel, annen privat tjenesteyting og sørvis
+
+- Kulturhus og andre ikke-kommersielle møteplasser
+
+- Næringslokaler og kontorlokaler for havrelaterte næringer (Havbyen Bergen)
+
+- Videregående skole
+
+- Ungdomsskole
+
+- Idrettsanlegg som for eksempel fotballbane og flerbrukshall
+
+- Parker og grøntarealer
+
+##### R2DEMOVATEDOKKEN12
+
+> Mobilitet, tilgjengelighet og “bilfri bydel”
+
+I Overordnet strategi for Dokken – Dokken 2050 – er det en målsetting at Dokken skal være en bilfri bydel der gående og syklende prioriteres.
+
+- gjenbruke noen av spm fra case om bilfri bydel?
+
+For eksempel videreutvikle spm 3 i Bilfri-bydel undersøkelsen?
+
+Info: spørsmålsbatteri, med en svarskala som går fra 0 (ikke viktig i det hele tatt) til 10 (ekstremt viktig)
+
+Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo?
+
+- Gangavstand til daglige gjøremål (barnehage, skole, jobb, matbutikk)
+
+- Offentlige grøntarealer og byrom som gatetun, parker, lekeplass og badeplass innen 200m fra bolig
+
+- Tilgang til offentlig transport, som buss og bybane innen 500m
+
+- Felles p-anlegg for bilparkering innen 500m
+
+- Delebilparkering tilgjengelig innen 500m
+
+- sosial infrastruktur – hva kan være relevant å spørre om?
+
+##### R2DEMOVATEDOKKEN13
+
+>  Bolig- og bokvalitet og nabolag
+
+a) Hvilke kvaliteter mener du er viktige i et nabolag eller nærområde?
+
+- Fellesarealer som gir gode muligheter for å treffe naboer og utvikle godt naboskap
+
+- Finne formuleringer med relevans for videre kvartals-/ område-/ nabolagutvikling
+
+- ?
+
+b) Hvilke kvaliteter mener du er viktige i et nabolag for at det skal være aldersvennlig og attraktivt gjennom ulike faser i livet?
+
+- Finne formuleringer med relevans for videre tomteutvikling
+
+c) Hva mener du er en riktig størrelse på boligen din dersom du er (matrise med tallstr for valg)
+
+- ALT1-enslig
+
+- ALT2-familie 2stk
+
+- ALT3 – familie 3stk
+
+- ALT4-4 stk
+
+- ALT5-5stk
+
+d) Hvor ofte, på en gjennomsnittlig uke, bruker du noen av følgende tilbud/funksjoner i ditt nærområde, i sentrum eller tilsvarende?
+
+- Dagligvarehandel
+
+- Annen handel/shopping
+
+- Serveringstilbud (Kafé og restauranter)
+
+- Opphold ute i offentlige parker og uterom
+
+- Bibliotek
+
+- Kulturtilbud
+
+- Treningssenter/Idrettsanlegg
+
+- Fritidsaktiviteter (utenom idrett)
+
+##### R2DEMOVATEDOKKEN14
+
+> Reell bærekraftig byutvikling
+
+- Finne formuleringer med relevans for videre transformasjonsarbeid OG KREVENDE / REELLE PRIORITERINGE
 
 #### Generelle politikkspørsmål
 ##### R2DEMOVATE10  

@@ -5,4 +5,59 @@ date: "2/10/2021"
 output: html_document
 ---
 
-Mer kommer.
+#### Sammendrag
+
+Her kommer et kort sammendrag.
+
+```{r forslag-dokken-samlet}
+
+table <- tibble(Forslag = c(rep('', 5)),
+                  For = c(rep(' ', 5)),
+                  Mot = c(rep(' ', 5)))
+kable(table)
+```
+
+#### Fornyelse av havneområdet Dokken
+
+##### Ekspansjon i sjø
+
+Ekspansjon i sjø, gjennom utfylling ved bruk av tunnellmasser, flytende konstruksjon eller peling, er en mulighet som vurderes på Dokken.
+Bør dette gjennomføres?
+
+```{r forslag-dokken-eksp}
+
+table <- tibble(Forslag = c(rep('Ekspansjon i sjø', 5)),
+                  For = c('Gir plass til flere boliger eller næringsformål',
+                          'Gir mer arealer til park og rekreasjon sentralt i byen',
+                          'Gir rom for vill natur i byen',
+                          'Sikrer fremtidig havnedrift i byen',
+                          'Sikrer en samfunnsnyttig bruk av tunellmasser fra vei-, tog og baneprosjekter i regionen'
+                  ),
+                  Mot = c('Må ta vare på sjøflate og eksisterende bylandskap slik som sjøfronten i Bergen sentrum ser ut i dag',
+                          'Unngå utfylling med masser for å spare dyreliv i sjø',
+                          rep(NA, 3)))
+kable(table)
+```
+
+##### Havneaktiviteter i sentrum
+
+Hvilke havnerelaterte aktiviteter mener du er riktig, eller ikke riktig å prioritere på Dokken eller i Bergen sentrum? 
+```{r forslag-dokken-havn}
+
+ table <- tibble(Forslag = c('Behold cruisetrafikk i sentrum',
+                             'Behold utenlands fergetilbud i sentrum',
+                             'Behold transport av gods i sentrum',
+                             'Behold Hurtigruten og Kystruten i sentrum'),
+                 For = c(rep('', 4)),
+                 Mot = c(rep('', 4)))
+
+kable(table)
+```
+
+#### Ordforklaringer
+```{r ordbok-dokken}
+
+table <- tibble(Begrep = c(rep(' ', 5)),
+                Forklaring = c(rep(' ', 5)))
+kable(table)
+```

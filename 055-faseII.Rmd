@@ -268,11 +268,15 @@ d %>% filter(Type== 'Faglig informasjonsmateriale', is.na(Oppgave)) %>% select(S
 
 ### Bilfrie soner 
 
-Lea Toska Oppedal leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
-Håvard Haarstad har sagt ja til å stille som fagekspert og til å rekruttere andre fageksperter.
+```{r child='Informasjonsmateriale/info-bilfri.Rmd'}
+```
 
-### Arealplanlegging Dokken
+
+### Fornying av havneområdet Dokken
 Laura Ve leder dette prosjektet fra kommunens side, og vil bidra inn med informasjonsmateriale. 
+
+```{r child='Informasjonsmateriale/info-dokken.Rmd'}
+```
 
 ## Teknisk veiledning
 For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurser på å forberede deltakerne på selve gjennomføringen:
