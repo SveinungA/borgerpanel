@@ -1,0 +1,69 @@
+---
+title: "info-bilfriesoner"
+author: "Sveinung Arnesen"
+date: "2/10/2021"
+output: html_document
+---
+
+Grønn strategi ble vedtatt av bystyret 21. september 2016, og slår fast at privatbilismen i Bergen skal reduseres med minst 10 prosent innen 2020, og 20 prosent innen 2030. 
+For å redusere biltrafikk vil Bergen kommune i tillegg til å styrke kollektivtrafikk, sykkel og gange, ta i bruk restriktive tiltak i form
+av f.eks. parkeringsbegrensninger. 
+Grønn strategi slår også fast at Bergen skal fremme delt mobilitet, og redusere antall biler pr husholdning. 
+Det skal settes av tilstrekkelig antall parkeringsplasser til bildeleordninger i sentrale strøk, og bildelingsordninger skal prioriteres ved utbygging av offentlig ladeinfrastruktur.
+
+Byrådet viser i Prinsippsak om parkering (465/16) til at vi er inne i en overgangsperiode. 
+Bilen er fortsatt viktig som fremkomstmiddel for mange av oss, både i næring og privat. 
+Samtidig vokser det frem ulike typer bildelingsordninger i byene som gir folk lønnsomme og fleksible alternativer til det å eie egen bil.
+Det er samtidig et ønske om å omdisponere mye av det arealet som i dag brukes av biler, og legge til rette for byrom hvor mennesker kan samles, utfolde og oppholde seg. 
+
+Byen må ha et forsvarlig og egnet parkeringstilbud. Ved vurdering av behov, må hensynet til ulike trafikantgrupper og beredskap - i form av fremkommelighet for utrykning, renovasjonsbiler, brøyting og busser - vektlegges. 
+Behovsvurderingen kan ikke utelukkende baseres på dagens reisevaner og bilhold. 
+Vi må se framover.
+Mål om redusert antall biler per husholdning og reduksjon av trafikk og utslipp må også ivaretas. 
+Restriktiv holdning til parkering langs veg kan redusere kjøring i det daglige, redusere bilhold og gi økt oppslutning om bildeleordninger og andre kollektive transportformer, ved at parkering blir et knapphetsgode i tett by og ved arbeidssted. 
+Regulering av parkering er også et egnet virkemiddel for å oppnå en mer miljøvennlig bilpark, ved at miljøvennlige biler gis prioritet. 
+En delingsbil kan i følge Transportøkonomisk institutt (TØI) erstatte mellom 5 og 15 privateide biler, og dermed frigjøre verdifullt areal i byene – uten at det begrenser faktisk mobilitet.
+
+Før vi går nærmere inn på detaljerte tanker omkring prosjektet kan det være grunn til å utdype hvordan Bymiljøetaten definerer ordet «bilfri» i denne sammenheng. 
+Det er etablert bilfrie bydeler i Oslo (Tjuvholmen), Trondheim (Lilleby), Drammen og Tromsø, og i flere byer i Europa (Malmø, København,
+London, Brussel, Amsterdam m.fl.). 
+Felles for alle disse byene er at ingen av dem har bydeler hvor bilen er helt fraværende.
+Det som er Bymiljøetatens fokus i dette prosjektet er å gjøre bydelen mer attraktiv å leve og bo i. 
+Som byrådet skriver i «Prinsippsak om parkering» så befinner vi oss i en overgangsfase.
+Fokus er at bilbruk og bilavhengighet må ned, men samfunnet er ennå ikke rede for et totalforbud mot privatbil, selv i et område som Møhlenpris.
+Et slikt forbud ville uansett være svært vanskelig å gjennomføre med dagens lovverk, og ikke minst dersom det skal tilrettelegges for å kunne bo og drive næring m.m. på Møhlenpris.
+Ved å omdisponere en del vegareal til bedre utemiljø for mennesker bidrar vi til å få Møhlenpris til å leve og fungere som en aktiv og attraktiv bydel. 
+Kort fortalt handler bilfri i vår sammenheng om en gradvis økning av areal til opphold og lek, på bekostning av areal til bil.
+
+Et annet vesentlig moment er muligheten for å kjøre bil på et «bilfritt» Møhlenpris.
+Et uttrykk som går igjen er at det skal opprettes parkeringsplasser for varelevering. 
+Det er upresist og i trafikkregulerings-terminologi direkte feil.
+Varelevering er ikke parkering, det er stans. 
+Kortest mulig stans for av- og pålessing og/eller av- og påstigning er ikke parkering.
+Med dette i bakhodet listes det opp noen funksjoner (ikke uttømmende) knyttet til tilgjengelighet som dette prosjektet må ha et bevisst forhold til underveis i planen om å innføre bilfri bydeler:
+
+Tillatt med kjøring og stans
+
+- Utrykningskjøretøy  
+- Eldre som har behov for å bli kjørt til døren  
+- Andre med redusert forflytningsevne som har behov for å bli kjørt nær inngang  
+- Varelevering (jevnlig til bedrifter m.m.)  
+- Renovasjon  
+- Sporadisk behov (Flyttebiler, Levering av vaskemaskiner etc)  
+
+Tilrettelegging for parkering
+
+- Forflytningshemmede med behov for å kjøre (og parkere) nær inngang (også butikk/næring)  
+- Håndverkere  
+- Bildeling  
+- Besøksparkering (også for de med dårlig forflytningsevne som ikke har HC-kort)
+
+Restriktiv holdning til parkering langs veg kan redusere kjøring i det daglige, redusere bilhold og gi økt oppslutning om bildeleordninger og andre kollektive transportformer, ved at parkering blir et knapphetsgode i tett by og ved arbeidssted. 
+Regulering av parkering er også et egnet virkemiddel for å oppnå en mer miljøvennlig bilpark, ved at miljøvennlige biler gis prioritet. 
+Byrådet viser i «prinsippsak om parkering» til at Kommuneplanens samfunnsdel (KPS) slår fast at «kommunen skal bidra til felles
+parkeringsløsninger, som tilrettelegger for private aktører eller som utbygger». 
+KPS er kommunens visjon for en fremtid som en aktiv og attraktiv by.
+Bergen vil møte utfordringene frem mot 2030 med å utvikle en mer kompakt og velfungerende by hvor innbyggerne skal bevege seg mer i hverdagen.
+Når Skansedammen parkeringsanlegg ble etablert var det et mål at tilsvarende antall parkeringsplasser skulle fjernes fra gategrunn i en del av gatene langs fjellsiden. 
+Dette ble gjennomført og det er i disse gatene ikke lenger parkerte biler. 
+Møhlenpris bydel har fått det så langt nest siste beboeranlegget under tak som er bygget i Bergen, i tilknytning til Vitalitetssenteret. 

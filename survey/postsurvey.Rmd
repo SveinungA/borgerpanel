@@ -374,4 +374,62 @@ Hva er din alder?
 3.	45-59 år
 4.	60 år eller eldre
 
+#### Evalueringsspørsmål 
+
+##### R2DEMOVATEEVAL1
+
+> Info: Batteri. 
+Stilles kun til deltakere i deliberativ meningsmåling
+
+Til slutt er det noen spørsmål om diskusjonene du deltok i.
+
+På en skala fra 0 til 10, der 0 er «bortkastet tid», 10 er «ekstremt verdifullt» og 5 er nøyaktig i midten, hvor verdifullt var hver av de følgende delene for å hjelpe deg med å avklare dine synspunkter på sakene?
+
+- De mindre gruppediskusjonene
+
+- Informasjonsmaterialene
+
+- Plenumsdiskusjonen
+
+- Arrangementet som helhet
+
+Svarskala:
+
+0 Bortkastet tid   
+1  
+2
+3  
+4  
+5 Nøyaktig i midten    
+6  
+7  
+8  
+9  
+10 Ekstremt verdifullt
+
+##### R2DEMOVATEEVAL2
+
+Og, i hvilken grad er du enig eller uenig i de følgende påstandene?
+
+-	Diskusjonsplattformen ga alle mulighet til å delta i diskusjonen
+
+-	Medlemmene i gruppen min deltok relativt likt i diskusjonene
+
+-	Diskusjonsplattformen prøvde noen ganger å påvirke gruppen med hennes eller hans egne meninger
+
+-	Diskusjonsplattformen prøvde å sørge for at motstridene argumenter ble vurdert
+
+-	De viktige aspektene av sakene ble dekket i gruppediskusjonene
+
+-	Jeg lærte mye om folk som er annerledes enn meg – om hvordan de og livene deres er
+
+Svarskala: 
+
+1 Sterkt uenig  
+2 Litt uenig  
+3 Verken eller  
+4 Litt enig  
+5 Sterkt enig  
+
+
 

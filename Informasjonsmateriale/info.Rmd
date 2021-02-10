@@ -1,0 +1,14 @@
+---
+title: "Informasjonsmateriale"
+author: "Sveinung Arnesen"
+date: "2/10/2021"
+output: html_document
+---
+
+```{r child='bilfrie-soner'}
+
+```
+
+```{r child='dokken'}
+
+```
