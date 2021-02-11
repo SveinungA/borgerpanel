@@ -208,3 +208,18 @@ Hvilket parti ville du stemt på om det var kommunevalg i morgen?
 15	Har ikke stemmerett  	
 16	Annet   
 
+```{r}
+table <- tibble(Dimensjon = c('Bilparkering', 'Offentlige grøntområder', 'Egen hage', 'Avstand til skole og matbutikk', 'Avstand til bybane eller buss'),
+                Verdi = c('Egen parkering på tomten / Offentlig parkering inntil 150 meter fra boligen / Offentlig parkering mer enn 150 meter fra boligen',
+                               'Under 100 meter fra boligen / Mellom 100-500 meter fra boligen / Mer enn 500 meter fra boligen',
+                               'Ja / Nei',
+                               'Under 500 meter fra boligen / Over 500 meter fra boligen',
+                               'Under 500 meter fra boligen / Over 500 meter fra boligen'
+                               ))
+
+ table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Beskrivelser av nabolag", col.names = linebreak(c("Dimensjon", "Verdi"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+```

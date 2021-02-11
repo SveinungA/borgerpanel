@@ -1,6 +1,5 @@
 ---
 title: "Forundersøkelse"
-date: "1/31/2021"
 output:
   word_document: default
   pdf_document: default
@@ -21,32 +20,145 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 > Merkelapp: Transport til arbeid.
 
-Hvordan kommer du deg til jobb og andre daglige gjøremål i dag (når det ikke er koronarestriksjoner)? 
+Hvordan pleier du å komme deg til dine daglige gjøremål (når det ikke er koronarestriksjoner)?
 
--	Kjører bil
+-	Kjører eller sitter på i bensin eller dieselbil
 
--	Tar buss eller bybane
+-	Kjører eller sitter på i hybridbil
 
--	Går og/eller sykler
+-	Kjører eller sitter på i elbil
+
+-	Tar buss
+
+-	Tar bane eller tog
+
+-	Tar båt
+
+-	Går
+
+-	Sykler
+
+-	Sparkesykler
+
+-	Annet:
 
 ##### R2DEMOVATEBILFRI2
 
-> Merkelapp: Nabolagsbeskrivelse.
+Har koronapandemien endret hvordan du pleier å komme deg til dine daglige gjøremål?
 
-Hvilken beskrivelse passer best på nabolaget der du bor i dag? 
+-	Kjører eller sitter på i bensin eller dieselbil
 
--	Eneboliger med hager og/eller egne parkeringsplasser
+-	Kjører eller sitter på i hybridbil
 
--	Eneboliger i tettbebygd strøk i nærhet til sentrum eller tettsted 
+-	Kjører eller sitter på i elbil
 
--	Leiligheter i tettsted 
+-	Tar buss
 
--	(flere alternativer, eventuelt…)
+-	Tar bane eller tog
+
+-	Tar båt
+
+-	Går
+
+-	Sykler
+
+-	Sparkesykler
+
+-	Annet:
+
+Svarskala:
+
+0 Ekstremt mye mindre  
+1  
+2  
+3  
+4  
+5 Ingen forskjell  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer
+
 
 ##### R2DEMOVATEBILFRI3
 
->Info: spørsmålsbatteri, med en svarskala som går fra 0 (ikke viktig i det hele tatt) til 10 (ekstremt viktig)
-Merkelapp: Attraktive nabolag II. 
+> Merkelapp: Nabolagsbeskrivelse.
+
+Ta stilling til følgende påstander om din bolig 
+
+-	Boligen min ligger i gangavstand til skole/barnehage
+
+-	Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen
+
+-	Jeg har tilgang til byfjell eller andre naturområder i gangavstand fra boligen
+
+-	Det er tilrettelagte grøntarealer, f.eks. park, i nærheten av boligen
+
+-	Boligen ligger i gangavstand fra dagligvarebutikk
+
+-	Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen
+
+-	Nærmiljøet er trygt/fritt for kriminalitet
+
+-	Nærmiljøet er trafikksikkert (for barn)
+
+-	Det finnes lekeplass i gangavstand
+
+-	Det finnes ballbane eller idrettsplass i nærheten
+
+-	Det er minimale støyforhold – fra vei, annet
+
+-	Boligen har godt kollektivtilbud i nærheten
+
+-	Det er lett å komme seg rundt med bil
+
+-	Boligen har gode parkeringsmuligheter for egen bil
+
+-	Boligen har gode gjesteparkeringsfasiliteter for bil
+
+-	Boligen ligger i gangavstand til delebiler
+
+Svarskala:  
+0 Passer ikke i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Passer fullt og helt
+
+##### R2DEMOVATEBILFRI4
+
+Hvor villig er du til å dele følgende bofunksjoner med andre:
+
+-	Delebil 
+
+-	Sykler
+
+-	Andre ting – se boligpreferanseundersøkelsen
+
+Svarskala:  
+0 Ikke villig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Fullstendig villig
+
+
+##### R2DEMOVATEBILFRI5
+
+> Info: Spørsmålsbatteri. Merkelapp: Attraktive nabolag II. 
 
 Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo? 
 
@@ -60,20 +172,40 @@ Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt �
 
 -	Muligheter for å treffe naboer og ha godt naboskap
 
-##### R2DEMOVATEBILFRI4-8
+Svarskala:  
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+
+
+##### R2DEMOVATEBILFRI6-10
 
 >Merkelapp: Attraktive nabolag I-V.
 Info: Conjoint-eksperiment som ber respondenten velge ett av to nabolag som oppleves som mest attraktivt å bo i.
 To nabolag settes opp mot hverandre, og varierer etter følgende faktorer:
 
 ```{r nabolag-conjoint}
-table <- tibble(Dimensjon = c('Bilparkering', 'Offentlige grøntområder', 'Egen hage', 'Avstand til skole og matbutikk', 'Avstand til bybane eller buss'),
-                Verdi = c('Egen parkering på tomten / Offentlig parkering inntil 150 meter fra boligen / Offentlig parkering mer enn 150 meter fra boligen',
-                               'Under 100 meter fra boligen / Mellom 100-500 meter fra boligen / Mer enn 500 meter fra boligen',
-                               'Ja / Nei',
-                               'Under 500 meter fra boligen / Over 500 meter fra boligen',
-                               'Under 500 meter fra boligen / Over 500 meter fra boligen'
-                               ))
+table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
+                              'Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
+                              'Boligen ligger i gangavstand fra dagligvarebutikk',
+                              'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
+                              'Nærmiljøet er trafikksikkert (for barn)',
+                              'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
+                              'Boligen har godt kollektivtilbud i nærheten',
+                              'Det er lett å komme seg rundt med bil',
+                              'Boligen har gode parkeringsmuligheter for egen bil',
+                              'Boligen ligger i gangavstand til delebiler'),
+                Verdi = c(rep('Ja / Nei')))
 
  table %>% 
     mutate_all(linebreak) %>% 
@@ -89,9 +221,20 @@ Vi ber deg nå ta stilling til to tenkte nabolag, hvor du ut fra beskrivelsen ve
 Du får i alt fem slike sammenlikninger, hvor beskrivelsene varierer fra gang til gang.
 
 ```{r nabolag-conjoint-eksempel}
-table <- tibble(Dimensjon = c('Bilparkering', 'Offentlige grøntområder', 'Egen hage', 'Avstand til skole og matbutikk', 'Avstand til bybane eller buss'),
-                Nabolag1 = c('Egen parkering på tomten', 'Mellom 100-500 meter fra boligen', 'Nei', 'Over 500 meter fra boligen', 'Under 500 meter fra boligen'),
-                Nabolag2 = c('Offentlig parkering inntil 150 meter fra boligen', 'Under 100 meter fra boligen', 'Nei', 'Under 500 meter fra boligen', 'Under 500 meter fra boligen'))
+
+x <- c('Ja', 'Nei')
+table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
+                              'Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
+                              'Boligen ligger i gangavstand fra dagligvarebutikk',
+                              'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
+                              'Nærmiljøet er trafikksikkert (for barn)',
+                              'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
+                              'Boligen har godt kollektivtilbud i nærheten',
+                              'Boligen har gode parkeringsmuligheter for egen bil',
+                              'Boligen ligger i gangavstand til delebiler'),
+                Nabolag1 = c(rep('Ja', 10)),
+                Nabolag2 = c(rep('Nei', 10)))
 table %>% 
     mutate_all(linebreak) %>% 
     kable(booktabs = T, linesep = "", escape = F,  caption = "Mest attraktivt nabolag", col.names = linebreak(c("", "Nabolag 1", "Nabolag 2"))) %>% 
@@ -100,7 +243,7 @@ table %>%
 
 ```
 
-##### R2DEMOVATEBILFRI9
+##### R2DEMOVATEBILFRI11
 
 > Merkelapp: Attraktive nabolag VI.
 
@@ -110,15 +253,16 @@ Så ber vi deg velge det alternativet du mener er mest attraktivt å bo i av dis
 
 -	Egen hage og parkeringsplass til bilen på tomten, men mer enn 500 meter til skole, matbutikk og offentlige grøntområder.
 
--	Over 500 meter til skole, matbutikk og offentlige grøntområder, men med under 500 meter til buss og bybane, og til offentlige grøntarealer i nærområdet.
 
-##### R2DEMOVATEBILFRI10
+##### R2DEMOVATEBILFRI12
 
->Info: Spørsmålsbatteri. Randomisér påstandende.
+>Info: Spørsmålsbatteri. Randomisér påstandene.
 Merkelapp: Oppfatning om bilfrie soner
 
-Bergen kommune har planer om å lage bilfrie soner både i sentrum og i bydelene.
-*(Her en setning eller to om hva planene innebærer.)*
+Bergen kommune har planer om å lage bilfrie soner både i sentrum og i bydelene. 
+I disse områdene vil kommunen legge til rette for en gradvis økning i areal til lek og opphold for mennesker, på bekostning av areal til bil.
+Det vil være aktuelt å tilrettelegge for gange, sykkel, bildeling og andre bærekraftige transportformer, begrense kjøring og parkering av privatbiler og opparbeide leke- og oppholdsarealer ute.
+
 Hvor sterkt støtter eller motsetter du deg disse planene?
 
 0 Motsetter meg svært sterkt  
@@ -134,7 +278,7 @@ Hvor sterkt støtter eller motsetter du deg disse planene?
 10 Støtter svært sterkt
 
 
-##### R2DEMOVATEBILFRI11
+##### R2DEMOVATEBILFRI13
 
 > Merkelapp: Bilfri effekt på nabolaget.
 
@@ -145,11 +289,14 @@ Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 
 
 -	Det hadde blitt lettere å leve miljøvennlig.
 
+-	Det hadde blitt mer attraktivt å oppholde seg ute i nærområdet.
+
 -	Det hadde blitt vanskeligere å komme seg til jobb og daglige gjøremål.
 
--	Det hadde ikke blitt store endringer fra dagens situasjon.
+- Det hadde ikke blitt store endringer fra dagens situasjon.
 
-##### R2DEMOVATEBILFRI12
+
+##### R2DEMOVATEBILFRI14
 
 >Info: Spørsmålsbatteri. Randomisér påstandene.
 Merkelapp: Bilfri effekt på Bergen
@@ -157,17 +304,20 @@ Merkelapp: Bilfri effekt på Bergen
 Og hva mener du effekten av bilfrie soner vil være for *Bergen*?
 Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 ("stemmer ikke i det hele tatt") til 10 ("stemmer fullt og helt")
 
--	Byen vil bli mer klima- og miljøvennlig. 
+-	Byen vil bli mer klima- og miljøvennlig.
 
--	Det vil bli lettere for folk å bevege seg rundt i byen.
+-	Det vil bli lettere for folk å bevege seg rundt i byen/nærområdet.
 
--	Det vil bli vanskeligere for folk å komme seg dit de skal. 
+-	Det vil bli vanskeligere for folk å komme seg dit de skal.
 
--	Kommunen blander seg for mye inn i folk sine hverdagsliv.
+-	Flere vil få tilgang på attraktive utearealer i sine nærområder.
 
-##### R2DEMOVATEBILFRI13
+-	Bedre folkehelse
 
->Info: Spørsmålsbatteri. Ps: Egner seg også for conjoint-eksperiment.
+
+##### R2DEMOVATEBILFRI15
+
+>Info: Spørsmålsbatteri. 
 Merkelapp: Hva påvirker bilkjøring.
 
 Hvor viktig er følgende faktorer for at du kan kjøre mindre bil i hverdagen?
@@ -185,7 +335,7 @@ Vennligst angi på en skala fra 0 ("Ikke viktig i det hele tatt") til 10 ("Ekstr
 
 -	Bompenger (hvis bompengene øker mer vil jeg ikke lengre ha råd til å kjøre bil).
 
-##### R2DEMOVATEBILFRI14 
+##### R2DEMOVATEBILFRI16 
 
 > Merkelapp: Alternativer til bil.
 
@@ -202,6 +352,103 @@ Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjen
 -	Jobbe mer hjemmefra
 
 -	Jeg har ingen alternativer
+
+##### R2DEMOVATEBILFRI16    
+
+Vi ønsker å vite mer om hvordan innbyggerne ønsker at kommunen skal arbeide med bilfrie soner. 
+Vennligst ta stilling til følgende forslag:
+
+-	Bilfrie soner skal utvikles i mindre områder som borettslag eller rundt skoler framfor større områder, som f.eks. større deler av bydelssentre.
+
+-	Kommunen bør prioritere utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum
+
+-	I en bilfri sone bør kommunen forby all kjøring og parkering av privatbiler (med unntak for personer med funksjonsnedsettelse)
+
+Svarskala:  
+0 Ikke enig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Fullstendig enig
+
+##### R2DEMOVATEBILFRI17    
+
+Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i mindre områder framfor større områder?
+
+- Argument 1
+
+- Argument 2
+
+- osv.
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+
+##### R2DEMOVATEBILFRI18    
+
+Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum?
+
+- Argument 1
+
+- Argument 2
+
+- osv.
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEBILFRI19
+
+Hvor viktig var følgende argumenter for din holdning til å forby all kjøring og parkering av privatbiler i bilfrie soner?
+
+- Argument 1
+
+- Argument 2
+
+- osv.
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
 
 #### Spørsmål om arealutvikling på Dokken
 
@@ -224,9 +471,7 @@ Hvor viktig er de følgende argumentene for din holdning til ekspansjon i sjøen
 
 - Skape nytt byggeland for å gi plass til flere boliger eller næringsformål
 
-- Skape nytt byggeland sånn at vi kan få mer arealer til park og rekreasjon sentralt i byen
-
-- Skape nytt byggeland for å gi rom for vill natur i byen
+- Skape nytt byggeland sånn at vi kan få mer arealer til park, rekreasjon og naturområder i byen
 
 - Skape nytt byggeland for å sikre fremtidig havnedrift i byen
 
@@ -236,11 +481,17 @@ Hvor viktig er de følgende argumentene for din holdning til ekspansjon i sjøen
 
 Svarskala: 
 
-- Svært viktig  
-- Viktig  
-- Noe viktig  
-- Lite viktig  
-- Ikke viktig i det hele tatt
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  Ekstremt viktig
 
 ##### R2DEMOVATEDOKKEN2
 > Havneoppgaver i Bergen sentrum
@@ -267,9 +518,9 @@ Svaralternativ:
 
 - Flytte ut av sentrum
 
-##### R2DEMOVATEDOKKEN3-8
+##### R2DEMOVATEDOKKEN3
 
-Hvor viktig er de følgende argumentene for din holdning til om [havneaktivitet] skulle bli værende eller flyttes ut av sentrum?
+Hvor viktig er de følgende argumentene for din holdning til om cruisetrafikken skulle bli værende eller flyttes ut av sentrum?
 
 - Miljøhensyn
 
@@ -279,7 +530,99 @@ Hvor viktig er de følgende argumentene for din holdning til om [havneaktivitet]
 
 - Plasshensyn
 
-##### R2DEMOVATEDOKKEN9
+Svarskala:
+
+0 Ikke viktig i det hele tatt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEDOKKEN4
+
+Hvor viktig er de følgende argumentene for din holdning til om utenlands fergetilbud skulle bli værende eller flyttes ut av sentrum?
+
+- Miljøhensyn
+
+- Tradisjon / historie / byens identitet
+
+- Økonomiske hensyn
+
+- Plasshensyn
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEDOKKEN5
+
+Hvor viktig er de følgende argumentene for din holdning til om transport av gods skulle bli værende eller flyttes ut av sentrum?
+
+- Miljøhensyn
+
+- Tradisjon / historie / byens identitet
+
+- Økonomiske hensyn
+
+- Plasshensyn
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEDOKKEN6
+
+Hvor viktig er de følgende argumentene for din holdning til om Hurtigruten og Kystruten skulle bli værende eller flyttes ut av sentrum?
+
+- Miljøhensyn
+
+- Tradisjon / historie / byens identitet
+
+- Økonomiske hensyn
+
+- Plasshensyn
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEDOKKEN7
 > Tilgjengelig sjøfront
 
 Sentrale deler av Bergen har en lang sjøfront som til dels er utilgjengelig og bebygd med boligbygg, næringsvirksomhet og havnerelatert bruk med sikkerhetsbegrensninger som gjør at sjøkanten og vannet er utilgjengelig for byens innbyggere og besøkende. 
@@ -295,117 +638,66 @@ Hvilken bruk av sjøfronten mener du det er viktigst å legge til rette for på 
 
 - Sjøfronten bør prioriteres til naturformål for å øke byens naturmangfold
 
-##### R2DEMOVATEDOKKEN10
-> Samlokalisering
+##### R2DEMOVATEDOKKEN8
 
-Anbefaling av tomtevalg for samlokaliseringsprosjektet for Havforskningsinstituttet og Fiskeridirektoratet er et sentralt tema i forslag til Arealstrategi for Dokken.
+Hvor viktig er de følgende argumentene for din holdning til om bruk av sjøfronten på Dokken?
+
+- Fyll inn argumenter her...
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEDOKKEN10
+
+> Annen arealbruk I
+
+Vennligst ta stilling til om du støtter eller motsetter deg følgende påstand:
+Boliger bør prioriteres framfor næring
+
+0 Motsetter meg fullstendig  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Støtter fullstendig
+
 
 ##### R2DEMOVATEDOKKEN11
-> Merkelapp: Nabolag Dokken
 
- Nabolag - se også variabler for bilfri by 4-8 + noen av spm fra bokvalitetsundersøkelse
+> Annen arealbruk II
 
-##### R2DEMOVATEDOKKEN12
+Og vennligst ta stilling til om du støtter eller motsetter deg følgende påstand:
+Parker og grøntarealer bør prioriteres framfor idrettsanlegg som for eksempel fotballbane og flerbrukshall
 
-Andre formål og bruk av arealene på Dokken
+0 Motsetter meg fullstendig  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Støtter fullstendig
 
-Hva bør vi prioritere å etablere på Dokken som kan supplere innholdet i Bergen? (flere svaralternativer mulig? Inntil 4 valg?)
 
-- Bergen har det meste kommunen / regionen trenger
-
-- Boliger
-
-- Butikker, handel, annen privat tjenesteyting og sørvis
-
-- Kulturhus og andre ikke-kommersielle møteplasser
-
-- Næringslokaler og kontorlokaler for havrelaterte næringer (Havbyen Bergen)
-
-- Videregående skole
-
-- Ungdomsskole
-
-- Idrettsanlegg som for eksempel fotballbane og flerbrukshall
-
-- Parker og grøntarealer
-
-##### R2DEMOVATEDOKKEN12
-
-> Mobilitet, tilgjengelighet og “bilfri bydel”
-
-I Overordnet strategi for Dokken – Dokken 2050 – er det en målsetting at Dokken skal være en bilfri bydel der gående og syklende prioriteres.
-
-- gjenbruke noen av spm fra case om bilfri bydel?
-
-For eksempel videreutvikle spm 3 i Bilfri-bydel undersøkelsen?
-
-Info: spørsmålsbatteri, med en svarskala som går fra 0 (ikke viktig i det hele tatt) til 10 (ekstremt viktig)
-
-Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo?
-
-- Gangavstand til daglige gjøremål (barnehage, skole, jobb, matbutikk)
-
-- Offentlige grøntarealer og byrom som gatetun, parker, lekeplass og badeplass innen 200m fra bolig
-
-- Tilgang til offentlig transport, som buss og bybane innen 500m
-
-- Felles p-anlegg for bilparkering innen 500m
-
-- Delebilparkering tilgjengelig innen 500m
-
-- sosial infrastruktur – hva kan være relevant å spørre om?
-
-##### R2DEMOVATEDOKKEN13
-
->  Bolig- og bokvalitet og nabolag
-
-a) Hvilke kvaliteter mener du er viktige i et nabolag eller nærområde?
-
-- Fellesarealer som gir gode muligheter for å treffe naboer og utvikle godt naboskap
-
-- Finne formuleringer med relevans for videre kvartals-/ område-/ nabolagutvikling
-
-- ?
-
-b) Hvilke kvaliteter mener du er viktige i et nabolag for at det skal være aldersvennlig og attraktivt gjennom ulike faser i livet?
-
-- Finne formuleringer med relevans for videre tomteutvikling
-
-c) Hva mener du er en riktig størrelse på boligen din dersom du er (matrise med tallstr for valg)
-
-- ALT1-enslig
-
-- ALT2-familie 2stk
-
-- ALT3 – familie 3stk
-
-- ALT4-4 stk
-
-- ALT5-5stk
-
-d) Hvor ofte, på en gjennomsnittlig uke, bruker du noen av følgende tilbud/funksjoner i ditt nærområde, i sentrum eller tilsvarende?
-
-- Dagligvarehandel
-
-- Annen handel/shopping
-
-- Serveringstilbud (Kafé og restauranter)
-
-- Opphold ute i offentlige parker og uterom
-
-- Bibliotek
-
-- Kulturtilbud
-
-- Treningssenter/Idrettsanlegg
-
-- Fritidsaktiviteter (utenom idrett)
-
-##### R2DEMOVATEDOKKEN14
-
-> Reell bærekraftig byutvikling
-
-- Finne formuleringer med relevans for videre transformasjonsarbeid OG KREVENDE / REELLE PRIORITERINGE
 
 #### Generelle politikkspørsmål
 ##### R2DEMOVATE10  

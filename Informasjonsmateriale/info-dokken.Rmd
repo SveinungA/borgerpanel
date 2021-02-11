@@ -2,8 +2,17 @@
 title: ''
 author: "Sveinung Arnesen"
 date: "2/10/2021"
-output: html_document
+output:
+  html_document: default
+  word_document: default
 ---
+```{r {setup-info-dokken, include = FALSE}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
 
 #### Sammendrag
 
