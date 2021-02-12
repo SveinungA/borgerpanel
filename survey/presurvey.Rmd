@@ -21,6 +21,7 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 > Merkelapp: Transport til arbeid.
 
 Hvordan pleier du å komme deg til dine daglige gjøremål (når det ikke er koronarestriksjoner)?
+Hvis du bruker flere reisemidler, velg hovedreisemiddelet.
 
 -	Kjører eller sitter på i bensin eller dieselbil
 
@@ -45,6 +46,7 @@ Hvordan pleier du å komme deg til dine daglige gjøremål (når det ikke er kor
 ##### R2DEMOVATEBILFRI2
 
 Har koronapandemien endret hvordan du pleier å komme deg til dine daglige gjøremål?
+Hvis du bruker flere reisemidler, velg hovedreisemiddelet.
 
 -	Kjører eller sitter på i bensin eller dieselbil
 
@@ -87,37 +89,29 @@ Svarskala:
 
 Ta stilling til følgende påstander om din bolig 
 
+- Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen
+
 -	Boligen min ligger i gangavstand til skole/barnehage
 
--	Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen
-
--	Jeg har tilgang til byfjell eller andre naturområder i gangavstand fra boligen
-
--	Det er tilrettelagte grøntarealer, f.eks. park, i nærheten av boligen
+-	Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder 
 
 -	Boligen ligger i gangavstand fra dagligvarebutikk
 
 -	Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen
 
--	Nærmiljøet er trygt/fritt for kriminalitet
-
 -	Nærmiljøet er trafikksikkert (for barn)
 
--	Det finnes lekeplass i gangavstand
-
--	Det finnes ballbane eller idrettsplass i nærheten
-
--	Det er minimale støyforhold – fra vei, annet
+-	Det finnes lekeplass, ballbane eller idrettsplass i gangavstand
 
 -	Boligen har godt kollektivtilbud i nærheten
 
--	Det er lett å komme seg rundt med bil
+-	Boligen har gode parkeringsmuligheter for bil 
 
--	Boligen har gode parkeringsmuligheter for egen bil
+- Bildeling* er tilgjengelig i gangavstand fra boligen
 
--	Boligen har gode gjesteparkeringsfasiliteter for bil
+*Med bildeling menes at flere personer eller /husholdninger deler et visst antall biler som eies av et foretak eller av andre privatpersoner.
+I Bergen finnes f.eks. bildelingsordningene Bildeleringen (samvirke med 250 biler plassert rundt i Bergen) og Nabobil 
 
--	Boligen ligger i gangavstand til delebiler
 
 Svarskala:  
 0 Passer ikke i det hele tatt  
@@ -136,11 +130,13 @@ Svarskala:
 
 Hvor villig er du til å dele følgende bofunksjoner med andre:
 
--	Delebil 
+- Delebil
 
 -	Sykler
 
--	Andre ting – se boligpreferanseundersøkelsen
+-	Sykkelparkering
+
+-	Sykkerlverksted
 
 Svarskala:  
 0 Ikke villig i det hele tatt  
@@ -162,13 +158,15 @@ Svarskala:
 
 Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo? 
 
--	God plass til parkering for bil
+-	Plass til parkering for bil
 
-- Gangavstand til daglige gjøremål (skole, jobb, matbutikk)
+- Gang- og sykkelavstand til daglige gjøremål (skole, jobb, matbutikk)
 
--	Offentlige grøntarealer, som parker
+-	Tilgang til grøntarealer, som parker og friluftsområder
 
 -	Tilgang til offentlig transport, som buss og bybane
+
+-	Nærhet til møteplasser utenfor hjemmet (kafé, lekeplasser, benker, o.l.)
 
 -	Muligheter for å treffe naboer og ha godt naboskap
 
@@ -185,8 +183,6 @@ Svarskala:
 9  
 10 Ekstremt viktig
 
-
-
 ##### R2DEMOVATEBILFRI6-10
 
 >Merkelapp: Attraktive nabolag I-V.
@@ -195,15 +191,14 @@ To nabolag settes opp mot hverandre, og varierer etter følgende faktorer:
 
 ```{r nabolag-conjoint}
 table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
-                              'Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen',
                               'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
                               'Boligen ligger i gangavstand fra dagligvarebutikk',
                               'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
                               'Nærmiljøet er trafikksikkert (for barn)',
                               'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
                               'Boligen har godt kollektivtilbud i nærheten',
-                              'Det er lett å komme seg rundt med bil',
-                              'Boligen har gode parkeringsmuligheter for egen bil',
+                              'Boligen har parkeringsmuligheter for bil',
                               'Boligen ligger i gangavstand til delebiler'),
                 Verdi = c(rep('Ja / Nei')))
 
@@ -224,14 +219,14 @@ Du får i alt fem slike sammenlikninger, hvor beskrivelsene varierer fra gang ti
 
 x <- c('Ja', 'Nei')
 table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
-                              'Jeg kan benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen',
                               'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
                               'Boligen ligger i gangavstand fra dagligvarebutikk',
                               'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
                               'Nærmiljøet er trafikksikkert (for barn)',
                               'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
                               'Boligen har godt kollektivtilbud i nærheten',
-                              'Boligen har gode parkeringsmuligheter for egen bil',
+                              'Boligen har parkeringsmuligheter for bil',
                               'Boligen ligger i gangavstand til delebiler'),
                 Nabolag1 = c(rep('Ja', 10)),
                 Nabolag2 = c(rep('Nei', 10)))
@@ -247,11 +242,11 @@ table %>%
 
 > Merkelapp: Attraktive nabolag VI.
 
-Så ber vi deg velge det alternativet du mener er mest attraktivt å bo i av disse tre alternativene (velg alternativet som passer best):
+Så ber vi deg velge det alternativet du mener er mest attraktivt å bo i av disse to alternativene:
 
--	Under 500 meter til skole, matbutikk og offentlige grøntområder, men kun offentlig bilparkering mer enn 150 meter fra boligen.
+-	Under 10 minutter å gå til skole, matbutikk, offentlige grøntområder, kollektivtilbud og bildeling, men bilparkering mer enn 250 meter fra boligen. 
 
--	Egen hage og parkeringsplass til bilen på tomten, men mer enn 500 meter til skole, matbutikk og offentlige grøntområder.
+-	Bilparkering i tilknytning til bolig, under 10 minutter å gå til grøntområder, men over 10 minutter å gå til skole, matbutikk og kollektivtilbud.
 
 
 ##### R2DEMOVATEBILFRI12
@@ -260,8 +255,7 @@ Så ber vi deg velge det alternativet du mener er mest attraktivt å bo i av dis
 Merkelapp: Oppfatning om bilfrie soner
 
 Bergen kommune har planer om å lage bilfrie soner både i sentrum og i bydelene. 
-I disse områdene vil kommunen legge til rette for en gradvis økning i areal til lek og opphold for mennesker, på bekostning av areal til bil.
-Det vil være aktuelt å tilrettelegge for gange, sykkel, bildeling og andre bærekraftige transportformer, begrense kjøring og parkering av privatbiler og opparbeide leke- og oppholdsarealer ute.
+I disse områdene vil kommunen begrense kjøring og parkering av privatbiler, for å tilrettelegge for aktivitet i nærområdet, og for gange og sykling som framkomstmiddel.
 
 Hvor sterkt støtter eller motsetter du deg disse planene?
 
@@ -282,40 +276,102 @@ Hvor sterkt støtter eller motsetter du deg disse planene?
 
 > Merkelapp: Bilfri effekt på nabolaget.
 
-Hvordan tror du en bilfri sone *i ditt nabolag* ville ha påvirket deg?
-Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 ("stemmer ikke i det hele tatt") til 10 ("stemmer fullt og helt")
+Tror du en bilfri sone *i ditt nabolag* hadde gjort det lettere eller vanskeligere å komme seg til jobb og daglige gjøremål?
 
--	Det hadde blitt lettere å bevege seg trygt for fotgjengere og/eller syklister.
-
--	Det hadde blitt lettere å leve miljøvennlig.
-
--	Det hadde blitt mer attraktivt å oppholde seg ute i nærområdet.
-
--	Det hadde blitt vanskeligere å komme seg til jobb og daglige gjøremål.
-
-- Det hadde ikke blitt store endringer fra dagens situasjon.
-
-
+0 Ekstremt mye lettere  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye vanskeligere
+ 
 ##### R2DEMOVATEBILFRI14
+
+Tror du en bilfri sone *i ditt nabolag* hadde gjort det mer eller mindre attraktivt å bruke gange og sykkel som fremkomstmiddel?
+
+0 Ekstremt mye mindre attraktivt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer attraktivt
+
+##### R2DEMOVATEBILFRI15 
+
+Tror du en bilfri sone *i ditt nabolag* hadde gjort det mer eller mindre attraktivt å oppholde seg ute i nærområdet?
+
+0 Ekstremt mye mindre attraktivt
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer attraktivt
+
+
+##### R2DEMOVATEBILFRI16
 
 >Info: Spørsmålsbatteri. Randomisér påstandene.
 Merkelapp: Bilfri effekt på Bergen
 
-Og hva mener du effekten av bilfrie soner vil være for *Bergen*?
-Vennligst angi på en skala din mening om påstandene under, på en skala fra 0 ("stemmer ikke i det hele tatt") til 10 ("stemmer fullt og helt")
+Tror du bilfrie soner *i Bergen* vil...
 
--	Byen vil bli mer klima- og miljøvennlig.
+- gjøre byen mer eller mindre klima- og miljøvennlig?
 
--	Det vil bli lettere for folk å bevege seg rundt i byen/nærområdet.
+-	bidra til mer eller mindre folkehelse?
 
--	Det vil bli vanskeligere for folk å komme seg dit de skal.
+0 Ekstremt mye mindre
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer
+ 
+##### R2DEMOVATEBILFRI17
 
--	Flere vil få tilgang på attraktive utearealer i sine nærområder.
+Tror du bilfrie soner *i Bergen* vil gjøre det lettere eller vanskeligere for folk å...
 
--	Bedre folkehelse
+- bevege seg rundt i byen og nærområdet?
+
+- komme seg dit de skal?
+
+- finne attraktive utearealer i sine nærområder?
+
+- drive butikk og handel i sentrum?
+
+0 Ekstremt mye lettere
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye vanskeligere
 
 
-##### R2DEMOVATEBILFRI15
+##### R2DEMOVATEBILFRI18
 
 >Info: Spørsmålsbatteri. 
 Merkelapp: Hva påvirker bilkjøring.
@@ -323,27 +379,37 @@ Merkelapp: Hva påvirker bilkjøring.
 Hvor viktig er følgende faktorer for at du kan kjøre mindre bil i hverdagen?
 Vennligst angi på en skala fra 0 ("Ikke viktig i det hele tatt") til 10 ("Ekstremt viktig")
 
--	Bedre tilgang til offentlig transport, som buss og bybane.
+-	Bedre tilgang til kollektivtransport, som buss og bybane.
 
--	At buss og bybane går oftere.
+-	Hyppigere avganger på kollektivtransport
 
--	Bedre og tryggere sykkelveier.
+- Billigere kollektivbilletter
 
--	Tilgang på delebil.
+-	Tilgang på delebil
 
--	Tryggere gangvei.
+-	Bompenger (hvis bompengene øker mer vil jeg ikke lengre ha råd til å kjøre bil)
 
--	Bompenger (hvis bompengene øker mer vil jeg ikke lengre ha råd til å kjøre bil).
+- Dyrere og mindre tilgjengelig bilparkering
 
-##### R2DEMOVATEBILFRI16 
+-	Tryggere og mer attraktiv sykkelveier
+
+-	Tryggere og mer attraktiv gangvei
+
+
+
+##### R2DEMOVATEBILFRI19
 
 > Merkelapp: Alternativer til bil.
 
 Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjengelig?
 
-- Sykle
+-	Gange
 
--	Gå
+- Sykkel
+
+- Elsparkesykkel
+
+- Bysykkel
 
 -	Delebil
 
@@ -353,9 +419,9 @@ Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjen
 
 -	Jeg har ingen alternativer
 
-##### R2DEMOVATEBILFRI16    
+##### R2DEMOVATEBILFRI20   
 
-Vi ønsker å vite mer om hvordan innbyggerne ønsker at kommunen skal arbeide med bilfrie soner. 
+Vi ønsker å vite mer om hvordan innbyggerne vil at kommunen skal arbeide med bilfrie soner. 
 Vennligst ta stilling til følgende forslag:
 
 -	Bilfrie soner skal utvikles i mindre områder som borettslag eller rundt skoler framfor større områder, som f.eks. større deler av bydelssentre.

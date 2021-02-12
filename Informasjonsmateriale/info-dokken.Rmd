@@ -16,57 +16,99 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 #### Sammendrag
 
-Her kommer et kort sammendrag.
+Hvordan skal havneområdet Dokken fornyes?
+
+Bergen kommune har startet arbeidet for utvikling på Dokken som et nytt byutviklingsområde.
+Byrådet har en visjon for Dokken om en transformasjon og utvikling av et stort havneområde til et fremtidsrettet og levende byområde for alle, med energi- og miljøløsninger som gir bærekraft og nullutslipp.
+
+Det er besluttet at godshavnen på Dokken skal flytte til Ågotnes. 
+Ved flytting av godshavnen til Ågotnes blir store områder og mye sjøfront frigjort for byutvikling. 
+For å gi rom for en byutvikling som skaper en levende by med aktivitet, mangfold og mennesker, er Dokken sett på som et attraktivt sted for byutvikling når havneareal kan omdisponeres til annen bruk.
+Dette er likevel bare en mindre del av den havneaktiviteten som er på Dokken i dag, og det er ikke avgjort om ytterligere havneaktiviteter skal flyttes eller inngå som en del av den framtidige byutviklingen.
+
+Hva skal prioriteres i fornyingen av Dokken til beste for byen?
+Bergen har vært en ledende internasjonal handels- og sjøfarts by og Norges største og viktigste havneby fra middelalderen og fram til vår tid.
+Samtidig er det behov for flere boliger i sentrum, og tilgang til sjøfronten er viktig for at området skal være attraktivt å bo og oppholde seg i.
+Skal det fortsatt være havneaktiviteter på området, eller skal sjøfronten åpnes for allmennheten?
+Er det greit å fylle ut i sjøen for å få mer plass, eller må eksisterende bylandskap bevares?
+Hvor mye areal skal prioriteres til fortsatt havneaktivitet, som for eksempel ferje og cruise trafikk?
+Dette og andre spørsmål skal deltakerne diskutere og ta stilling til.
+
 
 ```{r forslag-dokken-samlet}
 
-table <- tibble(Forslag = c(rep('', 5)),
-                  For = c(rep(' ', 5)),
-                  Mot = c(rep(' ', 5)))
-kable(table)
-```
-
-#### Fornyelse av havneområdet Dokken
-
-##### Ekspansjon i sjø
-
-Ekspansjon i sjø, gjennom utfylling ved bruk av tunnellmasser, flytende konstruksjon eller peling, er en mulighet som vurderes på Dokken.
-Bør dette gjennomføres?
-
-```{r forslag-dokken-eksp}
-
-table <- tibble(Forslag = c(rep('Ekspansjon i sjø', 5)),
+table <- tibble(Forslag = c(rep('Ekspansjon i sjø', 4), 
+                            'Behold cruisetrafikk i sentrum', 
+                            'Behold utenlands fergetilbud i sentrum', 
+                            'Prioriter areal til terminal for distribusjon av gods i sentrum',
+                            'Prioriter sjøfront til videre havnedrift', 
+                            'Prioriter sjøfront til rekreasjon for mennesker', 
+                            'Prioriter sjøfront til naturformål'),
                   For = c('Gir plass til flere boliger eller næringsformål',
-                          'Gir mer arealer til park og rekreasjon sentralt i byen',
-                          'Gir rom for vill natur i byen',
-                          'Sikrer fremtidig havnedrift i byen',
-                          'Sikrer en samfunnsnyttig bruk av tunellmasser fra vei-, tog og baneprosjekter i regionen'
-                  ),
+                          'Gir mer arealer til park, rekreasjon og natur i byen',
+                          'Sikrer fremtidig havnedrift i byen når eksisterende kaianlegg omdisponeres til formål som bolig og næring',
+                          'Sikrer en samfunnsnyttig bruk av tunellmasser fra vei-, tog og baneprosjekter i regionen',
+                          'Cruisetrafikk er en viktig del av reiselivet i byen',
+                          'Det er attraktivt for reisende å ankomme Bergen sentrum. Sykkelturister kan vanskelig sykle direkte av / på båten dersom den legges langt utenfor sentrale strøk',
+                          'Byen vil fremdeles være avhengig av distribusjon av gods internt i bykjernen og bydelene rundt',
+                          'Bergen sin identitet er sterkt knyttet til havnedrift', 
+                          'Sjøfronten må gjøres tilgjengelig og attraktiv for byens innbyggere og besøkende. Dette anses som viktig i en attraktiv by og for befolkningens velvære, trivsel og folkehelse',
+                          'Naturmangfold er under sterkt press. Naturen trenger også arealer i tilknytning til sjø som kan få utvikle seg i fred. Denne type sentrumsnære arealer kan benyttes til undervisningsformål som kan styrke barns kunnskap om natur i strandsonen'
+                          ),
                   Mot = c('Må ta vare på sjøflate og eksisterende bylandskap slik som sjøfronten i Bergen sentrum ser ut i dag',
                           'Unngå utfylling med masser for å spare dyreliv i sjø',
-                          rep(NA, 3)))
+                          NA,
+                          NA,
+                          'Cruiseturisme er forurensende og bidrar lite til lokal økonomi',
+                          'Håndtering av bilferger legger beslag på mye areal som vanskelig kan disponeres til andre formål og er til tider forbundet med en del trafikk av både gods- og personbiler',
+                          'Såkalte logistikk-huber medfører trafikk av varetransport som er lite forenlig med en bilfri bydel',
+                          'Det må forventes at havnedriften kan effektiviseres og redusere sitt arealbehov med for eksempel nye teknologiske løsninger',
+                          'Det er nok arealer som er tilgjengelig for byens befolkning og besøkende allerede',
+                          'Bergensregionen har nok sjønær natur og trenger at sentralt byggeland benyttes til boliger og næringsformål'))
 kable(table)
 ```
 
-##### Havneaktiviteter i sentrum
+<!-- #### Fornyelse av havneområdet Dokken -->
 
-Hvilke havnerelaterte aktiviteter mener du er riktig, eller ikke riktig å prioritere på Dokken eller i Bergen sentrum? 
-```{r forslag-dokken-havn}
+<!-- ##### Ekspansjon i sjø -->
 
- table <- tibble(Forslag = c('Behold cruisetrafikk i sentrum',
-                             'Behold utenlands fergetilbud i sentrum',
-                             'Behold transport av gods i sentrum',
-                             'Behold Hurtigruten og Kystruten i sentrum'),
-                 For = c(rep('', 4)),
-                 Mot = c(rep('', 4)))
+<!-- Ekspansjon i sjø, gjennom utfylling ved bruk av tunnellmasser, flytende konstruksjon eller peling, er en mulighet som vurderes på Dokken. -->
+<!-- Bør dette gjennomføres? -->
 
-kable(table)
-```
+<!-- ```{r forslag-dokken-eksp} -->
 
-#### Ordforklaringer
-```{r ordbok-dokken}
+<!-- table <- tibble(Forslag = c(rep('Ekspansjon i sjø', 5)), -->
+<!--                   For = c('Gir plass til flere boliger eller næringsformål', -->
+<!--                           'Gir mer arealer til park og rekreasjon sentralt i byen', -->
+<!--                           'Gir rom for vill natur i byen', -->
+<!--                           'Sikrer fremtidig havnedrift i byen', -->
+<!--                           'Sikrer en samfunnsnyttig bruk av tunellmasser fra vei-, tog og baneprosjekter i regionen' -->
+<!--                   ), -->
+<!--                   Mot = c('Må ta vare på sjøflate og eksisterende bylandskap slik som sjøfronten i Bergen sentrum ser ut i dag', -->
+<!--                           'Unngå utfylling med masser for å spare dyreliv i sjø', -->
+<!--                           rep(NA, 3))) -->
+<!-- kable(table) -->
+<!-- ``` -->
 
-table <- tibble(Begrep = c(rep(' ', 5)),
-                Forklaring = c(rep(' ', 5)))
-kable(table)
-```
+<!-- ##### Havneaktiviteter i sentrum -->
+
+<!-- Hvilke havnerelaterte aktiviteter mener du er riktig, eller ikke riktig å prioritere på Dokken eller i Bergen sentrum?  -->
+<!-- ```{r forslag-dokken-havn} -->
+
+<!--  table <- tibble(Forslag = c('Behold cruisetrafikk i sentrum', -->
+<!--                              'Behold utenlands fergetilbud i sentrum', -->
+<!--                              'Behold transport av gods i sentrum', -->
+<!--                              'Behold Hurtigruten og Kystruten i sentrum'), -->
+<!--                  For = c(rep('', 4)), -->
+<!--                  Mot = c(rep('', 4))) -->
+
+<!-- kable(table) -->
+<!-- ``` -->
+
+<!-- #### Ordforklaringer -->
+<!-- ```{r ordbok-dokken} -->
+
+<!-- table <- tibble(Begrep = c(rep(' ', 5)), -->
+<!--                 Forklaring = c(rep(' ', 5))) -->
+<!-- kable(table) -->
+<!-- ``` -->

@@ -7,8 +7,22 @@ output: html_document
 Bergen kommune har vedtatt at privatbilismen skal reduseres med 20 prosent innen 2030.
 For å redusere biltrafikk vil Bergen kommune i tillegg til å styrke kollektivtrafikk, sykkel og gange, ta i bruk restriktive tiltak i form av f.eks. parkeringsbegrensninger. 
 Ett av tiltakene er å utvikle bilfrie soner både i sentrumsområdet og bydelene. 
-
 Spørsmålet vi stiller til dere som representanter for alle innbyggerne i Bergen er hvordan dere mener dette skal gjøres.
+
+Bymiljøetaten i Bergen kommune har fire pågående prosjekter med bilfrie soner i sentrumsområdet; på Møhlenpris, Nedre Nygård, Nygårdshøyden og i Bøhmergaten-Løvstakklien i Solheim nord. 
+Målet med disse prosjektene er å skape plass til lek og opphold for mennesker, på bekostning av areal til bil. 
+For å nå målet, gjør Bymiljøetaten tiltak for å tilrettelegge for gange, sykkel og bildeling og for å begrense kjøring og parkering av privatbiler, blant annet ved å fjerne gateparkering. 
+I tillegg gjør de tiltak for å stimulere til økt bruk av gater og byrom ved å opparbeide leke- og oppholdsarealer.
+Ingen av disse prosjektene har som mål å skape områder der bilen er helt fraværende. 
+Bymiljøetatens fokus er å redusere bilbruk og bilavhengighet og lage gode og attraktive bydeler. 
+Varelevering og fremkommelighet utrykningskjøretøy og personer med nedsatt funksjonsevne skal ivaretas.
+Kommunen skal nå også utvikle bilfrie soner i bydelene.
+
+Frem mot 2023 skal Bymiljøetaten kartlegge egnede områder, bygge kunnskap og gjennomføre et forsøksprosjekt i en ytre bydel.
+Hensikten med forsøksprosjektet er å skaffe erfaring fra områder som i stor grad er planlagt for bilkjøring, i motsetning til sentrumsområdet som i utgangspunktet er bygget for gange. 
+I slutten av 2022 skal de levere en rapport som vil danne grunnlaget for neste fase av prosjektet, med anbefalinger om hvordan bilfrie soner kan utvikles i bydelene.
+
+
 Dere skal diskutere og ta stilling til flere forslag:
 
 ```{r forslag-bilfri-samlet}
