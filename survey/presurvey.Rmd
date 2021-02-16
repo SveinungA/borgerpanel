@@ -428,7 +428,7 @@ Vennligst ta stilling til følgende forslag:
 
 -	Kommunen bør prioritere utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum
 
--	I en bilfri sone bør kommunen forby all kjøring og parkering av privatbiler (med unntak for personer med funksjonsnedsettelse)
+-	De bilfrie sonene bør være større områder, som bydelssentre
 
 Svarskala:  
 0 Ikke enig i det hele tatt  
@@ -445,13 +445,23 @@ Svarskala:
 
 ##### R2DEMOVATEBILFRI17    
 
-Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i mindre områder framfor større områder?
+Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum?
 
-- Argument 1
+```{r presurvey-forslag1-bilfri}
 
-- Argument 2
+table <- tibble(Argumenter = c('Det er i bydelene det er størst behov for å legge til rette for gange, sykkel og andre «myke» trafikanter.',
+                      'Det er viktig at ikke bare beboerne i sentrum får nyte godt av fordelene med at det blir lettere å gå og sykle (rettferdighet).',
+                      'Det er mye støy og luftforurensning i bydelene, derfor er det spesielt viktig at bilfrie soner kommer dit.',
+                      'Bilfrie soner i bydelene kan være viktige i å forebygge kriminalitet',
+                'Det er vanskelig å bevege seg rundt i bydelene uten bil, og dette blir verre med bilfrie soner.',
+                        'Folk i bydelene har bosatt seg der fordi de liker å kjøre bil.',
+                        'De fleste som bor i bydelene har lang vei til jobb, og trenger å kunne bruke bilen for å komme seg dit',
+                        'Det er mindre trivelig eller trygt å bevege seg til fots eller sykkel i bydelene'))
 
-- osv.
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner utenfor sentrum") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
 
 Svarskala:
 
@@ -470,13 +480,23 @@ Svarskala:
 
 ##### R2DEMOVATEBILFRI18    
 
-Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum?
+Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i mindre områder framfor større områder?
 
-- Argument 1
+```{r presurvey-forslag2-bilfri}
 
-- Argument 2
+table <- tibble(Argumenter = c('Det vil bli trygge nærmiljø der folk bor.',
+                      'Det vil bli lettere å tilpasse prosjektet til innbyggernes ønsker og behov.',
+                      'Folk vil få økt trafikksikkerhet der de bor.',
+                      'Det vil ha positiv effekt på folkehelsen om folk må gå for å komme seg til bilen',
+                      'Større avstand mellom bolig og parkering vil kunne føre til at flere går og sykler på korte reiser',
+                'Det vil bli vanskeligere for folk å komme seg til bilen sin.',
+                        'Det vil ha liten effekt på bilbruken at enkelte nabolag blir bilfrie.',
+                        'Man vil fortsatt være avhengig av bil for å komme seg på jobb og andre gjøremål lengre unna'))
 
-- osv.
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner i mindre områder") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
 
 Svarskala:
 
@@ -494,14 +514,21 @@ Svarskala:
 
 ##### R2DEMOVATEBILFRI19
 
-Hvor viktig var følgende argumenter for din holdning til å forby all kjøring og parkering av privatbiler i bilfrie soner?
+Hvor viktig var følgende argumenter for din holdning til om de bilfrie sonene bør være større områder, som bydelssentre?
 
-- Argument 1
+```{r presurvey-forslag3-bilfri}
 
-- Argument 2
+table <- tibble(Argumenter = c('Tiltakene med å legge til rette for sykling og gange vil komme flere til gode',
+                      'Det vil bli lettere å koble de bilfrie sonene til buss og bybane, og dermed gjøre det lettere å reise bilfritt',
+                      'Det vil bli triveligere og tryggere i bydelssentrene',
+                'Folk trenger bil for å komme seg til bydelssentrene, så det blir ikke fritt for biler uansett.',
+                        'Folk handler mye i bydelssentrene og trenger derfor tilgang til bilen for å frakte varene.',
+                        'Det vil gå ut over handelen i butikkene at folk ikke kan kjøre bil dit'))
 
-- osv.
-
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner i større områder") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
 Svarskala:
 
 0 Ikke viktig i det hele tatt  

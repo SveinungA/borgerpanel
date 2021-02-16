@@ -22,7 +22,7 @@ kable(Medlem)
 d %>% filter(Type== 'Lage spørreundersøkelse', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
 
-## Spørreundersøkelse før arrangementet
+### Spørreundersøkelse før arrangementet
 
 ```{r child='survey/presurvey.Rmd'}
 ```
@@ -30,10 +30,9 @@ d %>% filter(Type== 'Lage spørreundersøkelse', is.na(Oppgave)) %>% select(Star
 ### Spørreundersøkelse etter arrangementet
 
 > Undersøkelsen er nesten identisk med den første, men har i tillegg noen spørsmål knyttet til vurderinger av arrangementet.
- 
-```{r child='survey/postsurvey.Rmd'}
-```
- 
+
+Kommer. 
+
 ### Oversette til engelsk
 Spørreundersøkelsen må foreligge også på engelsk.
 Grunnen til det er at våre internasjonale partnere også deltar i utformingen av undersøkelsen.

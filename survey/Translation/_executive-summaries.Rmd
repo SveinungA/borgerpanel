@@ -1,0 +1,128 @@
+---
+title: "Executive Summaries"
+date: "2/15/2021"
+output:
+  word_document: default
+  html_document: default
+always_allow_html: true  
+---
+```{r setup-dokken-executive-summary, echo=FALSE, warning=FALSE, include=FALSE}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+
+```
+## Renewal of Port Area Dokken 
+
+How should the port area, Dokken, be renewed? 
+
+Bergen municipality has initiated the work towards the development of Dokken as a new urban development area. The City Council’s vision of Dokken is to transform and develop a large port area into a future-oriented and vibrant urban area for everyone, with energy- and environmental solutions that provide sustainability and zero emissions. 
+The vision is “Dokken for Bergen and everyone in the world”. 
+
+It has been determined that the freight port located at Dokken will be moved to Ågotnes.  
+By relocating the freight port to Ågotnes, large areas and seafronts are available for urban development. In order to make room for an urban development that generates a vibrant city with activity, diversity and people, Dokken is considered an attractive location for urban development when the port area can be reallocated for other purposes.
+However, this is only a smaller part of the current port activity that takes place on Dokken, and it is yet to be determined whether further port activities will be moved or included as a part of the future urban development. 
+
+What should be prioritized when renewing Dokken, for the benefit of the city? 
+Ever since the Middle Ages to present day, Bergen has been an international leading city of trade and shipping, and the largest and most important port city in Norway. Simultaneously, there is a need for more homes in the city center, and in order for the area to be an attractive living area, access to the seafront is important. Should port activities continue in the area, or should the seafront be opened to the public? Is it okay to fill the sea in order to get more space, or must existing urban landscapes be preserved? How much of the area should be dedicated towards continued port activity, such as ferry and cruise traffic? These are among the questions the participants are to discuss and decide upon.  
+ 
+ 
+```{r proposal-dokken}
+
+table <- tibble(Proposal = c(rep('Sea expansion', 5), 
+                            'Keep cruise traffic in city center', 
+                            'Keep overseas ferry-options in city center', 
+                            'Prioritize area as terminal for distribution of goods in the city center',  
+                            'Prioritize seafront for further port operations', 
+                            'Prioritize seafront for recreation for people', 
+                            'Prioritize seafront for nature-purposes'),
+                  Pro = c('Provides space for more homes or business purposes',
+                          'Provides more areas for park, recreation and nature in the city',
+                          'Secures future port operations in the city when existing quay facilities are reallocated for purposes such as housing and industry',
+                          'Secures a socially beneficial use of tunnel rock masses from road, train and rail projects within the region',
+                          'Cruise traffic is an important part of the city’s tourism', 
+                          'It is attractive for travelers to arrive in the center of Bergen. It becomes challenging for bicycle tourists to cycle directly on / off the boat if it is located far outside central areas',
+                          'Arriving in the center of Bergen is attractive to travelers. Bicycle tourists will have a harder time cycling directly on / off the boat if it is located far outside central areas',
+                          'The city will still depend on the distribution of goods internally in the city center and the surrounding districts',
+                          'Bergen’s identity is strongly connected to port operations', 
+                          'The seafront must be made accessible and attractive to the city\'s inhabitants and visitors. This is considered important in an attractive city and for the well - being, happiness and public health of the population ',
+                          'Biodiversity is under strong pressure. Nature needs areas adjacent to the sea which are allowed to develop in peace. This type of area close to the city center can be used for educational purposes which can strengthen children\'s knowledge of nature in the beach zone '
+                          ),
+                  Con = c('Must take care of the sea surface and existing urban landscape just as the seafront in Bergen city center currently looks today',
+                          'Avoid filling with masses in order to save wildlife in the sea',
+                          NA,
+                          NA,
+                          NA,
+                          'Cruisetourism is polluting and hardly contributes to local economy', 
+                          'The handling of car ferries takes up a lot of space that is hard to dispose of for other purposes and is at times associated with traffic of both freight and passenger cars',
+                          'So-called logistic-hubs involves a traffic of goods transport that is not very compatible with a car-free district',
+                          'It must be expected that port operations can enhance effectiveness and reduce their space requirements with, for example, new technological solutions',
+                          'There are already enough areas available for the city\'s population and visitors',
+                          'The Bergen region already has enough nature close to the sea and needs that central building land is used for housing and business purposes'))
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Proposals Dokken") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+``` 
+
+#### Car-Free Zones
+
+The municipality of Bergen has decided that private car use will be reduced by 20 percent by 2030. 
+In order to reduce car traffic, Bergen municipality will, in addition to strengthening public transport, cycling and walking, adopt restrictive measures in the form of e.g. parking restrictions. 
+One of the measures is to develop car-free zones in both the city center and districts surrounding the city. The question we ask you as representatives of all the inhabitants of Bergen is how you think this should be done. 
+
+The Urban Environment Agency in Bergen has four ongoing projects with car-free zones in the city center; at Møhlenpris, Nedre Nygård, Nygårdshøyden, and in Bøhmergaten, Løvstakklien in Solheim nord. The goal of these projects is to create space for play and recreation for people, at the expense of space for cars. 
+
+To achieve this goal, the Urban Environment Agency takes measures to facilitate walking, cycling and car sharing and to limit the driving and parking of private cars, among other things by removing street parking. In addition, they take measures to stimulate increased use of streets and urban spaces by developing play and recreation areas. 
+
+None of these projects aims to create areas where cars are completely absent. 
+The Urban Environment Agency’s focus is to reduce car use and car dependence and create good and attractive districts. 
+Delivery of goods and accessibility to emergency vehicles and people with disabilities must be taken care of. 
+The municipality will now also develop car-free zones in the districts. 
+
+Up until 2023, the Urban Environment Agency will map suitable areas, build knowledge and carry out a pilot project in an outer district.
+The purpose of the pilot project is to gain experience from areas that are largely planned for driving, in contrast to the city center which is basically built for walking.
+At the end of 2022, they will submit a report that will form the basis for the next phase of the project, with recommendations on how car-free zones can be developed in the districts.
+
+
+Districts vs. city center
+As many other cities, Bergen are also developing car-free zones. 
+This is an investment in a larger area of a district where one facilitates safe and attractive walking and cycling at the expense of accessibility for private cars. Some driving will usually be allowed. 
+
+```{r proposal-carfree-zones}
+
+table <- tibble(Proposal = c(rep('Car-free zones also outside the city center', 4),
+                             rep('The car-free zones should be smaller, demarcated areas where people live.', 4),
+                             rep('The car-free zones should be in bigger areas such as in the center of the districts.', 3)),
+                  Pro = c('It is the districts that have the greatest need to facilitate for walking, cycling and other “soft” road users.',
+                          'It is important that not just only the citizens in the city center that gets to enjoy the benefits of making it easier to walk and cycle (fairness).',
+                          'There are a lot of noise and air pollution in the districts, therefore, it is especially important that car-free zones are established there.',
+                          'Car-free zones in the districts can be important in preventing crime.',
+                          'There will be a safe local environment where people live.',
+                          'It will be easier to adapt the project to the wishes and needs of the inhabitants.',
+                          'People will have increased traffic safety where they live.',
+                          'It will have a positive effect on public health if people have to walk to get to the car.',
+                          'The measures to facilitate cycling and walking will benefit more people.',
+                          'It will be easier to connect the car-free zones to the bus and light rail, this making it easier to travel car-free.',
+                          'It will be more pleasant and safer in the center of the districts.'),
+                Con = c('It is hard to move around the districts without a car, and this gets worse with car-free zones.',
+                          'People in the districts have settled there because they like to drive.',
+                          'Most people who live in the districts have a long way to work and need to be able to use the car to get there.',
+                          'It is less pleasant or safe to get around on foot or by bike in the districts.',
+                        'It will be more difficult for people to get to their car.',
+                        'It will have little effect on the use of cars that some neighborhoods will be car-free',
+                        'There will be a lot of disagreement about which neighborhoods will be car-free.',
+                        'One will still be dependent on a car to get to work and other activities further away',
+                        'People need a car to get to the center of the districts, so it won’t be free for cars anyway',
+                        'People shop a lot in the center of the districts and therefore need access to the car to transport their shopping.',
+                        'It will negatively affect the shops that people cannot drive there.'))
+                
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Proposals Car-Free Zones") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+
+
+

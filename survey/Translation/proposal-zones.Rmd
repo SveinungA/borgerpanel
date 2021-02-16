@@ -1,0 +1,39 @@
+---
+title: ''
+author: "Sveinung Arnesen"
+date: "2/16/2021"
+output: html_document
+---
+
+```{r proposal-carfree-zones2}
+
+table <- tibble(Proposal = c(rep('Car-free zones also outside the city center', 4),
+                             rep('The car-free zones should be smaller, demarcated areas where people live.', 4),
+                             rep('The car-free zones should be in bigger areas such as in the center of the districts.', 3)),
+                  Pro = c('It is the districts that have the greatest need to facilitate for walking, cycling and other “soft” road users.',
+                          'It is important that not just only the citizens in the city center that gets to enjoy the benefits of making it easier to walk and cycle (fairness).',
+                          'There are a lot of noise and air pollution in the districts, therefore, it is especially important that car-free zones are established there.',
+                          'Car-free zones in the districts can be important in preventing crime.',
+                          'There will be a safe local environment where people live.',
+                          'It will be easier to adapt the project to the wishes and needs of the inhabitants.',
+                          'People will have increased traffic safety where they live.',
+                          'It will have a positive effect on public health if people have to walk to get to the car.',
+                          'The measures to facilitate cycling and walking will benefit more people.',
+                          'It will be easier to connect the car-free zones to the bus and light rail, this making it easier to travel car-free.',
+                          'It will be more pleasant and safer in the center of the districts.'),
+                Con = c('It is hard to move around the districts without a car, and this gets worse with car-free zones.',
+                          'People in the districts have settled there because they like to drive.',
+                          'Most people who live in the districts have a long way to work and need to be able to use the car to get there.',
+                          'It is less pleasant or safe to get around on foot or by bike in the districts.',
+                        'It will be more difficult for people to get to their car.',
+                        'It will have little effect on the use of cars that some neighborhoods will be car-free',
+                        'There will be a lot of disagreement about which neighborhoods will be car-free.',
+                        'One will still be dependent on a car to get to work and other activities further away',
+                        'People need a car to get to the center of the districts, so it won’t be free for cars anyway',
+                        'People shop a lot in the center of the districts and therefore need access to the car to transport their shopping.',
+                        'It will negatively affect the shops that people cannot drive there.'))
+                
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Proposals Car-Free Zones") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```

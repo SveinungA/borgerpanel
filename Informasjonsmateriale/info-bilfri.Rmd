@@ -2,114 +2,72 @@
 title: "info-bilfriesoner"
 output: html_document
 ---
-#### Sammendrag
+#### Forslag
 
-Bergen kommune har vedtatt at privatbilismen skal reduseres med 20 prosent innen 2030.
-For å redusere biltrafikk vil Bergen kommune i tillegg til å styrke kollektivtrafikk, sykkel og gange, ta i bruk restriktive tiltak i form av f.eks. parkeringsbegrensninger. 
-Ett av tiltakene er å utvikle bilfrie soner både i sentrumsområdet og bydelene. 
-Spørsmålet vi stiller til dere som representanter for alle innbyggerne i Bergen er hvordan dere mener dette skal gjøres.
+##### Bydelene vs. sentrum
+Som mange andre byer utvikler Bergen kommune bilfrie soner. Dette er en satsning i et større område av en bydel hvor man tilrettelegger for trygg og attraktiv gange og sykkel på bekostning av fremkommelighet for privatbil. Noe bilkjøring vil som regel være tillatt.
 
-Bymiljøetaten i Bergen kommune har fire pågående prosjekter med bilfrie soner i sentrumsområdet; på Møhlenpris, Nedre Nygård, Nygårdshøyden og i Bøhmergaten-Løvstakklien i Solheim nord. 
-Målet med disse prosjektene er å skape plass til lek og opphold for mennesker, på bekostning av areal til bil. 
-For å nå målet, gjør Bymiljøetaten tiltak for å tilrettelegge for gange, sykkel og bildeling og for å begrense kjøring og parkering av privatbiler, blant annet ved å fjerne gateparkering. 
-I tillegg gjør de tiltak for å stimulere til økt bruk av gater og byrom ved å opparbeide leke- og oppholdsarealer.
-Ingen av disse prosjektene har som mål å skape områder der bilen er helt fraværende. 
-Bymiljøetatens fokus er å redusere bilbruk og bilavhengighet og lage gode og attraktive bydeler. 
-Varelevering og fremkommelighet utrykningskjøretøy og personer med nedsatt funksjonsevne skal ivaretas.
-Kommunen skal nå også utvikle bilfrie soner i bydelene.
+> Forslag 1: Det er viktig at de bilfrie sonene ikke bare finnes i Bergen sentrum, men også finnes i bydelene utenfor sentrum. 
 
-Frem mot 2023 skal Bymiljøetaten kartlegge egnede områder, bygge kunnskap og gjennomføre et forsøksprosjekt i en ytre bydel.
-Hensikten med forsøksprosjektet er å skaffe erfaring fra områder som i stor grad er planlagt for bilkjøring, i motsetning til sentrumsområdet som i utgangspunktet er bygget for gange. 
-I slutten av 2022 skal de levere en rapport som vil danne grunnlaget for neste fase av prosjektet, med anbefalinger om hvordan bilfrie soner kan utvikles i bydelene.
+```{r forslag1-bilfri}
 
+table <- tibble(For = c('Det er i bydelene det er størst behov for å legge til rette for gange, sykkel og andre «myke» trafikanter.',
+                      'Det er viktig at ikke bare beboerne i sentrum får nyte godt av fordelene med at det blir lettere å gå og sykle (rettferdighet).',
+                      'Det er mye støy og luftforurensning i bydelene, derfor er det spesielt viktig at bilfrie soner kommer dit.',
+                      'Bilfrie soner i bydelene kan være viktige i å forebygge kriminalitet'),
+                Mot = c('Det er vanskelig å bevege seg rundt i bydelene uten bil, og dette blir verre med bilfrie soner.',
+                        'Folk i bydelene har bosatt seg der fordi de liker å kjøre bil.',
+                        'De fleste som bor i bydelene har lang vei til jobb, og trenger å kunne bruke bilen for å komme seg dit',
+                        'Det er mindre trivelig eller trygt å bevege seg til fots eller sykkel i bydelene'))
 
-Dere skal diskutere og ta stilling til flere forslag:
-
-```{r forslag-bilfri-samlet}
-
-table <- tibble(Forslag = c(rep('', 5)),
-                  For = c(rep(' ', 5)),
-                  Mot = c(rep(' ', 5)))
-kable(table)
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner utenfor sentrum") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
 ```
 
-#### Bilfrie soner
+##### Mindre soner i nabolag, eller større soner i bydelssentre?
+Det finnes flere måter å lage bilfrie soner på. Noen byer har laget mindre, bilfrie nabolag, slik at folk får bilfrie nærmiljø å leve i. Disse områdene har strenge begrensninger på privatbilbruk, men ivaretar fremkommelighet med bil for personer med funksjonsnedsettelse, varelevering, utrykningskjøretøy, hjemmetjeneste, renovasjon og lignende. Parkeringsplasser flyttes til utkanten av området, og areal for bil omdisponeres til areal for lek, opphold og trygg ferdsel for myke trafikanter. 
+En annen mulighet er å tilrettelegge for en bilfri hverdag i større områder, som f.eks. (deler av) bydelssentre. I dette alternativet vil ikke området være fritt for privatbiler, men fremkommelighet for myke trafikanter vil prioriteres over fremkommelighet for biler. Det vil også være aktuelt å begrense bilparkering ved målpunkt, omdisponere noe areal fra bil til opphold for mennesker, og tilrettelegge for gange, sykkel og andre bærekraftige transportformer.
 
-Grønn strategi ble vedtatt av bystyret 21. september 2016, og slår fast at privatbilismen i Bergen skal reduseres med minst 10 prosent innen 2020, og 20 prosent innen 2030. 
-Innen desember 2022 skal Bergen kommune utrede muligheter for å utvikle bilfrie soner i bydelene, kartlegge egnede områder i hver bydel og levere en rapport som vil danne grunnlaget for neste fase av prosjektet med anbefalinger om hvordan bilfrie soner kan utvikles i de ulike bydelene.
+> Forslag 2: De bilfrie sonene bør være mindre, avgrensede områder hvor folk bor.
 
-I denne perioden skal vi videreutvikle fire pågående prosjekter i sentrumsområdet. 
-I tillegg skal vi rigge oss for å kunne utvikle bilfrie soner i alle bydeler, gjennom kartlegging av egnede områder i hver bydel og et pilotprosjekt i en ytre bydel. 
-Pilotprosjektet vil gi oss kunnskap og erfaringer som vi kan bygge videre på når vi skal utvikle bilfrie soner i andre bydeler. 
+```{r forslag2-bilfri}
 
-Våren 2021 starter vi arbeidet med et pilotprosjekt i en ytre bydel for å skaffe kunnskap og erfaring fra områder som i stor grad er planlagt for bilkjøring, i motsetning til sentrumsområdet som i utgangspunktet er bygget for gange. 
-Pilotprosjektet vil gi oss muligheter til å identifisere utfordringer, evaluere typen område som egner seg, og prøve ut og vurdere ulike tiltak for å styrke byliv og fremme grønn mobilitet på bekostning av privatbilisme. 
-For å kunne måle effekten av tiltak vil vi hente inn eksisterende og nye data på reisevaner, bruk av byrom, opplevelse av attraktivitet og trygghet i byrom og på gang- og sykkelnettet i bydelen, med mer. 
- 
+table <- tibble(For = c('Det vil bli trygge nærmiljø der folk bor.',
+                      'Det vil bli lettere å tilpasse prosjektet til innbyggernes ønsker og behov.',
+                      'Folk vil få økt trafikksikkerhet der de bor.',
+                      'Det vil ha positiv effekt på folkehelsen om folk må gå for å komme seg til bilen',
+                      'Større avstand mellom bolig og parkering vil kunne føre til at flere går og sykler på korte reiser'),
+                Mot = c('Det vil bli vanskeligere for folk å komme seg til bilen sin.',
+                        'Det vil ha liten effekt på bilbruken at enkelte nabolag blir bilfrie.',
+                        'Man vil fortsatt være avhengig av bil for å komme seg på jobb og andre gjøremål lengre unna',
+                        rep(NA, 2)))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner i mindre områder") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+
+
+> Forslag 3: De bilfrie sonene bør være større områder, som bydelssentre. 
+
+```{r forslag3-bilfri}
+
+table <- tibble(For = c('Tiltakene med å legge til rette for sykling og gange vil komme flere til gode',
+                      'Det vil bli lettere å koble de bilfrie sonene til buss og bybane, og dermed gjøre det lettere å reise bilfritt',
+                      'Det vil bli triveligere og tryggere i bydelssentrene'),
+                Mot = c('Folk trenger bil for å komme seg til bydelssentrene, så det blir ikke fritt for biler uansett.',
+                        'Folk handler mye i bydelssentrene og trenger derfor tilgang til bilen for å frakte varene.',
+                        'Det vil gå ut over handelen i butikkene at folk ikke kan kjøre bil dit'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner i større områder") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
 
 ![Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein](C:\Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png)
-
-Bymiljøetaten har i dag fire pågående prosjekter i sentrumsområdet. 
-I tillegg er vi i startfasen av et prosjekt der vi skal kartlegge og utvikle bilfrie soner i bydelene, og samarbeide med Byrådsavdeling for kultur, mangfold og likestilling om bilfritt byliv i bydelene. 
-
-Byrådet viser i Prinsippsak om parkering (465/16) til at vi er inne i en overgangsperiode. 
-Bilen er fortsatt viktig som fremkomstmiddel for mange av oss, både i næring og privat. 
-Samtidig vokser det frem ulike typer bildelingsordninger i byene som gir folk lønnsomme og fleksible alternativer til det å eie egen bil.
-Det er samtidig et ønske om å omdisponere mye av det arealet som i dag brukes av biler, og legge til rette for byrom hvor mennesker kan samles, utfolde og oppholde seg. 
-
-
-Byen må ha et forsvarlig og egnet parkeringstilbud.
-Ved vurdering av behov, må hensynet til ulike trafikantgrupper og beredskap - i form av fremkommelighet for utrykning, renovasjonsbiler, brøyting og busser - vektlegges. 
-Behovsvurderingen kan ikke utelukkende baseres på dagens reisevaner og bilhold. 
-Vi må se framover.
-Mål om redusert antall biler per husholdning og reduksjon av trafikk og utslipp må også ivaretas. 
-Restriktiv holdning til parkering langs veg kan redusere kjøring i det daglige, redusere bilhold og gi økt oppslutning om bildeleordninger og andre kollektive transportformer, ved at parkering blir et knapphetsgode i tett by og ved arbeidssted. 
-Regulering av parkering er også et egnet virkemiddel for å oppnå en mer miljøvennlig bilpark, ved at miljøvennlige biler gis prioritet. 
-En delingsbil kan i følge Transportøkonomisk institutt (TØI) erstatte mellom 5 og 15 privateide biler, og dermed frigjøre verdifullt areal i byene – uten at det begrenser faktisk mobilitet.
-
-Før vi går nærmere inn på detaljerte tanker omkring prosjektet kan det være grunn til å utdype hvordan Bymiljøetaten definerer ordet «bilfri» i denne sammenheng. 
-Det er etablert bilfrie bydeler i Oslo (Tjuvholmen), Trondheim (Lilleby), Drammen og Tromsø, og i flere byer i Europa (Malmø, København,
-London, Brussel, Amsterdam m.fl.). 
-Felles for alle disse byene er at ingen av dem har bydeler hvor bilen er helt fraværende.
-Det som er Bymiljøetatens fokus i dette prosjektet er å gjøre bydelen mer attraktiv å leve og bo i. 
-Som byrådet skriver i «Prinsippsak om parkering» så befinner vi oss i en overgangsfase.
-Fokus er at bilbruk og bilavhengighet må ned, men samfunnet er ennå ikke rede for et totalforbud mot privatbil, selv i et område som Møhlenpris.
-Et slikt forbud ville uansett være svært vanskelig å gjennomføre med dagens lovverk, og ikke minst dersom det skal tilrettelegges for å kunne bo og drive næring m.m. på Møhlenpris.
-Ved å omdisponere en del vegareal til bedre utemiljø for mennesker bidrar vi til å få Møhlenpris til å leve og fungere som en aktiv og attraktiv bydel. 
-Kort fortalt handler bilfri i vår sammenheng om en gradvis økning av areal til opphold og lek, på bekostning av areal til bil.
-
-Et annet vesentlig moment er muligheten for å kjøre bil på et «bilfritt» Møhlenpris.
-Et uttrykk som går igjen er at det skal opprettes parkeringsplasser for varelevering. 
-Det er upresist og i trafikkregulerings-terminologi direkte feil.
-Varelevering er ikke parkering, det er stans. 
-Kortest mulig stans for av- og pålessing og/eller av- og påstigning er ikke parkering.
-Med dette i bakhodet listes det opp noen funksjoner (ikke uttømmende) knyttet til tilgjengelighet som dette prosjektet må ha et bevisst forhold til underveis i planen om å innføre bilfri bydeler:
-
-Tillatt med kjøring og stans
-
-- Utrykningskjøretøy  
-- Eldre som har behov for å bli kjørt til døren  
-- Andre med redusert forflytningsevne som har behov for å bli kjørt nær inngang  
-- Varelevering (jevnlig til bedrifter m.m.)  
-- Renovasjon  
-- Sporadisk behov (Flyttebiler, Levering av vaskemaskiner etc)  
-
-Tilrettelegging for parkering
-
-- Forflytningshemmede med behov for å kjøre (og parkere) nær inngang (også butikk/næring)  
-- Håndverkere  
-- Bildeling  
-- Besøksparkering (også for de med dårlig forflytningsevne som ikke har HC-kort)
-
-Restriktiv holdning til parkering langs veg kan redusere kjøring i det daglige, redusere bilhold og gi økt oppslutning om bildeleordninger og andre kollektive transportformer, ved at parkering blir et knapphetsgode i tett by og ved arbeidssted. 
-Regulering av parkering er også et egnet virkemiddel for å oppnå en mer miljøvennlig bilpark, ved at miljøvennlige biler gis prioritet. 
-Byrådet viser i «prinsippsak om parkering» til at Kommuneplanens samfunnsdel (KPS) slår fast at «kommunen skal bidra til felles
-parkeringsløsninger, som tilrettelegger for private aktører eller som utbygger». 
-KPS er kommunens visjon for en fremtid som en aktiv og attraktiv by.
-Bergen vil møte utfordringene frem mot 2030 med å utvikle en mer kompakt og velfungerende by hvor innbyggerne skal bevege seg mer i hverdagen.
-Når Skansedammen parkeringsanlegg ble etablert var det et mål at tilsvarende antall parkeringsplasser skulle fjernes fra gategrunn i en del av gatene langs fjellsiden. 
-Dette ble gjennomført og det er i disse gatene ikke lenger parkerte biler. 
-Møhlenpris bydel har fått det så langt nest siste beboeranlegget under tak som er bygget i Bergen, i tilknytning til Vitalitetssenteret. 
 
 #### Ordforklaringer
 ```{r ordbok-bilfri}

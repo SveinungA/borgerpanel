@@ -1,0 +1,803 @@
+---
+title: "Presurvey draft, translated"
+date: "2/15/2021"
+output: html_document
+---
+```{r setup-questionnaire-translated, echo=FALSE, warning=FALSE, include=FALSE}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+
+```
+
+#### Car-free zones
+ 
+##### R2DEMOVATEBILFRI1
+ 
+How do you usually get to your daily chores (when there are no restrictions caused by the coronavirus)?
+If you use more than one, indicate your primary mean of transportation.
+
+- Driving or carpooling in a petrol or diesel car 
+ 
+- Driving or carpooling in a hybrid car 
+ 
+- Driving or carpooling in an electric car
+ 
+- By bus
+ 
+- By train or light rail
+ 
+- By boat
+ 
+- Walking
+ 
+- Cycling
+ 
+- Scooter
+ 
+- Other:
+ 
+##### R2DEMOVATEBILFRI2
+ 
+Has the corona pandemic changed how you usually get to your daily chores?
+If you use more than one, use your primary mean of transportation.
+ 
+- Driving or carpooling in a petrol or diesel car
+ 
+- Driving or carpooling in a hybrid car
+ 
+- Driving or carpooling in an electric car
+ 
+- By bus
+ 
+- By train or light rail
+ 
+- By boat
+ 
+- Walking
+ 
+- Cycling
+ 
+- Scooter
+ 
+- Other:
+
+ 
+Answer scale:
+ 
+0 Extremely less
+1  
+2  
+3  
+4  
+5 No difference  
+6  
+7  
+8  
+9  
+10 Extremely more
+ 
+##### R2DEMOVATEBILFRI3
+ 
+Consider the following statements concerning your housing
+ 
+- It’s possible to cycle or walk to work/school from the home
+ 
+- My home is within walking distance to a school/kindergarten
+ 
+- The home is within walking distance to green areas such as parks, mountains, or other nature areas
+ 
+- The home is within walking distance to a grocery store
+ 
+- There are cultural activities, businesses and other services in walking/biking distance from the home. 
+ 
+- The surrounding area is safe in terms of traffic (for kids) 
+ 
+- There are playgrounds, ballcourts, or sport fields within walking distance
+ 
+- The home has good public transport nearby 
+ 
+- The home has good parking opportunities 
+ 
+- Car Sharing* is avaliable within walking distance from the home 
+ 
+* By car sharing is meant that several persons or / housholds share a certain number of cars owned by a company or by other private individuals. 
+In Bergen there are for example the following schemes: Bildeleringen (cooperate with 250 cars placed around Bergen) and Nabobil
+
+Answer scale:  
+0 Does not fit at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Fits completely
+ 
+##### R2DEMOVATEBILFRI4
+ 
+How willing are you to share the following housing features with others?
+ 
+- Shared car
+ 
+- Bicycle
+ 
+- Bicycle parking
+ 
+- Bicycle workshop
+ 
+Answer scale:  
+0 Not willing at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Completely willing  
+ 
+##### R2DEMOVATEBILFRI5
+ 
+How important are the following factors for you when thinking about where it is good to live?
+ 
+- Parking for your car
+ 
+- Walking- and cycling distance to daily chores (school, work, grocery store)
+ 
+- Access to green areas, such as parks and recreation areas 
+ 
+- Access to public transport, such as bus and light rail 
+ 
+- Proximity to meet-up-spots outside the home (cafés, playgrounds, benches etc.)
+ 
+- Opportunities to meet neighbors and have good neighborly relations
+ 
+Answer scale:  
+0 Not important at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+ 
+##### R2DEMOVATEBILFRI6-10
+ 
+> Info: Conjoint-eksperiment that asks the respondant to choose one of two neighborhoods that are perceived most attractive to live in. 
+Two neighborhoods are set up against each other, and varies between the following factors:
+ 
+```{r nabolag-conjoint}
+table <- tibble(Dimension = c('My home is within walking distance to a school/kindergarten',
+                              'It’s possible to cycle or walk to work/school from the home',
+                              'The home is within walking distance to green areas such as parks, mountains, or other nature areas ',
+                              'The home is within walking distance to a grocery store',
+                              'There are cultural activities, businesses and other services in walking/biking distance from the home',
+                              'The surrounding area is safe in terms of traffic (for kids)',
+                              'There are playgrounds, ballcourts, or sport fields within walking distance',
+                              'The home has good public transport nearby',
+                              'The home has good parking opportunities',
+                              'Car Sharing is avaliable within walking distance from the home'),
+                Value = c(rep('Yes / No')))
+ 
+table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Descriptions of neighborhoods", col.names = linebreak(c("Dimensjon", "Verdi"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+```
+ 
+Example of how the question appears for the respondent:
+
+We are concerned with what type of neighborhood the inhabitants of Bergen think is most attractive to live in. We now ask you to consider two imaginary neighborhoods where you, based on the description, choose the neighborhoods you think is most attractive to live in. 
+You will get in total five of these comparisons, where the description will vary from time till time. 
+ 
+```{r nabolag-conjoint-eksempel}
+ 
+x <- c('Yes', 'No')
+table <- tibble(Dimension = c('My home is within walking distance to a school/kindergarten',
+                              'It’s possible to cycle or walk to work/school from the home',
+                              'The home is within walking distance to green areas such as parks, mountains, or         other nature areas ',
+                              'The home is within walking distance to a grocery store',
+                              'There are cultural activities, businesses and other services in walking/biking distance from the home',
+                              'The surrounding area is safe in terms of traffic (for kids)',
+                              'There are playgrounds, ballcourts, or sport fields within walking distance',
+                              'The home has good public transport nearby',
+                              'The home has good parking opportunities',
+                              'Car Sharing is avaliable within walking distance from the home'),
+                Neighborhood1 = c(rep('Yes', 4), rep('No', 3), rep('Yes', 3)),
+                Neighborhood2 = c(rep('No', 6),rep('Yes', 4)))
+
+table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Most attractive neighborhood. Please choose one below.", col.names = linebreak(c("", "Neighborhood 1", "Neighborhood 2"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+ 
+```
+ 
+##### R2DEMOVATEBILFRI11
+ 
+We then ask you to choose the alternative that you consider more attractive to live in of the two following alternatives: 
+ 
+- Under 10 minutes to walk to a school, grocery store, public green areas, public transport, and car sharing, but car parking more than 250 meter from the residence
+ 
+- Car parking adjacent to housing, less than 10 minutes to walk to green areas, but more than 10 minutes to walk to a school, grocery store, and public transport.
+ 
+##### R2DEMOVATEBILFRI12
+ 
+The municipality of Bergen has plans to make car-free zones in the city center and in the city districts. 
+In these areas, the municipality wants to restrict driving and parking of private vehicles, to facilitate for activity in the surrounding area, and for walking and cycling as a means of transportation. 
+How strongly do you support or oppose these plans? 
+ 
+0 Strongly oppose  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Strongly support
+ 
+ 
+##### R2DEMOVATEBILFRI13
+ 
+Do you think a car-free zone *in your neighborhood* would make it easier or harder to get to work and other daily chores?
+ 
+0 Extremely easier  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely harder
+
+##### R2DEMOVATEBILFRI14
+ 
+Do you think a car-free zone *in your neighborhood* would make it more or less attractive to use walking or cycling as a means of transportation?
+ 
+0 Extremely less attractive
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely more attractive
+ 
+##### R2DEMOVATEBILFRI15 
+ 
+Do you think a car-free zone *in your neighborhood* would make more or less attractive to stay out in the surrounding area?
+ 
+0 Extremely less attractive
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely more attractive
+ 
+ 
+##### R2DEMOVATEBILFRI16
+ 
+Do you think car-free zones *in Bergen* would…
+ 
+- make the city more or less environmentally friendly? 
+ 
+- contribute more or less to public health? 
+ 
+0 Extremely less
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely more
+
+##### R2DEMOVATEBILFRI17
+ 
+Do you think car-free zones *in Bergen* will make it easier or harder for people to…
+
+- move around the city and the surrounding area? 
+
+- get to where they are going?
+
+- find attractive outdoor areas in their surrounding area?
+ 
+- run shops and businesses in the city center?
+ 
+0 Extremely easier
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely harder
+ 
+ 
+##### R2DEMOVATEBILFRI18
+
+How important are the following factors for you to be able to drive a car less in your everyday life?
+Please indicate on a scale from 0 ("Not important at all") to 10 ("Extremely important")
+
+- Better access to public transport, such as bus and light rail. 
+
+- That the bus and light rail run more often.
+
+- Cheaper public transport tickets
+
+- Access to car sharing.
+
+- Tolls (if the tolls increase I will no longer afford to drive a car)
+
+- More expensive and less accessible car parking
+
+- Safer and more attractive cycle paths
+
+- Safer and more attractive walkways 
+ 
+ 
+##### R2DEMOVATEBILFRI19
+ 
+If you had to drive less in everyday life, what options do you have available?
+ 
+- Walking
+ 
+- Bicycle
+ 
+- Electric-scooter
+ 
+- City-bike
+ 
+- Shared car
+ 
+- Bus or light rail
+ 
+- Working more from home 
+ 
+- I don’t have any options
+ 
+
+#### Questions regarding area development on Dokken
+ 
+##### R2DEMOVATEDOKKEN1
+ 
+Sea expansion, by filling using tunnel masses, floating construction or piling, is an option that is being considered at Dokken in order to create a new construction land. 
+In you opinion, should the municipality expand in the sea when they renew the port area on Dokken:
+
+- Yes
+
+- No
+
+##### R2DEMOVATEDOKKEN1A 
+
+How important are the following arguments for your attitude towards the sea expansion during the renewal of the Dock?
+
+- Take care of the sea surface and existing urban landscape as the seafront in Bergen city center currently looks today
+
+- Create new building land for construction to make room for more homes or business purposes 
+
+- Create new building land to get more areas for parks, recreation and areas of nature in the city
+
+- Create new building land in order to ensure future port operations in the city
+
+- Create new building land in order to ensure a socially beneficial use of tunnel masses from road, train and rail projects in the region
+ 
+- Avoid filling with masses to save wildlife in the sea 
+
+Response scale: 
+ 
+0 Not important at all
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  Extremely important
+ 
+##### R2DEMOVATEDOKKEN2
+
+Bergen is a harbor city with a long maritime history, and for a long time, the area on Dokken has had an important role as an industrial port. It has now been decided that port activity related to goods will be re-established in a new facility at Ågotnes.
+
+Even if the freight port is moved, there are still several port-related activities that may remain on Dokken or elsewhere in Bergen city center.
+The alternative is to move the tasks out of the city center to other areas in Bergen, or in the region.
+
+In your opinion, which port activities should remain in the city center, and which should be moved out of the city center?
+
+- Cruise traffic
+
+- Overseas ferry offers (such as "Danskebåten")
+
+- Transport of goods for further distribution to the city center and the districts outside the city center
+
+- Hurtigruten (Express Route) and Kystruten (Coastal Route)
+
+Answer options:
+
+- Remain in the city center
+
+- Move out of the center 
+
+##### R2DEMOVATEDOKKEN3
+
+How important are the following arguments for your attitude towards whether cruise traffic should remain or be moved out of the city center?
+
+- Environmental considerations
+
+- Tradition / history / city identity
+
+- Economic considerations
+
+- Space considerations
+
+Response scale:  
+
+0 Not important at all  
+1   
+2   
+3   
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+ 
+##### R2DEMOVATEDOKKEN4
+
+How important are the following arguments for your attitude towards whether foreign ferry services should remain or be moved out of the city center?
+
+- Environmental considerations
+
+- Tradition / history / city identity
+
+- Economic considerations
+
+- Space considerations
+
+Response scale:
+
+0 Not important at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+
+##### R2DEMOVATEDOKKEN5
+
+How important are the following arguments for your attitude towards whether the transport of goods should remain or be moved out of the city center?
+
+- Environmental considerations
+
+- Tradition / history / city identity
+
+- Economic considerations
+
+- Space considerations
+
+Response scale:
+
+0 Not important at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+
+ ##### R2DEMOVATEDOKKEN6
+
+How important are the following arguments for your attitude towards whether Hurtigruten and Kystruten should remain or be moved out of the city center?
+
+- Environmental considerations
+
+- Tradition / history / city identity
+
+- Economic considerations
+
+- Space considerations
+
+Response scale:  
+0 Not important at all  
+1  
+2   
+3   
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+ 
+##### R2DEMOVATEDOKKEN7
+
+Central parts of Bergen have a long seafront which is partly inaccessible and occupied by residential buildings, business activities and port-related use with safety restrictions that make the seafront and water inaccessible to the city's residents and visitors.
+
+The dock has a 1 km long sea line which is currently used for port activity, but in the proposed Area Strategy for Dokken, it is suggested that just over two thirds of the sea line be reallocated for recreational purposes.
+Parts of the quay lengths are proposed to be used for recreation in combination with ship traffic, while parts of the quays are proposed to be continued for pure port-related use with associated safety restrictions.
+
+Which utilization of the seafront do you think is most important to facilitate on Dokken? Choose one answer option
+
+- The quay facilities should mainly be preserved for further port operation / arrival and berth for larger ships and companies with a need for quay access / port-related companies
+
+- The seafront should be prioritized for recreation such as sea promenades, bathing places, sea houses, piers for launching boats and kayaks, etc.
+
+- The seafront should be prioritized for nature purposes to increase the city's biodiversity 
+
+##### R2DEMOVATEDOKKEN8
+ 
+How important are the following arguments for your attitude towards the use of the seafront on Dokken? 
+
+ 
+Response scale:
+ 
+0 Not important at all  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Extremely important
+ 
+##### R2DEMOVATEDOKKEN10
+ 
+Please decide whether you support or oppose the following statement:
+Private housing should be prioritized over industry
+
+0 Completely oppose  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Completely support
+ 
+ 
+##### R2DEMOVATEDOKKEN11
+ 
+And please decide whether you support or oppose the following statement:
+
+Parks and green areas should be prioritized over sports facilities such as football courts and multi-purpose halls. 
+
+0 Completely oppose  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Completely support
+ 
+ 
+#### General political questions
+
+##### R2DEMOVATE10  
+ 
+To what extent would you say that the political system in Bergen allows people like you influence the local authorities? Please select from the options below where 0 represents "not at all" and 10 represents "fully and completely".
+
+0 Not at all  
+1  
+2  
+3  
+4  
+5   
+6  
+7  
+8  
+9  
+10 Fully and completely
+ 
+##### R2DEMOVATE11: 
+ 
+How well does the following statements fit, as you see it: Local politics is sometimes so complicated that people like me do not understand what it is about. Please choose from the options below where 0 means "does not fit at all" and 10 means "fully and completely".
+ 
+0 Not at all  
+1  
+2  
+3  
+4  
+5   
+6  
+7  
+8  
+9  
+10 Fully and completely
+ 
+##### R2DEMOVATE12
+ 
+In politics, people often talk about the "left" and the "right". Below is a scale where 0 represents those on political far left, and 10 represents those on the political far right.
+How would you place yourself on such a scale?  
+
+0 Left  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Right
+ 
+##### R2DEMOVATE20
+ 
+How important would you say that the following issues were for the voters' voting in the municipal election in your municipality?
+
+- Schools  
+- Elderly care  
+- Municipal mergers  
+- Property tax  
+- Culture / sports  
+- Environment / climate  
+- Public transport  
+- Merging of county municipalities  
+- Immigration  
+- Area utilization  
+
+0 Unimportant  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Very important
+ 
+#### Background questions
+ 
+##### R2DEMOVATE26
+ 
+Where in Bergen do you live?
+
+1. Arna  
+2. Åsane  
+3. Ytrebygda  
+4. Fana  
+5. Laksevåg  
+6. Fyllingsdalen  
+7. Årstad  
+8. Bergenhus  
+
+##### R2DEMOVATE18
+
+What is your highest completed education?
+
+- No education / primary school
+
+- High School
+
+- College / University (at least 2 years) 
+
+##### R2DEMOVATE19
+ 
+What is your current level of income? Gross annual income in Norwegian kroner is: 
+ 
+- Under 150 000   
+- 150 001 - 300 000  
+- 300 001 - 400 000  
+- 400 001 - 500 000  
+- 500 001 - 600 000  
+- 600 001 - 700 000  
+- 700 001 - 1 000 000   
+- Over 1 000 000
+ 
+##### R2DEMOVATEaldrkat
+ 
+How old are you? 
+ 
+- Under 30 years  
+- 30-44 years  
+- 45-59 years  
+- 60 years or older  
+ 
+ 
+##### R2DEMOVATE21
+ 
+What is your population-registered gender?
+ 
+- Female  
+- Male
+ 
+##### R2DEMOVATEaldrkat
+ 
+How old are you? 
+ 
+- Under 30 years
+
+- 30-44 years
+
+- 45-59 years
+
+- 60 years or older
+ 
+##### R2DEMOVATEStatsborgerskap
+
+Citizenship.
+Are you:
+
+1 Norwegian citizen  
+2 Citizen of another country. Please write which: 
+
+##### R2DEMOVATEinnvandret
+
+Have you or your parents (mother, father or both parents) immigrated to Norway?
+
+- No 
+- I myself have immigrated to Norway  
+- Both my parents have immigrated to Norway, but I was born in Norway  
+- Mother has immigrated to Norway, but my father and I have not immigrated  
+- Father has immigrated to Norway, but my mother and I have not immigrated  
+
+##### R2DEMOVATEstemmerett
+
+Were you eligible to vote in the 2019 Municipal council elections? 
+
+- Yes
+
+- No 
+
+- Unsure
