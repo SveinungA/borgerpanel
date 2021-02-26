@@ -5,7 +5,8 @@ output: html_document
 #### Forslag
 
 ##### Bydelene vs. sentrum
-Som mange andre byer utvikler Bergen kommune bilfrie soner. Dette er en satsning i et større område av en bydel hvor man tilrettelegger for trygg og attraktiv gange og sykkel på bekostning av fremkommelighet for privatbil. Noe bilkjøring vil som regel være tillatt.
+Som mange andre byer utvikler Bergen kommune bilfrie soner. 
+Dette er en satsning i et større område av en bydel hvor man tilrettelegger for trygg og attraktiv gange og sykkel på bekostning av fremkommelighet for privatbil. Noe bilkjøring vil som regel være tillatt.
 
 > Forslag 1: Det er viktig at de bilfrie sonene ikke bare finnes i Bergen sentrum, men også finnes i bydelene utenfor sentrum. 
 
@@ -68,6 +69,86 @@ kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner
 
 
 ![Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein](C:\Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png)
+
+> Forslag 4:	Skape avstand mellom parkering og bolig 
+
+```{r forslag4-bilfri}
+
+table <- tibble(For = c('Skape trygge nærmiljø med plass til å utfolde seg (større frihet for barn og unge)',
+                      'Øke terskelen for bilbruk på korte reiser'),
+                Mot = c('Skaper vanskeligheter for folk som trenger bil i hverdagen',
+                        'Utfordrende å finne plass til parkeringsplasser'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Skape avstand mellom parkering og bolig") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+> Forslag 5:	Senke fartsgrensen til 10 km i timen gjennom bilfrie soner 
+
+```{r forslag5-bilfri}
+
+table <- tibble(For = c('Ivaretar fremkommelighet for bil, økt trafikksikkerhet',
+                        'skaper større muligheter for aktivitet i gatene, større frihet for barn og unge', 
+                        'lite attraktivt å kjøre gjennom området'),
+                Mot = c('Tar lang tid å komme seg frem med bil'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Senke fartsgrensen i bilfrie soner") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+> Forslag 6:	Legge til rette for deleløsninger for biler og el-/lastesykler 
+
+```{r forslag6-bilfri}
+
+table <- tibble(For = c('gjøre bildeling til et reelt alternativ for folk i bydelene',
+                        'gi folk mulighet til å bruke/prøve ut alternative transportløsninger som også har lastekapasitet (kan brukes til handletur og frakt av barn)'),
+                Mot = c('tar opp plass',
+                'krever satsing fra bildeleaktører og kommunen uten at vi vet noe om lønnsomhet'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Delebiler og delesykler") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+> Forslag 7: Legge til rette for utleie av elsparkesykler i bydelene 
+
+```{r forslag7-bilfri}
+
+table <- tibble(For = c('Økt mobilitet'),
+                Mot = c('Dårlig for trafikksikkerhet',
+                'Dårlig for fremkommelighet for andre myke trafikanter',
+                'Dårlig for folkehelsen'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Elsparkesykler i bydelene") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+> Forslag 8: Gjøre om gater og parkeringsplasser til grøntarealer/lekeplasser 
+
+```{r forslag8-bilfri}
+
+table <- tibble(For = c(''),
+                Mot = c(''))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Gjøre om gater til grøntareal") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+> Forslag 8: La beboerne i en gate/nabolag selv få avgjøre om det skal bli bilfritt eller ikke
+
+```{r forslag9-bilfri}
+
+table <- tibble(For = c(''),
+                Mot = c(''))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Selvbestemmelse over bilfri gate") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
 
 #### Ordforklaringer
 ```{r ordbok-bilfri}

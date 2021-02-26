@@ -1,9 +1,9 @@
 ---
 title: "Forundersøkelse"
 output:
-  word_document: default
-  pdf_document: default
   html_document: default
+  pdf_document: default
+  word_document: default
 always_allow_html: yes
 ---
 ```{r setup_presurvey, include=FALSE, warning=FALSE, echo=FALSE}
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 ##### R2DEMOVATEBILFRI1
 
-> Merkelapp: Transport til arbeid.
+> Merkelapp: Transport til daglige gjøremål.
 
 Hvordan pleier du å komme deg til dine daglige gjøremål (når det ikke er koronarestriksjoner)?
 Hvis du bruker flere reisemidler, velg hovedreisemiddelet.
@@ -105,13 +105,11 @@ Ta stilling til følgende påstander om din bolig
 
 -	Boligen har godt kollektivtilbud i nærheten
 
--	Boligen har gode parkeringsmuligheter for bil 
+-	Boligen har parkeringsmuligheter for bil 
 
 - Bildeling* er tilgjengelig i gangavstand fra boligen
 
-*Med bildeling menes at flere personer eller /husholdninger deler et visst antall biler som eies av et foretak eller av andre privatpersoner.
-I Bergen finnes f.eks. bildelingsordningene Bildeleringen (samvirke med 250 biler plassert rundt i Bergen) og Nabobil 
-
+*Med bildeling menes at flere personer eller husholdninger deler biler som eies av et foretak eller av andre privatpersoner, f. eks Bildeleringen og Nabobil.
 
 Svarskala:  
 0 Passer ikke i det hele tatt  

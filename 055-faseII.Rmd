@@ -280,13 +280,12 @@ Laura Ve leder dette prosjektet fra kommunens side, og vil bidra inn med informa
 ## Teknisk veiledning
 For å sikre en så sikker gjennomføring som mulig bruker vi ekstra mye ressurser på å forberede deltakerne på selve gjennomføringen:
 
-1. Vi lager en kort **informasjonsvideo** som viser hvordan programvaren ser ut, og hva som venter dem når arrangementet settes i gang. (Sveinung)
+1. Skriftlig informasjon om deliberativ meningsmåling som metode gjøres tilgjengelig for deltakerne **på nettsidene**. (Sveinung)
 
-2. Skriftlig informasjon om deliberativ meningsmåling som metode gjøres tilgjengelig for deltakerne **på nettsidene**. (Sveinung)
+2. Vi setter opp et eget **online prøverom** som deltakerne kan gå inn i og gjøre seg kjent med programvaren.
+[Klikk her for å komme til prøverommet.](https://stanforddeliberate.org/test?locale=no-NO)
 
-3. Vi setter opp et eget **online prøverom** som deltakerne kan gå inn i og gjøre seg kjent med programvaren. (Lodewijk)
-
-4. Åpen linje. (Pål)
+3. Åpen linje. (Pål)
 
 ```{r veiledning}
 Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Sveinung', 'Hvem fra kommunen?'))

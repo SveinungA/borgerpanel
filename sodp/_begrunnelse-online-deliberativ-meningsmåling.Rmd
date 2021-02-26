@@ -1,0 +1,172 @@
+---
+title: Deliberativ meningsmåling i Bergen, april 2021
+subtitle: Notat til personvernombudet i Bergen kommune
+date: "2/19/2021"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+  
+---
+
+# Sammenfattet beskrivelse av arrangementet
+
+Det planlegges å gjennomføre en deliberativ meningsmåling i Bergen våren 2021.
+Arrangementet er et demokrati-initiativ som gjennomføres som et ledd i det forskningsrådsfinansierte prosjektet *Demokratisk innovasjon i praksis: Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (Demovate)* (prosjektnummer 295892). P
+rosjektansvarlig er Bergen kommune, og faglig prosjektleder er Sveinung Arnesen ved forskningsinstitusjonen NORCE. 
+Samarbeidspartnere er Universitetet i Bergen og Stanford University. Prosjektet varer fra september 2019 til november 2022.
+
+Formålet er å utvide verktøykassen for lokaldemokratiet i kommunen ved å ta i bruk nye metoder for involvering av innbyggerne i politikken.
+Metoden er velprøvd internasjonalt, men har ikke blitt benyttet i norske kommuner tidligere, og er i så måte et demokratisk innovasjonsprosjekt. 
+Vi inviterer ved hjelp av tilfeldig uttrekk om lag 200 innbyggere i Bergen til å diskutere bilfrie soner i bydelene og arealutviklingen på Dokken.
+Diskusjonen vil foregå over nett.    
+Som del av opplegget vil vi gjennomføre en spørreundersøkelse med deltakerne før og etter at de har diskutert sakene, hvor vi spør om deres meninger om de to nevnte sakene pluss andre politiske holdninger, tillit til myndighetene, og sosiale bakgrunnsspørsmål. 
+En kontrollgruppe av tilsvarende størrelse vil svare på spørreundersøkelsene, men ikke delta i diskusjonen.
+
+# Bakgrunn og motivasjon
+Tidligere byrådsleder Harald Schjelderup satte i 2017 ned et utvalg, ledet av Prof. Anne Lise Fimreite, med formål å vurdere demokratiets tilstand i Bergen. 
+Utvalget vurderte blant annet hvilke muligheter innbyggerne i Bergen hadde for å påvirke politiske beslutninger i kommunen, og anbefalte at man søkte å utvikle og forbedre disse mulighetene. 
+I utvalgets rapport “Byen og nærdemokratiet” ble såkalte borgerpaneler anbefalt gjennomført, hvor vanlige innbyggere velges ut etter vitenskapelige prinsipper som sikrer mest mulig representativ deltakelse. 
+I etterkant av forsøket med borgerpaneler vedtok Bergen bystyre i møte 24.10.2018, sak 235/18, at «Bystyret ber om at byborgerpanel prøves videre ut som et forskningssamarbeid der det også søkes eksterne forskningsmidler.» 
+
+Prosjektets etablering har altså blitt til dels for å dekke lokal politisk etterspørsel etter demokratisk innovasjon. 
+Også underveis har politikere fulgt opp prosjektet:
+Oppstartsseminaret ble åpnet av daværende byutviklingsbyråd Rune Bakervik i 2019, med deltakelse fra byråds- og bystyrepolitikere og lokalpolitikere utenfor kommunen. 
+Prosjektet har også blitt presentert for Bergensalliansen, som følger prosjektet med interesse av muligheten for å gjennomføre lignende tiltak i egne kommuner. 
+
+En sentral motivasjon for prosjektet er nettopp å høste erfaringer i Bergen som kan komme til nytte for andre norske kommuner.
+I en tid hvor demokratiet settes på prøve også i etablerte, vestlige demokratier, er viktigheten av å forske på demokratiske prosesser kanskje viktigere enn noen gang. 
+Bergen kommune og forskningsinstitusjonene NORCE og Universitetet i Bergen har derfor ønsket å arbeide videre med forsøk som kan styrke demokratiet lokalt i Bergen kommune.
+Flere av forskerne som var involvert i lokaldemokratiutvalget er nå med i dette samarbeidsprosjektet, deriblant utvalgets leder og sekretær. 
+Med oss på laget har vi fått kolleger fra Stanford University, som har utviklet deliberativ meningsmåling som metode for å gjennomføre borgerpanel.
+
+# Beskrivelse av deliberativ meningsmåling
+Deliberativ meningsmåling viser til en bestemt prosedyre for å invitere innbyggere til diskusjon og meningsutveksling om forhåndsbestemte politiske spørsmål. 
+Det er et registrert varemerke på prof. James S. Fishkin ved Stanford University. 
+Hovedideen bak bruken av deliberativ meningsmåling i den politiske prosessen er å få vite hva innbyggerne mener når de får tenkt seg om og vurdert argumenter for et politisk forslag.
+I korte trekk går prosessen ut på at man inviterer et representativt utvalg typisk på 150-300 innbyggere til å sette av en til to dager for å diskutere politikk med sine medborgere. 
+De tar stilling til forslag, blir presentert for for- og motargumenter, og diskuterer sakene i mindre grupper på rundt 10 personer. 
+Gruppene ledes av moderatorer som styrer diskusjonen, og sørger for at alle får anledning til å bli hørt.
+Etter diskusjonen får de i en plenumssesjon anledning til å stille spørsmål til fageksperter. 
+Mot slutten av arrangementet svarer de på en spørreundersøkelse om deres holdninger til de politiske temaene som var på agendaen.
+De samme spørsmålene svarte de på før arrangementet, slik at man kan måle effekten av dagens gruppediskusjoner. 
+En kontrollgruppe som ikke har deltatt på arrangementet får samme spørreundersøkelsen på samme tidspunkt.
+
+Siden starten i 1988 har metoden blitt brukt verden over. 
+De aller fleste deliberative høringer har foregått ved at deltakerne fysisk kommer sammen. 
+En nettbasert løsning er imidlertid under utvikling, hvor hele arrangementet gjennomføres online. 
+Forsøk har blitt gjennomført i Japan, Hong Kong, og USA. 
+Plattformen som benyttes heter Stanford Online Deliberation Platform (SODP), og utvikles av Centre for Deliberative Democracy på Stanford University, i USA, ledet av James Fishkin.
+
+# Stanford Online Deliberation Platform (SODP)
+SODP ligner i sitt uttrykk på andre mer kjente videokonferanseplattformer som Zoom eller Microsoft Teams:
+Personer kommer sammen i digitale grupper, hvor de kan se og høre hverandre på skjermen. 
+SODP har imidlertid skreddersydde løsninger for å gjennomføre en deliberativ meningsmåling som andre plattformer ikke kan tilby.
+For eksempel har den en automatisk moderator som geleider deltakerne gjennom diskusjonen. 
+Moderatoren passer på at deltakerne får like mye snakketid. 
+Den gir enkelte «dult» til deltakerne, slik som å oppmode deltakere til å ta ordet hvis det er lenge siden forrige gang de snakket.
+Den passer også på å fordele tiden på alle undertemaene, slik at gruppene kommer gjennom alle punktene på sin tilmålte tid.
+SODP oversettes til deltakernes språk, inkludert all tekst og audioinstrukser som benyttes for å lede deltakerne gjennom de ulike stegene i prosedyren knyttet til den deliberative meningsmålingen.
+Plattformen støttes teknisk av medarbeidere på Stanford både i forkant og underveis i gjennomføringen av den deliberative meningsmålingen.
+
+# Gjennomføring av deliberativ meningsmåling i Demovate-prosjektet: Vurdering av alternativer
+I den opprinnelige søknaden DEMOVATE sendte og fikk tildelt midler med utgangspunkt i, var planen å gjennomføre den deliberative meningsmålingen i april 2021, ved å samle deltakere fysisk i egnede lokaler.
+Koronapandemien satte en effektiv stopper for mulighetene til å planlegge fysiske samlinger. 
+Vi bestemte høsten 2020 at det opprinnelige opplegget ikke lot seg gjennomføre, da det var knyttet for mye usikkerhet til hvilke restriksjoner vi måtte forholde oss til.
+
+## Fysisk alternativ: Utsette til koronarestriksjonene løftes
+
+Det vurderes som urealistisk å utsette den deliberative meningsmålingen til et senere tidspunkt. 
+Det er det flere årsaker til:
+
+-	Vi har allerede  har utsatt til høsten 2021 to andre borgerpaneler som skulle vært gjennomførtes våren 2020. Per i dag er det fortsatt usikkert om disse arrangementene lar seg gjennomføre i løpet av 2021, ettersom pandemisituasjonen fram i tid fremdeles er vanskelig å spå. 
+Det er ikke realistisk i denne situasjonen å utsette nok et arrangement til senere i 2021 eller i 2022. 
+Prosjektet skal være ferdig november 2022, og det siste året trengs for å analysere data, skrive håndbok, og gjennomføre andre avsluttende oppgaver i prosjektet.
+
+-	To masterstudenter skriver masteroppgavene sine knyttet til prosjektets tematikk, og disse skal levere våren 2021. De er også forskningsassistenter i prosjektet ut våren 2021, og det er usikkert om de vil fortsette etter det.
+
+-	Et betydelig antall timer har gått til spille på å planlegge for arrangementer som ikke har latt seg gjennomføre pga pandemien. Ekstraoppgaver knyttet til endringer av planer som følge av pandemien har også tæret på ressursene i prosjektet, og det finnes slik vi vurderer det ikke rom for å gjøre ytterligere endringer i planene innenfor eksisterende rammer.
+
+## Nettbaserte alternativer
+
+SODP framstår som et naturlig valg for en nettbasert gjennomføring, både av organisatoriske, økonomiske, og akademiske årsaker.
+Som beskrevet over er deliberativ meningsmåling en distinkt prosess som krever at organisatorene involverer seg underveis i arrangementet. 
+Partnerne i prosjektet - Stanford University - har tilbudt seg å stille plattformen tilgjengelig, vederlagsfritt og med teknisk og organisatorisk assistanse. 
+Den nettbaserte versjonen SODP har automatisert mye av denne involveringen, og sikrer derfor en gjennomføring med høy vitenskapelig kvalitet.
+Vi antar at andre nettbaserte løsninger vil gi betydelig større utfordringer med å sikre at prosessen er godt nok ivaretatt.
+Det er ingen garanti for at våre samarbeidspartnere ved Stanford vil være interessert i å bidra med innsats inn i prosjektet om vi velger vekk deres spesialtilpassede løsning. 
+Tvert imot er det sannsynlig at prosjektet blir mindre attraktivt å delta i for deres del. 
+Dette vil gjøre gjennomføringen av den deliberative meningsmålingen dyrere, vanskeligere, og dårligere.
+I tillegg har vi ikke oversikt over dataflyten i aktuelle nettbaserte alternativer som Zoom og Microsoft Teams (begge amerikanske selskaper). 
+Det ligger ikke innenfor prosjektets ressursrammer å gjennomføre grundige utredninger om GDPRs personvernhensyn er tilstrekkelig ivaretatt med deres løsninger.
+Samlet sett innebærer dette at vi vurderer SODP som eneste reelle nettbaserte alternativ i vårt konkrete tilfelle.
+
+### Alternative løsninger med SODP
+
+Et alternativ vi har diskutert med prosjektpartnerne er å flytte SODPs servere til EU/EØS-området, for slik å unngå at data overføres til USA. 
+Et slikt tiltak vil slik vi tolker det ikke være tilstrekkelig for å unngå at data regnest som overført, da vi like fullt vil være avhengig av at våre partnere på Stanford har tilgang til serverne. 
+Det er heller ikke en praktisk gjennomførbar løsning innenfor rammene av vårt prosjekt.
+Også andre alternativer har vært diskutert for å finne løsninger som kan sikre at personidentifiserbar informasjon ikke overføres ut av EU/EØS. 
+Ettersom strømming av lyd og bilde - som er en nødvendig forutsetning for arrangementet - uansett regnes som personidentifiserbar informasjon, ser vi ingen alternative løsninger som kan oppfylle vårt mål.
+
+#### Tiltak for å redusere omfanget av personidentifiserbar informasjon
+
+Vi har gått gjennom hvordan vi ytterligere kan redusere omfanget av personidentifiserbar informasjon som overføres til USA. 
+Tiltak som settes inn for å oppnå dette er at
+
+-	alle personidentifiserbare data samlet inn av SODP slettes så snart som mulig.
+
+-	deltakerne ikke blir ikke bedt om å oppgi fullt navn når de registrerer seg på plattformen.
+
+På generelt grunnlag er vi som forskere opptatt av å ivareta deltakernes personvernhensyn så langt det lar seg gjøre innenfor prosjektets natur.
+Vi har sendt inn meldeskjema til NSD, som vurderer prosjektet opp mot innbyggernes personvernhensyn ved å utarbeide en personvernkonsekvensutredning (DPIA).
+Der beskrives i detalj hvordan vi vil håndtere data som samles inn i forbindelse med alle aspekter knyttet til den deliberative meningsmålingen.
+
+Spørreundersøkelsene i forkant og etterkant av panelet gjennomføres utenfor SODP.
+Det samme gjelder registreringen av deltakerne.
+Disse dataene kan altså ikke kobles til dataene som overføres til USA via SODP, med mindre man har en koblingsnøkkel.
+Denne nøkkelen sammen med deltakernes påmeldingsinformasjon oppbevares på Nettskjema, som er en sikker databehandlingsløsning som NORCE abonnerer på fra Universitetet i Oslo,
+
+Mer detaljert beskrivelse av databehandlingen vil finnes i personvernkonsekvensutredningen til Norsk senter for forskningsdata (NSD).
+
+I SODP er det generelt tre typer data som samles inn eller brukes under gjennomføringen; innholdsdata, tekniske data og innloggingsdata.
+
+1.	Innholdsdata:
+Lyd- og videostrømmer og deltakernes handlinger på plattformen.
+Dette inkluderer alt som en deltaker gjør og som er synlig eller hørbart, og alt som deltakeren klikker på.
+
+2.	Tekniske data som datamaskinen til deltakeren sender som en del av interaksjonene. 
+Dette avhenger av enhetens oppsett, og inkluderer potensielt ting som IP-adresse, nettleserinformasjon og enhetsinnstillinger.
+
+3.	Innloggingsdata: 
+Avhengig av kravene til organisatoren blir visse påloggingsdata samlet inn. Dette inkluderer et brukernavn (vanligvis e-postadresse), et skjermnavn (kreves for å identifisere deltaker til andre deltakere) valgt av deltakeren og fullt navn (for å identifisere deltaker). 
+Skjermnavnet og det fulle navnet brukes for øyeblikket også til å skille mellom deltakere i visualiseringen av samtalen og å identifisere dem på Zendesk, the helpdesk-systemet. 
+Dette vil vi gjøre om på, slik at brukerne identifiseres med bruker-ID.
+
+Når det gjelder personvernhensyn spesifikt knyttet til SODP har NORCE sitt personvernombud Øyvind Straume uttrykt at aktiviteten kan behandles som en særlig situasjon all den tid det er en begrenset behandling av personopplysninger som er gjort nødvendig av pandemisituasjonen. 
+Deltakerne kan med rimelighet få  beskrevet konkret for dem hvilken risiko det innebærer for at personidentifiserbar informasjon kan bli fanget opp av aktører utenfor EU/EØS. 
+Det kan defineres som et særskilt unntak fordi deltakerne vil bli avkrevd eksplisitt samtykke til at personidentifiserbare data blir sendt ut av EU/EØS. 
+Dette synet støttes av våre partnere på Stanford.
+Begrunnelsen følger av artikkel 49 (1) (a) i GDPR:
+
+>In the absence of an adequacy decision pursuant to Article 45(3), or of appropriate safeguards pursuant to Article 46, including binding corporate rules, a transfer or a set of transfers of personal data to a third country or an international organisation shall take place only on one of the following conditions:  
+    - the data subject has explicitly consented to the proposed transfer, after having been informed of the possible risks of such transfers for the data subject due to the absence of an adequacy decision and appropriate safeguards;
+
+# Avslutning
+Dette innovasjonsprosjektet  er initiert på bakgrunn av vedtak i Bergen bystyre i møte 24.10.2018, sak 235/18, der bystyret fattet følgende vedtakspunkt: 
+«Bystyret ber om at byborgerpanel prøves videre ut som et forskningssamarbeid der det også søkes eksterne forskningsmidler.» 
+Prosjektet har deretter blitt etablert med finansiering fra Norges forskningsråd gjennom et FORKOMMUNE-prosjekt for å utvikle lokaldemokratiet i samarbeid med demokratiforskere, med mål å forbedre lokaldemokratiet i sin og andre kommuner. 
+Et tverrsnitt av befolkningen i Bergen skal inviteres til å sammen diskutere to saker som er aktuelle i lokalpolitikken våren 2021: 
+Bilfrie soner og utviklingen av havneområdet på Dokken. 
+Metoden som benyttes er deliberativ meningsmåling, som er et spesialfelt for prosjektpartner Stanford University. 
+Koronapandemien satte en stopper for de opprinnelige planene med fysiske samlinger, og plan B er å gjennomføre et nettbasert alternativ som er skreddersydd for formålet. 
+Som i alle forskningsprosjekter som samler inn persondata må det gjøres en avveining av samfunnsnytten prosjektet gir opp mot personvernhensyn knyttet til individene som det blir forsket på. 
+Vår vurdering er at alle personvernhensyn er tilstrekkelig ivaretatt, og den vurderingen støttes av personvernombudet ved NORCE og prosjektpartnerne ved Stanford.  
+Spesifikt for data som overføres i forbindelse med bruken av Stanford Online Deliberation Platform mener vi at det faller inn under kategorien for særskilte unntak, da pandemien hindret oss fra å gjennomføre de opprinnelige planene, og at den nettbaserte løsningen er skreddersydd vårt behov og ikke kan erstattes tilfredsstillende. 
+Kun deltakere som gir eksplisitt samtykke til at data overføres får delta i det nettbaserte arrangementet.
+
+Mvh,
+
+Sveinung Arnesen
+
+Faglig prosjektansvarlig, DEMOVATE.

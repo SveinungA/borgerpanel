@@ -2,8 +2,8 @@
 title: "Executive Summaries"
 date: "2/15/2021"
 output:
-  word_document: default
   html_document: default
+  word_document: default
 always_allow_html: true  
 ---
 ```{r setup-dokken-executive-summary, echo=FALSE, warning=FALSE, include=FALSE}

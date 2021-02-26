@@ -1,7 +1,10 @@
 ---
 title: "Presurvey draft, translated"
 date: "2/15/2021"
-output: html_document
+output:
+  word_document: default
+  html_document: default
+always_allow_html: true
 ---
 ```{r setup-questionnaire-translated, echo=FALSE, warning=FALSE, include=FALSE}
 if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
