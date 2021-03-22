@@ -169,7 +169,7 @@ De som ikke har svart får et nytt brev med **påminnelse**, og en endelig frist
 #### Hovedutvalg
 
 
-Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Utsending til hovedutvalg') %>% select(Startdato)`.
+Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Brevutsending til hovedutvalg') %>% select(Startdato)`.
 
 ##### Deltakere i deliberativ meningsmåling
 
@@ -178,7 +178,7 @@ Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Utsending til h
 ```{r child = 'Invitasjon/invitasjonsbrev-deltaker-hovedutvalg.Rmd'}
 ```
 
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til hovedutvalg') %>% select(Startdato)`.
 
 > Forslag til påminnelse: 
 
@@ -187,12 +187,14 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg')
 
 ##### Respondenter i kontrollgruppen
 
+Utsendelse til hovedutvalget starter `r d %>% filter(Oppgave == 'Brevutsending til hovedutvalg') %>% select(Startdato)`.
+
 > Forslag til brevtekst:
 
 ```{r child = 'Invitasjon/invitasjonsbrev-respondent-hovedutvalg.Rmd'}
 ```
 
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til hovedutvalg') %>% select(Startdato)`.
 
 > Forslag til påminnelse: 
 
@@ -203,8 +205,8 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg')
 #### Tilleggsutvalg
 
 Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
-Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Utsending til tilleggsutvalg') %>% select(Startdato)`.
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutvalg') %>% select(Startdato)`.
+Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Brevutsending til tilleggsutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til tilleggsutvalg') %>% select(Startdato)`.
 
 ##### Deltakere i deliberativ meningsmåling
 
@@ -213,7 +215,7 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutval
 ```{r child = 'Invitasjon/invitasjonsbrev-deltaker-tilleggsutvalg.Rmd'}
 ```
 
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til tilleggsutvalg') %>% select(Startdato)`.
 
 > Forslag til påminnelse:  
 
@@ -222,8 +224,8 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg')
 
 ##### Respondenter i kontrollgruppen
 Ved behov gjentas prosessen for (en andel av) tilleggsutvalget.
-Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Utsending til tilleggsutvalg') %>% select(Startdato)`.
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutvalg') %>% select(Startdato)`.
+Utsendelse til tilleggsutvalget starter `r d %>% filter(Oppgave == 'Brevutsending til tilleggsutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til tilleggsutvalg') %>% select(Startdato)`.
 
 ##### Deltakere i deliberativ meningsmåling
 
@@ -232,7 +234,7 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til tilleggsutval
 ```{r child = 'Invitasjon/invitasjonsbrev-respondent-tilleggsutvalg.Rmd'}
 ```
 
-Påminnelsen sendes ut `r d %>% filter(Oppgave == 'Påminnelse til hovedutvalg') %>% select(Startdato)`.
+Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til tilleggsutvalg') %>% select(Startdato)`.
 
 > Forslag til påminnelse:  
 
@@ -292,8 +294,6 @@ Medlem <- tibble(Involverte = c('Alice', 'Lodewijk', 'Sveinung', 'Hvem fra kommu
 kable(Medlem)
 d %>% filter(Type== 'Teknisk veiledning', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
-### Informasjonsvideo
-'YouTube'-stil: 5-10 minutter hvor vi klikker oss rundt i programmet og forklarer opplegget. (Sveinung)
 
 ### Skriftlig informasjon
 De får også tilgang på skriftlig informasjon om hvilke tekniske krav som stilles for at de kan delta. (Sveinung/Lodewijk)
@@ -319,6 +319,7 @@ Medlem <- tibble(Involverte = c('Anne Lise', 'Sveinung', 'Hvem fra kommunen?'))
 kable(Medlem)
 d %>% filter(Type== 'Mediehåndtering', is.na(Oppgave)) %>% select(Startdato, Sluttdato, Aktivitet) %>% kable()
 ```
+
 
 
 

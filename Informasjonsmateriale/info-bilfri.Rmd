@@ -2,6 +2,11 @@
 title: "info-bilfriesoner"
 output: html_document
 ---
+#### Ressurser
+Transportøkonomisk institutt har skrevet en rapport om virkemidler og effekter mtp parkering: 
+[Parkering - virkemidler og effekter](https://www.toi.no/getfile.php/1343774-1480062966/Publikasjoner/T%C3%98I%20rapporter/2016/1493-2016/1493-2016_18.11.2017.pdf)
+På side 67-83 finnes en oversikt over effekter av og argumenter for de ulike tiltakene.
+
 #### Forslag
 
 ##### Bydelene vs. sentrum

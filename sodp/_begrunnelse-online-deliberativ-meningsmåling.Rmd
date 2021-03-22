@@ -103,6 +103,7 @@ Samlet sett innebærer dette at vi vurderer SODP som eneste reelle nettbaserte a
 
 ### Alternative løsninger med SODP
 
+Den såkalte Schrems II-dommen peker på at data bare unntaksvis kan overføres ut av EU/EØS-området. 
 Et alternativ vi har diskutert med prosjektpartnerne er å flytte SODPs servere til EU/EØS-området, for slik å unngå at data overføres til USA. 
 Et slikt tiltak vil slik vi tolker det ikke være tilstrekkelig for å unngå at data regnest som overført, da vi like fullt vil være avhengig av at våre partnere på Stanford har tilgang til serverne. 
 Det er heller ikke en praktisk gjennomførbar løsning innenfor rammene av vårt prosjekt.
@@ -144,7 +145,10 @@ Skjermnavnet og det fulle navnet brukes for øyeblikket også til å skille mell
 Dette vil vi gjøre om på, slik at brukerne identifiseres med bruker-ID.
 
 Når det gjelder personvernhensyn spesifikt knyttet til SODP har NORCE sitt personvernombud Øyvind Straume uttrykt at aktiviteten kan behandles som en særlig situasjon all den tid det er en begrenset behandling av personopplysninger som er gjort nødvendig av pandemisituasjonen. 
-Deltakerne kan med rimelighet få  beskrevet konkret for dem hvilken risiko det innebærer for at personidentifiserbar informasjon kan bli fanget opp av aktører utenfor EU/EØS. 
+Behandlingen er begrenset både i omfang (mengde opplysninger) og varighet. 
+Det vektlegges videre at det er bruk av en programvare utviklet ved Stanford med unik funksjonalitet som er skreddersydd for prosjektet. 
+Den uavklarte situasjonen etter Schrems II-dommen gjør også at dette er en særlig situasjon.
+Det er vesentlig at Ddeltakerne kan med rimelighet  få beskrevet konkret for dem hvilken risiko det innebærer for at personidentifiserbar informasjon kan bli fanget opp av aktører utenfor EU/EØS. 
 Det kan defineres som et særskilt unntak fordi deltakerne vil bli avkrevd eksplisitt samtykke til at personidentifiserbare data blir sendt ut av EU/EØS. 
 Dette synet støttes av våre partnere på Stanford.
 Begrunnelsen følger av artikkel 49 (1) (a) i GDPR:
