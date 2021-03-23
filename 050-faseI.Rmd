@@ -203,65 +203,15 @@ Basert på analyser av disse argumenterer Luskin, Fishkin og Iyengar (2004) for 
 Det er imidlertid viktig å påpeke at de eksperimentelle kontekstene for deliberasjonene gjennomført online og ansikt-til-ansikt ikke var identiske. 
 For eksempel ble det brukt ulike eksperter, moderatorer og (til dels) spørreskjemaer for å måle effekten av overveielse i de to kontekstene, hvilket gjør sammenlikningen av effekten av de to typene deliberasjonene mindre presis (Min 2007). 
 
-#### Programvare: Stanford Online Deliberation Platform
+#### Programvare
 
-I den tiden deliberativ meningsmåling har eksistert som metode har arrangementene som regel blitt gjennomført ansikt til ansikt.
-I 2019 utviklet forskere ved Stanford en online plattform kalt Stanford Online Deliberation Platform (SODP).
-Programmet har blitt brukt i Japan og i California, og har etter koronapandemien opplevd en sterk økning i oppmerksomhet.
-Nettopp på grunn av pandemien valgte vi å bytte til den nettbaserte løsningen i vårt prosjekt.
+##### Stanford Online Deliberation Platform
+``` {r child = 'sodp/sodp.Rmd'}
+```
 
-På overflaten ligner programmet på det folk er vant med fra videokonferanseløsninger som Zoom, Microsoft Teams, Google Hangout og Skype.
-Forskjellen ligger i at SODP har innebygd automatisk moderator som styrer samtalen mellom deltakerne.
-
-Deltakerne må trykke på en knapp for å stille seg i kø for å snakke, eller for å bryte inn med en kort replikk.
-Alle deltakerne får like mye tid til rådighet, som de kan velge å bruke eller ikke.
-Agendaen for diskusjonen er synlig på skjermen, og den automatiske moderatoren sørger for at progresjonen blir holdt.
-
-[Les mer om SODP her (ekstern lenke)](https://cdd.stanford.edu/2019/automateddeliberationplatform/).
-[Klikk her for å komme til den norske versjonen av programmet](https://stanforddeliberate.org/demo-no).
-
-Fordeler med SODP:
-
-* Kompetanse: Et svært kompetent lag med programvareutviklere og demokratiforskere på Stanford University deltar aktivt i gjennomføringen av den deliberative meningsmålingen. 
-Fram til nå har SODP-teamet vært tett på hver enkelt gjennomføring av online deliberativ meningsmåling, og det vil de også være i vårt tilfelle.
-Alice Siu, Lodewijk Gelauff, og en person til vil være med under selve gjennomføringen av den deliberative meningsmålingen.
-
-* Kredibilitet: Stanford University er et anerkjent universitet som gjenkjennes av de fleste.
-
-Ulemper med SODP: 
-
-* Bruk er avhengig av kapasitet og interesse fra eierne av programvaren.
-
-* Programvaren har (per i dag) ikke åpen kildekode.
-For vår del er det en fordel om det er det på sikt, både av prinsipielle hensyn knyttet til åpen tilgang på infrastruktur som benyttes til forskningsformål, og fordi det kan være praktiske grunner til at man ønsker å tilpassse programmet til eget bruk.
-Første gang vi gjennomfører en deliberativ meningsmåling vil det imidlertid ikke være aktuelt for oss å gå inn i kildekoden og gjøre endringer, så det er ingen stor ulempe i denne omgang.
-Om man skal gå over til mer hyppig bruk av programvaren vil det derimot være nyttig å kunne ha administrativ tilgang til programmet.
-Programvaren er fortsatt under utvikling, og dette er ett av punktene hvor vi kan se endringer i framtiden.
-
-### Alternativer 
-*	Plassere DM i en større kontekst av innbyggermedvirkning
-
-*	Fremheve positive og negative sider ved DM i kontrast til de andre formene for medvirkning
-
-*	Se Mansbridge 
-
-*	Alternativer til DM
-
-*	Political forums with deliberative elements are being instituted across the globe (ref first chapter + several chapters in handbook)
-
-*	Deliberative Mini-Publics
-
-*	Citizen dialogue (https://participedia.net/method/631)
-
-*	Planleggingscelle (se side 67 i rapport)
-
-*	Borgerjury (se side 68 i rapport)
-
-*	Lav representativitet (gjelder nok også andre mini-publics)
-
-*	Press for å oppnå enstemmighet (dette er det ikke i DM)
-
-*	Dette gjelder også for de Europeiske consensus-møtene 
+##### Zoom
+``` {r child = 'zoom/zoom.Rmd'}
+```
 
 
 ## Målgruppe

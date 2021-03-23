@@ -1,0 +1,629 @@
+##### R2DEMOVATEBILFRI1
+
+>Info: Spørsmålsbatteri. Randomisér påstandene. 
+Merkelapp: Oppfatning om bilfrie soner
+
+Bergen kommune har planer om å lage bilfrie soner både i sentrum og i bydelene. 
+I disse områdene vil kommunen begrense kjøring og parkering av privatbiler, for å tilrettelegge for aktivitet i nærområdet, og for gange og sykling som framkomstmiddel.
+
+Hvor sterkt støtter eller motsetter du deg disse planene?
+0 Motsetter meg svært sterkt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 Støtter svært sterkt
+
+##### R2DEMOVATEBILFRI2
+
+>Info: Batteri.
+Merkelapp: Utvikling av bilfrie soner
+
+Vi ønsker å vite mer om hvordan innbyggerne vil at kommunen skal arbeide med bilfrie soner.
+Vennligst ta stilling til følgende forslag:
+
+-	Bilfrie soner skal utvikles i mindre områder som borettslag eller rundt skoler heller enn større områder som f.eks. større områder av bydeler.
+
+-	Kommunen bør prioritere utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum
+
+-	Bilfrie soner bør utvikles der folk bor (nabolag, borettslag) fremfor der for skal (f.eks. skole, idrettsarena eller kulturarena)
+
+Svarskala:
+
+0 Ikke enig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Fullstendig enig  
+
+
+##### R2DEMOVATEBILFRI3
+
+Hvor viktig er følgende argumenter for din holdning til utvikling av bilfrie soner i sentrum framfor i bydelene utenfor sentrum?
+
+
+```{r presurvey-forslag1-bilfri}
+
+table <- tibble(Argumenter = c('Det er i bydelene det er størst behov for å legge til rette for gange, sykkel og andre «myke» trafikanter.',
+                      'Det er viktig at ikke bare beboerne i sentrum får nyte godt av fordelene med at det blir lettere å gå og sykle (rettferdighet).',
+                      'Det er mye støy og luftforurensning i bydelene, derfor er det spesielt viktig at bilfrie soner kommer dit.',
+                      'Bilfrie soner i bydelene kan være viktige i å forebygge kriminalitet',
+                'Det er vanskelig å bevege seg rundt i bydelene uten bil, og dette blir verre med bilfrie soner.',
+                        'Folk i bydelene har bosatt seg der fordi de liker å kjøre bil.',
+                        'De fleste som bor i bydelene har lang vei til jobb, og trenger å kunne bruke bilen for å komme seg dit',
+                        'Det er mindre trivelig eller trygt å bevege seg til fots eller sykkel i bydelene'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner utenfor sentrum") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEBILFRI4
+
+Hvor viktig var følgende argumenter for din holdning til utvikling av bilfrie soner i mindre områder framfor større områder?
+
+```{r presurvey-forslag2-bilfri}
+
+table <- tibble(Argumenter = c('Det vil bli trygge nærmiljø der folk bor.',
+                      'Det vil bli lettere å tilpasse prosjektet til innbyggernes ønsker og behov.',
+                      'Folk vil få økt trafikksikkerhet der de bor.',
+                      'Det vil ha positiv effekt på folkehelsen om folk må gå for å komme seg til bilen',
+                      'Større avstand mellom bolig og parkering vil kunne føre til at flere går og sykler på korte reiser',
+                'Det vil bli vanskeligere for folk å komme seg til bilen sin.',
+                        'Det vil ha liten effekt på bilbruken at enkelte nabolag blir bilfrie.',
+                        'Man vil fortsatt være avhengig av bil for å komme seg på jobb og andre gjøremål lengre unna'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner i mindre områder") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+##### R2DEMOVATEBILFRI5
+
+Hvor viktig var følgende argumenter for din holdning til om de bilfrie sonene bør være rundt der folk bor, fremfor der folk skal?
+
+``` {r presurvey-forslag3-bilfri}
+table <- tibble(Argumenter = c('Mulighet for strengere restriksjoner på biltrafikk som gir økt klimagevinst.',
+                      'Mulighet for å skape trygge og aktive nærmiljø.',
+                      'Tiltakene påvirker bare noen få mennesker; lavere miljø- og klimagevinst og færre mennesker får utnytte utearealene som frigjøres/bygges opp.'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Bilfrie soner der folk bor") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+##### R2DEMOVATEBILFRI6
+
+>Merkelapp: Parkering
+
+Nå kommer noen spørsmål om parkering. 
+Noen mener parkeringsplasser deler av døgnet bør kunne brukes til andre formål (som uteservering, marked, lek, osv), mens andre mener parkeringsareal utelukkende bør brukes til parkering for at de som kjører bil skal ha mulighet til å sette fra seg bilen. 
+Hvor sterkt for eller mot er du at parkeringsplasser av og til kan brukes til andre formål?
+
+0 Ekstremt sterkt imot å bruke parkeringsplasser til andre formål  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt sterkt for å bruke parkeringsplasser til andre formål  
+
+##### R2DEMOVATEBILFRI7
+
+> Merkelapp: Attraktive nabolag.
+
+Noen foretrekker å kunne gå til skole, matbutikk, offentlige grøntområder, og kollektivtilbud på under 10 minutter, selv om det betyr at de har bilparkering mer enn 250 meter fra boligen. 
+Andre foretrekker å ha bilparkering like ved boligen, selv om det betyr at det er mer enn 10 minutter å gå til grøntområder, skole, matbutikk og kollektivtilbud.
+Hva foretrekker du?
+
+0 Foretrekker definitivt under 10 minutter å gå  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Foretrekker definitivt parkering like ved boligen  
+
+##### R2DEMOVATEBILFRI8
+
+> Merkelapp: Bildeleparkering.
+
+Det har den siste tiden blitt satt av egne parkeringsplasser rundt om i byen til bildeleordninger. 
+Noen mener dette er bra siden det blir lettere for folk å ikke eie egen bil. 
+Det kan også frigi fellesarealer til andre aktiviteter i nabolaget, ettersom det blir behov for færre parkeringsplasser når ikke alle trenger sin egen bil. 
+Andre mener dette ikke er bra fordi færre parkeringsplasser for privatbiler gjør at det innskrenker hver enkelt sin frihet. 
+Hva mener du, hvordan skal andelen parkeringsplasser fordeles mellom privatbiler og bildeleordninger?
+
+0 Alle parkeringsplasser skal være til privatbiler  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Alle parkeringsplasser skal være til bildeleordninger  
+
+##### R2DEMOVATEBILFRI9
+Noen mener elsparkesykler bør forbys på fortau, da de er en fare for gående. 
+Andre mener elsparkesykler er nyttige framkomstmidler som bør ha samme betingelser som vanlige sykler. 
+Hva mener du, er du for eller imot at elsparkesykler skal forbys på fortau?
+
+0 Sterk imot at elsparkesykler forbys på fortau  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Sterk for at elsparkesykler forbys på fortau  
+
+##### R2DEMOVATEBILFRI10
+
+> Merkelapp: Holdning til bilfrie soner
+
+Hva er din mening: Er du for eller imot at det blir bilfri sone i nabolaget der du bor?
+
+0 Jeg er svært sterkt imot at nabolaget mitt skal bli bilfri sone  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Jeg er svært sterkt for at nabolaget mitt skal bli bilfri sone  
+
+##### R2DEMOVATEBILFRI11
+> Info: Eksperiment. Randomiser |Beslutningsutfall
+ Merkelapp: Ultralokal medbestemmelse
+
+Noen mener at beboerne selv bør få bestemme om de skal ha bilfri sone i sitt nabolag, siden det er de som best vet hva som passer deres ønsker og behov. 
+Andre mener at en slik beslutning må tas av kommunen, fordi de ser hva som er best ikke bare for nabolaget, men for kommunen i sin helhet.
+*|Beslutningsutfall* 
+Hva mener du er mest demokratisk?
+
+0 Beboerne i nabolaget må bestemme helt selv uten innblanding fra kommunen  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Kommunen må bestemme helt selv uten innblanding fra beboerne i nabolaget  
+
+``` {r ultralokaldemokrati-eksperiment}
+
+table <- tibble(Beslutningsutfall = c('[blank]', 'Se for deg at det var flertall i ditt nabolag for å ha bilfri sone der du bor, men at kommunen var imot.', 'Se for deg at det var flertall i ditt nabolag mot å ha bilfri sone der du bor, men at kommunen var for.'))
+
+kable(table, booktabs = TRUE, linesep = "", escape = F, caption = "Hvem skal bestemme over bilfrie soner") %>% 
+  footnote(footnote_as_chunk = ) %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+##### R2DEMOVATEBILFRI12
+
+>Merkelapp: Bilfri effekt på nabolaget.
+
+Tror du en bilfri sone i ditt nabolag hadde gjort det lettere eller vanskeligere å komme seg til jobb og daglige gjøremål?
+
+0 Ekstremt mye lettere  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye vanskeligere  
+
+##### R2DEMOVATEBILFRI13
+
+Tror du en bilfri sone i ditt nabolag hadde gjort det mer eller mindre attraktivt å bruke gange og sykkel som fremkomstmiddel?
+0 Ekstremt mye mindre attraktivt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer attraktivt  
+
+##### R2DEMOVATEBILFRI14
+
+Tror du en bilfri sone i ditt nabolag hadde gjort det mer eller mindre attraktivt å oppholde seg ute i nærområdet?
+0 Ekstremt mye mindre attraktivt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer attraktivt  
+
+##### R2DEMOVATEBILFRI15
+
+>Info: Spørsmålsbatteri. Randomisér påstandene. Merkelapp: Bilfri effekt på Bergen
+
+Tror du bilfrie soner i Bergen vil…
+
+-	gjøre byen mer eller mindre klima- og miljøvennlig?
+
+-	bidra til mer eller mindre folkehelse?
+
+0 Ekstremt mye mindre  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer  
+
+
+
+##### R2DEMOVATEBILFRI16
+
+>Info: Spørsmålsbatteri. Merkelapp: Attraktive nabolag II.
+
+Hvor viktige er følgende faktorer for deg når du tenker på hvor det er godt å bo?
+
+- Plass til parkering for bil
+
+- Gang- og sykkelavstand til daglige gjøremål (skole, jobb, matbutikk)
+
+-	Tilgang til grøntarealer, som parker og friluftsområder
+
+-	Tilgang til offentlig transport, som buss og bybane
+
+-	Nærhet til møteplasser utenfor hjemmet (kafé, lekeplasser, benker, o.l.)
+
+-	Muligheter for å treffe naboer og ha godt naboskap
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig  
+
+##### R2DEMOVATEBILFRI17
+
+>Merkelapp: Attraktive nabolag I-V.
+Info: Conjoint-eksperiment som ber respondenten velge ett av to nabolag som oppleves som mest attraktivt å bo i.
+To nabolag settes opp mot hverandre, og varierer etter følgende faktorer:
+
+```{r nabolag-conjoint}
+table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
+                              'Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
+                              'Boligen ligger i gangavstand fra dagligvarebutikk',
+                              'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
+                              'Nærmiljøet er trafikksikkert (for barn)',
+                              'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
+                              'Boligen har godt kollektivtilbud i nærheten',
+                              'Boligen har parkeringsmuligheter for bil',
+                              'Boligen ligger i gangavstand til delebiler'),
+                Verdi = c(rep('Ja / Nei')))
+
+ table %>% 
+    mutate_all(linebreak) %>% 
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Beskrivelser av nabolag", col.names = linebreak(c("Dimensjon", "Verdi"))) %>% 
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>% 
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+```
+
+Eksempel på hvordan spørsmålet framstår for respondenten:
+
+Vi er opptatt av hvilken type nabolag innbyggerne i Bergen mener er mest attraktivt å bo i.
+Vi ber deg nå ta stilling til to tenkte nabolag, hvor du ut fra beskrivelsen velger det nabolaget du selv mener det er mest attraktivt å bo i.
+Du får i alt fem slike sammenlikninger, hvor beskrivelsene varierer fra gang til gang.
+
+```{r nabolag-conjoint-eksempel}
+
+x <- c('Ja', 'Nei')
+table <- tibble(Dimensjon = c('Boligen min ligger i gangavstand til skole/barnehage',
+                              'Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen',
+                              'Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder',
+                              'Boligen ligger i gangavstand fra dagligvarebutikk',
+                              'Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen',
+                              'Nærmiljøet er trafikksikkert (for barn)',
+                              'Det finnes lekeplass, ballbane eller idrettsplass i gangavstand',
+                              'Boligen har godt kollektivtilbud i nærheten',
+                              'Boligen har parkeringsmuligheter for bil',
+                              'Boligen ligger i gangavstand til delebiler'),
+                Nabolag1 = c(rep('Ja', 10)),
+                Nabolag2 = c(rep('Nei', 10)))
+table %>%
+    mutate_all(linebreak) %>%
+    kable(booktabs = T, linesep = "", escape = F,  caption = "Mest attraktivt nabolag", col.names = linebreak(c("", "Nabolag 1", "Nabolag 2"))) %>%
+    collapse_rows(columns = 1, latex_hline = "major", valign = "top") %>%
+  kable_styling(latex_options = c("scale_down", "HOLD_position"))
+
+```
+
+##### R2DEMOVATEBILFRI18
+
+> Info: Spørsmålsbatteri. 
+Merkelapp: Hva påvirker bilkjøring.
+
+Hvor viktig er følgende faktorer for at du kan kjøre mindre bil i hverdagen? 
+
+-	Bedre tilgang til kollektivtransport, som buss og bybane.
+
+-	Hyppigere avganger på kollektivtransport
+
+-	Billigere kollektivbilletter
+
+-	Tilgang på delebil
+
+-	Bompenger (hvis bompengene øker mer vil jeg ikke lengre ha råd til å kjøre bil)
+
+-	Dyrere og mindre tilgjengelig bilparkering
+
+-	Tryggere og mer attraktiv sykkelveier
+
+-	Tryggere og mer attraktiv gangvei
+
+Svarskala:
+
+0 Ikke viktig i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Ekstremt viktig
+
+##### R2DEMOVATEBILFRI19
+
+>Merkelapp: Alternativer til bil.
+
+Hvis du måtte kjøre mindre bil i hverdagen, hvilke alternativer har du tilgjengelig?
+
+-	Gange
+
+-	Sykkel
+
+-	Elsparkesykkel
+
+-	Bysykkel
+
+-	Delebil
+
+-	Buss og bybane
+
+-	Jobbe mer hjemmefra
+
+-	Jeg har ingen alternativer
+
+##### R2DEMOVATEBILFRI20
+
+>Merkelapp: Transport til daglige gjøremål.
+
+Hvordan pleier du å komme deg til dine daglige gjøremål (når det ikke er koronarestriksjoner)? Hvis du bruker flere reisemidler, velg hovedreisemiddelet.
+
+-	Kjører eller sitter på i bensin eller dieselbil
+
+-	Kjører eller sitter på i hybridbil
+
+-	Kjører eller sitter på i elbil
+
+-	Tar buss
+
+-	Tar bane eller tog
+
+-	Tar båt
+
+-	Går
+
+-	Sykler
+
+-	Sparkesykler
+
+-	Annet:
+
+##### R2DEMOVATEBILFRI21
+
+Har koronapandemien endret hvordan du pleier å komme deg til dine daglige gjøremål? Hvis du bruker flere reisemidler, velg hovedreisemiddelet.
+
+-	Kjører eller sitter på i bensin eller dieselbil
+
+-	Kjører eller sitter på i hybridbil
+
+-	Kjører eller sitter på i elbil
+
+-	Tar buss
+
+-	Tar bane eller tog
+
+-	Tar båt
+
+-	Går
+
+-	Sykler
+
+-	Sparkesykler
+
+-	Annet:
+
+Svarskala:
+
+0 Ekstremt mye mindre  
+1  
+2  
+3  
+4  
+5 Ingen forskjell  
+6  
+7  
+8  
+9  
+10 Ekstremt mye mer  
+
+##### R2DEMOVATEBILFRI22
+
+> Merkelapp: Nabolagsbeskrivelse.
+
+Ta stilling til følgende påstander om din bolig
+
+-	Det er mulig å benytte sykkel eller gange til arbeid/studiested fra boligen
+
+-	Boligen min ligger i gangavstand til skole/barnehage
+
+-	Boligen ligger i gangavstand til grøntarealer som park, byfjell eller andre naturområder
+
+-	Boligen ligger i gangavstand fra dagligvarebutikk
+
+-	Det ligger godt med kultur-, handels- og servicetilbud i gang-/sykkelavstand fra boligen
+
+-	Nærmiljøet er trafikksikkert (for barn)
+
+-	Det finnes lekeplass, ballbane eller idrettsplass i gangavstand
+
+-	Boligen har godt kollektivtilbud i nærheten
+
+-	Boligen har parkeringsmuligheter for bil
+
+-	Bildeling* er tilgjengelig i gangavstand fra boligen
+
+*Med bildeling menes at flere personer eller husholdninger deler biler som eies av et foretak eller av andre privatpersoner, f. eks Bildeleringen og Nabobil.
+
+Svarskala:
+
+0 Passer ikke i det hele tatt  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10 Passer fullt og helt  
+
+##### R2DEMOVATEBILFRI23
+
+>Merkelapp: Delevillighet.
+
+Hvor villig er du til å dele dette med andre:
+
+-	Delebil
+
+-	Sykler
+
+-	Sykkelparkering
+
+-	Sykkelverksted
+
+Svarskala:
+
+0 Ikke villig i det hele tatt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 Fullstendig villig
+
+
+##### R2DEMOVATEBILFRI24
+
+> Merkelapp: Kjøring i bilfri sone
+
+En bilfri sone er ikke helt bilfri, da det trengs tilkomst for varelevering/flyttelass, spesielle forflytningsbehov og for utrykningskjøretøy. 
+Likevel finnes det tiltak som kan redusere biltrafikken, og vi ber deg indikere hvilken måte du foretrekker av de fire under:
+
+-	Fartsbegrensning: Privatbilisme tillatt, med maksfart på 10 eller 20 km/t eller fysiske hindringer som tvinger ned farten.
+Tiltaket vil gjøre det lite attraktivt å kjøre i sonen, men likevel mulig dersom man har behov for det. 
+Bilene som kjører i området, vil ha så lav fart at lek og annen aktivitet i gatene vil være relativt trygt. 
+Samtidig er det vanskelig å passe på at de kjørende holder fartsgrensen.
+
+-	Gjennomkjøring forbudt: Dette vil kunne redusere biltrafikken i området. 
+Det er vanskelig å passe på at forbudet overholdes. 
+
+-	Fysiske hindringer: Privatbilisme er tillatt, men fysiske hindringer tvinger ned farten. 
+Tiltaket vil gjøre det lite attraktivt å kjøre i sonen, men likevel mulig dersom man har behov for det. 
+Bilene som kjører i området, vil ha så lav fart at lek og annen aktivitet i gatene vil være relativt trygt.
+Samtidig vil det være en del trafikk i området.
+
+-	Fysiske sperrer: 
+Dette kan være en bom eller stolper i veien som kan heves/senkes for nødvendig trafikk. 
+Tiltaket sikrer lite trafikk i området og gir rom for trygg lek.
+Det er positivt for nærmiljø og andre trafikanter enn kjørende, og gir også mulighet for å skape bilfrie soner på visse tidspunkt (deler av dagen, i helger og ved spesielle anledninger). 
+Samtidig vil en slik løsning ha høyere økonomisk kostnad ved bygging og drift enn andre alternativer.
+
+-	Sambruk:
+Gatetun eller sambruksgate der det er lov å kjøre, men bilkjøring skal tilpasses myke trafikanter og annen aktivitet i gaten.
+Det er vanskelig å passe på at bilister holder lav fart.
+

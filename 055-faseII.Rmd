@@ -182,7 +182,7 @@ Påminnelsen sendes ut `r d %>% filter(Oppgave == 'SMS-påminnelse til hovedutva
 
 > Forslag til påminnelse: 
 
-```{r child = 'Invitasjon/påminnelsesbrev-deltaker-hovedutvalg.Rmd'}
+```{r child = 'Invitasjon/påminnelsesbrev-deltaker-hovedutvalg.Rmd'} 
 ```
 
 ##### Respondenter i kontrollgruppen
