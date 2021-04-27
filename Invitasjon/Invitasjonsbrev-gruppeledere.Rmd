@@ -1,0 +1,37 @@
+---
+title: "Vil du være med og lede et demokrati-initativ i Bergen?"
+subtitle: Vi søker gruppeledere til demokratidag
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+ 
+Vi inviterer om lag 200 innbyggere i Bergen til å diskutere to engasjerende, lokalpolitiske saker.
+Den ene er hvordan Dokken skal bli som ny bydel, og den andre handler om hvordan kommunen skal legge til rette for bilfrie områder.
+
+Arrangementet gjennomføres over Zoom, hvor deltakerne deles inn i mindre grupper for å diskutere saker som handler om disse to temaene.
+Svarene deltakerne gir vil bli gitt til byens politikere og tatt med i deres politiske prosessarbeid.
+
+For å gjennomføre arrangementet trenger vi moderatorer til å lede gruppediskusjonene. 
+Kan du tenke deg å være med på dette?
+
+Arrangementet finner sted **lørdag den 12. juni**, og varer fra 10-16.
+Oppmøte for gruppelederne er kl 9.
+
+I tillegg er det et informasjonsmøte for alle gruppelederne **tirsdag 8. juni kl 18-20.**
+
+Arrangementet er en såkalt *deliberativ meningsmåling*, og er et samarbeid mellom Bergen kommune, Norce, Universitetet i Bergen, og Stanford University.
+Mer informasjon om metoden finner du her (på engelsk):
+https://cdd.stanford.edu/what-is-deliberative-polling/
+
+
+Dersom du syns dette høres spennende ut, meld din interesse til Sveinung Arnesen på epost sarn@norceresearch.no.
+Dersom det melder seg flere enn det er behov for, vil vi foreta en utvelgelse av gruppeledere.
+Honorar vil bli gitt.
+
+
+Gjør en innsats for lokaldemokratiet, og ta kontakt!
+------------------------
+
+![](Bg_Logo.png){height='80'}    ![](NORCE_Logo.png){height='45'}   ![](UiB_Logo.png){height='80'}  ![](CDD_Stanford_Logo.jpg){height='25'}     ![](RNDBG_Logo_transparent_web.png){height='110'}    ![](nfr_Logo.jpg){height='70'}    

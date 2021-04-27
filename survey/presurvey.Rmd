@@ -14,20 +14,15 @@ if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
 ```
 
-#### Spørsmål om bilfrie soner
-
-```{r child = 'presurvey/bilfri-sone.Rmd'}
-```
-
-
 #### Spørsmål om arealutvikling på Dokken
-
 ```{r child = 'presurvey/dokken.Rmd'}
 ```
 
+#### Spørsmål om bilfrie soner
+```{r child = 'presurvey/bilfri-sone.Rmd'}
+```
 
 #### Bakgrunnsspørsmål
-
 ```{r child = 'presurvey/bakgrunn.Rmd'}
 ```
 

@@ -1,0 +1,30 @@
+---
+title: "Generering av løpenummer"
+output: html_document
+---
+
+```{r lopenummer-setup, include=FALSE}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+```
+
+For at vi skal kunne koble deltakerne i den deliberative meningsmålingen med andre datakilder (personopplysninger lagret sikkert i TDS og svar på spørreundersøkelsene i Qualtrics) trenger vi et løpenummer.
+Løpenummeret genereres tilfeldig, og kan bare spores tilbake til deltakeren dersom man har tilgang til TDS.
+
+Fire tusen er maks antall deltakere vi kommer til å rekruttere.
+Vi lager derfor først et datasett hvor vi trekker fire tusen tilfeldige, unike tall mellom en og ti tusen.
+Deretter deler vi tallene i to ulike datasett, slik at vi kan skille mellom de som skal inviteres til deltakelse i den deliberative meningsmålingen og kontrollgruppen. 
+Disse datasettene blir kalt henholdsvis *treatment_uid* og *control_id*:
+
+```{r random-id}
+set.seed(34934)
+id <- tibble(id = sample(10000, size = 4000, replace = FALSE))
+
+treatment_id <- id[1:2000, ]
+control_id <- id[2001:4000, ]
+
+```
+
+Datasettene blir seinere koblet til navn og adresser på deltakerne.
+Deltakerne må oppgi denne når de svarer på spørreundersøkelsen og deltar på den deliberative meningsmålingen.
+
