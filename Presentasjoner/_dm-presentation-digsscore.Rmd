@@ -1,0 +1,215 @@
+---
+title: "Online Deliberative Polling in Bergen"
+author: "Sveinung Arnesen"
+date: "5/4/2021"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# What, where, when, why
+
+What: 
+Deliberative Polling
+
+Where:
+Municipality of Bergen
+
+When: 
+June 12, 2021
+
+Why:
+Main objective is practical.
+Collaborate with local government and try out new forms of democratic participation to complement the representative channel.
+
+
+![](Bg_Logo.png){height='80'}           ![](NORCE_Logo.png){height='30'}  ![](UiB_Logo.png){height='60'}   ![](CDD_Stanford_Logo.jpg){height='20'}   ![](RNDBG_logo_transparent_web.png){height='80'}    ![](nfr_logo.jpg){height='80'}
+
+# Deliberative Polling
+
+A [Deliberative Poll®](https://cdd.stanford.edu/) aims to show what the people would think if they opportunity to become more informed and more engaged by the issues in question.
+
+## Key features
+
+- Random sample
+
+- 150-300 citizens discuss chosen topics and express their views in a survey
+
+- Control group of similar size participates in same survey, but not in the deliberation
+
+- Physical meetings most commone, but online solutions possible (and necessary in the covid era)
+
+- Groups of 5-20 participants discuss political proposals, and weigh arguments for and against.
+Group moderators ensure proper discussions, maintain progression, and make sure everyone has the opportunity to make their voice heard
+
+- Panel debate with experts on the field, representing the breadth of opinions on the topic under discussion
+Participants have the opportunity to ask questions.
+
+- Duration: 1-2 days
+
+Deliberative polling shares many features with other small scale participatory processes that sail under different flags ('Citizen assembly', 'mini-publics', 'G1000', and more).
+In Norwegian, we label such small scale participatory processes 'borgerpanel'.
+
+<!-- # Deliberative Polling -->
+
+<!-- [Deliberative Polling®](https://cdd.stanford.edu/)  is an attempt to use public opinion research in a new and constructive way. -->
+
+<!-- The public has little reason to invest time and effort in acquiring information or coming to a considered judgment, and are as a result often uninformed about key public issues. -->
+
+<!-- In a deliberative poll, the participants first take survey. -->
+<!-- Then, the participants engage in dialogue with fellow citizens and competing experts. -->
+<!-- After the deliberations, the sample is again asked the original questions.  -->
+<!-- The resulting changes in opinion represent the conclusions the public would reach, *if people had opportunity to become more informed and more engaged by the issues*. -->
+
+
+# Background: Local democratic innovation in Bergen
+
+- Former head of Council Harald Schelderup established a committee lead by Prof. Anne Lise Fimreite with the mandate to evaluate the health of democracy in Bergen.
+
+- [The report](https://www.bergen.kommune.no/publisering/api/filer/T540582721) recommended trying out alternative forms of participatory processes to complement.
+
+- An initial *borgerpanel* pilot was carried out in collaboration with the municipality of Bergen.
+
+# *Borgerpanel* pilot
+
+## Topic: decentralized local government in Bergen?
+
+![Runa guiding participants for borgerpanel pilot](borgerpanel-runa.jpg) ![Resultater fra piloten](borgerpanel-bydeler-conjoint.jpg){height='400'}
+
+
+
+# DEMOVATE project: Collaborative project between academia and local authorities
+
+- The core aim to be addressed in the DEMOVATE project is to establish a well-functioning, legitimate, and politically relevant borgerpanel in the municipality of Bergen that can serve as a model for other municipalities in Norway.
+
+- Financed by the Research Council of Norway (2019-2022).
+
+
+# DEMOVATE project: Deliberative poll, 2021
+
+## Preparations
+
+Survey on citizens of Bergen to evaluate
+
+  - What topics to choose
+  
+  - How to set up the deliberative poll (incentives, length, etc)
+  
+![How can we achieve high participation rates?](lokaldemokrati-deltakelse.png){height='400'}
+
+# DEMOVATE project: Deliberative poll, 2021
+
+## Two issues chosen:
+
+- Re-development of the port area Dokken
+
+- Introduction of car-free zones in Bergen
+
+```{r, out.width = "50%", fig.cap= "Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png")
+```
+
+Topics decided by the city council.
+Results from the deliberative poll will be formally recognized and taken into account by the city council:
+
+>Byrådsleder innstiller til byrådet å fatte følgende vedtak:
+1. Program for bilfrie soner i bydelene og arealstrategi for Dokken brukes som
+diskusjonstemaer i borgerpanelet.
+2. Byrådet vil ta stilling til innspillene fra borgerpanelet i de politiske saksfremleggene som
+følger sakene i vedtakspunkt 1, og innspillene skal være selvstendige vedlegg i
+saksgrunnlaget frem mot endelig politisk behandling.
+
+        - City Council decision, April 29, 2021
+
+# DEMOVATE project: Deliberative poll, 2021
+
+## Timeline
+
+```{r firefaser-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+```{r dp-sodp-gantt, fig.width=9, fig.height=4}
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Startdato)) %>% 
+  pivot_longer(., Startdato:Sluttdato, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Type = as_factor(Type))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Type, desc(Item)), group=Item, color=as_factor(Fase)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ Meningsmåling, 2021") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Fase") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+```
+
+Key upcoming dates:
+
+May 15: Invitation letter goes out to main samples (control group and DP participants). Pre survey goes into field.
+
+June 12: Deliberation Day. Post survey goes into field.
+
+# DEMOVATE project: Deliberative poll, 2021
+
+## Academic research collaboration in the age of data protectionism
+
+- Schrems II ruling
+
+- Different cultures in how to deal with data protection issues in academia and public sector, and allegiance pledged to different authorities
+
+# Join us as moderator!
+
+Vi inviterer om lag 200 innbyggere i Bergen til å diskutere to engasjerende, lokalpolitiske saker.
+Den ene er hvordan Dokken skal bli som ny bydel, og den andre handler om hvordan kommunen skal legge til rette for bilfrie områder.
+
+Arrangementet gjennomføres over Zoom, hvor deltakerne deles inn i mindre grupper for å diskutere saker som handler om disse to temaene.
+Svarene deltakerne gir vil bli gitt til byens politikere og tatt med i deres politiske prosessarbeid.
+
+For å gjennomføre arrangementet trenger vi moderatorer til å lede gruppediskusjonene. 
+Kan du tenke deg å være med på dette?
+
+Arrangementet finner sted **lørdag den 12. juni**, og varer fra 10-16.
+Oppmøte for gruppelederne er kl 9.
+
+I tillegg er det et informasjonsmøte for alle gruppelederne **tirsdag 8. juni kl 18-20.**
+
+Arrangementet er en såkalt *deliberativ meningsmåling*, og er et samarbeid mellom Bergen kommune, Norce, Universitetet i Bergen, og Stanford University.
+Mer informasjon om metoden finner du her (på engelsk):
+https://cdd.stanford.edu/what-is-deliberative-polling/
+
+
+Dersom du syns dette høres spennende ut, meld din interesse til Sveinung Arnesen på epost sarn@norceresearch.no.
+Dersom det melder seg flere enn det er behov for, vil vi foreta en utvelgelse av gruppeledere.
+Honorar vil bli gitt.
+
+
+Gjør en innsats for lokaldemokratiet, og ta kontakt!
+------------------------
+
+![](Bg_Logo.png){height='80'}    ![](NORCE_Logo.png){height='45'}   ![](UiB_Logo.png){height='80'}  ![](CDD_Stanford_Logo.jpg){height='25'}     ![](RNDBG_Logo_transparent_web.png){height='110'}    ![](nfr_Logo.jpg){height='70'}    
+

@@ -254,6 +254,9 @@ Deltakerne som ønsker å delta registrerer seg på [Nettskjema](https://nettskj
 Nettskjema er en påmeldingsløsning utviklet av Universitetet i Oslo, og som ivaretar alle personvernhensyn.
 Mer informasjon om løsningen [finnes her](https://www.uio.no/tjenester/it/adm-app/nettskjema/hjelp/).
 
+```{r child='Invitasjon/løpenummer-deltakere.Rmd'}
+```
+
 ## Rekruttere gruppeledere
 
 ```{r child= 'Invitasjon/Invitasjonsbrev-gruppeledere.Rmd'}

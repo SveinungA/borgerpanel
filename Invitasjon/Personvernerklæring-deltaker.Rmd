@@ -1,0 +1,77 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
+# Personvernerklæring
+
+#### Hvorfor kontakter vi deg?
+Vi kontakter deg for å invitere deg til å delta i dette arrangementet. 
+Du er trukket tilfeldig fra Folkeregisteret, basert på informasjon om din alder, kjønn og adresse.
+Det er viktig for oss å beskytte personopplysningene dine. 
+Denne informasjonen skisserer hva vi gjør med dataene som vi samler inn og lagrer. 
+
+#### Din deltakelse i arrangementet
+
+I løpet av arrangementet vil du delta i nettbaserte gruppediskusjoner om lokale samfunnsspørsmål.
+Det vil også være eksperter som vil kunne svare på spørsmål fra gruppen.
+Inviterte gjester kan se og lytte til diskusjonene underveis.
+Det vil gjøres opptak av diskusjonene.
+Opptakene knyttes ikke til annen informasjon som blir samlet inn, og blir lagret sikkert på Universitetet i Oslos servere.
+I de tilknyttede spørreundersøkelsene vil vi spørre om politikk, din bakgrunn, og om dine holdninger i utvalgte lokale samfunnsspørsmål. 
+Det er frivillig å delta i undersøkelsen. 
+Du bestemmer selv hvilke spørsmål du vil svare på, og du kan avslutte din deltakelse når som helst uten å oppgi noen forklaring.
+Alle opplysninger om deg vil da bli anonymisert. 
+Det vil ikke ha noen negative konsekvenser for deg hvis du ikke vil delta eller senere velger å trekke deg. 
+
+#### Hvis du bestemmer deg for å ikke delta
+
+Vi har behov for å kontrollere at personene som deltar i undersøkelsen er representative for den samlede befolkningen. 
+Når vi trakk utvalget innhentet vi informasjon om hvilken ditt navn, adresse, telefonnummer, kjønn, alder og utdanning.
+Dine kontaktopplysninger er hentet fra Folkeregisteret med tillatelse fra Skatteetaten.
+Du har rett til innsyn i disse opplysningene, samt be om at opplysningene korrigeres eller slettes.
+Hvis du bestemmer deg for å ikke delta i arrangementet, vil vi bruke disse dataene i anonymisert form til å gjøre en frafallsanalyse.
+Du kan reservere deg mot å være del av frafallsanalysen ved å kontakte Sveinung Arnesen i NORCE (se kontaktinfo).
+
+#### Hva skjer med informasjonen som samles inn?
+
+Vi vil behandle all informasjon om deg strengt konfidensielt og i samsvar med EUs personvernforordning (GDPR) og nasjonale personvernlover.
+Prosjektet er meldt til personvernombudet ved Norsk senter for forskningsdata (NSD).  
+Vi vil bare bruke opplysningene om deg til formålene vi har fortalt om i dette skrivet.  
+Det er bare Norce som vil ha tilgang til kontaktopplysningene dine (f.eks. navn, adresse og telefonnummer).
+Direkte og indirekte identifiserbare personopplysninger lagres på en sikker server ved UiB (SAFE – Sikker Adgang til Forskningsdata og E-infrastruktur) og Universitetet i Oslos tilsvarende løsning TSD.
+Spørreskjemaopplysningene behandles av Qualtrics International Inc., USA. 
+Vi benytter Qualtrics sin anonyme løsning hvor det ikke lagres kobling mellom IP-/e-postadresse og besvarelse. 
+
+Når studien er ferdig, og senest 31.12.2022 vil alle personidentifiserbare opplysninger slettes permanent. 
+Dataene, uten navnet eller kontaktopplysningene dine, sendes NSD – Norsk senter for forskningsdata i Bergen.   
+Resultatene av undersøkelsen vil bli publisert på nettsiden til forskningsprosjektet innen januar 2022.     
+De anonymiserte dataene lagres sikkert på ubestemt tid. 
+De gjøres tilgjengelig for bruk i vitenskapelige studier av forskere, studenter og andre.  
+Vi vil gjøre vårt ytterste for å sikre at ingen deltakere kan identifiseres i resultatene fra undersøkelsen, eller i noen publikasjoner som bygger på studien. 
+
+#### Dine rettigheter
+Så lenge du kan identifiseres i datamaterialet, har du rett til	innsyn i hvilke personopplysninger som er registrert om deg; å få rettet personopplysninger om deg;	få slettet personopplysninger om deg;	få utlevert en kopi av dine personopplysninger (dataportabilitet);	å sende klage til personvernombudet eller Datatilsynet om behandlingen av dine personopplysninger.  
+
+#### Hva gir oss rett til å behandle personopplysninger om deg?
+Vi behandler registeropplysninger om deg med dispensasjon fra taushetsplikten fra Statistisk sentralbyrå, basert på allmenn interesse og offentlig myndighet (art. 6 nr. 1 bokstav e) og formål knyttet til vitenskapelig forskning (art. 9 nr. 2 bokstav j). Vi behandler opplysninger som innhentes i utførelsen av Byborgerpanelet med bakgrunn i samtykke.
+
+På oppdrag fra NORCE har NSD vurdert at behandlingen av personopplysninger i dette prosjektet er i samsvar med personvernregelverket. 
+Når detaljer som ditt navn, adresse og telefonnummer er fjernet, er det ikke lenger mulig å slette informasjonen du har oppgitt. 
+Dette er fordi det ville kreve en betydelig innsats å identifisere deg gjennom de gjenværende opplysningene, etter at de nevnte opplysningene er fjernet.
+Du har også rett til å sende en klage til Datatilsynet.
+
+#### Hvem er ansvarlig?
+Det er NORCE - Norwegian Research Centre som er behandlingsansvarlig.
+Prosjektet finansieres av Bergen kommune og Norges Forskningsråd (prosjektnummer: 295892). 
+
+#### Hvilke organisasjoner er involvert og hvor kan jeg finne ut mer?
+Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen og Stanford University er involvert i prosjektet som organiserer arrangementet.
+Norges forskningsråd finansierer prosjektet. 
+Du kan kontakte disse personene direkte på epost:
+
+NORCE: Sveinung Arnesen, e-post: sveinung.arnesen@norceresearch.no.  
+
+Personvernombud, NORCE: Øyvind Straume, e-post: personvernombud@norceresearch.no.
+
+Bergen kommune: Pål Bjørseth, e-post: pal.bjorseth@bergen.kommune.no.

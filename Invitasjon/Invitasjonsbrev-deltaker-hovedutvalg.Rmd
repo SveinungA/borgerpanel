@@ -1,13 +1,10 @@
 ---
 title: "Diskutér Bergens fremtid"
-
-output: word_document
-#   pagedown::html_letter:
-#     self_contained: false
-# links-to-footnotes: true
-# paged-footnotes: true
-# # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+output:
+  word_document: 
+    reference_docx: NORCE-Dokumentmal.docx
+  html_document:
+      pdf_document: default
 ---
 
 ```{r setup_letter_participant_invitation_sample1, echo = FALSE, warning = FALSE, message = FALSE}
@@ -19,75 +16,70 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 ```
 
-<!-- ![Bergen kommune Logo](Bg_logo.png){.logo} -->
-<!-- ![NORCE Logo](NORCE_logo.png){.logo} -->
-
-<!-- ![UiB Logo](UiB_logo.png){.logo} -->
 
 
-<!-- ::: date -->
-<!-- Bergen, xx.xx, 2021 -->
-<!-- ::: -->
+::: date
+Bergen, 15.5., 2021
+:::
 
-Kjære innbygger!
+Kjære **navn**!
 
-Bergen kommune ønsker å invitere deg med i et forskningsprosjekt der vi vil ha innbyggerne mer involvert i politiske prosesser.
-Studien er et samarbeid mellom Bergen kommune, Norwegian Research Centre (NORCE), Universitetet i Bergen og Stanford University i USA.
+Her kommer en unik sjanse til å hjelpe politikerne i Bergen med å ta avgjørelser. 
+Bergen kommune starter et helbergensk demokratiprosjekt, der vi vil ha innbyggerne mer involvert i politiske prosesser. 
 
-Hva mener innbyggerne i viktige saker for Bergen? 
+Hva mener folk i de viktige sakene for Bergen? 
 Det er det vi vil vite. 
-Derfor inviterer vi blant andre deg til å delta i et digitalt borgerpanel lørdag 12. juni 2021.
+Derfor inviterer vi blant andre deg til å delta i en digital deliberativ meningsmåling lørdag 12. juni 2021.
 
-**Hva er et borgerpanel?** 
+## Dette er deliberativ meningsmåling  
 
-Borgerpanelet skal bestå av mennesker med ulik bakgrunn, alder og kjønn fra Bergen. 
-Formålet er at alle deler av befolkningen skal være representert. 
-
-I panelet skal du og de andre deltakerne diskutere utvalgte saker. 
-I tillegg skal du også svare på spørreundersøkelser om politiske saker før og etter paneldiskusjonen. 
-Resultatene fra diskusjonen og spørreundersøkelsen blir samlet opp og formidlet videre til politikerne som skal treffe beslutninger. 
+Deliberasjon betyr å diskutere, og det er det vi inviterer deg til å gjøre:
+Du og de andre medlemmene diskutere utvalgte saker gjennom en hel dag.
+Innspill og synspunkter fra diskusjonen blir samlet opp og formidlet videre til politikerne som skal treffe beslutninger. 
+I tillegg skal hver og én svare på spørreundersøkelser om politiske saker før og etter arrangementet.
+Resultatene fra spørreundersøkelsene blir også forelagt politikerne. 
 Svarene dine blir anonymisert.
 
-**Sakene som skal opp til diskusjon i borgerpanelet er: **
+### Sakene som skal opp til diskusjon 
 
--	Fornyingen av havneområdet Dokken i Bergen sentrum. 
-For eksempel skal dere diskutere disse spørsmålene:
-    
-    - Skal alle nye gatenavn på Dokken kalles opp etter kvinner?
-    
-    - Hva skal sjølinjen brukes til?
+1. Fornyingen av havneområdet Dokken i Bergen sentrum. 
+For eksempel, hva skal sjølinjen brukes til? Bør alle nye gatenavn på Dokken kalles opp etter kvinner?
 
--	Utvikling av bilfrie soner i bydelene.
-Spørsmål som kommer opp er blant annet:
+2. Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
 
-    - Hvor mange parkeringsplasser skal være forbeholdt bildeling?
-    
-    - Hvem skal bestemme om et nabolag skal være bilfritt; beboerne i nabolaget eller kommunen?
-
-**Om deltakelse**
-
-Det er selvsagt frivillig å delta.
+### Hvem utfører prosjektet?
+Studien er et samarbeid mellom Bergen kommune, NORCE, Universitetet i Bergen og Stanford University, med finansiering fra Norges forskningsråd. 
+Det er selvsagt frivillig å delta. 
 De fleste som deltar synes det er interessant og meningsfylt. 
 Vi håper du blir med, og at også du finner det givende.
+Som takk for din innsats, får du overført 500 kroner på konto når du har fullført deltakelsen. 
 
-Du og de andre deltakerne er tilfeldig trukket ut fra Folkeregisteret. 
-Dette gjør vi for at alle deler av bergenssamfunnet skal være representert. 
-Det kreves ingen forkunnskap for å delta, og du må kunne sette av tid fra 10.00–16.00.
+Hvorfor er nettopp du trukket ut? 
+Vi har gjort et såkalt representativt utvalg fra Folkeregisteret.
+Dette gjør vi for at alle deler av lokalsamfunnet skal være representert. 
+Det kreves ingen forkunnskap for å delta, og du må kunne sette av hele dagen. 
+Arrangementet starter kl 10, og varer til kl 16.
 
 Alle svar du gir oss, blir behandlet i samsvar med reglene for personvern. 
 Se vedlagte personvernerklæring. 
 
-Bruk denne lenken for å registrere deg som deltaker:
-https://nettskjema.no/a/183040
+Gå inn på denne nettsiden allerede i dag for å registrere deg som deltaker: https://nettskjema.no/a/183040.
+Når du har registrert deg vil du få en epost med mer informasjon.
+Obs: I påmeldingen er det viktig at du oppgir *dette nummeret, som er ditt referansenummer:* **ID**
+Frist for påmelding er 25. mai. 
 
-Alle som deltar skal svarer først på en spørreundersøkelse.
-Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
-www.qualtrics.com
 
-Obs: Både i påmeldingen og spørreundersøkelsen er det viktig at du oppgir følgende referansenummer: (sett inn referanse-ID, fire siffer)
-```{r referenceID_letter_participant_invitation_sample1}
-set.seed(100)
-referanse <- sample(1000:5000, replace = FALSE)
+
+Med vennlig hilsen
+
+
+<!-- Sveinung Arnesen   -->
+<!-- Forsker og prosjektleder   -->
+<!-- NORCE -->
+
+![](Bg_Logo.png){height='80'}     .       ![](NORCE_Logo.png){height='30'}  
+![](UiB_Logo.png){height='60'}    .      ![](CDD_Stanford_Logo.jpg){height='20'}
+
+```{r child = 'Personvernerklæring-deltaker.Rmd'}
 ```
 
-Som takk for din innsats, får du et sentrumsgavekort på x00 kroner.

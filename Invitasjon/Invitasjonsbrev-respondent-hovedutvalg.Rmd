@@ -1,16 +1,14 @@
 ---
 title: "Diskutér Bergens fremtid"
-
-output: word_document
-#   pagedown::html_letter:
-#     self_contained: false
-# links-to-footnotes: true
-# paged-footnotes: true
-# # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+output:
+  word_document: 
+    reference_docx: NORCE-Dokumentmal.docx
+  html_document:
+      pdf_document: default
 ---
 
-```{r setup_letter_survey_invitation_sample1, echo = FALSE, warning = FALSE, message = FALSE}
+
+```{r setup_letter_participant_invitation_sample1, echo = FALSE, warning = FALSE, message = FALSE}
 if(!require("readxl")){install.packages("readxl");  library(readxl)}
 if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
 
@@ -19,53 +17,65 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 ```
 
-<!-- ![Bergen kommune Logo](Bg_logo.png){.logo} -->
-<!-- ![NORCE Logo](NORCE_logo.png){.logo} -->
-
-<!-- ![UiB Logo](UiB_logo.png){.logo} -->
 
 
+::: date
+Bergen, 15.5., 2021
+:::
 
-<!-- ::: date -->
-<!-- Bergen, xx.xx, 2021 -->
-<!-- ::: -->
+Kjære **navn**!
 
-Kjære innbygger!
+Her kommer en unik sjanse til å hjelpe politikerne i Bergen med å ta avgjørelser. 
+Bergen kommune starter et helbergensk demokratiprosjekt, der vi vil ha innbyggerne mer involvert i politiske prosesser. 
 
-Bergen kommune ønsker å invitere deg med i et forskningsprosjekt der vi vil ha innbyggerne mer involvert i politiske prosesser.
-Studien er et samarbeid mellom Bergen kommune, Norwegian Research Centre (NORCE), Universitetet i Bergen og Stanford University i USA.
-
-Hva mener innbyggerne i viktige saker for Bergen? 
+Hva mener folk i de viktige sakene for Bergen? 
 Det er det vi vil vite. 
-Derfor inviterer vi blant andre deg til å delta i en digital spørreundersøkelse.
-
-Resultatene fra spørreundersøkelsen blir samlet opp og formidlet videre til politikerne som skal treffe beslutninger. 
+Derfor inviterer vi blant andre deg til å delta i en spørreundersøkelse som blir forelagt politikerne. 
 Svarene dine blir anonymisert.
 
-**Saker som spørreundersøkelsen dreier seg i hovedsak om: **
+## Sakene som du skal si din mening om 
 
--	Fornyingen av havneområdet Dokken i Bergen sentrum. 
+     - Fornyingen av havneområdet Dokken i Bergen sentrum. For eksempel, hva skal sjølinjen brukes til? Bør alle nye gatenavn på Dokken kalles opp etter kvinner?
 
--	Utvikling av bilfrie soner i bydelene.
+      - Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
 
-**Om deltakelse**
+## Hvem utfører undersøkelsen?
+Undersøkelsen er et samarbeid mellom Bergen kommune, NORCE, Universitetet i Bergen og Stanford University, med finansiering fra Norges forskningsråd. 
+Den er del av et større prosjekt som dreier seg om involvering av innbyggerne i lokalpolitiske saker.
+Det er selvsagt frivillig å delta. 
+De fleste som deltar synes det er interessant og meningsfylt. 
+Vi håper du blir med, og at også du finner det givende.
+Du som har blitt invitert til å delta er automatisk med i trekningen av en pengepremie på kr. 5000,-.
+Dette kan du vinne uansett om du deltar eller ikke.
+Dersom du registrerer deg og fullfører undersøkelsene, blir du i tillegg med i trekningen av kr. 10 000,- som takk for din innsats.
 
-Det er selvsagt frivillig å delta i spørreundersøkelsen.
-Vi håper du blir med, og at også du finner det interessant og meningsfylt å uttrykke dine meninger til politikerne i kommunen.
-Alle som deltar er med i trekningen av et sentrumsgavekort på kr. xx 000,-.
-
-Du og de andre deltakerne er tilfeldig trukket ut fra Folkeregisteret. 
-Dette gjør vi for at alle deler av bergenssamfunnet skal være representert. 
-Det kreves ingen forkunnskap for å delta, og spørreundersøkelsen tar om lag 25 minutter å fullføre.
+Hvorfor er nettopp du trukket ut? 
+Vi har gjort et såkalt representativt utvalg fra Folkeregisteret.
+Dette gjør vi for at alle deler av lokalsamfunnet skal være representert. 
+Det kreves ingen forkunnskap for å svare, og det finnes ingen rette eller gale svar.
 
 Alle svar du gir oss, blir behandlet i samsvar med reglene for personvern. 
 Se vedlagte personvernerklæring. 
 
-Gjennomfør denne undersøkelsen allerede i dag ved å gå inn på denne lenken:
-www.qualtrics.com
+Gå inn på denne nettsiden allerede i dag for å registrere deg: https://nettskjema.no/a/200896.
+Frist for påmelding er 25. mai. 
 
-Obs: Det er viktig at du oppgir følgende referansenummer i undersøkelsen når du blir bedt om det: (sett inn referanse-ID, fire siffer)
-```{r referenceID_letter_survey_invitation_sample1}
-set.seed(100)
-referanse <- sample(1000:5000, replace = FALSE)
+Når du har registrert deg vil du få en epost med lenke til undersøkelsen.
+Du skal svare på samme undersøkelse to ganger: 
+Første gang i starten av juni, og andre gang i midten av juni.
+Vi gjør det på denne måten for å måle om svarene endrer seg mellom første og andre gang du svarer.
+
+Obs: I påmeldingen er det viktig at du oppgir *dette nummeret, som er ditt referansenummer:* **ID**
+
+Med vennlig hilsen
+
+
+<!-- Sveinung Arnesen   -->
+<!-- Forsker og prosjektleder   -->
+<!-- NORCE -->
+
+![](Bg_Logo.png){height='80'}     .       ![](NORCE_Logo.png){height='30'}  
+![](UiB_Logo.png){height='60'}    .      ![](CDD_Stanford_Logo.jpg){height='20'}
+
+```{r child = 'Personvernerklæring-respondent.Rmd'}
 ```

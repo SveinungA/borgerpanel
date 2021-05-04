@@ -1,0 +1,210 @@
+---
+title: "Deliberativ meningsmåling i Bergen 2021"
+subtitle: "Torsdagsseminaret Helse/Samfunn, NORCE"
+author: "Sveinung Arnesen"
+date: "3/4/2021"
+output:
+  slidy_presentation: 
+    font_adjustment: -1
+---
+```{r dm-presentation-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("C:/Users/svein/Documents/borgerpanel/Data/DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+# Sammenfatning
+
+- Hva: Deliberativ meningsmåling
+
+- Hvor: Bergen
+
+- Når: April 2021
+
+- Formål: Utvide verktøykassen for lokaldemokratiet i kommunen ved å ta i bruk nye metoder for involvering av innbyggerne i politikken.
+Metoden er velprøvd internasjonalt, men har ikke blitt benyttet i norske kommuner tidligere, og er i så måte et demokratisk  innovasjonsprosjekt. 
+
+# Hva er en deliberativ meningsmåling?
+
+> Hva mener folk om politiske spørsmål når de får tenkt seg om og diskutert med sine medborgere?
+
+## Nøkkelegenskaper
+
+- Tilfeldig uttrekk
+
+- 150-300 personer diskuterer utvalgte politiske saker og uttrykker deretter sin mening i en spørreundersøkelse
+
+- Kontrollgruppe av tilsvarende størrelse deltar i spørreundersøkelse, men ikke i diskusjonen
+
+- Fysisk samling mest vanlig, men også nettbasert løsning mulig
+
+- Grupper på 5-20 deltakere diskuterer politiske forslag, og vurderer argumenter for og imot. 
+Moderator sørger for saklig diskusjon, progresjon, og at alle får komme til orde
+
+- Paneldebatt med eksperter på feltet, som representerer bredden av meninger om saken som diskuteres.
+Mulighet for deltakerne å stille spørsmål til ekspertene
+
+- Varighet 1-2 dager
+
+# Hva er en deliberativ meningsmåling?
+> Hva mener folk om politiske spørsmål når de får tenkt seg om og diskutert med sine medborgere?
+
+## Gjennomføring i Bergen
+  
+- Vi inviterer ved hjelp av tilfeldig uttrekk om lag 200 innbyggere i Bergen til å diskutere bilfrie soner i bydelene og arealutviklingen på Dokken. 
+Diskusjonen vil foregå over nett.  
+Som del av opplegget vil vi gjennomføre en spørreundersøkelse med deltakerne før og etter at de har diskutert sakene, hvor vi spør om deres meninger om de to nevnte sakene pluss andre politiske holdninger, tillit til myndighetene, og sosiale bakgrunnsspørsmål. 
+En kontrollgruppe av tilsvarende størrelse vil svare på spørreundersøkelsene, men ikke delta i diskusjonen.
+
+```{r, out.width = "75%", fig.cap= "Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png")
+```
+
+# Bakgrunn og motivasjon
+
+> I en tid hvor demokratiet settes på prøve også i etablerte, vestlige demokratier, er viktigheten av å forske på demokratiske prosesser kanskje viktigere enn noen gang
+
+## Prosjektinfo
+
+- Gjennomføres som et ledd i det forskningsrådsfinansierte prosjektet *Demokratisk innovasjon i praksis: 
+Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (Demovate)*. 
+Prosjektnummer 295892.
+
+  - Prosjektansvarlig er **Bergen kommune**, og faglig prosjektleder er Sveinung Arnesen ved **NORCE**. 
+  
+  - Samarbeidspartnere er *Universitetet i Bergen* og *Stanford University*. 
+  
+  - Prosjektperiode fra september 2019 til november 2022.
+  
+
+# Bakgrunn og motivasjon
+> I en tid hvor demokratiet settes på prøve også i etablerte, vestlige demokratier, er viktigheten av å forske på demokratiske prosesser kanskje viktigere enn noen gang
+
+## Lokalpolitisk etterspørsel etter demokratisk innovasjon
+- Prosjektet bygger på daværende byrådsleder Harald Schjelderups initiativ til et lokaldemokratiutvalg i 2017, med formål å vurdere demokratiets tilstand i Bergen
+
+  - Ledet av Prof. Anne Lise Fimreite
+  
+  - Rapport: [Byen og nærdemokratiet](https://www.bergen.kommune.no/hvaskjer/tema/lokaldemokratireformen/politiske-saksdokumenter/bystyresak-23117-nardemokratireform-vurdering-av-rapport-fra-nardemokratiutvalget)
+  
+  - Utvalget anbefalte at man søkte å utvikle og forbedre mulighetene for politisk påvirkning utenom valg. 
+  
+  - Vedtak i Bergen bystyre 24.10.2018, sak 235/18: «Bystyret ber om at byborgerpanel prøves videre ut som et forskningssamarbeid der det også søkes eksterne forskningsmidler.» 
+
+
+# Bakgrunn og motivasjon
+> I en tid hvor demokratiet settes på prøve også i etablerte, vestlige demokratier, er viktigheten av å forske på demokratiske prosesser kanskje viktigere enn noen gang
+
+## Lokalpolitisk etterspørsel etter demokratisk innovasjon
+```{r, out.width = "50%", fig.cap= "Kilde: Byen og Nærdemokratiet", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Presentasjoner/lokdem-valgdeltakelse-utdanning-alder.png")
+```
+
+# Bakgrunn og motivasjon
+> I en tid hvor demokratiet settes på prøve også i etablerte, vestlige demokratier, er viktigheten av å forske på demokratiske prosesser kanskje viktigere enn noen gang
+
+## Lokalpolitisk etterspørsel etter demokratisk innovasjon
+```{r, out.width = "50%", fig.cap= "Kilde: Byen og Nærdemokratiet", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Presentasjoner/lokdem-valgdeltakelse-valgkrets-utdanningsnivå.png")
+```
+
+
+# Gjennomføring
+
+## Fire faser
+
+Vi deler borgerpanelene inn i fire faser.
+I fase I bestemmes metode, målgruppe og tema.
+Til fase II tilfaller de praktiske oppgavene knyttet til forberedelsene av feltarbeidet.
+Fase III er selve feltarbeidet - datainnsamlingsperioden.
+Debrief og bearbeiding av data kommer i fase IV.
+
+Til dels er fasene overlappende i tid, men i hovedsak blir aktivitetene knyttet til fase I gjennomført før aktivitetene i fase II, og så videre.
+
+Tidsplanen under viser hvor de ulike fasene faller i tid for den deliberative meningsmålingen som gjennomføres i 2021.
+
+```{r dp-sodp-gantt, fig.width=9, fig.height=4}
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Startdato)) %>% 
+  pivot_longer(., Startdato:Sluttdato, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Type = as_factor(Type))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Type, desc(Item)), group=Item, color=as_factor(Fase)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ Meningsmåling, 2021") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Fase") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+```
+
+# Gjennomføring
+
+## Forundersøkelse (Fase I)
+```{r, out.width = "50%", fig.cap= "Hva skal til for å øke deltakelsen i arrangementet?", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Presentasjoner/conjoint-deltakelse-bergen.png")
+```
+
+# Gjennomføring
+
+## Forundersøkelse (Fase I)
+
+```{r, out.width = "50%", fig.cap= "Hva skal til for å øke arrangementets legitimitet i den politiske prosessen?", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Presentasjoner/conjoint-legitimitet-bergen.png")
+```
+
+# Status og utfordringer
+
+- Midt i den mest hektiske forberedelsesfasen (Fase II)
+
+- Utfordringer som følge av Covid-19
+
+  - Måtte bytte til nettbasert gjennomføring: 
+  Stanford Online Deliberation Platform
+
+# Status og utfordringer
+  
+##  Stanford Online Deliberation Platform (SODP)
+
+- SODP ligner i sitt uttrykk på andre mer kjente videokonferanseplattformer som Zoom eller Microsoft Teams:
+Personer kommer sammen i digitale grupper, hvor de kan se og høre hverandre på skjermen
+  
+- SODP har imidlertid skreddersydde løsninger for å gjennomføre en deliberativ meningsmåling som andre plattformer ikke kan tilby
+  
+  - For eksempel har den en automatisk moderator som geleider deltakerne gjennom diskusjonen. 
+  Moderatoren passer på at deltakerne får like mye snakketid. 
+  Den gir enkelte «dult» til deltakerne, slik som å oppmode deltakere til å ta ordet hvis det er lenge siden forrige gang de snakket.
+  Den passer også på å fordele tiden på alle undertemaene, slik at gruppene kommer gjennom alle punktene på sin tilmålte tid.
+  SODP oversettes til deltakernes språk, inkludert all tekst og audioinstrukser som benyttes for å lede deltakerne gjennom de ulike stegene i prosedyren knyttet til den deliberative meningsmålingen.
+  Plattformen støttes teknisk av medarbeidere på Stanford både i forkant og underveis i gjennomføringen av den deliberative meningsmålingen.
+
+- Uoverensstemmelser mellom personvernombudet i NORCE / NSD på den ene siden og personvernombudet i Bergen kommune på den andre siden om bruk av programvare som ikke ligger i EU/EØS-området
+
+# Avrunding
+
+Den deliberative meningsmålingen som gjennomføres er del av et samarbeidsprosjekt mellom forskere og lokale myndigheter.
+En sentral motivasjon for prosjektet er å høste erfaringer i Bergen som kan komme til nytte for  byen og andre norske kommuner etter prosjektslutt.
+
+Prosjektet svarer på et uttalt lokalpolitisk behov for mer involvering av innbyggerne utenom politiske valg.
+Vi fokuserer i sterkere grad enn andre medvirkningstiltak på at deltakerne skal være så representative som mulig for den generelle befolkningen i kommunen.
+
+Dersom prosjektet blir vellykket kan det forbedre lokaldemokratiske prosesser, som i sin tur antas å øke legitimiteten og støtte til det politiske systemet.
+

@@ -1,0 +1,19 @@
+---
+title: 'Deliberativ meningsmåling'
+subtitle: "Hendelsesforløp"
+output: html_document
+---
+
+- 6. mai: Uttrekk av personer fra folkeregisteret
+
+- 15. mai: Invitasjon sendes ut til hovedutvalg for både kontrollgruppen og deltakerne i deliberativ meningsmåling.
+
+- 25. mai: Invitasjon sendes ut til tilleggsutvalg for både kontrollgruppen og deltakerne i deliberativ meningsmåling.
+
+- 26. mai: Teknisk testing av Zoom
+
+- 8. juni: Informasjonsmøte til gruppeledere
+
+- 10. juni (tentativt): Deltakere tester Zoom
+
+- 12. juni: D-dag
