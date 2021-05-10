@@ -1,0 +1,44 @@
+---
+title: "Deliberativ meiningsmåling"
+subtitle: Dagsplan 12. juni, 2021
+date: "5/10/2021"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup-dagsplan, include=FALSE}
+
+if(!require(kableExtra)) {install.packages('kableExtra'); require(kableExtra)}
+if(!require(knitr)) {install.packages('knitr'); require(knitr)}
+if(!require(tidyverse)) {install.packages('tidyverse'); require(tidyverse)}
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+```{r dagsplan, include=FALSE}
+
+dagsplan <- tibble(start = c('09:15', '10:00', '10:10', '11:00', '11:50', '12:30', '13:15', '14:10', '15:05', '15:50'),
+                     stopp = c('09:45', '10:10', '10:55', '11:45', '12:30', '13:15', '14:00', '14:55', '15:50', '16:00'),
+                   tema = c(NA, NA, 'Dokken', 'Dokken', 'Dokken', NA, 'Bilfrie områder', 'Bilfrie områder', 'Bilfrie områder', NA),
+                   aktivitet = c('Forberedelser', 'Velkommen', "Første gruppesamling", "Panel", "Andre gruppesamling", "Lunsj", "Første gruppesamling", "Panel", "Andre gruppesamling", 'Avslutning'),
+                   beskrivelse = c('Test av utstyr, Opptelling gruppeledere, m.m.',
+                                   'Velkommen fra Richard(?) og Sveinung',
+                                   'Opptelling av deltakere, gjennomgang av agenda, forberede spørsmål til panel',
+                                   'Moderator: Anne Lise(?). Eksperter: TBA',
+                                   'Debrief og videre diskusjon i gruppen', NA, 
+                                   'Gjennomgang av agenda, forberede spørsmål til panel',
+                                   'Moderator: Jacob(?). Eksperter: Oddrun Hagen, Anders Tønnesen, Rolf Knudsen',
+                                   'Debrief og videre diskusjon i gruppen.', 'Avslutning')
+                   )
+```
+
+```{r tabell-dagsplan}
+dagsplan  %>%  kable(linesep = "",
+      booktabs = T, 
+      escape = F) %>% 
+  kable_styling() %>% 
+  collapse_rows(3)  
+  
+```

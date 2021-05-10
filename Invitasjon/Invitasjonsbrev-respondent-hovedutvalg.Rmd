@@ -9,8 +9,8 @@ output:
 
 
 ```{r setup_letter_participant_invitation_sample1, echo = FALSE, warning = FALSE, message = FALSE}
-if(!require("readxl")){install.packages("readxl");  library(readxl)}
-if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+if(!require(readxl)){install.packages("readxl");  library(readxl)}
+if(!require(tidyverse)){install.packages("tidyverse");  library(tidyverse)}
 
 d <- read_excel("C://Users/svein/Documents/borgerpanel/Data/DeliberativePoll-planning.xlsx")
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 
 ::: date
-Bergen, 15.5., 2021
+Bergen, 10.5., 2021
 :::
 
 Kjære **navn**!
@@ -35,9 +35,11 @@ Svarene dine blir anonymisert.
 
 ## Sakene som du skal si din mening om 
 
-     - Fornyingen av havneområdet Dokken i Bergen sentrum. For eksempel, hva skal sjølinjen brukes til? Bør alle nye gatenavn på Dokken kalles opp etter kvinner?
+- Fornyingen av havneområdet Dokken i Bergen sentrum. For eksempel, hva skal sjølinjen brukes til? Bør alle nye gatenavn på Dokken kalles opp etter kvinner?
 
-      - Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
+- Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
+
+Byrådet behandlet saken i møtet 29.04.2021 sak 1135/21 og vedtok at innspillene fra prosjektet skal være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling.
 
 ## Hvem utfører undersøkelsen?
 Undersøkelsen er et samarbeid mellom Bergen kommune, NORCE, Universitetet i Bergen og Stanford University, med finansiering fra Norges forskningsråd. 
@@ -58,11 +60,11 @@ Alle svar du gir oss, blir behandlet i samsvar med reglene for personvern.
 Se vedlagte personvernerklæring. 
 
 Gå inn på denne nettsiden allerede i dag for å registrere deg: https://nettskjema.no/a/200896.
-Frist for påmelding er 25. mai. 
+Frist for påmelding er 26. mai. 
 
 Når du har registrert deg vil du få en epost med lenke til undersøkelsen.
 Du skal svare på samme undersøkelse to ganger: 
-Første gang i starten av juni, og andre gang i midten av juni.
+Første gang i mai, og andre gang i juni.
 Vi gjør det på denne måten for å måle om svarene endrer seg mellom første og andre gang du svarer.
 
 Obs: I påmeldingen er det viktig at du oppgir *dette nummeret, som er ditt referansenummer:* **ID**

@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 
 ::: date
-Bergen, 15.5., 2021
+Bergen, 10.5., 2021
 :::
 
 Kjære **navn**!
@@ -42,17 +42,19 @@ Svarene dine blir anonymisert.
 
 ### Sakene som skal opp til diskusjon 
 
-1. Fornyingen av havneområdet Dokken i Bergen sentrum. 
+- Fornyingen av havneområdet Dokken i Bergen sentrum. 
 For eksempel, hva skal sjølinjen brukes til? Bør alle nye gatenavn på Dokken kalles opp etter kvinner?
 
-2. Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
+- Utvikling av bilfrie områder i Bergen. For eksempel, skal nabolag selv få bestemme om et område skal være bilfritt? Og hvor mange parkeringsplasser skal være forbeholdt bildeling?
+
+Byrådet behandlet saken i møtet 29.04.2021 sak 1135/21 og vedtok at Byrådet vil ta stilling til innspillene fra den deliberative meningsmålingen i den politiske behandlingen.
 
 ### Hvem utfører prosjektet?
-Studien er et samarbeid mellom Bergen kommune, NORCE, Universitetet i Bergen og Stanford University, med finansiering fra Norges forskningsråd. 
+Prosjektet er et samarbeid mellom Bergen kommune, NORCE, Universitetet i Bergen og Stanford University, med finansiering fra Norges forskningsråd. 
 Det er selvsagt frivillig å delta. 
 De fleste som deltar synes det er interessant og meningsfylt. 
 Vi håper du blir med, og at også du finner det givende.
-Som takk for din innsats, får du overført 500 kroner på konto når du har fullført deltakelsen. 
+Dersom du registrerer deg og fullfører deltakelsen i den deliberative meningsmålingen, får du overført 500 kroner på konto som takk for din innsats. 
 
 Hvorfor er nettopp du trukket ut? 
 Vi har gjort et såkalt representativt utvalg fra Folkeregisteret.
@@ -66,7 +68,8 @@ Se vedlagte personvernerklæring.
 Gå inn på denne nettsiden allerede i dag for å registrere deg som deltaker: https://nettskjema.no/a/183040.
 Når du har registrert deg vil du få en epost med mer informasjon.
 Obs: I påmeldingen er det viktig at du oppgir *dette nummeret, som er ditt referansenummer:* **ID**
-Frist for påmelding er 25. mai. 
+
+Frist for påmelding er 26. mai. 
 
 
 

@@ -1,0 +1,72 @@
+---
+title: "sampling-test"
+author: "Sveinung Arnesen"
+date: "5/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require(readxl)) {install.packages('readxl'); require(readxl)}
+if(!require(tidyverse)) {install.packages(('tidyverse'), require(tidyverse))}
+if(!require(xlsx)) {install.packages(('xlsx'), require(xlsx))}
+if(!require(writexl)) {install.packages(('writexl'), require(writexl))}
+
+```
+
+# Trekke hovedutvalg for brevutsending
+
+## Last inn data
+```{r load}
+d <- read_excel("C:\\Users/svein/Documents/borgerpanel/Invitasjon/Adresseliste4000.xlsx")
+```
+
+## Gi referanse-ID
+{r lopenummer-setup, include=FALSE}
+set.seed(34934)
+id <- tibble(id = sample(10000, size = 4000, replace = FALSE))
+
+d <- left_join(d, id, by = id)
+
+
+For at vi skal kunne koble deltakerne i den deliberative meningsmålingen med andre datakilder (personopplysninger lagret sikkert i TDS og svar på spørreundersøkelsene i Qualtrics) trenger vi et løpenummer.
+Løpenummeret genereres tilfeldig, og kan bare spores tilbake til deltakeren dersom man har tilgang til TDS.
+
+Fire tusen er maks antall deltakere vi kommer til å rekruttere.
+Vi lager derfor først et datasett hvor vi trekker fire tusen tilfeldige, unike tall mellom en og ti tusen.
+Deretter deler vi tallene i to ulike datasett, slik at vi kan skille mellom de som skal inviteres til deltakelse i den deliberative meningsmålingen og kontrollgruppen. 
+Disse datasettene blir kalt henholdsvis *treatment_uid* og *control_id*:
+
+
+Datasettene blir seinere koblet til navn og adresser på deltakerne.
+Deltakerne må oppgi denne når de svarer på spørreundersøkelsen og deltar på den deliberative meningsmålingen.
+
+
+Hver person som får brev trenger et unikt referanse-ID.
+
+
+## Randomiser rekkefølge
+
+Adresselisten er sortert etter alder, og må derfor reordnes slik at rekkefølgen er tilfeldig.
+
+```{r random-sample}
+set.seed(101)
+d <- d[sample(nrow(d), 4000), ] 
+```
+
+## Del opp i hovedutvalg og tileggsutvalg
+
+Vi har to utvalg - hovedutvalget som først får brev, og deretter tilleggsutvalget som brukes til å supplere dersom det er behov for det.
+```{r split-sample}
+hoved <- d[1:2500, ]
+tillegg <- d[2501:4000, ]
+```
+
+## Lage filer
+```{r save-file}
+write.csv(hoved, file = 'adresser-hovedutvalg.csv')
+write.csv(tillegg, file = 'adresser-tilleggsutvalg.csv')
+
+```

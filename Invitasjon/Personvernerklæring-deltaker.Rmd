@@ -27,7 +27,7 @@ Det vil ikke ha noen negative konsekvenser for deg hvis du ikke vil delta eller 
 #### Hvis du bestemmer deg for å ikke delta
 
 Vi har behov for å kontrollere at personene som deltar i undersøkelsen er representative for den samlede befolkningen. 
-Når vi trakk utvalget innhentet vi informasjon om hvilken ditt navn, adresse, telefonnummer, kjønn, alder og utdanning.
+Når vi trakk utvalget innhentet vi informasjon om ditt navn, adresse, telefonnummer, kjønn, alder og utdanning.
 Dine kontaktopplysninger er hentet fra Folkeregisteret med tillatelse fra Skatteetaten.
 Du har rett til innsyn i disse opplysningene, samt be om at opplysningene korrigeres eller slettes.
 Hvis du bestemmer deg for å ikke delta i arrangementet, vil vi bruke disse dataene i anonymisert form til å gjøre en frafallsanalyse.
@@ -67,7 +67,6 @@ Prosjektet finansieres av Bergen kommune og Norges Forskningsråd (prosjektnumme
 
 #### Hvilke organisasjoner er involvert og hvor kan jeg finne ut mer?
 Bergen kommune, NORCE - Norwegian Research Centre, Universitetet i Bergen og Stanford University er involvert i prosjektet som organiserer arrangementet.
-Norges forskningsråd finansierer prosjektet. 
 Du kan kontakte disse personene direkte på epost:
 
 NORCE: Sveinung Arnesen, e-post: sveinung.arnesen@norceresearch.no.  
