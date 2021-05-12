@@ -36,6 +36,7 @@ Det er bare Norce som vil ha tilgang til kontaktopplysningene dine (f.eks. navn,
 Direkte og indirekte identifiserbare personopplysninger lagres på en sikker server ved UiB (SAFE – Sikker Adgang til Forskningsdata og E-infrastruktur) og Universitetet i Oslos tilsvarende løsning TSD.
 Spørreskjemaopplysningene behandles av Qualtrics International Inc., USA. 
 Vi benytter Qualtrics sin anonyme løsning hvor det ikke lagres kobling mellom IP-/e-postadresse og besvarelse. 
+Ingen data føres ut av EU/EØS-området.
 
 Når studien er ferdig, og senest 31.12.2022 vil alle personidentifiserbare opplysninger slettes permanent. 
 Dataene, uten navnet eller kontaktopplysningene dine, sendes NSD – Norsk senter for forskningsdata i Bergen.   

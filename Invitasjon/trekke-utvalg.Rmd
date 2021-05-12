@@ -20,16 +20,17 @@ if(!require(writexl)) {install.packages(('writexl'), require(writexl))}
 
 ## Last inn data
 ```{r load}
-d <- read_excel("C:\\Users/svein/Documents/borgerpanel/Invitasjon/Adresseliste4000.xlsx")
+d <- read_excel("C:\\Users/svein/OneDrive - NORCE/Prosjekter/Demovate/DP/Invitasjonsbrev/Adresseliste4000.xlsx")
+
 ```
 
-## Gi referanse-ID
-{r lopenummer-setup, include=FALSE}
-set.seed(34934)
-id <- tibble(id = sample(10000, size = 4000, replace = FALSE))
+## Gi referansenummer
 
-d <- left_join(d, id, by = id)
-
+### Hovedutvalg
+```{r lopenummer-setup, include=FALSE}
+set.seed(10000)
+d <- d %>% mutate(id = sample(10000, size = 4000, replace = FALSE))
+```
 
 For at vi skal kunne koble deltakerne i den deliberative meningsmålingen med andre datakilder (personopplysninger lagret sikkert i TDS og svar på spørreundersøkelsene i Qualtrics) trenger vi et løpenummer.
 Løpenummeret genereres tilfeldig, og kan bare spores tilbake til deltakeren dersom man har tilgang til TDS.
@@ -56,17 +57,38 @@ set.seed(101)
 d <- d[sample(nrow(d), 4000), ] 
 ```
 
+
 ## Del opp i hovedutvalg og tileggsutvalg
 
 Vi har to utvalg - hovedutvalget som først får brev, og deretter tilleggsutvalget som brukes til å supplere dersom det er behov for det.
 ```{r split-sample}
 hoved <- d[1:2500, ]
 tillegg <- d[2501:4000, ]
+test <- d[1:6, ]
+```
+
+## Del opp i kontrollgruppe (respondenter) og treatmentgruppe (deltakere)
+
+```{r treatment-kontroll}
+hovedrespondent <- hoved[1:1250, ]
+hoveddeltaker <- hoved[1251:2500, ]
+tilleggsrespondent <- tillegg[1:750, ]
+tilleggsdeltaker <- tillegg[751:1500, ]
+testrespondent <- test[1:3, ]
+testdeltaker <-  test[4:6, ]
 ```
 
 ## Lage filer
 ```{r save-file}
 write.csv(hoved, file = 'adresser-hovedutvalg.csv')
+write.csv(hovedrespondent, file = 'adresser-hovedutvalg-respondent.csv')
+write.csv(hoveddeltaker, file = 'adresser-hovedutvalg-deltaker.csv')
 write.csv(tillegg, file = 'adresser-tilleggsutvalg.csv')
+write.csv(tilleggsrespondent, file = 'adresser-tilleggsutvalg-respondent.csv')
+write.csv(tilleggsdeltaker, file = 'adresser-tilleggsutvalg-deltaker.csv')
+write.csv(test, file = 'adresser-testutvalg.csv')
+write.csv(testrespondent, file = 'adresser-testutvalg-respondent.csv')
+write.csv(testdeltaker, file = 'adresser-testutvalg-deltaker.csv')
+
 
 ```
