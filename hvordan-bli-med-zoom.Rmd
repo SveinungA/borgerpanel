@@ -1,0 +1,21 @@
+---
+title: "Hvordan bli med på Zoom"
+author: "Sveinung Arnesen"
+date: "5/25/2021"
+output: html_document
+---
+
+
+
+
+Problemer med å logge deg på?
+
+De mest vanlige årsakene til at du ikke kommer deg inn på Zoom er 
+
+1. Nettleser som ikke støttes av Zoom. Nettlesere som støttes av Zoom er
+
+  -	Windows: Internet Explorer 11+, Edge 12+, Firefox 27+, Chrome 30+
+
+  -	macOS: Safari 7+, Firefox 27+, Chrome 30+
+
+  -	Linux: Firefox 27+, Chrome 30+

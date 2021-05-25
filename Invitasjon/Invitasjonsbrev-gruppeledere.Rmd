@@ -2,9 +2,9 @@
 title: "Vil du være med og lede et demokrati-initativ i Bergen?"
 subtitle: Vi søker gruppeledere til demokratidag
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
  
 Vi inviterer om lag 200 innbyggere i Bergen til å diskutere to engasjerende, lokalpolitiske saker.
@@ -19,7 +19,7 @@ Kan du tenke deg å være med på dette?
 Arrangementet finner sted **lørdag den 12. juni**, og varer fra 10-16.
 Oppmøte for gruppelederne er kl 9.
 
-I tillegg er det et informasjonsmøte for alle gruppelederne **tirsdag 8. juni kl 18-20.**
+I tillegg er det et informasjonsmøte for alle gruppelederne **mandag 7. juni kl 18-20.**
 
 Arrangementet er en såkalt *deliberativ meningsmåling*, og er et samarbeid mellom Bergen kommune, Norce, Universitetet i Bergen, og Stanford University.
 Mer informasjon om metoden finner du her (på engelsk):
@@ -28,7 +28,7 @@ https://cdd.stanford.edu/what-is-deliberative-polling/
 
 Dersom du syns dette høres spennende ut, meld din interesse til Sveinung Arnesen på epost sarn@norceresearch.no.
 Dersom det melder seg flere enn det er behov for, vil vi foreta en utvelgelse av gruppeledere.
-Honorar vil bli gitt.
+Honorar på kr. 1000,- vil bli gitt til gruppelederne.
 
 
 Gjør en innsats for lokaldemokratiet, og ta kontakt!

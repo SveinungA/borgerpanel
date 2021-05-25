@@ -1,0 +1,25 @@
+---
+title: "Agenda-gruppediskusjon-dokken"
+author: "Sveinung Arnesen"
+date: "5/25/2021"
+output: html_document
+---
+
+Forslag 1:
+
+Flytt cruisetrafikken ut av sentrum
+
+Argument for: 
+Cruiseskip forurenser og tar opp verdifull plass i sentrum av byen.
+
+Argument mot:
+Turistnæringen trenger at byen er attraktiv å komme til for turister, og cruiseturistene utgjør en stor andel av turistene som kommer til Bergen.
+
+Andre argumenter som kommer opp i diskusjonen?
+
+Spørsmål til panelet?
+
+Forslag 2:
+
+Utenlandsferger ut av sentrum?
+
