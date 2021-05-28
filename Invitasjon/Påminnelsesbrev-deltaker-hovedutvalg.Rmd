@@ -1,13 +1,9 @@
 ---
-title: "Diskutér Bergens fremtid"
+title: "Diskuter Bergens fremtid"
 
-output: word_document
-#   pagedown::html_letter:
-#     self_contained: false
-# links-to-footnotes: true
-# paged-footnotes: true
-# # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+output:
+  word_document: 
+    reference_docx: NORCE-Dokumentmal.docx
 ---
 
 ```{r setup_letter_participant_reminder_sample1, echo = FALSE, warning = FALSE, message = FALSE}
@@ -19,29 +15,30 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, messag
 
 ```
 
-<!-- ![Bergen kommune Logo](Bg_logo.png){.logo} -->
-<!-- ![NORCE Logo](NORCE_logo.png){.logo} -->
 
-<!-- ![UiB Logo](UiB_logo.png){.logo} -->
-
-<!-- ::: date -->
-<!-- Bergen, xx.xx, 2021 -->
-<!-- ::: -->
-
-
-Kjære **navn**!
+Kjære **fornavn** **etternavn**
 
 Vi minner om din unike sjanse til å være med som deltaker i den deliberative meningsmålingen den 12. juni.
 Kanskje du hørte om arrangementet på NRK Hordaland i deres morgensending tirsdag 25. mai?
 
 Vi oppfordrer deg til å registrere deg dersom du ikke allerede har gjort det.
 
-For å sikre at flest mulig interesserte melder seg på øker vi honoraret fra kr. 500 til kr. 1000 for de som fullfører deltakelsen. 
+For å sikre at flest mulig interesserte melder seg på øker vi honoraret fra kr. 500 til kr. 1000 for alle som fullfører deltakelsen. 
 Vi har også utvidet påmeldingsfristen til 4. juni.
 Dersom vi når maks antall deltakere før denne datoen vil påmeldingen stenges tidligere.
 
-Noen mener det er en plikt å bruke stemmeretten sin i valg.
 Nå har du sjansen til å påvirke politikken i byen i mellom valg, og vi oppfordrer deg til å benytte deg av denne muligheten.
-Gå inn på denne nettsiden allerede i dag for å registrere deg som deltaker: https://nettskjema.no/a/183040.
-Når du har registrert deg vil du få en epost med mer informasjon.
-Obs: I påmeldingen er det viktig at du oppgir *dette nummeret, som er ditt referansenummer:* **ID**
+Gå inn på denne nettsiden for å registrere deg som deltaker: https://nettskjema.no/a/183040
+
+Når du har registrert deg vil du senere få en epost med mer informasjon.
+Obs: I påmeldingen er det viktig at du oppgir dette nummeret, som er ditt referansenummer: **ID**
+
+Dersom du allerede har registrert deg eller ikke ønsker å delta kan du se bort fra denne påminnelsen.
+Ved spørsmål kan du kontakte faglig leder Sveinung Arnesen på epost sarn@norceresearch.no.
+
+Med vennlig hilsen
+
+Ingrid Helgøy
+
+![](Bg_Logo.png){height='80'}     .       ![](NORCE_Logo.png){height='30'}  
+![](UiB_Logo.png){height='60'}    .      ![](CDD_Stanford_Logo.jpg){height='20'}
