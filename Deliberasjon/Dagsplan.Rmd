@@ -25,16 +25,16 @@ dagsplan <- tibble(start = c('09:15', '10:00', '10:10', '11:00', '11:50', '12:30
                    beskrivelse = c('Test av utstyr, opptelling gruppeledere, m.m.',
                                    '',
                                    'Opptelling av deltakere, gjennomgang av agenda, forberede spørsmål til panel',
-                                   'Moderator:  Anne Lise Fimreite. Paneldeltakere: Erling Dokk Holm, Johanne Gillow, Gro Sandkjær Hanssen',
+                                   'Moderator:  Anne Lise Fimreite. Paneldeltakere: Anders Nyland, Johanne Gillow, Gro Sandkjær Hanssen',
                                    'Debrief og videre diskusjon i gruppen', ' ', 
                                    'Gjennomgang av agenda, forberede spørsmål til panel',
-                                   'Moderator: Jacob Aars. Paneldeltakere: Oddrun Hagen, Håvard Haarstad',
+                                   'Moderator: Jacob Aars. Paneldeltakere: Oddrun Hagen, Håvard Haarstad, Rolf Knudsen',
                                    'Debrief og videre diskusjon i gruppen.', 'Avslutning')
                    )
 ```
 
 ```{r tabell-dagsplan}
-dagsplan  %>%  kable(linesep = "",
+dagsplan  %>%  select (-beskrivelse) %>% kable(linesep = "",
       booktabs = T, 
       escape = F) %>% 
   kable_styling() %>% 

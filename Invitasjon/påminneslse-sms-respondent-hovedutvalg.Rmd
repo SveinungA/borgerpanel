@@ -17,17 +17,3 @@ Obs: I påmeldingen er det viktig at du oppgir referansenummeret du fikk i breve
 Om du ikke finner referansenummeret eller har andre spørsmål kan du kontakte faglig leder Sveinung Arnesen på epost sarn@norceresearch.no.
 
 Dersom du allerede har registrert deg eller ikke ønsker å delta kan du se bort fra denne siste påminnelsen.
-
-
-```{r}
-library(tidyverse)
-library(knitr)
-
-dataset1 <- tibble(name = c('Jane', 'Joe', 'Janet', 'George'), surname = c('Doe', 'Doe', 'Doh', 'Costanza'), phone = c(55512, 55513, 55514, NA))
-dataset2a <- tibble(name = c('George', 'Janet'), surname = c('Costanza', 'Doh'))
-dataset2b <- tibble(name = c('Joe', 'Jane'), surname = c('Doe', 'Doe'))
-
-kable(dataset1)
-kable(dataset2a)
-kable(dataset2b)
-```  
