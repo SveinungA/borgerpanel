@@ -1,0 +1,27 @@
+---
+title: "Diskuter Bergens fremtid"
+
+output:
+  word_document: 
+    reference_docx: NORCE-Dokumentmal.docx
+---
+
+```{r setup_letter_participant_reminder_sample2, echo = FALSE, warning = FALSE, message = FALSE}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("C://Users/svein/Documents/borgerpanel/Data/DeliberativePoll-planning.xlsx")
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+
+```
+
+Hei!
+Vi minner om din unike sjanse til å være med som deltaker i den deliberative meningsmålingen den 12. juni.
+
+Gå inn på denne nettsiden for å registrere deg som deltaker: https://nettskjema.no/a/183040
+Fristen er i dag, 4. juni.
+
+Obs: I påmeldingen er det viktig at du oppgir referansenummeret du fikk i brevet.
+Om du ikke finner referansenummeret eller har andre spørsmål kan du kontakte faglig leder Sveinung Arnesen på epost sarn@norceresearch.no.
+
+Dersom du allerede har registrert deg eller ikke ønsker å delta kan du se bort fra denne påminnelsen.

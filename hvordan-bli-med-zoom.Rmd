@@ -5,7 +5,14 @@ date: "5/25/2021"
 output: html_document
 ---
 
+Det blir anledning å prøve ut utstyret torsdag 10. juni mellom kl 14-16.
+Du vil da bli møtt av noen i IT-avdelingen, og får sett at alt fungerer.
+Det vil nok bare ta noen minutter.
 
+Obs: På selve møtet vil du få en annen lenke, så lenken under skal kun benyttes til testing på torsdagen.
+
+Testlenke:
+https://norceresearch-no.zoom.us/j/64919034710
 
 
 Problemer med å logge deg på?
