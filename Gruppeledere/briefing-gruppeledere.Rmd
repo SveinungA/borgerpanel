@@ -1,0 +1,22 @@
+---
+title: "Briefing gruppeledere"
+output: html_document
+---
+
+Før møtet:
+
+1. Les gruppelederguiden  
+2. Les informasjonsmaterialet  
+
+Under møtet:
+
+1. Gi kort oppsummering av rollen en gruppeleder skal ha.  
+2. Konkrete oppgaver som de må huske på:
+
+  - Be alle om å si sitt fulle navn i starten av møtet. Om noen kommer til, så skal de også oppgi sitt fulle navn.  
+  - Nevne at det kan komme observatører inn i rommet i løpet av gruppediskusjonen. Disse skal ikke involvere seg på noen måte i diskusjonen.  
+  - Gjør klart et spørsmål som man kan stille i plenum. Forbered spørsmålsstiller å skrive ned spørsmålet slik at han/hun kan stille det selv.
+
+3.  Lag rollespill hvor man bytter på å være gruppeleder og deltaker.
+
+4. Debrief

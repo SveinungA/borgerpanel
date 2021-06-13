@@ -1,0 +1,16 @@
+---
+title: "Lenke til møtet i morgen"
+author: "Sveinung Arnesen"
+date: "6/10/2021"
+output: html_document
+---
+
+Kjære deltaker,
+
+I morgen skjer det! Her er lenken til den deliberative meningsmålingen: xxx
+Dette er den eneste lenken som fungerer for å komme til riktig sted. Andre lenker dere har fått tidligere vil ikke lede dere til arrangementet i morgen.
+
+Vi oppfordrer om å være ute i god tid før oppstart kl. 10. Om dere har tekniske problemer kan dere ringe Malene på tlf. Xxxx. Samtidig ber vi om forståelse for at det er begrenset hvor mye hjelp vi kan gi til hver enkelt. Dere har forhåpentligvis testet utstyret på forhånd, og så regner vi med at dette skal gå bra for de aller fleste.
+
+Lykke til!
+

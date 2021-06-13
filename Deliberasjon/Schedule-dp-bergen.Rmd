@@ -1,6 +1,6 @@
 ---
-title: "Deliberativ meningsmåling"
-subtitle: Dagsplan 12. juni, 2021
+title: "Deliberative Poll, Bergen"
+subtitle: "Schedule for June 12, 2021"
 output:
   html_document: default
   pdf_document: default
@@ -19,8 +19,8 @@ knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = " ", warning = FALSE, messa
 ```{r dagsplan, include=FALSE}
 
 dagsplan <- tibble(Start = c('10:00', '10:10', '11:00', '11:50', '12:30', '13:15', '14:10', '15:05', '15:50'),
-                     Stopp = c('10:10', '10:55', '11:45', '12:30', '13:15', '14:00', '14:55', '15:50', '16:00'),
-                         Aktivitet = c('Velkommen', "Dokken: Første gruppesamling", "Panel", "Dokken: Andre gruppesamling", "Lunsj", "Bilfrie områder: Første gruppesamling", "Panel", "Bilfrie områder: Andre gruppesamling", 'Avslutning'),
+                     Stop = c('10:10', '10:55', '11:45', '12:30', '13:15', '14:00', '14:55', '15:50', '16:00'),
+                         Activity = c('Welcome', "Dokken: First Group Session", "Plenary Session", "Dokken: Second group Session", "Lunch", "Car Free Zones: First Group Session", "Plenary Session", "Car Free Zones: Second Group Session", 'Concluding Remarks'),
                    beskrivelse = c('',
                                    'Opptelling av deltakere, gjennomgang av agenda, forberede spørsmål til panel',
                                    'Moderator:  Anne Lise Fimreite. Paneldeltakere: Anders Nyland, Johanne Gillow, Gro Sandkjær Hanssen, Erling Dokk Holm',
