@@ -1,0 +1,215 @@
+---
+title: "Online Deliberative Polling in the Age of Covid and EU Data Protectionism"
+subtitle: 'Presentation at Center for Advanced Studies, Oslo'
+author: "Sveinung Arnesen"
+date: "6/15/2021"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# What, where, when, why
+
+What: 
+Deliberative Polling
+
+Where:
+
+* Municipality of Bergen  
+* Online
+
+When: 
+June 12, 2021
+
+Why:
+Main objective is practical.
+Collaborate with local government and try out new forms of democratic participation to complement the representative selection procedure.
+
+
+![](Bg_Logo.png){height='80'}           ![](NORCE_Logo.png){height='30'}  ![](UiB_Logo.png){height='60'}   ![](CDD_Stanford_Logo.jpg){height='20'}   ![](RNDBG_logo_transparent_web.png){height='80'}    ![](nfr_logo.jpg){height='80'}
+
+# Deliberative Polling
+
+A [Deliberative Poll®](https://cdd.stanford.edu/) aims to show what the people would think if they opportunity to become more informed and more engaged by the issues in question.
+
+## Key features
+
+- Random sample
+
+- 100-300 citizens discuss chosen topics and express their views in a survey
+
+- Control group of similar size participates in same survey, but not in the deliberation
+
+- Physical meetings most common, but online solutions possible (and necessary in the covid era)
+
+<!-- # Deliberative Polling -->
+
+<!-- [Deliberative Polling®](https://cdd.stanford.edu/)  is an attempt to use public opinion research in a new and constructive way. -->
+
+<!-- The public has little reason to invest time and effort in acquiring information or coming to a considered judgment, and are as a result often uninformed about key public issues. -->
+
+<!-- In a deliberative poll, the participants first take survey. -->
+<!-- Then, the participants engage in dialogue with fellow citizens and competing experts. -->
+<!-- After the deliberations, the sample is again asked the original questions.  -->
+<!-- The resulting changes in opinion represent the conclusions the public would reach, *if people had opportunity to become more informed and more engaged by the issues*. -->
+
+# Deliberative Polling
+
+A [Deliberative Poll®](https://cdd.stanford.edu/) aims to show what the people would think if they opportunity to become more informed and more engaged by the issues in question.
+
+## Key features
+
+- Groups of 5-20 participants discuss political proposals, and weigh arguments for and against.
+Group moderators ensure proper discussions, maintain progression, and make sure everyone has the opportunity to make their voice heard
+
+- Panel debate with experts on the field, representing the breadth of opinions on the topic under discussion
+Participants have the opportunity to ask questions.
+
+- Duration: 1-2 days
+
+Deliberative polling shares many features with other small scale participatory processes with other labels ('Citizen assembly', 'mini-publics', 'G1000', and more).
+In Norwegian, we label such small scale participatory processes 'borgerpanel'.
+
+# Background: Local democratic innovation in Bergen
+
+- Former head of Council Harald Schelderup established a committee lead by Prof. Anne Lise Fimreite with the mandate to evaluate the health of democracy in Bergen.
+
+- [The report](https://www.bergen.kommune.no/publisering/api/filer/T540582721) recommended trying out alternative forms of participatory processes to complement representative democracy.
+
+- An initial *borgerpanel* pilot was carried out in collaboration with the municipality of Bergen.
+
+# *Borgerpanel* pilot
+
+## Topic: decentralized local government in Bergen?
+
+![Runa guiding participants for borgerpanel pilot](borgerpanel-runa.jpg) ![Resultater fra piloten](borgerpanel-bydeler-conjoint.jpg){height='400'}
+
+
+
+# DEMOVATE project: Collaborative project between academia and local authorities
+
+- The core aim to be addressed in the DEMOVATE project is to establish a well-functioning, legitimate, and politically relevant borgerpanel in the municipality of Bergen that can serve as a model for other municipalities in Norway.
+
+- Financed by the Research Council of Norway (2019-2022).
+
+
+# DEMOVATE project: Deliberative poll, 2021
+
+## Preparations
+
+Survey on citizens of Bergen to evaluate
+
+  - What topics to choose
+  
+  - How to set up the deliberative poll to increase participation (incentives, length, etc)
+  
+![](lokaldemokrati-deltakelse.png){height='400'}
+
+# Two issues 
+
+- Re-development of the port area Dokken
+
+- Introduction of car-free zones in Bergen
+
+```{r, out.width = "50%", fig.cap= "Bilfri sone på Møhlenpris. Foto: Lars Ove Kvalbein", echo=FALSE}
+knitr::include_graphics("C:/Users/svein/Documents/borgerpanel/Informasjonsmateriale/Picture1.png")
+```
+
+The topics were decided by the city council.
+
+# Formal input into the political decision process
+
+Results from the deliberative poll will be formally recognized and taken into account by the city council:
+
+>Byrådsleder innstiller til byrådet å fatte følgende vedtak:
+1. Program for bilfrie soner i bydelene og arealstrategi for Dokken brukes som
+diskusjonstemaer i borgerpanelet.
+2. Byrådet vil ta stilling til innspillene fra borgerpanelet i de politiske saksfremleggene som
+følger sakene i vedtakspunkt 1, og innspillene skal være selvstendige vedlegg i
+saksgrunnlaget frem mot endelig politisk behandling.
+
+        - City Council decision, April 29, 2021
+
+# First challenge: Covid-19
+
+* Initial plan of physical gathering in April 2021 was impossible due to government restrictions followin the Covid-19 pandemic.
+
+* Caused a two mont delay and the need to go online
+
+# Adjusted timeline
+
+```{r firefaser-setup, include=FALSE}
+if(!require("haven")){install.packages("haven");  library(haven)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+if(!require("knitr")){install.packages("knitr");  library(knitr)}
+if(!require("readxl")){install.packages("readxl");  library(readxl)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+
+d <- read_excel("DeliberativePoll-planning.xlsx")
+
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = "", warning = FALSE, message = FALSE)
+```
+
+```{r dp-sodp-gantt, fig.width=9, fig.height=4}
+#Gantt
+gantt <- d %>% 
+  filter(!is.na(Startdato)) %>% 
+  pivot_longer(., Startdato:Sluttdato, names_to = "period") %>% 
+  mutate(value = as.Date(value, "%Y.%m.%d"),
+         Type = as_factor(Type))  
+
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+plot1 <- 
+  ggplot(gantt, aes(x=value, y=fct_reorder(Type, desc(Item)), group=Item, color=as_factor(Fase)))+
+    geom_line(size = 3) +
+  labs(x="Year", y=NULL, title="Deliberativ Meningsmåling, 2021") + 
+  scale_colour_manual(values=cbbPalette) +
+  labs(color = "Fase") +
+     theme_light() +
+  theme(axis.line.y=element_blank(),
+                  axis.title.x=element_blank(),
+                 axis.title.y=element_blank(),
+                 axis.ticks.y=element_blank(),
+                                  axis.line.x =element_blank(),
+                 legend.position = "bottom"
+                ) 
+plot1
+```
+
+# Solution: Stanford Online Deliberation Platform (SODP)
+
+
+# Challenge II: EU Data Protectionism
+
+- Schrems II ruling of Summer 2020: No personal identifying data of EU/EEA citizens can be transferred outside that area.
+
+- Using the SODP, the discussions during June 12th would temporarily be transferred to the secure servers at Stanford University. This is a breach of the Schrems II ruling. 
+
+- After much back and forth between the project partners, we had to make a late switch to using Zoom.
+
+# Research design
+
+Solomon Four Group  Design
+
+Treatment group: Pretest --> Deliberation --> Post test  
+Control group: Pretest --> Post test
+
+# Recruitment
+
+Random draw from the population registry, everyone 18 years of age and older. Close to perfect sampling frame of all inhabitants in Bergen.
+
+Main sample: 2500 persons. 1250 invited to deliberative poll, and 1250 invited to survey only (control group).
+Reserve sample of 1500 persons to be invited if needed.
+
+Invitation by regular mail.
+
+
+------------------------
+
+![](Bg_Logo.png){height='80'}    ![](NORCE_Logo.png){height='45'}   ![](UiB_Logo.png){height='80'}  ![](CDD_Stanford_Logo.jpg){height='25'}     ![](RNDBG_Logo_transparent_web.png){height='110'}    ![](nfr_Logo.jpg){height='70'}    
+
