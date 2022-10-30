@@ -1,0 +1,35 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem}
+\usepackage[font=singlespacing]{caption}
+\usepackage{
+  sectsty, lmodern, setspace, graphicx, booktabs, geometry, hyperref,
+  tabularx, color, subcaption, bookmark, ragged2e, bookmark, arydshln, 
+  minitoc, fancyhdr
+}
+
+%% Font-related
+\usepackage{libertine, libertinust1math}
+\usepackage[scaled=0.9]{inconsolata}
+
+%% Setup
+\geometry{
+  hmargin = 2.5cm,
+  vmargin = 2.5cm
+}
+
+
+\renewcommand{\contentsname}{Innholdsfortegnelse}
+\renewcommand{\listfigurename}{Figurliste}
+\renewcommand{\figurename}{Figur}
+\renewcommand{\listtablename}{Tabelliste}
+\renewcommand{\tablename}{Tabell}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}}
+
+\renewcommand{\refname}{Referanser}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% page number on the left of even pages and right of odd pages
+\fancyfoot[LE,RO]{\thepage}

@@ -1,0 +1,397 @@
+--- 
+abstract: "![](figs/2x/Forside.png){width=11in,align=center} "
+title: |
+  ![](figs/norce_logo.png){width=1in}   
+  \bigskip  
+  Hvordan gjennomføre borgerpanel  
+author: |
+  Sveinung Arnesen (red.)  
+  Henrik Litlere Bentsen  
+  Pål Bjørseth  
+  Anne Lise Fimreite (red.)  
+  Arild Ohren  
+  Jon Kåre Skiple 
+  Jacob Aars 
+output:
+  pdf_document:
+    toc: no
+    includes:
+      in_header: preamble.tex
+  html_document:
+    toc: no
+    df_print: paged
+cover-image: null
+documentclass: article
+classoption: a4paper, 12pt
+bibliography:
+- haandbok.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
+description: Hvordan gjennomføre borgerpanel
+fontsize: 12pt
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = " ", cache = FALSE, warning = FALSE)
+
+## if(!require("ggdag")){install.packages("ggdag");  library(ggdag)}
+if(!require("gt")){install.packages("gt");  library(gt)}
+## if(!require("haven")){install.packages("haven");  library(haven)}
+## if(!require("here")){install.packages("here");  library(here)}
+if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
+## if(!require("patchwork")){install.packages("patchwork");  library(patchwork)}
+## if(!require("readxl")){install.packages("readxl");  library(readxl)}
+## if(!require("rio")){install.packages("rio");  library(rio)}
+if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
+if(!require("qrcode")){install.packages("qrcode");  library(qrcode)}
+```
+
+
+
+\newpage
+\tableofcontents 
+
+\newpage
+\listoftables
+\listoffigures
+
+
+\newpage
+# Om rapporten
+
+Prosjekttittel: Demokratisk innovasjon i praksis -- Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser      
+Institusjon: NORCE Helse og samfunn  
+Oppdragsgiver(e): Norges forskningsråd (prosjektnummer 295892)  
+Gradering: Åpen   
+Rapportnr.: 174  
+ISBN:   
+Antall sider:   
+Publiseringsmnd.: November, 2022  
+Denne versjonen:  02. november, 2022
+Url: https://hdl.handle.net/11250/3028610
+```{r, qrcode, include=FALSE}
+set.seed(2022)
+qr <- qr_code(" https://hdl.handle.net/11250/3028610")
+png("figs/qrcode.png", width = 400, height = 400)
+plot(qr)
+dev.off()
+```
+
+![QR-kode til rapport i vitenarkivet]("figs/qrcode.png"){width='20%'}
+
+\newpage
+# FORORD
+
+\newpage
+# DEL I: BORGERPANELER -- HVA OG HVORFOR?
+
+> Jacob Aars og Arild Ohren 
+
+![](figs/1x/Del1.png)
+
+
+### Demokratiske innovasjoner 
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Familier av demokratiske innovasjoner"}
+knitr::include_graphics("figs/familier.png")
+```
+
+
+### Nærmere om borgerpaneler 
+
+```{r, tbl-borgerpaneler}
+tibble <- tibble(Samtale = c('Nei', 'Nei', 'Nei', 'Nei', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja'),
+                 Representativitet = c('Nei', 'Nei', 'Ja', 'Ja', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Ja', 'Ja'),
+                 Deltakelsestiltak = c('Folkemøte/høring uten mulighet for diskusjon',
+                                      'Undersøkelse med skjevt utvalg',
+                                      'Brukerundersøkelse',
+                                      'Valg',
+                                      'Folkemøte',
+                                      'Høring',
+                                      'Kommunestyre',
+                                      'Charrette',
+                                      'Deltakende budsjettering',
+                                      'Borgerpanel',
+                                      'Deliberativ meningsmåling')
+)
+
+tibble %>% kableExtra::kbl(caption = 'Klassifikasjon av deltakelsestiltak/-kanaler', booktabs = T, linesep = ' ') %>%  
+     collapse_rows(columns = 1:2, valign = "top") %>% 
+  kable_styling(latex_options = c('striped', 'hold_position')) %>% 
+  row_spec(0, bold = T)
+  
+```
+
+
+### Borgerpanelenes opprinnelse og utvikling 
+
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Tidslinje over viktige borgerpanel"}
+knitr::include_graphics("figs/tidslinje.png")
+#Adoptert fra Gastil og Knobloch [-@gastil_hope_2020, pp. 13]
+```
+
+```{r, tbl-opprinnelse}
+tbl <- tibble(Type = c('Borgerjury', 'Plannleggingscelle/Planleggingsnettverk', 'Lekfolkskonferanser', 'Borgerforsamling/
+Borgersamling', 'Borgerhøring/Deliberativ meningsmåling', 'G1000'),
+Originalnavn = c('Citizen Jury/ Reference Panels/ Citizen panels', 'Planning Cell', 'Consensus Conference', 'Citizen Assembly',
+'Deliberative Poll', 'G1000'),
+Opprinnelse = c('Ned Crosby, USA, 1971', 'Peter Dienel, Tyskland, 1970-tallet', 'Teknologirådet - The Danish Board of Technology, Danmark, 1987',
+'Gordon Gibson, Canada 2002', 'James Fishkin, USA, 1994', '27 underskrivere, Belgia, 2011'),
+Deltakerantall  = c('12 - 36(50)', '25 i hver celle, men flere celler. Totalt 100 - 500', '10 - 25', '(50) 99 - 150', '100 (130) - 500', '1000'),
+Tid = c('2 - 5 dager', '2 -7 dager', '3 - 8 dager', 'Over flere helger', 'En helg', '1 dag'),
+Resultat = c('Anbefalinger i form av en borgerrapport', 'Spørreundersøkelser og en kollektiv rapport fra alle cellene', 'Anbefalinger i form av en borgerrapport', 'Detaljerte anbefalinger', 'En spørreundersøkelse etter prosessen', 'Avstemming på diverse forslag')
+)
+
+tbl %>% kableExtra::kbl(caption = 'Typer av borgerpanel', booktabs = T, linesep = ' ') %>%  
+  footnote(number = 'Basert på Escobar og Elstub (2017), Farrell og Stone (2019), Smith og Setälä (2018).')%>%
+  kable_styling(latex_options = c("striped", "hold_position", 'scale_down')) %>% 
+  landscape(margin = c('1cm')) %>% 
+  row_spec(0, bold = T)
+```
+
+
+### Deliberativ prosess
+
+```{r, tbl-kjerneelementer}
+tbl <- tibble(Element = c('Lag et solid kunnskaps- og læringsgrunnlag',	
+                'Diskutér personlig og følelsesmessig erfaringer, samt kjente fakta',
+                'Prioritér verdiene som står på spill', 
+                'Reflektér over dine egne verdier samt også verdiene til de andre', 
+                'Identifisér et bredt spekter av løsninger',	
+                'Brainstorm på en rekke måter å løse problemet', 
+                'Vei fordeler, ulemper og avveininger',	
+                'Se begrensningene i løsningene som du foretrekker, og fordelene i andres løsninger', 
+                'Ta den best mulige avgjørelsen',
+                'Oppdatér din egen mening i lys av det du har lært. Det er ikke nødvendig å ta en felles beslutning',
+                'Sørg for at alle får snakke', 
+                'Bytt på i samtalen eller ta andre handlinger for å sikre en balansert diskusjon', 
+                'Sørg for at alle forstår',	
+                'Snakk tydelig til hverandre og be om avklaring når du er forvirret',
+                'Vurder andres ideer og erfaringer', 
+                'Lytt nøye til hva andre sier, spesielt når du er uenig', 
+                'Respektér andre deltakere',
+                'Anta at andre deltakere er ærlige og at de mener vel. Anerkjenn deres unike livserfaringer og perspektiver')
+)
+
+tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T, linesep = ' ') %>%  
+  footnote(number = 'Basert på Gastil (2008).') %>% 
+  kable_styling(latex_options = c('striped', 'hold_position', 'scale_down')) %>% 
+  pack_rows("Analytisk",1,10) %>% 
+  pack_rows("Sosialt", 11, 18)
+
+```
+#### Tilfeldig uttrekk
+
+### Ulike typer borgerpaneler
+#### Planleggingscelle
+#### Lekfolkskonferanser
+#### Borgersamlinger
+#### Deliberative meningsmålinger
+
+
+
+\newpage
+# DEL II: PRAKTISK GJENNOMFØRING AV BORGERPANEL
+![](figs/1x/Del2.png)
+\newpage
+
+## Tre eksempler 
+
+### Byborgerpanelet
+
+### Deliberativ meningsmåling i Bergen 2021 
+
+### Deliberativ meningsmåling i Norge 2022 
+
+\newpage
+## Valg av sakstyper
+
+### Prinsipp og refleksjon
+
+### Våre valg og erfaringer
+![](figs/1x/spm.png)
+
+\newpage
+## Fysisk eller digitalt?
+
+### Prinsipper/mål som veileder valgene 
+
+#### Kvalitet på diskusjonene
+
+#### Kostnader
+
+#### Deltakelse
+
+#### Kompetansekrav hos arrangøren
+
+#### Data
+
+### Vår erfaring 
+![](figs/1x/Deltakelsesform.png)
+
+\newpage
+## Rekruttering
+
+### Hvorfor er rekruttering av deltakere viktig
+
+### Viktige steg og valg i rekrutteringsprosessen
+
+#### Definer populasjonen
+
+#### Sette mål og kartlegge tilgjengelige ressurser 
+
+#### Velg rekrutteringsform  
+
+#### Rekrutter deltakere 
+
+### En empirisk studie om hvordan man kan øke deltakelse og legitimitet
+
+### Vår erfaring ved å rekruttere deltakere til borgerpanel i Bergen kommune
+
+```{r, tbl-byborgerpanel}
+tbl <- tibble(Variabel = c('Antall', 'Andel av inviterte', 'Kjønnsbalanse', 'Gjennomsnittlig alder'),
+              Invitert = c('433', '100%', '49% menn, 51% kvinner', '48'),
+              Påmeldt = c('87', '20%', '42% menn, 58% kvinner', '40' ),
+              Deltok = c('78', '18%', '43% menn, 57% kvinner', '40')
+)
+
+tbl %>% kableExtra::kbl(caption = 'Inviterte og deltakende i Byborgerpanelet 2018', booktabs = T, linesep = ' ') %>%  
+  kable_styling(latex_options = c("striped", "hold_position", "scale_down")) %>% 
+  row_spec(0, bold = T) %>% 
+  footnote(number = 'Tabell hentet fra Arnesen, Fimreite og Aars (2021).')%>%
+  kable_styling(latex_options = c("striped", "hold_position")) 
+```
+
+
+![](figs/1x/Rekruttering.png)
+
+\newpage
+## Informasjon til deltakerne
+
+### Veivalg og avveininger
+
+### Våre erfaringer
+```{r, tbl-forslag}
+tbl <- tibble(Tema = c('Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken',
+                       'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler'),
+              Forslag = c('Sjøfronten skal prioriteres til rekreasjon for mennesker', 
+                          'Sjøfronten skal prioriteres til naturformål og beskyttelse av dyreliv', 
+                          'Sjøen ved dokken skal fylles ut', 
+                          'Gater, veier og plasser på Dokken skal få kvinnelige navn', 
+                          'Kommunen bør gjøre ytterlige tiltak for å gjøre Bergen sentrum mer bilfritt', 
+                          'Utviklingen av bilfrie områder bør fremover i større grad fokusere på bydelene og ikke bare sentrum',
+                          'Bilfrie områder utenfor sentrum bør utvikles i de mest sentrumsnære strøkene', 
+                          'Bilfrie områder bør etableres i mindre områder', 
+                          'Bilfrie områder bør etableres i større områder (bydelssentre eller lignende)', 
+                          'Åpne for fleksibel bruk av parkeringsplasser', 
+                          'Større tilgang til bildelingsordninger i nærheten av bilfrie områder',
+                          'Skape avstand mellom parkering og bolig', 
+                          'Alle trange, tettbygde gater bør få 30-sone',
+                          'La beboerne i en gate/nabolag selv få avgjøre om det skal bli bilfritt eller ikke')
+)
+
+tbl %>% kableExtra::kbl(caption = 'Forslag som ble diskutert i den deliberative meningsmålingen i Bergen 2021', booktabs = T, linesep = " ") %>%  
+    collapse_rows(columns = 1, valign = "middle") %>% 
+  row_spec(0,bold = T) %>%
+  kable_styling(latex_options = c("striped", "hold_position", "scale_down")) 
+
+```
+
+
+![](figs/1x/Informasjon.png)
+
+\newpage
+## Gjennomføring av panel
+
+### Prinsipp og refleksjoner
+
+### Våre valg og erfaringer
+
+Lag tabell med Agenda for kunstig intelligens
+![](figs/1x/Gjennomføring.png)
+
+\newpage
+## Hvordan måle resultater
+
+### Prinsipper/mål som veileder valgene
+
+#### Klare svar
+
+#### Gruppeholdning vs. samling av individuelle holdninger
+
+#### Analyser av gruppediskusjoner
+
+### Vår erfaring
+
+Tabell xx: Eksperimentelt design for deliberativ meningsmåling i Norge 2022
+
+|         Gruppe            | Pretest | Eksperimentkomponent    | Posttest                           | 
+|--------------------:|--------:|-------------:|-----------:|
+| Bruk av kunstig intelligens i forvaltningen       |  Spørreundersøkelse | Gruppediskusjon om kunstig intelligens             | Spørreundersøkelse     | 
+| Negative utslippsteknologier     |  Spørreundersøkelse | Gruppediskusjon om negative utslippsteknologier | Spørreundersøkelse     |
+
+
+
+\newpage
+## Oppfølging etter arrangement
+
+![](figs/1x/Oppfølging.png)
+
+### Antakelser og refleksjoner
+
+### Vår erfaring
+
+
+
+\newpage
+# DEL III: ANDRE ERFARINGER
+
+\newpage
+## Borgerpanel sett fra kommuneadministrasjonen
+![](figs/1x/Kommuneperspektivet.png)
+
+\newpage
+## Erfaringer fra andre norske kommuner
+
+![](figs/1x/Andre_kommuner.png)
+
+```{r, tbl-borgerpanel}
+tbl <- tibble(Tittel= c('Lekfolkskonferanse om genmodifisert mat', 'Innbyggerhøring Nordland', 'Innbyggerhøring Kongsberg',
+                        'Lekfolkskonferanse om genmodifisert mat', 'Lekfolkskonferanse om stamceller og terapeutisk kloning', 'Borgerpanelet for Tempe', 'Byborgerpanelet', 'Borgerkraft', 'Deliberativ meningsmåling i Bergen', 'Borgerpanel på Grefsen-Kjelsås om overvann', 'Borgerpanel på Romsås', 'Trondheimspanelet', 'Ungt Borgerpanel', 'Borgerpanel om revisjon av småhusplanen', 'Medarbeiderpanelet i Sadexxo', 'Deliberativ meningsmåling om kunstig intelligens', 'Røros borgerpanel'
+),
+Sted = c('Nasjonal', 'Nordland', 'Kongsberg', 'Nasjonal', 'Nasjonal', 'Trondheim', 'Bergen', 'Trondheim', 'Bergen', 'Oslo', 'Oslo', 'Trondheim',
+         'Stavanger', 'Oslo', 'Bedrift', 'Nasjonal', 'Røros'),
+Type = c('Lekfolkskonferanse', 'Deliberativ meningsmåling', 'Deliberativ meningsmåling', 'Lekfolkskonferanse', 'Lekfolkskonferanse', 'Lekfolkskonferanse', 'Deliberativ meningsmåling', 'Borgerjury', 'Deliberativ meningsmåling', 'Borgerjury', 'Borgerjury', 'Borgerjury', 'Borgerjury', 'Borgerjury', 'Borgerjury', 'Deliberativ meningsmåling', 'Borgerjury'),
+År = c('1996', '1998', '1998', '2000', '2001', '2004', '2018', '2020', '2021', '2021', '2021', '2021-2022', '2021-2022', '2021-2022', '2022', '2022', '2023-2025'),
+Deltakerantall = c('16', '83', 'Ukjent', '15', '15', '14', '76', '16', '90', '20', '14', '50', '21', '21', '15', '218', '16-30')
+)
+
+tbl %>% kableExtra::kbl(caption = 'Borgerpanel i Norge', booktabs = T, linesep = " ") %>%  
+  row_spec(0,bold = T) %>%
+  kable_styling(latex_options=c("striped", "hold_position", "scale_down"))
+
+```
+ 
+
+
+### Borgerpanelene i Trondheim, Oslo, og Stavanger
+#### Trondheim – Borgerkraft 
+#### Trondheim – Trondheimpanelet
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Medvirkningsprosess"}
+knitr::include_graphics("figs/trondheimspanelet.png")
+#Kristin Solhaug Næss, personlig kommunikasjon, 07.09.2022
+```
+
+ 
+#### Stavanger – ungt borgerpanel
+#### Oslo – Borgerpanel på Grefsen og Kjelsås
+#### Røros – Permanent borgerpanel
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Mulig struktur for borgerpaneler på Røros"}
+knitr::include_graphics("figs/røros.png")
+```
+
