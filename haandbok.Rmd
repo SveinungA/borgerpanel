@@ -10,7 +10,7 @@ author: |
   Pål Bjørseth  
   Anne Lise Fimreite (red.)  
   Arild Ohren  
-  Jon Kåre Skiple 
+  Jon Kåre Skiple  
   Jacob Aars 
 output:
   pdf_document:
@@ -211,7 +211,7 @@ tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T
 
 ### Prinsipp og refleksjon
 
-### Våre valg og erfaringer
+### Våre erfaringer
 ![](figs/1x/spm.png)
 
 \newpage
@@ -229,7 +229,7 @@ tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T
 
 #### Data
 
-### Vår erfaring 
+### Våre erfaringer 
 ![](figs/1x/Deltakelsesform.png)
 
 \newpage
@@ -249,7 +249,7 @@ tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T
 
 ### En empirisk studie om hvordan man kan øke deltakelse og legitimitet
 
-### Vår erfaring ved å rekruttere deltakere til borgerpanel i Bergen kommune
+### Våre erfaringer
 
 ```{r, tbl-byborgerpanel}
 tbl <- tibble(Variabel = c('Antall', 'Andel av inviterte', 'Kjønnsbalanse', 'Gjennomsnittlig alder'),
@@ -308,10 +308,30 @@ tbl %>% kableExtra::kbl(caption = 'Forslag som ble diskutert i den deliberative 
 
 ### Prinsipp og refleksjoner
 
-### Våre valg og erfaringer
+### Våre erfaringer
 
-Lag tabell med Agenda for kunstig intelligens
 ![](figs/1x/Gjennomføring.png)
+
+```{r, tbl-dagsplan}
+dagsplan <- tibble(Starttidspunkt = c('10:00', '10:10', '11:00', '11:50', '12:30', '13:15', '14:10', '15:05', '15:50'),
+                     Sluttidspunkt = c('10:10', '10:55', '11:45', '12:30', '13:15', '14:00', '14:55', '15:50', '16:00'),
+                         Aktivitet = c('Velkommen', "Dokken: Første gruppesamling", "Panel", "Dokken: Andre gruppesamling", "Lunsj", "Bilfrie områder: Første gruppesamling", "Panel", "Bilfrie områder: Andre gruppesamling", 'Avslutning'),
+                   Beskrivelse = c('',
+                                   'Opptelling av deltakere, gjennomgang av agenda, forberede spørsmål til panel',
+                                   'Moderator:  Anne Lise Fimreite',
+                                   'Debrief og videre diskusjon i gruppen', ' ', 
+                                   'Gjennomgang av agenda, forberede spørsmål til panel',
+                                   'Moderator: Jacob Aars',
+                                   'Debrief og videre diskusjon i gruppen.', 'Avslutning')
+                   )
+
+dagsplan  %>%   kable(caption = 'Dagsplan for deliberativ meningsmåling i Bergen 2021', linesep = "",
+      booktabs = T, 
+      escape = F) %>% 
+  row_spec(0,bold = T) %>%
+  kable_styling(latex_options=c("striped", "hold_position", "scale_down")) %>% 
+  collapse_rows(3)  
+```
 
 \newpage
 ## Hvordan måle resultater
@@ -324,16 +344,27 @@ Lag tabell med Agenda for kunstig intelligens
 
 #### Analyser av gruppediskusjoner
 
-### Vår erfaring
+### Våre erfaringer
 
-Tabell xx: Eksperimentelt design for deliberativ meningsmåling i Norge 2022
+```{r, tbl-design}
+tbl <- tibble(Gruppe = c('Bruk av kunstig intelligens i forvaltningen',
+                         'Negative utslippsteknologier'),
+              Pretest = c('Spørreundersøkelse',
+                          'Spørreundersøkelse'),
+              Eksperimentkomponent = c('Gruppediskusjon om kunstig intelligens',
+                                       'Gruppediskusjon om negative utslippsteknologier'),
+              Posttest = c('Spørreundersøkelse',
+                           'Spørreundersøkelse')
+              )
 
-|         Gruppe            | Pretest | Eksperimentkomponent    | Posttest                           | 
-|--------------------:|--------:|-------------:|-----------:|
-| Bruk av kunstig intelligens i forvaltningen       |  Spørreundersøkelse | Gruppediskusjon om kunstig intelligens             | Spørreundersøkelse     | 
-| Negative utslippsteknologier     |  Spørreundersøkelse | Gruppediskusjon om negative utslippsteknologier | Spørreundersøkelse     |
+tbl %>% kableExtra::kbl(caption = 'Eksperimentelt design for deliberativ meningsmåling i Norge 2022', booktabs = T, linesep = " ") %>%  
+  row_spec(0,bold = T) %>%
+  kable_styling(latex_options=c("striped", "hold_position", "scale_down"))
+
+```
 
 
+![Ordsky fra gruppediskusjon om bilfrie soner](figs/ordsky-bilfri.png)
 
 \newpage
 ## Oppfølging etter arrangement
@@ -342,7 +373,7 @@ Tabell xx: Eksperimentelt design for deliberativ meningsmåling i Norge 2022
 
 ### Antakelser og refleksjoner
 
-### Vår erfaring
+### Våre erfaringer
 
 
 
