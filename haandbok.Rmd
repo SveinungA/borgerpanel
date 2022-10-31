@@ -65,8 +65,8 @@ Prosjekttittel: Demokratisk innovasjon i praksis -- Forskning på medvirkning og
 Institusjon: NORCE Helse og samfunn  
 Oppdragsgiver(e): Norges forskningsråd (prosjektnummer 295892)  
 Gradering: Åpen   
-Rapportnr.: 174  
-ISBN:   
+Rapportnr.: 38-2022    
+ISBN: 978-82-8408-254-7  
 Antall sider:   
 Publiseringsmnd.: November, 2022  
 Denne versjonen:  02. november, 2022
@@ -296,7 +296,7 @@ tbl <- tibble(Tema = c('Arealutvikling på Dokken', 'Arealutvikling på Dokken',
 tbl %>% kableExtra::kbl(caption = 'Forslag som ble diskutert i den deliberative meningsmålingen i Bergen 2021', booktabs = T, linesep = " ") %>%  
     collapse_rows(columns = 1, valign = "middle") %>% 
   row_spec(0,bold = T) %>%
-  kable_styling(latex_options = c("striped", "hold_position", "scale_down")) 
+  kable_styling(latex_options = c("striped", "hold_position", "scale_down", full_width = F)) 
 
 ```
 
@@ -335,6 +335,8 @@ dagsplan  %>%   kable(caption = 'Dagsplan for deliberativ meningsmåling i Berge
 
 \newpage
 ## Hvordan måle resultater
+
+![Hvordan måle resultater](figs/1x/måling.png)
 
 ### Prinsipper/mål som veileder valgene
 
@@ -426,3 +428,15 @@ knitr::include_graphics("figs/trondheimspanelet.png")
 knitr::include_graphics("figs/røros.png")
 ```
 
+# Om forfatterne
+
+Arild Ohren er PhD kandidat ved NTNU. 
+Hans forskning fokuserer på borgerpaneler og hvilken type form for politisk representasjon de representerer. 
+Arild er medlem av OECDs «Innovative Citizen Participation Network», samt også medlem av forskningsklyngen om demokratisk representasjon i Participedia. 
+
+Jacob Aars er professor ved Institutt for politikk og forvaltning, Universitetet i Bergen. 
+Aars har arbeidet med lokalstyre og lokalt demokrati. 
+Han har blant annet publisert flere artikler om kommuners tiltak for å styrke deltakelse i lokalpolitikken. 
+
+# References
+Han har også bistått mange kommuner i deres arbeid med å utvikle og designe borgerpaneler i Norge. 
