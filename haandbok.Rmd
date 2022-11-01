@@ -14,6 +14,7 @@ author: |
   Jacob Aars 
 output:
   bookdown::pdf_document2:
+    latex_engine: xelatex
     toc: no
     includes:
       in_header: preamble.tex
@@ -31,7 +32,6 @@ biblio-style: apalike
 link-citations: yes
 description: Hvordan gjennomføre borgerpanel
 fontsize: 12pt
-lang: no
 
 ---
 
@@ -177,7 +177,6 @@ Den moderne historien om forsøk med borgerpaneler i vesten startet på 1970-tal
 
 ```{r, out.width = "80%", fig.align = "center", fig.cap= "Tidslinje over viktige borgerpanel"}
 knitr::include_graphics("figs/tidslinje.png")
-#Adoptert fra Gastil og Knobloch [-@gastil_hope_2020, pp. 13]
 ```
 
 I den senere tid har bruken av borgerpaneler økt betraktelig. OECDs rapport «den deliberative bølgen» slår fast at bruken i OECD-landene spesielt har økt etter 2010 [@oecd_innovative_2020]. Dette kan ses i sammenheng med den økende interessen rundt demokratiske innovasjoner generelt, som ofte blir sett på som et mulig demokratisk hjelpemiddel for å løse problemene som vi vil stå ovenfor. Kort sagt, det vi ser er at flere demokratier er under press, og at de nåværende demokratiske systemene har noen mangler som gjør at de kanskje ikke er så godt egnet til å løse disse utfordringene. Demokratiske innovasjoner og borgerpaneler har derfor blitt sett på som et av flere demokratiske hjelpemidler som man kan ha i verktøykassen for å styrke våre demokratiske systemer.
@@ -365,32 +364,131 @@ Sluttresultater fra deliberative meningsmålinger er formidlet og brukt på ulik
 
 Koblingen til formelle beslutningsarenaer har vært ulik, men i hovedsak benyttes resultatene fra deliberative meningsmålinger som innspill i en bredere politisk debatt. Derfor har formidlingen av samlingene vært viktig. For eksempel har utdrag fra flere av de deliberative meningsmålingene vært fjernsynsoverført.
 
-Siden den første deliberative meningsmålingen i Storbritannia i 1994 er det gjennomført tilsvarende arrangementer i en rekke land, deriblant Australia, Danmark, Finland, Island og USA. I Norge er det gjennomført to deliberative meningsmålinger, og disse omtales i denne håndboken. I tillegg er det gjennomført tre såkalte «utvidede folkehøringer» på lokalt nivå i Norge, men disse manglet enkelte av elementene som kreves for å være kvalifisert til den formelle (og beskyttede) betegnelsen «Deliberative Poll®».
+Siden den første deliberative meningsmålingen i Storbritannia i 1994 er det gjennomført tilsvarende arrangementer i en rekke land, deriblant Australia, Danmark, Finland, Island og USA. I Norge er det gjennomført to deliberative meningsmålinger, og disse omtales i denne håndboken. I tillegg er det gjennomført tre såkalte «utvidede folkehøringer» på lokalt nivå i Norge, men disse manglet enkelte av elementene som kreves for å være kvalifisert til den formelle (og beskyttede) betegnelsen «Deliberative Poll».
 
 Erfaringene med deliberative meningsmålinger tilsier at det er krevende å rekruttere et fullstendig representativt utvalg av deltakere. Uten en svært målrettet rekruttering risikerer man at utvalget får mange av de samme bakgrunnstrekkene som folkevalgte forsamlinger. Imidlertid viser erfaringene også at en stor andel av deltakerne ikke hadde tidligere politisk erfaring, og for mange var det første gang de sto foran en større forsamling og holdt et politisk innlegg. Det har også skjedd en bevegelse i deltakernes holdninger som følge av at de har deltatt, men holdningsendringene skjer ikke alltid i form av en samlet opinionsendring, det vil si at mange skifter mening, men ikke nødvendigvis i samme retning.
 
 
-
 \newpage
 # DEL II: PRAKTISK GJENNOMFØRING AV BORGERPANEL
+
 ![](figs/1x/Del2.png)
+
+Denne delen trekker veksler på tre ulike borgerpaneler som vi selv har arrangert. Borgerpanelene har variert i omfang, tematikk og møteform. Vi bruker dem vekselvis som eksempler, og derfor vil vi først gi en kort beskrivelse av de tre arrangementene før vi går mer i detalj om den praktiske gjennomføringen av et borgerpanel.
+
+
 \newpage
 
 ## Tre eksempler 
 
 ### Byborgerpanelet
 
+> Borgerpanel om bydelsnivå i Bergen
+
+Dette borgerpanelet referer vi til som *Byborgerpanelet*. Byborgerpanelet ble en realitet som følge av arbeidet til et byrådsoppnevnt utvalg med mandat til å se på nærdemokratiet i Bergen [@fimreitebyen]. Beskrivelsen er delvis hentet fra @arnesenloddet, hvor man også kan finne mer utfyllende informasjon om Byborgerpanelet. 
+
+Utvalget, som utførte sitt arbeid våren 2017, var organisatorisk uavhengig av kommunen og sammensatt av forskere, tidligere lokalpolitikere, mediefolk og representanter for frivilligheten i byen – både den organiserte og den uorganiserte.
+
+Et panel basert på tilfeldig uttrekk blant kommunens innbyggere var ett av utvalgets forslag for å øke lokal deltakelse og medvirkning. Forslaget vakte interesse i byens politiske miljø, og i september 2017 fattet bystyret vedtak om et forsøk med innbyggerpanel. Bystyret bestemte samtidig at panelet skulle gi konkrete innspill i saken om innføring av politiske bydelsstyrer i kommunen fra 2020 (byrådssak 245/17 og bystyresak 231/17). Bergen kommune har siden 1970-årene hatt ulike former for bydelsorganisering – både politisk og administrativt. Fra 2011 ble ordningen med politiske bydelsutvalg avskaffet. I samarbeidsplattformen til partiene som utgjorde byrådet i perioden 2015–2019, sto det imidlertid at gjeninnføring av slike utvalg skulle vurderes. Derfor var bydeler også et viktig tema i Nærdemokratiutvalgets arbeid [@fimreitebyen].
+
+Byborgerpanelet ble organisert som et samarbeidsprosjekt mellom Bergen kommune, Universitetet i Bergen og NORCE og ble gjennomført i slutten av april 2018. Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) ble fire dimensjoner ved bydelsorganisering presentert for panelet. Det gjaldt hvor mange bydeler skal kommunen ha; hvilke oppgaver bydelene skal ta seg av; i hvor stor grad skal bydelene selv bestemme hva pengene de får overført skal brukes til; hvordan representantene til bydelsstyrene skal rekrutteres.
+
+
 ### Deliberativ meningsmåling i Bergen 2021 
 
+Borgerpanel om utvikling av havneområde i Bergen og om etablering av bilfrie soner. Beskrivelsen av dette borgerpanelet er hentet fra rapporten «Deliberativ meningsmåling i Bergen», hvor mer utfyllende informasjon om prosjektet foreligger [@arnesendelib2021]. En deliberativ meningsmåling er en variant av borgerpanel, som omtalt tidligere.
+
+Arrangementet ble gjennomført som et ledd i det forskningsrådsfinansierte prosjektet Demokratisk innovasjon i praksis: Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (Demovate) (prosjektnummer 295892). Formålet med prosjektet var å utvide verktøykassen for lokaldemokratiet i kommunen ved å ta i bruk nye metoder for involvering av innbyggerne i politikken. Prosjektansvarlig var Bergen kommune, og faglig ble prosjektet ledet av forskningsinstitusjonen NORCE. Samarbeidspartnere var Universitetet i Bergen og Stanford University.
+
+Deliberativ meningsmåling i Bergen 2021 ble initiert på bakgrunn av vedtak i Bergen bystyre i møtet 24.10.2018, sak 235/18. Byrådet behandlet videre saken i møtet 29.04.2021, sak 1135/21, og fattet vedtak om at programmet for bilfrie soner i bydelene og arealstrategi for Dokken skulle brukes som diskusjonstemaer i borgerpanelet.
+
+Sakene som skulle inngå i undersøkelsen, samt i den deliberative meningsmålingen, ble bestemt av Bergen kommune i samråd med forskerne. Det ble utarbeidet et omfattende informasjonsmateriale (**se eget dokument**) om de to sakene som ble sendt til paneldeltakerne i forkant av arrangementet. I dette materialet ble det gitt informasjon om hva saken dreide seg om. Det ble videre lagt frem konkrete forslag som skulle være diskusjonstemaer i den deliberative meningsmålingen. For disse forslagene ble det presentert for- og motargumenter. Arrangementet skulle i utgangspunktet gjennomføres fysisk, men covid 19-pandemien satte en effektiv stopper for disse planene. Den deliberative meningsmålingen ble derfor gjennomført digitalt i juni 2021, hvor 84 personer fullførte deltakelsen via videokonferanseplattformen Zoom.
+
+Byrådet forpliktet seg til å ta stilling til innspillene fra borgerpanelet i de politiske saksfremleggene som følger sakene, hvor innspillene skulle være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling.
+
 ### Deliberativ meningsmåling i Norge 2022 
+
+> Borgerpanel om bruk av kunstig intelligens i forvaltningen og om teknologier for å redusere klimagassutslipp
+
+Sommeren 2022 ble det gjennomført en digital deliberativ meningsmåling med deltakere fra hele landet. Arrangementet var i regi av forskningsinstituttet NORCE, i samarbeid med Stanford University i USA. 218 deltakere fra hele landet samlet seg online for å diskutere enten 
+
+1) rettferdig bruk av kunstig intelligens i forvaltningen, eller  
+2) teknikker for å redusere karbondioksid i luften. 
+
+Det første temaet var del av det forskningsrådsfinansierte prosjektet *Public Fairness Perceptions of Algorithmic Governance* (prosjektnr. 314411), mens det andre var del av det EU-finansierte prosjektet *Ocean-based Negative Emission Technologies – analyzing the feasibility, risks, and co-benefits for stabilizing the climate (OceanNETs)*.
+
+Borgerpanelet ble gjennomført ved hjelp av en plattform utviklet av Stanford University, som var skreddersydd for formålet. Det var første gang at denne plattformen ble tatt i bruk i Europa.
+
+Deltakerne ble rekruttert ved tilfeldig uttrekk fra Folkeregisteret. I første omgang fikk meningsmålingsbyrået Ipsos oppdraget med å ringe til personer på listen og rekruttere deltakere. Senere ble innbyggere som ikke hadde gitt respons, kontaktet via Digipost.
+
 
 \newpage
 ## Valg av sakstyper
 
+> Anne Lise Fimreite
+
+![](figs/1x/spm.png)
+
 ### Prinsipp og refleksjon
 
+Valg av spørsmål og saker som behandles av borgerpaneler, har vist seg å være svært viktig for hvordan panelene vurderes av innbyggerne –- ikke bare av de som deltar, men også av de som ikke deltar. Hvilke saker som behandles, er også avgjørende for hvordan det politiske systemet forholder seg til panelene og tar imot råd og anbefalinger (og i noen tilfeller beslutninger) fra dem. For at panelene skal ha det litteraturen omtaler som god kvalitet, må meningsutvekslingen og diskusjonen mellom deltakerne fungere, men i tillegg må også relasjonen mellom panelene og det politiske systemet fungere. Det betyr at systemet –- uavhengig av om det er et kommunestyre, et parlament eller EU-systemet –- må ta panelenes råd og anbefalinger på alvor og innlemme dem i den videre politiske behandlingen. Hvis det ikke skjer, vil panelenes legitimitet som demokratisk innovative arenaer fort tape terreng. Hvilke saker og saksfelt panelene tar opp, kan ha stor betydning i så måte.
+
+Ulike spørsmål og sakstyper har vært behandlet i borgerpaneler verden over. Noen paneler har, som omtalt i del 1, vært innrettet mot store overordnede sakskomplekser som endringer i valgordninger og grunnlovsformuleringer (f.eks. i Canada, Irland og Island). Andre har vært innrettet mot overordnede forhold, men på mer avgrensede saksfelter som velferds- og familiepolitikk (f.eks. i Irland og Skottland). Mange paneler har vært innrettet mot helt konkrete saker som bygging av veier og broer, hvilke trasevalg som skal tas, og hvilke omfang utbyggingen skal ha. Saker av mer teknisk karakter har også vært tatt opp, bl.a. av et panel i Belgia som behandlet regionale klimatilpasningstiltak. Noen paneler har videre tatt opp nedleggelse eller flytting av offentlige tilbud som sykehus og skoler. Budsjettforslag og offentlige planer har også vært behandlet av slike paneler. I tillegg til slike relativt konkrete saker finnes det også eksempler på at paneler har tatt opp utforming av offentlig styringsstruktur, både på lokalt og på regionalt nivå. Spørsmål om etableringen av et nytt regionalt folkevalgt nivå i England var gjenstand for diskusjon i borgerpanelet i 2015. I tillegg finnes det også et eksempel på at EU i 2018 ga et stort deliberativt panel i oppgave å utforme et spørreskjema som skulle avdekke hva som kjennetegner en «europeisk borger».
+
+Det er altså stor variasjon i hvilke saker og sakstyper som behandles av disse panelene. Pragmatisme, og til en viss grad politiske behov, har ofte vært mer førende for valgene enn klare prinsipper. En kritikk som gjerne rettes mot denne typen panel, er at den korte tiden panelene (tross alt) har til rådighet, gjør at komplekse saker blir overflatisk behandlet. Uansett opplegg for panelene har ikke deltakerne nok tid, nok informasjon eller nok kunnskap til å sette seg inn i sakene på en fullgod måte sammenlignet med permanente politiske organer. Disse organene har dessuten ekspertstøtte til å opplyse om og utrede sakene de behandler. Et retningsgivende prinsipp for valg av saker kan derfor være graden av kompleksitet. Et annet prinsipp som trekkes frem, er at saker som har et klart utfallsrom, er å foretrekke. Det kan f.eks. være saker som går ut på om en vei skal bygges eller ikke, om et flyktningmottak skal etableres eller ikke, om et konkret klimatilpasningstiltak skal innføres eller ikke, eller om en skole skal legges ned eller ikke. Her kan prinsippene helt klart stå mot hverandre. Det er også opplagt at også saker med klare utfall kan være svært komplekse å ta standpunkt til. Dermed er ikke kompleksitet alene avgjørende for om et panel fungerer godt eller ikke. Andre forhold spiller også inn.
+
+Det har likevel vist seg å være en tendens til at saker som har et klart utfall, på den måten at man kan ta et standpunkt for eller imot, lettere får gjennomslag i det politiske systemet etter behandling i borgerpaneler enn saker av mer vurderende karakter. Det betyr ikke at politikerne nødvendigvis følger panelenes anbefalinger i de nevnte sakene, men at det er større sjanse for at panelets innspill blir innlemmet i den videre politiske sakshåndteringen. Samtidig finnes det eksempler på at anbefalinger gjort av paneler knyttet til utforming av lokal styringsstruktur er blitt tatt videre i det politiske systemet, både her hjemme og i utlandet, blant annet i det tidligere nevnte eksemplet om å innføre et regionalt folkevalgt nivå i England.
+
+En faktor som kan ha betydning for hvilke saker og sakstyper panelene skal behandle, er når i en saksprosess de blir involvert. Tidlig i saksprosessen kan panelene behandle spørsmål som har med formulering av et saksfelt å gjøre, mens det senere i prosessen kan være snakk om å komme med mer konkrete anbefalinger og råd i retning av hvordan saker bør løses. Uansett tidspunkt i saksprosessen er det avgjørende om panelene representerer en reell påvirkningsmulighet eller kun fungerer som sandpåstrøere (se mer i kapitlet \@ref(sec:etter) om oppfølging etter gjennomføring).
+
+Bruk av paneler er gjerne styrt av et opplevd behov for (større) kontakt mellom det politiske systemet og innbyggerne. Slike behov kan være knyttet til kartlegging av synspunkter hos befolkningen, enten som helhet eller blant deler av den, til tilbakemeldinger i vanskelige saker og til reell meningsutveksling mellom ulike synspunkter for å kunne fremme så gode anbefalinger som mulig. Men litteraturen viser også at paneler har vært brukt til forsvar for beslutninger som allerede er fattet, eller for å legitimere disse. Innledningsvis i dette delkapitlet nevnte vi at kvaliteten på et panel er avhengig av to forhold: 
+
+- meningsutvekslingen internt i panelene, og  
+- relasjonen mellom panelene og det politiske systemet. 
+
+Kvaliteten kan knyttes til panelenes legitimitet -– både overfor de som deltar, overfor de innbyggerne som panelene representerer, og overfor det politiske systemet. Som tidligere nevnt er det viktig for kvaliteten at det politiske systemet faktisk tar sakene videre, men det er også viktig at panelene oppfattes som reelle, på den måten at tilbakemeldingene deres blir lyttet til, og at de ikke kun brukes for å bekrefte eller avkrefte allerede fattede politiske vedtak. Saker og sakstyper er en viktig side ved dette.
+
 ### Våre erfaringer
-![](figs/1x/spm.png)
+
+Byborgerpanelet 2018 dreide seg om en sakstype som det gjerne *ikke* anbefales å ta inn i et borgerpanel, nemlig organisatoriske forhold. Panelet tok opp gjeninnføring av bydeler i kommunens styringsstruktur. Saken hadde ikke hatt noe særlig offentlig oppmerksomhet, og det var derfor ikke gitt at de som deltok i panelet, hadde noen form for kjennskap til den. Utenom en kort omtale om at det var denne saken som skulle tas opp, ble det ikke gitt noe informasjon om sakskomplekset i invitasjonsbrevet. All informasjon ble gitt ved innledningen til selve panelet. Informasjonen var utarbeidet i samarbeid mellom representanter for Bergen kommune og forskerne. Det ble utformet et manus som ble lest opp til deltakerne, der fire dimensjoner ved bydeler ble presentert (**se nærmere omtale i kapitlet om informasjonsmateriale samt vedlegg**). 
+
+Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) skulle deltakerne ta stilling til 
+- Hvor mange bydeler skal kommunen ha?  
+- Hvilke oppgaver skal bydelene ta seg av?  
+- I hvor stor grad skal bydelene selv bestemme hva pengene de får overført, skal brukes til?  
+- Hvordan skal representantene til bydelsstyrene rekrutteres? 
+
+I tråd med erfaringene fra paneler i andre land som har behandlet organisatoriske og strukturelle forhold, var redegjørelsen for dimensjonene gjort nokså konkret. Det ble også understreket overfor deltakerne at situasjonen de skulle forholde seg til, var at bydelsstyrer skulle gjeninnføres, og at det de skulle ta stilling til, var hvordan de da ønsket at dette skulle organiseres. Panelets tema var ikke for eller imot bydeler, men organiseringen av bydeler i kommunens styringsstruktur.
+
+Erfaringen fra Byborgerpanelet 2018 er at saken/sakstypen fungerte i dette forumet. Deltakerne tok standpunkt til undersøkelsene og debatterte i gruppesesjonen. Det var også mulig å utarbeide en anbefaling til kommunen (byrådet) om hvordan fremtidig bydelsorganisering skulle være. Ved avslutningen av panelet informerte representanter fra Bergen kommune om hvordan anbefalingene fra Byborgerpanelet ville bli fulgt opp i den videre politiske prosessen.
+
+Sakene som skulle inngå i den deliberative meningsmålingen i Bergen 2021, ble bestemt av Bergen kommune i samråd med forskerne. Det ble pekt ut to saker: 
+
+- fornying av havneområdet Dokken i Bergen sentrum, og  
+- utvikling av bilfrie områder i Bergen utenom sentrum. 
+
+Begge sakene må kunne klassifiseres som planleggingssaker, og begge sakene dreier seg om arealdisponering –- hva arealet skal brukes til, og hvem som skal bestemme dette. Sakene har relativt ulike tidshorisonter. Dokken-utbyggingen er helt i startfasen, og utbyggingen antas ikke å være ferdigstilt før om 30 år. Konseptet med bilfrie soner er på gang i deler av kommunen, og den politiske bestillingen om å utvide dette til andre deler av kommunen enn sentrumssoner er gjort. Bindende beslutninger i denne saken er derfor ikke like langt unna som i Dokken-utbyggingen.
+
+Det ble utarbeidet et omfattende informasjonsmateriale om de to sakene i samarbeid mellom de aktuelle avdelingene i Bergen kommune og forskerne (**se mer i eget kapittel og lenke til materialet**). Informasjonsmaterialet ble sendt til paneldeltakerne ca. én uke før selve arrangementet. I dette materialet ble det gitt nøktern informasjon om hva sakene dreide seg om. På bakgrunn av informasjonen ble det videre lagt frem konkrete forslag til spørsmål som skulle være diskusjonstemaer i den deliberative meningsmålingen. For forslagene ble det presentert både for- og motargumenter. Det var sju forslag knyttet til Dokken-utbyggingen og ni knyttet til spørsmålet om bilfrie soner. Heller ikke dette panelet skulle ta stilling til om Dokken-utbyggingen skulle realiseres, eller om bilfrie soner skulle iverksettes. Inngangen var gitt at utbyggingen finner sted, og gitt at bilfrie soner etableres, hvordan skal de da utformes?
+
+I brevet som fulgte med informasjonsmaterialet, ble det videre sagt noe om hvordan innspillene fra den deliberative meningsmålingen vil bli behandlet i det kommunale systemet. Byrådet i Bergen fattet i april 2021 et helt konkret vedtak om dette, som det ble referert til i nevnte brev.
+
+Erfaringene fra denne digitale deliberative meningsmålingen i Bergen er at begge sakene fungerte i dette forumet. Det er likevel en tendens til at det fungerte litt bedre å diskutere og komme med anbefalinger i saken om Dokken-utbyggingen enn i saken om bilfrie soner. Forskjellene er ikke store, og sakstypene er nokså like i og med at begge dreier seg om arealutnytting i fremtiden. Dokken-utbyggingen er et større problemfelt, som nærmest dreier seg om å bygge en helt ny bydel, og om hva innholdet i den skal være. Her er det et langtidsperspektiv som opplagt gjør at saken blir mindre konkret, men samtidig spennende og utfordrende. Deltakerne hadde også mange og viktige spørsmål til ekspertpanelet som møtte dem i løpet av diskusjonen (**se mer om dette i kapitlet om gjennomføring av panelet**). 
+
+Bilfrie soner dreide seg om en utvidelse av et konsept som allerede er i ferd med å bli innført i sentrumsnære områder. Denne saken er derfor langt mer konkret og nærmere i tid. Likevel var det en tendens til at engasjementet i diskusjonen var mer moderat her, selv om deltakerne også i denne saken hadde flere og relevante spørsmål til ekspertene. En opplagt forklaring kan være at begge sakene er omfattende og komplekse, og at det å innlemme to slike saker i et avgrenset panel på én og samme dag ble i overkant for mange av deltakerne. Det at panelet var digitalt, forsterket dette bildet av «overload».
+
+Isolert sett fungerte sakstypen –- arealdisponering i fremtiden –- imidlertid godt for diskusjon i panelene, spesielt med et «løfte» fra det politiske systemet om å ta innspillene deres på alvor. Lærdommen må være å konsentrere panelet rundt én sak og heller vie denne litt mer tid, blant annet til å gå mer i dybden i samtalene mellom paneldeltakerne og ekspertene.
+
+I motsetning til de to foregående eksemplene ble den deliberative meningsmålingen i Norge i 2022 gjennomført av forskere uten samarbeid med noen kommune. Spørsmålene ble valgt ut fra hvilke forskningsspørsmål de to prosjektene ønsket svar på, og var ikke direkte koblet til noen politisk prosess. Like fullt er det grunner til å anta at både holdninger til bruk av kunstig intelligens i forvaltningen og teknikker for å redusere karbondioksid i luften vil være av interesse for politiske beslutningstakere.
+
+De to nevnte temaene er relativt kompliserte og dessuten lite diskutert i befolkningen generelt. Dersom man bare gjennomfører en vanlig spørreundersøkelse, risikerer man at folk gir «placebo-svar», altså bare svarer et eller annet uten egentlig å ha reflektert nok over temaene til å kunne ha en informert oppfatning. Deliberative meningsmålinger egner seg godt til slike typer temaer, da det gir vanlige innbyggere anledning til å bruke tid til å tenke seg om og diskutere med andre. Fageksperter på henholdsvis kunstig intelligens og negative utslippsteknologier bidro også med oppklarende refleksjoner, som deltakerne kunne velge å lytte til.
+
+De foreløpige resultatene viser at deltakerne selv mener at de vet mer om temaene enn de faktisk gjør. Når det gjelder holdninger til bruk av kunstig intelligens, endret de oppfatning og ble mer positive til det. Holdningene til teknologier for karbonfangst og -lagring endret seg ikke, selv ikke etter at de hadde tilegnet seg mer kunnskap om temaet. Å skape holdningsendring er imidlertid ikke et mål i seg selv på slike arrangementer, målet er å skape visshet om at holdningene er informerte. Det lyktes dette borgerpanelet med.
+
+
+
+
+ 
 
 \newpage
 ## Fysisk eller digitalt?
@@ -482,7 +580,7 @@ tbl %>% kableExtra::kbl(caption = 'Forslag som ble diskutert i den deliberative 
 ![](figs/1x/Informasjon.png)
 
 \newpage
-## Gjennomføring av panel
+## Gjennomføring av panel {#etter}
 
 ### Prinsipp og refleksjoner
 
