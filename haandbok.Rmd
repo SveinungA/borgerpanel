@@ -858,17 +858,49 @@ Heller enn å gå inn i en vurdering av hvilke av disse oppleggene som fungerte 
 \newpage
 ## Hvordan måle resultater
 
+> Sveinung Arnesen
+
 ![Hvordan måle resultater](figs/1x/måling.png)
 
 ### Prinsipper/mål som veileder valgene
 
+Det er viktig at man allerede i planleggingsfasen har det klart for seg hva som skal komme ut av borgerpanelet. For de fleste formål er deltakernes holdninger selve sluttproduktet som borgerpanelet skal levere, og som beslutningstakerne skal agere på. Hvordan holdningene måles, kan påvirke hvilke konklusjoner som trekkes fra borgerpanelet. Det kan også ha mer utilsiktede konsekvenser på villigheten til å delta i borgerpaneler.
+
+Vi anbefaler å måle deltakernes holdninger individuelt, i en anonym spørreundersøkelse som sendes ut mot slutten av arrangementet. Ved å gjennomføre en spørreundersøkelse får man helt konkrete svar på holdningene til gruppen.
+
+
 #### Klare svar
+
+Ofte er selve målet med gjennomføringen at beslutningstakerne – for eksempel politikere i en kommune – skal sitte igjen med klare svar om hvilke holdninger deltakerne har etter at de har fått reflektert rundt spørsmålene. Dersom man gjennomfører en spørreundersøkelse, vil deltakerne måtte ta stilling til helt konkrete spørsmål fra arrangøren. En godt utformet spørreundersøkelse gir rikelig med informasjon om deltakernes holdninger og om deres sosiale bakgrunn.
+
+Det er også mulig å måle om deltakerne endrer holdning av å delta i borgerpanelet. Dette er noe forskere ofte er opptatt av, for å kunne måle om deliberasjonen har hatt noen effekt på deltakernes holdninger. For å kunne gjøre slike analyser må deltakerne få to spørreundersøkelser – en før arrangementet og en etter.
+
+Om man virkelig ønsker å gå vitenskapelig til verks, måler man eventuelle holdningsendringer opp mot en kontrollgruppe som ikke har deltatt på borgerpanelet. Dette for å kontrollere at det er deltakelse i borgerpanelet som har ledet til holdningsendringene, og ikke for eksempel noe annet som kan ha skjedd i verden i tiden som har gått mellom første og andre spørreundersøkelse.
+
+Det er en fordel å involvere personer med kompetanse på utforming av spørreundersøkelser. Å lage spørsmål som både er forståelige for respondentene, som fungerer godt til diskusjon, og som faktisk gir svars på det arrangørene vil vite, høres kanskje tilforlatelig ut, men dette er en kunst som de færreste er utlært i. Det er svært nyttig å få med på laget noen som har gjort dette før, enten personer innomhus, meningsmålingsbyråer eller surveyforskere. Disse vil også ha kjennskap til verktøy som kan lette arbeidet. Mange organisasjoner har avtaler med selskaper som kan tilby de tekniske løsningene som kreves for å lage en spørreundersøkelse, og kanskje kan de også konsulteres i design av spørsmål og analyser av svarene.
+
 
 #### Gruppeholdning vs. samling av individuelle holdninger
 
+Hvis deltakerne svarer i en spørreundersøkelse, uttrykker de sine individuelle holdninger. Svarene deres blir anonymisert på samme måte som i vanlige spørreundersøkelser. Det er i prinsippet ikke noe i veien for at de svarer uten anonymitet. Da må de «stå til ansvar» for holdningene sine, slik valgte politikere må gjøre. Noen vil kanskje mene at dette er positivt, og at det styrker legitimiteten til arrangementet. Det er verdt å påpeke at eksperimenter vi har gjennomført, viser at villigheten til å delta på arrangementer synker dersom deltakerne må offentliggjøre sine holdninger.
+
+Noen former for borgerpaneler – for eksempel borgerjuryer – legger opp til at deltakerne skal uttrykke sine holdninger samlet som gruppe. Dette kan for eksempel gjøres ved at de blir enige om en felles uttalelse. En kritikk mot et slikt opplegg er at enkeltdeltakere kan få uforholdsmessig stor innvirkning på gruppens holdninger slik de uttrykkes. Mange vegrer seg for å gå inn i opphetede diskusjoner med andre og vil vike for sosialt press fra dominerende deltakere eller det de oppfatter som majoriteten.
+
+
 #### Analyser av gruppediskusjoner
 
+Dersom gruppediskusjonene tas opp og transkriberes, inneholder dette datamaterialet mye informasjon om hva deltakerne mener om sakene som diskuteres. Vi anbefaler imidlertid ikke at dette brukes som et direkte mål på deltakernes holdninger. Dette fordi denne delen av arrangementet nettopp er en arena for å løfte frem for- og motargumenter, før man har gjort seg opp en bestemt mening. Hvis man skal bruke datamaterialet til å måle holdningene til deltakerne, må dette i så fall kommuniseres tydelig til deltakerne på forhånd, og da risikerer man at diskusjonene blir mindre åpne og dynamiske enn man hadde tenkt. Det er dessuten utfordrende å analysere ustrukturert tekstmateriale på en objektiv måte.
+
+Datamaterialet kan imidlertid fungere godt for å eksemplifisere holdninger som kommer til uttrykk i den påfølgende spørreundersøkelsen. Tekstmaterialet kan gjerne brukes til å visualisere hva diskusjonene handlet om, for eksempel i en ordsky. Materialet innbyr også til mer kompliserte analyser av forskningsspørsmål knyttet til gruppedynamikk, betydningen av agendasetting osv. 
+
+![Ordsky fra gruppediskusjon om bilfrie soner](figs/ordsky-bilfri.png)
+
+
 ### Våre erfaringer
+
+I alle våre tre eksempler har vi benyttet oss av spørreundersøkelser både før og etter gruppediskusjonene. Vi brukte Qualtrics, som er en internasjonal leverandør av spørreundersøkelser. Qualtrics er bare ett av flere selskaper som leverer denne typen tjenester. Vi valgte dem fordi vi hadde kjennskap til dem fra før, og fordi de kunne levere enkelte spesialtjenester som vi hadde behov for i våre undersøkelser.
+
+Det ble lagt opp til et såkalt pretest/posttest-kontrollgruppedesign. Det vil si at vi målte holdningene til deltakerne både før og etter arrangementet. På denne måten kan vi måle om deltakernes holdninger endrer seg etter å ha diskutert sakene og fått tid til å tenke seg om. For å utelate at eventuelle holdningsendringer kommer som en konsekvens av andre forhold som har skjedd i mellomtiden, hadde vi med en kontrollgruppe som også gjennomførte spørreundersøkelsene, men som ikke deltok på selve arrangementet. Et slikt oppsett er et av de mest vanlige eksperimentelle designene [@cook2002experimental].
 
 ```{r tbl-design}
 tbl <- tibble(Gruppe = c('Bruk av kunstig intelligens i forvaltningen',
@@ -888,17 +920,52 @@ tbl %>% kableExtra::kbl(caption = 'Eksperimentelt design for deliberativ menings
 ```
 
 
-![Ordsky fra gruppediskusjon om bilfrie soner](figs/ordsky-bilfri.png)
+
+I den deliberative meningsmålingen i Norge 2022 lot vi deltakerne fra henholdsvis kunstig intelligens-gruppen og negative utslippsteknologier-gruppen være kontrollgruppe for hverandre. Fordelen med dette var at vi ikke trengte å rekruttere egne respondenter som kun skulle være i en kontrollgruppe uten å få være med på å diskutere noen av sakene.
+
+Svarene som ble vektlagt overfor politikerne i 2018 og 2021, var svarene deltakerne ga etter at de hadde gjennomført gruppediskusjonen. Samtidig ble det også formidlet i hvilken grad deltakerne endret holdninger fra før gruppediskusjonen, og om slike holdningsendringer bevegde seg mer enn eventuelle holdningsendringer i kontrollgruppen. I 2022 var vi spesielt opptatt av forskjellen i holdningsendring mellom kontrollgruppene og behandlingsgruppene, og vi analyserte resultatene ut fra dette perspektivet.
+ 
 
 \newpage
 ## Oppfølging etter arrangement
+
+> Anne Lise Fimreite
 
 ![](figs/1x/Oppfølging.png)
 
 ### Antakelser og refleksjoner
 
+Litteraturen om borgerpaneler presenterer en rekke antakelser, ikke bare om hvordan panelets utforming kan tenkes å påvirke beslutningstakernes vurdering av panelene, men også om hvordan politikerne kan tenkes å ta imot de anbefalingene som fremkommer fra panelene. [dette kapitlet bygger i noen grad på @arnesenloddet]. Det finnes også antakelser knyttet til hvordan politikerne og andre i systemet velger å ta panelets anbefalinger videre. Stort sett er antakelsene knyttet til at paneler med det som omtales som høy indre kvalitet (bl.a. knyttet til representativ rekruttering og gode vilkår for meningsutveksling), også vil ha høy ekstern kvalitet, dvs. at paneler med disse kjennetegnene vil kunne påvirke politiske beslutninger i tråd med sine anbefalinger. Empiriske erfaringer viser imidlertid at hvordan panels anbefalinger påvirker systemets beslutninger, ikke bare er avhengig av trekk som antas å ha med den indre kvaliteten å gjøre, men at det i aller høyeste grad også er avhengig av hvordan panelet knyttes til det vi kan kalle det politiske systemet i vid forstand. Med det politiske systemet mener vi her beslutningstakere, politiske institusjoner og velgere/innbyggere.
+
+Nærmest uavhengig av hvilke funksjon panelet er tiltenkt, og hvilke saker det behandler, trekker forskningen frem hvor viktig det er at panelet aksepteres av dette politiske systemet. Ett forhold trekkes i så måte frem som særlig viktig, nemlig kapasiteten på mottakersiden til å inkludere panelets anbefalinger i pågående prosesser. Etter å ha studert fire paneler på ulike kontinenter konkluderte forskerne Curato og Böker med at borgerpaneler faktisk kan ha potensielt uheldige konsekvenser for et politisk system og for den videre demokratiske konteksten i et samfunn dersom det mangler aksept og kapasitet i samspillet mellom panelet og systemet. Erfaringene fra et panel i Belgia viser at uansett hvilke vurderinger politikerne som mottok panelets anbefalinger, hadde av dets arbeid, så var ikke det representative systemet upåvirket av panelets arbeid. Politikerne ble tvunget til å tenke gjennom hvilken rolle borgerpanelet kan ha i systemet – og om de avviser dets anbefalinger. Disse forholdene gjør det viktig å påpeke at et panel ikke er avsluttet idet arrangementet er ferdig og rapporten med dets anbefalinger er overlevert oppdragsgiver. Oppfølging i ettertid av et panel er også essensielt om det skal ha noen plass i det politiske systemet.
+
+Det er også viktig at de som har deltatt i borgerpanelene, følges opp. De som har satt av tid og engasjert seg i denne typen demokratisk aktivitet, har krav på å bli fulgt opp også etter at arrangementet er ferdig. Først i fremst gjelder dette rent praktisk, f.eks. ved at løfter om honorarer og premier innfris i løpet av en rimelig (og avtalt) tidshorisont. Det er også viktig at deltakerne får tilgang til rapporten med panelets anbefalinger som utarbeides, enten ved at de får den tilsendt i posten, eller ved at de får tilsendt en lenke til rapporten. Etter at rapporten er oversendt oppdragsgiver, er det også ønskelig at paneldeltakerne får mulighet til å se hvordan anbefalingene til panelet blir fulgt opp gjennom den politiske prosessen. Dette kan f.eks. gjøres ved at det opprettes en nettside for det gitte borgerpanelet, eller ved at deltakerne tilskrives når en sak er sluttbehandlet i det politiske systemet. Aktiv bruk av media (redaksjonelle så vel som sosiale) kan også være en måte å informere deltakerne på om saksgangen og saksutfallet.
+
+Denne oppfølgingen er avgjørende, ikke bare som en gest overfor de som har satt av tid til deltakelse, men også for legitimiteten til ordningen med borgerpanel. Dersom anbefalingene ikke blir brukt aktivt i de politiske prosessene, er veien kort til at både panelene og anbefalingene kun blir oppfattet som interessante for de involverte forskerne, bl.a. for å finne ut om informasjon og diskusjon påvirker synspunktene. Selv om det kan være svært interessant i seg selv å finne ut av dette (også for de som har deltatt), er det å kunne få å si sitt i politiske saker noe helt annet.
+
+Undersøkelser både her hjemme og i utlandet viser at innbyggere som ikke deltar i panelene, er opptatt av hvordan panelene er satt sammen og utformet, og hvilke saker de tar opp. Men de er også opptatt av at panelets diskusjoner, eventuelle avstemninger og anbefalinger blir offentliggjort. For at borgerpaneler skal fungere med tanke på den videre demokratiske konteksten og som skoler i demokrati, ved å være noe innbyggerne er oppmerksom på at de selv kan bli trukket ut til å delta i, må de være kjent. En del av arbeidet med å gjøre panelet og dets arbeid kjent må gjøres som oppfølging i etterkant av gjennomføringen.
+
+
 ### Våre erfaringer
 
+Begge panelene som ble arrangert i samarbeid med Bergen kommune (Byborgerpanelet 2018 og den deliberative meningsmålingen i Bergen 2021), var godt forankret i kommunens politiske ledelse i forkant. Byborgerpanelet var foreslått i en rapport om kommunens nærdemokrati våren 2017 , men det var bystyret selv som i behandlingen av denne rapporten aktivt valgte å arrangere et byborgerpanel. Det var også bystyret som selv pekte ut fremtidig bydelsorganisering som aktuell sak for byborgerpanelet. Slik sett var den politiske oppmerksomheten til stede i forkant av panelet.
+
+Også den deliberative meningsmålingen i 2021 kom som et resultat av et politisk ønske fra bystyret i og med at politikerne aktivt tok del i beslutningen om at Bergen kommune skulle være med i prosjektet DEMOVATE. Den konkrete utforming av de panelene som var planlagt å skulle inngå i DEMOVATE, var delegert til kommunens utøvende apparat, og først og fremst til byrådslederens kontor. Koronapandemien satte en stopper for planene om å avvikle et fysisk panel våren/sommeren 2020, men forarbeidene til et slik arrangement var kommet godt i gang, og aktuelle saker var diskutert med kommunens ledelse. Da pandemien gjorde at fysisk panel måtte utsettes, og etter hvert skrinlegges, og tidspunktet ble forskjøvet med ett år, ble andre saker mer aktuelle for panelet. Hvilke saker som skulle behandles, var gjennom en intern prosess i Bergen kommune før dette ble diskutert med forskerne, og det ble fattet en endelig beslutning om hvilke to saker det skulle være.
+Kommunen var dermed svært involvert i å velge ut saker både i byborgerpanelet og i den deliberative meningsmålingen 2021. Sakene var aktuelle for dem, både på det politiske og administrative nivået. Dette ble klart formidlet til paneldeltakerne både i invitasjonsbrevet og på selve arrangementet. Også allmennheten ble informert om panelene via lokalpressen og NRK Hordaland. Oppfølgingen av de to panelene i det politiske systemet skulle dermed ha de beste forutsetninger.
+
+Den praktiske oppfølgingen i form av utbetaling av honorarer og utsending av rapporten var et samarbeid mellom forskningsinstitusjonen og kommunen. Det var et til dels et tidkrevende arbeid å samle inn all nødvendig informasjon fra deltakerne og få sendt ut honorarer til alle, men dette ble gjennomført, selv om en del av deltakerne mente at det tok for lang tid. I denne forbindelse er det viktig å informere om prosessen og prosedyrene, slik at ikke folk forventer å få pengene inn på konto dagen etter at panelet ble arrangert. Det er også viktig å informere om at det kan ta tid å skrive en rapport. Disse praktiske sidene av oppfølgingen er likevel svært håndterlige. Gode rutiner som er fastlagt i forkant, er til god hjelp.
+
+Ingen av de to panelene er imidlertid i særlig grad informert om til allmennheten utover det som ble gjort i forkant. Her kunne det helt klart ha vært gjort en bedre jobb, både med å informere fra selve arrangementene og om hva panelene kom frem til. Panelene utfører tross alt demokratisk arbeid på vegne av fellesskapet, og da er det rimelig at fellesskapet til en viss grad får ta del i arbeidet.
+
+Oppfølgingen fra kommunens side har vi noe begrenset innsikt i. Det vi vet, er at Byborgerpanelets anbefalinger fulgte saken frem til det ble fattet vedtak, men vi vet samtidig at anbefalingene ikke ble diskutert i noen særlig grad i de representative politiske foraene. En masteroppgave ved UiB våren 2021 avdekket at politikerne i liten grad husket at de hadde bedt om Byborgerpanelet, og at de i enda mindre grad var opptatt av og kunne huske anbefalingene fra panelet. Dette gjaldt både politikere i bystyret og i byrådet. Stabilitet i politisk oppmerksomhet har i mange endringssituasjoner og reformer vist seg å være svært avgjørende. Utskifting av byrådsleder i forkant av valget i 2019 kan ha ført til at den politiske oppmerksomheten rundt Byborgerpanelet (og bydelsorganiseringen) ble noe mindre i den politiske ledelsen. Selv om denne endringen kom i forkant av et valg, vil valgsykluser alltid være noe som kan føre til endringer i den politiske ledelsen, og dermed også i oppmerksomheten rundt igangsatte forsøk. Dette er noe som må tas hensyn til også i planleggingen av hvordan borgerpanelet skal følges opp.
+
+Rapporten fra den deliberative meningsmålingen 2021 ble oversendt kommunen vinteren 2022, og det ble arrangert et møte mellom forskerne og kommunens administrative og politiske toppledelse i februar i 2022, der deler av rapporten ble presentert. Sluttføringen av rapporten, og ikke minst overleveringen av den til kommunen, må ses i lys av at høsten 2021 var sterkt preget av koronarestriksjoner. Avtalte møter for å diskutere fremdriften ble avlyst, og overleveringen ble noe forsinket. Det skal heller ikke stikkes under stol at det er vanskelig å få politisk (til dels også administrativ) oppmerksomhet i en situasjon så preget av krisehåndtering som både Bergen og resten av Norges kommuner har vært i store deler av DEMOVATEs prosjektperiode. I denne fasen har det også skjedd utskiftinger i den politiske ledelsen, så oppmerksomheten om prosjektet DEMOVATE måtte fanges på nytt. Kommunens prosjektansvarlige har også gitt uttrykk for at dette har vært krevende.
+
+Stabilitet på oppdragssiden er viktig for oppfølging. Denne stabiliteten har administrasjonen i kommunen representert, og de vil også fremover være avgjørende for hvordan anbefalingene i sakene som ble behandlet i den deliberative meningsmålingen, følges opp. I denne forbindelse er det viktig å ha i mente at ingen av sakene som dette panelet tok opp, var dagsaktuelle i den forstand at det skal fattes bindende politiske beslutninger med det første. Det er likevel grunn til å peke på et dilemma knyttet til at et tiltak som er innrettet mot demokratisk innovasjon og deltakelse gjennom oppfølgingen, kan ende opp som et verktøy for administrasjonen i en kommune. Da kan den demokratiske innovasjonen få mer karakter av høring og dialog, og selve deltakelsesaspektet kan havne mer i bakgrunnen.
+
+Den deliberative meningsmålingen i Norge 2022 har større avstand til politiske beslutningstakere. Den følger mer ordinære forskningsprosjekter, hvor formidlingen i første omgang rettes mot det akademiske miljøet både nasjonalt og internasjonalt. Samtidig er begge temaene i denne deliberative meningsmålingen absolutt av interesse for både allmennheten og det politiske systemet. Nettopp det at vanlige innbyggere har fått anledning til å diskutere komplekse temaer som ellers unngår de største overskriftene i media (i hvert fall inntil videre), gjør at resultatene fra arrangementet kan være med på å sette dagsorden for en større, allmenn debatt.
+
+Som vi har diskutert flere steder i denne boken, har borgerpaneler mange steder vist at innbyggerne har kvalifiserte holdninger som kan gi et bredere spekter av erfaringer som kan danne grunnlag for politiske beslutninger. Bedre forankring av saker og høyere legitimitet av både prosesser og vedtak kan være en konsekvens av dette. Brukt på rett måte har borgerpaneler dessuten potensial til å aktivisere flere enn bare de som blir trukket ut til å delta. En betingelse for å få dette til er som diskutert i tidligere kapitler at deltakerne representerer et tverrsnitt av befolkningen. Dette har vist seg å være vanskelig å få til, og det er uansett ikke nok om borgerpanel skal ha en betydning i et representativt system på en måte som er mer varig enn enkeltforsøk. Våre erfaringer er at det må være avklart på forhånd hvilken plass et panels arbeid, og ikke minst dets anbefalinger, skal ha i det politiske systemets prosesser og strukturer. Empirien både fra utlandet og fra våre forsøk viser at heller ikke dette er uten utfordringer, men at det er helt avgjørende. Den viktigste delen av oppfølgingen starter derfor i forkant av et borgerpanel.
 
 
 \newpage
