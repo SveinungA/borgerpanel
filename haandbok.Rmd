@@ -197,7 +197,7 @@ Som man kan se ut fra tabellen, varierer typene som faller inn under definisjone
 
 > et borgerpanel består av uavhengige og fasiliterte gruppediskusjoner mellom en (nær) tilfeldig trukket ut gruppe mennesker som tar imot informasjon fra eksperter og interessegrupper» [@smith_mini-publics_2018].
 
-Ut fra dette kan man si at et borgerpanel har to kjerneelementer (jf. tabell \@ref(tab:tbl-kjerneelementer)):
+Ut fra dette kan man si at et borgerpanel har to kjerneelementer (jf. tabell \@ref(tab:tbl-opprinnelse)):
 
 -	tilfeldig utvelgelse av deltakere gjennom loddtrekning  
 -	at disse deltakerne gjennomgår en deliberativ prosess  
@@ -658,7 +658,7 @@ Resultatene fra surveyeksperimentet viser også at valg av rekrutteringsform kan
 
 Til Byborgerpanelet i Bergen 2018 var bystyrets bestilling at panelet skulle avholdes som en fysisk samling med inntil hundre tilfeldig uttrukne personer over 18 år. For å kunne oppfylle denne bestillingen foretok Folkeregisteret et tilfeldig uttrekk av tusen personer med bostedsadresse i Bergen. Fra denne basen ble 430 invitasjonsbrev sendt ut via posten – også her ble tilfeldighetsprinsippet lagt til grunn. Med utgangspunkt i utfordringer knyttet til rekruttering rapportert fra utenlandske paneler besluttet kommunen at deltakerne i panelet skulle honoreres som om de var medlemmer i «ordinære politiske utvalg». Honoraret ble satt til 2000 kroner for oppmøte. Dette var den eneste formen for kompensasjon som ble gitt, noe det ble gjort oppmerksom på i invitasjonsbrevet. Påmelding til panelet skjedde enten ved telefonisk henvendelse til kommunen eller via internett. Både telefonnummeret og nettadressen var oppgitt i invitasjonsbrevet. De som ble invitert til Byborgerpanelet, representerte et tverrsnitt av innbyggerne i Bergen, i og med at alle over 18 år hadde like stor sannsynlighet for å bli trukket ut, uavhengig av hvor lenge de har bodd i kommunen, kjønn, alder eller andre forhold.
 
-Tabell \@ref(tab:tbl-byborgerpanel) viser at rundt 20 prosent svarte positivt på invitasjonen. Tabellen viser også et relativt lite frafall fra dem som var påmeldt, til dem som møtte opp. 78 deltakere deltok i panelet, en fremmøteprosent på rundt 90. Gjennomsnittlig alder synker med åtte år når vi sammenligner dem som ble invitert, med dem som faktisk deltok. Et annet moment som fremgår av tabell 10.1, er forskjellen i deltakelse mellom kvinner og menn. Kjønnsbalansen er om lag lik blant de inviterte, men gapet mellom menn og kvinner øker til 14 prosentpoeng når vi ser på dem som faktisk deltok, noe som er stikk motsatt av det vi som oftest ser i utenlandske paneler. Også i norske besluttende organer på lokalt plan, som kommunestyrer og formannskap, er kvinner underrepresentert. Når det gjelder valgdeltakelsen, er det derimot nå kun i de eldre aldersgruppene at menn deltar i større grad enn kvinner.
+Tabell \@ref(tab:tbl-byborgerpanel) viser at rundt 20 prosent svarte positivt på invitasjonen. Tabellen viser også et relativt lite frafall fra dem som var påmeldt, til dem som møtte opp. 78 deltakere deltok i panelet, en fremmøteprosent på rundt 90. Gjennomsnittlig alder synker med åtte år når vi sammenligner dem som ble invitert, med dem som faktisk deltok. Et annet moment som fremgår av tabell \@ref(tab:tbl-byborgerpanel), er forskjellen i deltakelse mellom kvinner og menn. Kjønnsbalansen er om lag lik blant de inviterte, men gapet mellom menn og kvinner øker til 14 prosentpoeng når vi ser på dem som faktisk deltok, noe som er stikk motsatt av det vi som oftest ser i utenlandske paneler. Også i norske besluttende organer på lokalt plan, som kommunestyrer og formannskap, er kvinner underrepresentert. Når det gjelder valgdeltakelsen, er det derimot nå kun i de eldre aldersgruppene at menn deltar i større grad enn kvinner.
 
 Deltakelse i Byborgerpanelet i Bergen i 2018 er basert på tilfeldig utvalg, og muligheten for selvseleksjon er derfor mindre enn i deltakelseskanaler der innbyggerne inviteres åpent, for eksempel folkemøter. Til tross for en slik rekrutteringsmekanisme peker de to variablene som er kjent i dette materialet, kjønn og alder, mot en skjevhet blant dem som valgte å delta i panelet, sammenlignet med populasjonen. Vel å merke er forskjellen for kjønn ikke statistisk signifikant, noe vi tilskriver det forholdsvis lave antallet deltakere. Aldersforskjellen mellom dem som ble invitert, og dem som deltok, er derimot statistisk signifikant.
 
@@ -726,7 +726,7 @@ I forbindelse med den deliberative meningsmålingen i Bergen ble det utarbeidet 
 
 Informasjonsmaterialet ble utviklet i samarbeid mellom forskere fra NORCE og ansatte i Bergen kommune som i det daglige arbeider henholdsvis med utviklingsprogrammet for Dokken og i Bymiljøetaten. Som grunnlag for rapporten ble det tatt utgangspunkt i offentlige dokumenter og fagnotater knyttet til de to sakene, samt forskningsartikler om temaene som bidro til å belyse ulike sider ved sakene. Utkast av informasjonsmaterialet ble sirkulert i de to respektive avdelingene i kommunen, slik at de som hadde innsikt i disse prosjektene, kunne bidra med innspill. Vår erfaring er at personene som var involvert i utviklingen av disse prosjektene, hadde god innsikt i argumentene på begge sider av sakene. Det endelige utkastet ble deretter oversendt til fagekspertene, som deltok på selve arrangementsdagen, slik at de fikk anledning til å gi innspill før informasjonsmaterialet ble ferdigstilt og formidlet til deltakerne.
 
-En sentral utfordring i utviklingen av informasjonsmaterialet var å bestemme seg for hvilke konkrete forslag det skulle settes søkelys på. Begge sakene som skulle diskuteres, er store saker med en rekke ulike sider som kan løftes frem til diskusjon. Dokken-saken handler om å transformere havneområdet Dokken i Bergen til en helt ny bydel innen 2050. En slik transformasjon innebærer en rekke problemstillinger – alt fra hvilket formål den nye bydelen skal ha, til hvordan man skal navngi gatene. Saken om bilfrie soner er også et langtidsprosjekt som omhandler kommunens satsning på å utvikle et bilfritt byliv både i sentrum og i bydelene. For at gruppediskusjonene ikke skulle bli for overordnede eller abstrakte, valgte vi å sette søkelys på konkrete forslag som allerede var løftet frem i offentlige planer og i media. Disse forslagene skulle være diskusjonstemaer i den deliberative meningsmålingen. Totalt var det 8 forslag knyttet til utbyggingen på Dokken og 9 knyttet til bilfrie soner. Forslagene er oppsummert i Tabell 1. Til hvert forslag ble det i informasjonsmaterialet presentert konkrete for- og motargumenter i tabeller, som også fungerte som en oppsummering av argumentene for og imot som ble diskutert.
+En sentral utfordring i utviklingen av informasjonsmaterialet var å bestemme seg for hvilke konkrete forslag det skulle settes søkelys på. Begge sakene som skulle diskuteres, er store saker med en rekke ulike sider som kan løftes frem til diskusjon. Dokken-saken handler om å transformere havneområdet Dokken i Bergen til en helt ny bydel innen 2050. En slik transformasjon innebærer en rekke problemstillinger – alt fra hvilket formål den nye bydelen skal ha, til hvordan man skal navngi gatene. Saken om bilfrie soner er også et langtidsprosjekt som omhandler kommunens satsning på å utvikle et bilfritt byliv både i sentrum og i bydelene. For at gruppediskusjonene ikke skulle bli for overordnede eller abstrakte, valgte vi å sette søkelys på konkrete forslag som allerede var løftet frem i offentlige planer og i media. Disse forslagene skulle være diskusjonstemaer i den deliberative meningsmålingen. Totalt var det 8 forslag knyttet til utbyggingen på Dokken og 9 knyttet til bilfrie soner. Forslagene er oppsummert i Tabell \@(ref(tab:tbl-forslag). Til hvert forslag ble det i informasjonsmaterialet presentert konkrete for- og motargumenter i tabeller, som også fungerte som en oppsummering av argumentene for og imot som ble diskutert.
 
 ```{r tbl-forslag}
 tbl <- tibble(Tema = c('Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken',
@@ -1048,6 +1048,8 @@ Avslutningsvis vil vi takke for anledningen til å delta i et forskningsbasert o
 \newpage
 ## Erfaringer fra andre norske kommuner {#andre}
 
+> Arild Ohren
+
 ![](figs/1x/Andre_kommuner.png)
 Som vi har vært inne på tidligere, så ser vi en klar definisjonsavgrensing av hva et borgerpanel er. Et borgerpanel er altså en familie av demokratiske innovasjoner, som har to kjerneelementer: 
 
@@ -1221,12 +1223,12 @@ Internasjonalt har man begynt å se etablering av mer permanente borgerpaneler, 
 **Arild Ohren** er PhD-kandidat ved NTNU. 
 Hans forskning fokuserer på borgerpaneler og hvilken type form for politisk representasjon de representerer. 
 Arild er medlem av OECDs «Innovative Citizen Participation Network», samt også medlem av forskningsklyngen om demokratisk representasjon i Participedia. 
+Han har også bistått mange kommuner i deres arbeid med å utvikle og designe borgerpaneler i Norge. 
 
 **Jon Kåre Skiple** er utdannet statsviter med doktorgrad fra Institutt for sammenlignende politikk ved Universitetet i Bergen. Hans forskningsinteresser er knyttet til domstoler, politisk deltakelse og offentlig opinion.
 
 **Jacob Aars** er professor ved Institutt for politikk og forvaltning, Universitetet i Bergen. 
 Aars har arbeidet med lokalstyre og lokalt demokrati. 
 Han har blant annet publisert flere artikler om kommuners tiltak for å styrke deltakelse i lokalpolitikken. 
-Han har også bistått mange kommuner i deres arbeid med å utvikle og designe borgerpaneler i Norge. 
 
 \newpage

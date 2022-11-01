@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 16:27
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2288,12 +2288,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Andre_kommuner.png Graphic file (type bmp)
 <figs/1x/Andre_kommuner.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 1403--1405
+[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1405--1407
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1411
 
  []
 
@@ -2389,7 +2389,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [82]
-Underfull \hbox (badness 2856) in paragraph at lines 1647--1649
+Underfull \hbox (badness 2856) in paragraph at lines 1651--1653
 []\TU/LinLibertine(0)/m/n/12 Arnesen, Sveinung, Anne Lise Fimreite, and Jon Kåre Skiple. 2021. “Deliberativ
  []
 
@@ -2435,14 +2435,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  34081 strings out of 477738
  658446 string characters out of 5842294
- 1045352 words of memory out of 5000000
+ 1045354 words of memory out of 5000000
  54459 multiletter control sequences out of 15000+600000
  490114 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
