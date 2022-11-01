@@ -32,25 +32,16 @@ biblio-style: apalike
 link-citations: yes
 description: Hvordan gjennomføre borgerpanel
 fontsize: 12pt
-
+reference-section-title: Referanser
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, knitr.kable.NA = " ", cache = FALSE, warning = FALSE)
 
-## if(!require("ggdag")){install.packages("ggdag");  library(ggdag)}
-if(!require("gt")){install.packages("gt");  library(gt)}
-## if(!require("haven")){install.packages("haven");  library(haven)}
-## if(!require("here")){install.packages("here");  library(here)}
 if(!require("kableExtra")){install.packages("kableExtra");  library(kableExtra)}
-## if(!require("patchwork")){install.packages("patchwork");  library(patchwork)}
-## if(!require("readxl")){install.packages("readxl");  library(readxl)}
-## if(!require("rio")){install.packages("rio");  library(rio)}
 if(!require("tidyverse")){install.packages("tidyverse");  library(tidyverse)}
 if(!require("qrcode")){install.packages("qrcode");  library(qrcode)}
 ```
-
-
 
 \newpage
 \tableofcontents 
@@ -58,7 +49,6 @@ if(!require("qrcode")){install.packages("qrcode");  library(qrcode)}
 \newpage
 \listoftables
 \listoffigures
-
 
 \newpage
 # Om rapporten
@@ -69,11 +59,11 @@ Oppdragsgiver(e): Norges forskningsråd (prosjektnummer 295892)
 Gradering: Åpen   
 Rapportnr.: 38-2022    
 ISBN: 978-82-8408-254-7  
-Antall sider:   
+Antall sider: 85   
 Publiseringsmnd.: November, 2022  
 Denne versjonen:  02. november, 2022  
 Url: https://hdl.handle.net/11250/3028610
-```{r, qrcode, include=FALSE}
+```{r, qrcode, include=FALSE, eval=FALSE}
 set.seed(2022)
 qr <- qr_code(" https://hdl.handle.net/11250/3028610")
 png("figs/qrcode.png", width = 400, height = 400)
@@ -84,7 +74,7 @@ dev.off()
 ![QR-kode til rapport i vitenarkivet]("figs/qrcode.png"){width='20%'}
 
 \newpage
-# FORORD
+# Forord
 
 > Sveinung Arnesen og Anne Lise Fimreite
 
@@ -396,13 +386,15 @@ Byborgerpanelet ble organisert som et samarbeidsprosjekt mellom Bergen kommune, 
 
 ### Deliberativ meningsmåling i Bergen 2021 
 
-Borgerpanel om utvikling av havneområde i Bergen og om etablering av bilfrie soner. Beskrivelsen av dette borgerpanelet er hentet fra rapporten «Deliberativ meningsmåling i Bergen», hvor mer utfyllende informasjon om prosjektet foreligger [@arnesendelib2021]. En deliberativ meningsmåling er en variant av borgerpanel, som omtalt tidligere.
+> Borgerpanel om utvikling av havneområde i Bergen og om etablering av bilfrie soner. 
+
+Beskrivelsen av dette borgerpanelet er hentet fra rapporten «Deliberativ meningsmåling i Bergen», hvor mer utfyllende informasjon om prosjektet foreligger [@arnesendelib2021]. En deliberativ meningsmåling er en variant av borgerpanel, som omtalt tidligere.
 
 Arrangementet ble gjennomført som et ledd i det forskningsrådsfinansierte prosjektet Demokratisk innovasjon i praksis: Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (Demovate) (prosjektnummer 295892). Formålet med prosjektet var å utvide verktøykassen for lokaldemokratiet i kommunen ved å ta i bruk nye metoder for involvering av innbyggerne i politikken. Prosjektansvarlig var Bergen kommune, og faglig ble prosjektet ledet av forskningsinstitusjonen NORCE. Samarbeidspartnere var Universitetet i Bergen og Stanford University.
 
 Deliberativ meningsmåling i Bergen 2021 ble initiert på bakgrunn av vedtak i Bergen bystyre i møtet 24.10.2018, sak 235/18. Byrådet behandlet videre saken i møtet 29.04.2021, sak 1135/21, og fattet vedtak om at programmet for bilfrie soner i bydelene og arealstrategi for Dokken skulle brukes som diskusjonstemaer i borgerpanelet.
 
-Sakene som skulle inngå i undersøkelsen, samt i den deliberative meningsmålingen, ble bestemt av Bergen kommune i samråd med forskerne. Det ble utarbeidet et omfattende informasjonsmateriale (**se eget dokument**) om de to sakene som ble sendt til paneldeltakerne i forkant av arrangementet. I dette materialet ble det gitt informasjon om hva saken dreide seg om. Det ble videre lagt frem konkrete forslag som skulle være diskusjonstemaer i den deliberative meningsmålingen. For disse forslagene ble det presentert for- og motargumenter. Arrangementet skulle i utgangspunktet gjennomføres fysisk, men covid 19-pandemien satte en effektiv stopper for disse planene. Den deliberative meningsmålingen ble derfor gjennomført digitalt i juni 2021, hvor 84 personer fullførte deltakelsen via videokonferanseplattformen Zoom.
+Sakene som skulle inngå i undersøkelsen, samt i den deliberative meningsmålingen, ble bestemt av Bergen kommune i samråd med forskerne. Det ble utarbeidet et omfattende informasjonsmateriale om de to sakene som ble sendt til paneldeltakerne i forkant av arrangementet. I dette materialet ble det gitt informasjon om hva saken dreide seg om. Det ble videre lagt frem konkrete forslag som skulle være diskusjonstemaer i den deliberative meningsmålingen. For disse forslagene ble det presentert for- og motargumenter. Arrangementet skulle i utgangspunktet gjennomføres fysisk, men covid 19-pandemien satte en effektiv stopper for disse planene. Den deliberative meningsmålingen ble derfor gjennomført digitalt i juni 2021, hvor 84 personer fullførte deltakelsen via videokonferanseplattformen Zoom.
 
 Byrådet forpliktet seg til å ta stilling til innspillene fra borgerpanelet i de politiske saksfremleggene som følger sakene, hvor innspillene skulle være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling.
 
@@ -450,7 +442,7 @@ Kvaliteten kan knyttes til panelenes legitimitet -– både overfor de som delta
 
 ### Våre erfaringer
 
-Byborgerpanelet 2018 dreide seg om en sakstype som det gjerne *ikke* anbefales å ta inn i et borgerpanel, nemlig organisatoriske forhold. Panelet tok opp gjeninnføring av bydeler i kommunens styringsstruktur. Saken hadde ikke hatt noe særlig offentlig oppmerksomhet, og det var derfor ikke gitt at de som deltok i panelet, hadde noen form for kjennskap til den. Utenom en kort omtale om at det var denne saken som skulle tas opp, ble det ikke gitt noe informasjon om sakskomplekset i invitasjonsbrevet. All informasjon ble gitt ved innledningen til selve panelet. Informasjonen var utarbeidet i samarbeid mellom representanter for Bergen kommune og forskerne. Det ble utformet et manus som ble lest opp til deltakerne, der fire dimensjoner ved bydeler ble presentert (**se nærmere omtale i kapitlet om informasjonsmateriale samt vedlegg**). 
+Byborgerpanelet 2018 dreide seg om en sakstype som det gjerne *ikke* anbefales å ta inn i et borgerpanel, nemlig organisatoriske forhold. Panelet tok opp gjeninnføring av bydeler i kommunens styringsstruktur. Saken hadde ikke hatt noe særlig offentlig oppmerksomhet, og det var derfor ikke gitt at de som deltok i panelet, hadde noen form for kjennskap til den. Utenom en kort omtale om at det var denne saken som skulle tas opp, ble det ikke gitt noe informasjon om sakskomplekset i invitasjonsbrevet. All informasjon ble gitt ved innledningen til selve panelet. Informasjonen var utarbeidet i samarbeid mellom representanter for Bergen kommune og forskerne. Det ble utformet et manus som ble lest opp til deltakerne, der fire dimensjoner ved bydeler ble presentert. 
 
 Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) skulle deltakerne ta stilling til 
 - Hvor mange bydeler skal kommunen ha?  
@@ -469,11 +461,11 @@ Sakene som skulle inngå i den deliberative meningsmålingen i Bergen 2021, ble 
 
 Begge sakene må kunne klassifiseres som planleggingssaker, og begge sakene dreier seg om arealdisponering –- hva arealet skal brukes til, og hvem som skal bestemme dette. Sakene har relativt ulike tidshorisonter. Dokken-utbyggingen er helt i startfasen, og utbyggingen antas ikke å være ferdigstilt før om 30 år. Konseptet med bilfrie soner er på gang i deler av kommunen, og den politiske bestillingen om å utvide dette til andre deler av kommunen enn sentrumssoner er gjort. Bindende beslutninger i denne saken er derfor ikke like langt unna som i Dokken-utbyggingen.
 
-Det ble utarbeidet et omfattende informasjonsmateriale om de to sakene i samarbeid mellom de aktuelle avdelingene i Bergen kommune og forskerne (**se mer i eget kapittel og lenke til materialet**). Informasjonsmaterialet ble sendt til paneldeltakerne ca. én uke før selve arrangementet. I dette materialet ble det gitt nøktern informasjon om hva sakene dreide seg om. På bakgrunn av informasjonen ble det videre lagt frem konkrete forslag til spørsmål som skulle være diskusjonstemaer i den deliberative meningsmålingen. For forslagene ble det presentert både for- og motargumenter. Det var sju forslag knyttet til Dokken-utbyggingen og ni knyttet til spørsmålet om bilfrie soner. Heller ikke dette panelet skulle ta stilling til om Dokken-utbyggingen skulle realiseres, eller om bilfrie soner skulle iverksettes. Inngangen var gitt at utbyggingen finner sted, og gitt at bilfrie soner etableres, hvordan skal de da utformes?
+Det ble utarbeidet et omfattende informasjonsmateriale om de to sakene i samarbeid mellom de aktuelle avdelingene i Bergen kommune og forskerne. Informasjonsmaterialet ble sendt til paneldeltakerne ca. én uke før selve arrangementet. I dette materialet ble det gitt nøktern informasjon om hva sakene dreide seg om. På bakgrunn av informasjonen ble det videre lagt frem konkrete forslag til spørsmål som skulle være diskusjonstemaer i den deliberative meningsmålingen. For forslagene ble det presentert både for- og motargumenter. Det var sju forslag knyttet til Dokken-utbyggingen og ni knyttet til spørsmålet om bilfrie soner. Heller ikke dette panelet skulle ta stilling til om Dokken-utbyggingen skulle realiseres, eller om bilfrie soner skulle iverksettes. Inngangen var gitt at utbyggingen finner sted, og gitt at bilfrie soner etableres, hvordan skal de da utformes?
 
 I brevet som fulgte med informasjonsmaterialet, ble det videre sagt noe om hvordan innspillene fra den deliberative meningsmålingen vil bli behandlet i det kommunale systemet. Byrådet i Bergen fattet i april 2021 et helt konkret vedtak om dette, som det ble referert til i nevnte brev.
 
-Erfaringene fra denne digitale deliberative meningsmålingen i Bergen er at begge sakene fungerte i dette forumet. Det er likevel en tendens til at det fungerte litt bedre å diskutere og komme med anbefalinger i saken om Dokken-utbyggingen enn i saken om bilfrie soner. Forskjellene er ikke store, og sakstypene er nokså like i og med at begge dreier seg om arealutnytting i fremtiden. Dokken-utbyggingen er et større problemfelt, som nærmest dreier seg om å bygge en helt ny bydel, og om hva innholdet i den skal være. Her er det et langtidsperspektiv som opplagt gjør at saken blir mindre konkret, men samtidig spennende og utfordrende. Deltakerne hadde også mange og viktige spørsmål til ekspertpanelet som møtte dem i løpet av diskusjonen (**se mer om dette i kapitlet om gjennomføring av panelet**). 
+Erfaringene fra denne digitale deliberative meningsmålingen i Bergen er at begge sakene fungerte i dette forumet. Det er likevel en tendens til at det fungerte litt bedre å diskutere og komme med anbefalinger i saken om Dokken-utbyggingen enn i saken om bilfrie soner. Forskjellene er ikke store, og sakstypene er nokså like i og med at begge dreier seg om arealutnytting i fremtiden. Dokken-utbyggingen er et større problemfelt, som nærmest dreier seg om å bygge en helt ny bydel, og om hva innholdet i den skal være. Her er det et langtidsperspektiv som opplagt gjør at saken blir mindre konkret, men samtidig spennende og utfordrende. Deltakerne hadde også mange og viktige spørsmål til ekspertpanelet som møtte dem i løpet av diskusjonen. 
 
 Bilfrie soner dreide seg om en utvidelse av et konsept som allerede er i ferd med å bli innført i sentrumsnære områder. Denne saken er derfor langt mer konkret og nærmere i tid. Likevel var det en tendens til at engasjementet i diskusjonen var mer moderat her, selv om deltakerne også i denne saken hadde flere og relevante spørsmål til ekspertene. En opplagt forklaring kan være at begge sakene er omfattende og komplekse, og at det å innlemme to slike saker i et avgrenset panel på én og samme dag ble i overkant for mange av deltakerne. Det at panelet var digitalt, forsterket dette bildet av «overload».
 
@@ -576,10 +568,10 @@ Vår erfaring er at det er god hjelp for forskerne å få hos Sikt. Offentlige i
 ![](figs/1x/Rekruttering.png)
 
 ### Hvorfor er rekruttering av deltakere viktig
-Rekruttering av deltakere er nøkkelen for å utløse det demokratiske potensialet til borgerpanel. Grunnpilarene til borgerpaneler er nemlig demokratisk likhet – alle innbyggere skal ha lik mulighet til å delta og til representativitet, og det deliberative beslutningsorganet skal speile befolkningen som helhet [@flanigan_fair_2021]. Representativitet blir i denne sammenhengen forstått som deskriptiv representativitet [@fishkin_democracy_2018], altså deskriptive karakteristikker ved befolkningen, som kjønn, alder, bosted og utdanning. Representasjon i borgerpaneler er viktig fordi det er antatt å gi en variasjonsbredde i meningsutvekslingen som reflekterer holdningene i befolkningen som helhet [@fishkin_democracy_2018].
+Rekruttering av deltakere er nøkkelen for å utløse det demokratiske potensialet til borgerpanel. Grunnpilarene til borgerpaneler er nemlig demokratisk likhet, alle innbyggere skal ha lik mulighet til å delta, og representativitet, det deliberative beslutningsorganet skal speile befolkningen som helhet [@flanigan_fair_2021]. Representativitet blir i denne sammenhengen forstått som deskriptiv representativitet [@fishkin_democracy_2018], altså deskriptive karakteristikker ved befolkningen, som kjønn, alder, bosted og utdanning. Representasjon i borgerpaneler er viktig fordi det er antatt å gi en variasjonsbredde i meningsutvekslingen som reflekterer holdningene i befolkningen som helhet [@fishkin_democracy_2018].
 Hvordan man rekrutterer deltakere, er avgjørende for i hvilken grad man evner å oppnå idealene om demokratisk likhet og representativitet. Den rekrutteringsformen som er antatt å gi best resultat, er tilfeldig uttrekk fra populasjonen, fordi den gir alle innbyggere lik mulighet til å delta, uavhengig av hvem de er. Samtidig kan den reelle muligheten til å delta i borgerpaneler være ulikt fordelt blant befolkningen, og lik mulighet til å delta er ikke er ensbetydende med å oppnå representativitet. På samme måte som at noen grupper i befolkningen er mindre tilbøyelige til å benytte seg av stemmeretten sin ved politiske valg, er det sannsynligvis systematiske skjevheter i hvem som velger å delta i borgerpaneler. Demokratisk likhet og representativitet er med andre ord idealer man etterstreber, men som man ikke nødvendigvis oppnår.
 I prosessen med å rekruttere deltakere til borgerpaneler står man som arrangør ovenfor mange små og store valg som kan få betydning for hvor mange deltakere man klarer å rekruttere, i hvilken grad man oppnår representasjon og demokratisk likhet, kostnadene ved gjennomføring og hvilken legitimitet borgerpanelet får i befolkningen og blant politikerne. Ofte medfører valgene at man er nødt til å gjøre avveininger mellom faktorer knyttet til kostnader og den praktiske gjennomføringen på den ene siden og representativitet, demokratisk likhet og legitimitet på den andre siden.
-I dette kapitlet beskriver vi de valgene man står ovenfor som arrangør av borgerpanel i forbindelse med rekruttering av deltakere. Vi diskuterer hvordan ulike valg påvirker antallet deltakere, økonomiske kostnader, gjennomføring, demokratisk likhet, representativitet og legitimitet. Basert på en forskningsundersøkelse gjennomført i Bergen kommune viser vi hvordan valg knyttet til rekruttering kan påvirke hvorvidt innbyggere velger å delta i borgerpaneler, samt påvirke legitimiteten til borgerpanelet [@arnesen_loddet_2021]. Til slutt presenterer og diskuterer vi våre egne erfaringer knyttet til rekruttering av deltakere i forbindelse med gjennomføringen av borgerpanel i Bergen kommune. Målet vårt er at disse innsiktene skal gi fremtidige arrangører av borgerpaneler et godt beslutningsgrunnlag i rekrutteringsarbeidet.
+I dette kapitlet beskriver vi de valgene man står ovenfor som arrangør av borgerpanel i forbindelse med rekruttering av deltakere. Vi diskuterer hvordan ulike valg påvirker antallet deltakere, økonomiske kostnader, gjennomføring, demokratisk likhet, representativitet og legitimitet. Basert på en forskningsundersøkelse gjennomført i Bergen kommune viser vi hvordan valg knyttet til rekruttering kan påvirke hvorvidt innbyggere velger å delta i borgerpaneler, samt påvirke legitimiteten til borgerpanelet [@arnesenloddet]. Til slutt presenterer og diskuterer vi våre egne erfaringer knyttet til rekruttering av deltakere i forbindelse med gjennomføringen av borgerpanel i Bergen kommune. Målet vårt er at disse innsiktene skal gi fremtidige arrangører av borgerpaneler et godt beslutningsgrunnlag i rekrutteringsarbeidet.
 
 
 ### Viktige steg og valg i rekrutteringsprosessen
@@ -643,16 +635,17 @@ Påmeldingen til arrangementet bør utformes med det prinsipp at det skal være 
 Vi gjennomførte en spørreundersøkelse blant innbyggerne i Bergen kommune for å få empirisk kunnskap om hvordan man kan utforme borgerpanelet for å øke antallet deltakere og gi beslutningene til borgerpanelet større legitimitet. Med utforming av borgerpanelet mener vi nøkkelvalg med tanke på rekruttering og gjennomføring av arrangementet. Slike valg kan være praktiske (hvilken dag borgerpanelet arrangeres), økonomiske (kompensasjon), prosessuelle (hvilken rekrutteringsform som benyttes) og substansielle (hvilken politisk sak som er tema).
 Spørreundersøkelsen ble utført av Respons Analyse i tidsrommet 16. Desember 2019 til 13. Januar 2020. Intervjuene ble gjennomført per telefon med utgangspunkt i et representativt utvalg av stemmeberettigede innbyggere i Bergen kommune. Til sammen ble 12 405 personer oppringt, og 900 besvarte undersøkelsen. Det gir en svarprosent på 15,4 prosent. Deskriptive karakteristikker ved respondentene indikerer overrepresentasjon av personer med høy utdanning.
 
-Respondentene i undersøkelsen ble presentert en beskrivelse av et fiktivt borgerpanel som varierer langs seks dimensjoner: 
+Respondentene i undersøkelsen ble presentert en beskrivelse av et fiktivt borgerpanel som varierer langs sju dimensjoner: 
 
 - beslutningsgrunnlag  
 - gjennomføringsdag  
 - deltakerantall  
 - økonomisk kompensasjon  
-- rekrutteringsform  
+- rekrutteringsform 
+- offentlig avstemming
 - sak  
 
-Innenfor hver av disse seks dimensjonene blir respondentene eksponert for ulike verdier som varierer tilfeldig, slik at vi kan identifisere årsakssammenhenger. Faktorene innenfor dimensjonene ble valgt med utgangspunkt i reelle alternativer for gjennomføring av et planlagt borgerpanel i Bergen kommune. Etter beskrivelsen av borgerpanelet ble om lag halvparten av respondentene spurt hvor sannsynlig det er at de vil delta i borgerpanelet, mens den andre halvparten ble spurt i hvilken grad de mener politikerne bør vektlegge resultatet fra borgerpanelet når de skal fatte sin beslutning. Det siste spørsmålet er inkludert for å måle legitimiteten til borgerpanelet.
+Innenfor hver av disse sju dimensjonene blir respondentene eksponert for ulike verdier som varierer tilfeldig, slik at vi kan identifisere årsakssammenhenger. Faktorene innenfor dimensjonene ble valgt med utgangspunkt i reelle alternativer for gjennomføring av et planlagt borgerpanel i Bergen kommune. Etter beskrivelsen av borgerpanelet ble om lag halvparten av respondentene spurt hvor sannsynlig det er at de vil delta i borgerpanelet, mens den andre halvparten ble spurt i hvilken grad de mener politikerne bør vektlegge resultatet fra borgerpanelet når de skal fatte sin beslutning. Det siste spørsmålet er inkludert for å måle legitimiteten til borgerpanelet.
 
 Resultatene fra surveyeksperimentet tegner et ganske entydig bilde av hvordan man kan øke deltakelsen i borgerpanel, nemlig ved å øke den økonomiske kompensasjonen. Effektene av økonomisk kompensasjon er betydelige. Sammenlignet med et borgerpanel hvor deltakerne ikke mottar økonomisk kompensasjon, og hvor sannsynligheten for deltakelse er om lag 26 prosent, øker sannsynligheten for deltakelse med om lag 12 prosentpoeng med en kompensasjon på 200 kroner i timen, 15 prosentpoeng med en kompensasjon på 500 kroner i timen og 22 prosentpoeng med en kompensasjon på 1000 kroner i timen. Disse tallene indikerer dermed at en kan oppnå en relativt betydelig økning i sannsynligheten for deltakelse ved å gi en økonomisk kompensasjon på 200 kroner i timen, men at økningen i sannsynligheten for deltakelse deretter avtar med et enda høyere beløp. Det er også viktig å merke seg at ingen økonomisk kompensasjon er den egenskapen ved borgerpanelet som gir den laveste sannsynlighet for deltakelse relativt til det overordnede gjennomsnittet på 38 prosent sannsynlighet for deltakelse. Innbyggere forventer med andre ord kompensasjon for deltakelsen.
 
@@ -786,7 +779,7 @@ Borgerpaneler har vært organisert, tilrettelagt og gjennomført på mange ulike
 
 ### Våre erfaringer
 
-Byborgerpanelet 2018 ble gjennomført som et fysisk panel våren 2018, mens de deliberative meningsmålingene i hhv. Bergen 2021 og Norge 2022 ble gjennomført digitalt (**se nærmere informasjon om dette i presentasjonen av borgerpanelene i innledningen til del 2**). Arrangementene har mange fellestrekk, men også noen særegenheter som det er verdt å merke seg når man står overfor valg av deltakelsesform i et panel.
+Byborgerpanelet 2018 ble gjennomført som et fysisk panel våren 2018, mens de deliberative meningsmålingene i hhv. Bergen 2021 og Norge 2022 ble gjennomført digitalt. Arrangementene har mange fellestrekk, men også noen særegenheter som det er verdt å merke seg når man står overfor valg av deltakelsesform i et panel.
 
 2018-panelet tok som tidligere omtalt opp fremtidig bydelsorganisering i Bergen kommune. Panelet ble gjennomført i UiBs lokaler i Bergen sentrum og hadde en varighet på to timer. Ved registrering fikk deltakerne et påkoblingsnummer de skulle bruke i den elektroniske surveyen på samlingen. Det viste seg at noen av deltakerne ikke var helt komfortable med bruken av datamaskin, noe som var en viktig del av opplegget. Det fremgikk ikke av invitasjonsbrevet at undersøkelsen skulle besvares elektronisk. Vurderingen var at slik informasjon kunne virke fremmedgjørende for noen. Det bør imidlertid finnes assistanse i lokalet, slik at alle får den hjelpen de trenger for å komme i gang med undersøkelsen. Det kan også vurderes om undersøkelsen skal kunne fylles ut manuelt. Manuell utfylling vil medføre noe koding i etterkant, men de aller fleste vil sannsynligvis velge en elektronisk løsning. Et slikt tilbud vil dermed ikke medføre den helt store ekstrakostnaden. Det gjør også opplegget mer inkluderende. Noen plattformer som brukes ved denne typen undersøkelser, kan imidlertid ikke betjenes manuelt. Da vil et alternativ være at deltakere som ikke behersker digitale verktøy, eller som f.eks. er svaksynte, får lest opp svaralternativene og så får hjelp til inntastingen.
 
@@ -850,7 +843,7 @@ Den største forskjellen mellom de tre panelene er åpenbart at det ene er fysis
 - sakstype (arealdisponering vs. organisasjonsstruktur vs. kunstig intelligens i beslutninger), og  
 - måten informasjonen om saken(e) som skulle behandles i panelet, ble gitt på (direkte i panelet vs. skriftlig informasjon i forkant). 
 
-Heller enn å gå inn i en vurdering av hvilke av disse oppleggene som fungerte best, vil vi peke på at både digitale og fysiske paneler har vist seg å fungere. De to panelene i Bergen førte begge til at kommunen fikk råd og anbefalinger som ble tatt inn i den videre saksbehandlingen (**se delkapittelet om oppfølging etter gjennomføring**). Våre erfaringer er variasjoner over det tredelte opplegget –- informasjon, deliberasjon, råd –- som har vist seg å fungere mange andre steder, og som også har gjort det i våre tre borgerpaneler.
+Heller enn å gå inn i en vurdering av hvilke av disse oppleggene som fungerte best, vil vi peke på at både digitale og fysiske paneler har vist seg å fungere. De to panelene i Bergen førte begge til at kommunen fikk råd og anbefalinger som ble tatt inn i den videre saksbehandlingen. Våre erfaringer er variasjoner over det tredelte opplegget –- informasjon, deliberasjon, råd –- som har vist seg å fungere mange andre steder, og som også har gjort det i våre tre borgerpaneler.
 
 
 
@@ -927,7 +920,7 @@ Svarene som ble vektlagt overfor politikerne i 2018 og 2021, var svarene deltake
  
 
 \newpage
-## Oppfølging etter arrangement
+## Oppfølging av arrangement
 
 > Anne Lise Fimreite
 
@@ -976,6 +969,8 @@ Denne delen bringer inn perspektiver fra to andre vinkler enn de som er presente
 
 \newpage
 ## Borgerpanel sett fra kommuneadministrasjonen
+
+> Pål Bjørseth
 
 ![](figs/1x/Kommuneperspektivet.png)
 Dette kapitlet handler om perspektiver fra kommuneadministrasjonen om medvirkning generelt, og borgerpanel spesielt. Selv om Bergen kommune har parlamentarisk styreform, er de aller fleste betraktninger relevante for kommuneadministrasjonen uavhengig av kommunens styreform. Andre deler av kommunens helhetlige lokaldemokratiarbeid omtales også for å kunne gi en bredere kontekst for hvilken funksjon borgerpaneler kan ha i det helhetlige medvirkningsarbeidet.
@@ -1133,7 +1128,7 @@ Borgerpanelet ble gjennomført under pandemien. Selv om det på det tidspunktet 
 
 Trondheimspanelet var linket opp til en større prosess med flere former for medvirkning og representasjon involvert. I prosessen med å lage en ny samfunnsdel av kommuneplanen gjennomførte Trondheim kommune tre medvirkningsfaser, der Trondheimspanelet var en av disse. Dette kan man se nedenfor:
 
-```{r, out.width = "80%", fig.align = "center", fig.cap= "Medvirkningsprosess. Kristin Solhaug Næss, personlig kommunikasjon, 07.09.2022"}
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Medvirkningsprosess"}
 knitr::include_graphics("figs/trondheimspanelet.png")
 
 ```
@@ -1212,6 +1207,7 @@ Røros er en forholdsvis liten kommune, og derfor er det noen utfordringer knytt
 
 Internasjonalt har man begynt å se etablering av mer permanente borgerpaneler, eller en institusjonalisering, som OECD kaller det. Om dette er veien å gå når det gjelder borgerpaneler, er for tidlig å si. De fleste borgerpaneleksemplene vi har sett, har vært etablert ad hoc om enkeltsaker. Røros vil derfor være et interessant eksempel på hvordan et slikt permanent borgerpanel kan se ut, og hvordan det vil fungere.
 
+\newpage
 # Om forfatterne
 
 **Sveinung Arnesen** er statsviter med PhD fra Institutt for sammenlignende politikk ved Universitetet i Bergen. Han er fagleder for Demokrati og innovasjon ved forskningsinstituttet NORCE og førsteamanuensis ved Institutt for politikk og forvaltning, UiB. Arnesen er nasjonal koordinator for Den europeiske samfunnsundersøkelsen (ESS) og forsker på tematikk knyttet til valg, opinion og demokrati.
@@ -1233,4 +1229,4 @@ Aars har arbeidet med lokalstyre og lokalt demokrati.
 Han har blant annet publisert flere artikler om kommuners tiltak for å styrke deltakelse i lokalpolitikken. 
 Han har også bistått mange kommuner i deres arbeid med å utvikle og designe borgerpaneler i Norge. 
 
-# References
+\newpage

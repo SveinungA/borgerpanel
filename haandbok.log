@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 14:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1114,40 +1114,40 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 ) (./haandbok.aux)
 \openout1 = `haandbok.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 160.
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 160.
-LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 160.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for LS1/libertinust1math/m/n on input line 159.
+LaTeX Font Info:    Trying to load font information for LS1+libertinust1math on input line 159.
 (c:/Users/svein/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/libertinust1math/ls1libertinust1math.fd
 File: ls1libertinust1math.fd 2016/03/23 Fontinst v1.933 font definitions for LS1/libertinust1math.
 )
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 160.
-LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 160.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for LS2/libertinust1mathsym/m/n on input line 159.
+LaTeX Font Info:    Trying to load font information for LS2+libertinust1mathsym on input line 159.
 (c:/Users/svein/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/libertinust1math/ls2libertinust1mathsym.fd
 File: ls2libertinust1mathsym.fd 2015/04/17 v1.1.2-latex LibertinusT1Mathsym LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 160.
-LaTeX Info: Command `\dddot' is already robust on input line 160.
-LaTeX Info: Command `\ddddot' is already robust on input line 160.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Info: Command `\dddot' is already robust on input line 159.
+LaTeX Info: Command `\ddddot' is already robust on input line 159.
 
 Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             'latinmodern-math.otf' with options
@@ -1179,13 +1179,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `LS1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 160.
+(Font)              `operators' in the math version `normal' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  LS1/libertinust1math/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 160.
+(Font)                  LS1/libertinust1math/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 159.
 LaTeX Font Info:    Encoding `LS1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 160.
+(Font)              `operators' in the math version `bold' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  LS1/libertinust1math/b/n --> TU/latinmodern-math.otf(1)/b/n on input line 160.
+(Font)                  LS1/libertinust1math/b/n --> TU/latinmodern-math.otf(1)/b/n on input line 159.
 
 Package fontspec Info: latinmodern-math scale = 1.0001.
 
@@ -1249,13 +1249,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `LS2' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 160.
+(Font)              `symbols' in the math version `normal' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  LS2/libertinust1mathsym/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 160.
+(Font)                  LS2/libertinust1mathsym/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 159.
 LaTeX Font Info:    Encoding `LS2' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 160.
+(Font)              `symbols' in the math version `bold' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  LS2/libertinust1mathsym/m/n --> TU/latinmodern-math.otf(2)/b/n on input line 160.
+(Font)                  LS2/libertinust1mathsym/m/n --> TU/latinmodern-math.otf(2)/b/n on input line 159.
 
 Package fontspec Info: latinmodern-math scale = 0.9999.
 
@@ -1301,14 +1301,14 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =7.2pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `LS2' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 160.
+(Font)              `largesymbols' in the math version `normal' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  LS2/libertinust1mathex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 160.
+(Font)                  LS2/libertinust1mathex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 159.
 LaTeX Font Info:    Encoding `LS2' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 160.
+(Font)              `largesymbols' in the math version `bold' on input line 159.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  LS2/libertinust1mathex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 160.
-Package hyperref Info: Link coloring OFF on input line 160.
+(Font)                  LS2/libertinust1mathex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 159.
+Package hyperref Info: Link coloring OFF on input line 159.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
@@ -1352,67 +1352,67 @@ Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 162.
+(Font)              scaled to size 20.74pt on input line 161.
 File: figs/norce_logo.png Graphic file (type bmp)
 <figs/norce_logo.png>
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 162.
+(Font)              scaled to size 14.4pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 14.4pt on input line 162.
+(Font)              scaled to size 14.4pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/it' will be
-(Font)              scaled to size 7.0pt on input line 162.
+(Font)              scaled to size 7.0pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 162.
+(Font)              scaled to size 14.40152pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 162.
+(Font)              scaled to size 10.00107pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 162.
+(Font)              scaled to size 7.00075pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 162.
+(Font)              scaled to size 14.39845pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 162.
+(Font)              scaled to size 9.99893pt on input line 161.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 162.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 162.
+(Font)              scaled to size 6.99925pt on input line 161.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 161.
 (c:/Users/svein/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 161.
 (c:/Users/svein/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for LS1+libertinust1mathbb on input line 162.
+LaTeX Font Info:    Trying to load font information for LS1+libertinust1mathbb on input line 161.
 (c:/Users/svein/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/libertinust1math/ls1libertinust1mathbb.fd
 File: ls1libertinust1mathbb.fd 2016/08/22 latex LibertinusT1Mathbb LS1 font definitions
 )
 LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 14.4pt on input line 162.
+(Font)              scaled to size 14.4pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1mathbb/m/n' will be
-(Font)              scaled to size 7.0pt on input line 162.
+(Font)              scaled to size 7.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 14.4pt on input line 162.
+(Font)              scaled to size 14.4pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/n' will be
-(Font)              scaled to size 7.0pt on input line 162.
+(Font)              scaled to size 7.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 14.4pt on input line 162.
+(Font)              scaled to size 14.4pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 161.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
-(Font)              scaled to size 7.0pt on input line 162.
+(Font)              scaled to size 7.0pt on input line 161.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 162.
+(Font)              scaled to size 10.95pt on input line 161.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 162.
+(Font)              scaled to size 10.95pt on input line 161.
 File: figs/2x/Forside.png Graphic file (type bmp)
 <figs/2x/Forside.png>
 
-Overfull \hbox (16.42679pt too wide) in paragraph at lines 163--164
+Overfull \hbox (16.42679pt too wide) in paragraph at lines 162--163
 [][] 
  []
 
@@ -1420,9 +1420,9 @@ Overfull \hbox (16.42679pt too wide) in paragraph at lines 163--164
 
 ]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 167.
+(Font)              scaled to size 17.28pt on input line 166.
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 167.
+(Font)              scaled to size 17.28pt on input line 166.
 (./haandbok.toc
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -1488,12 +1488,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@lot=\write5
 \openout5 = `haandbok.lot'.
 
-(./haandbok.lof
-Underfull \hbox (badness 1460) in paragraph at lines 10--10
- [][] [][]\TU/LinLibertine(0)/m/n/12 Medvirkningsprosess. Kristin Solhaug Næss, personlig kommunikasjon, 
- []
-
-)
+(./haandbok.lof)
 \tf@lof=\write6
 \openout6 = `haandbok.lof'.
 
@@ -1515,7 +1510,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Underfull \hbox (badness 1281) in paragraph at lines 212--213
+Underfull \hbox (badness 1281) in paragraph at lines 211--212
 []\TU/LinLibertine(0)/m/n/12 Med denne håndboken ønsker vi å øke oppmerksomheten om borgerpaneler og være
  []
 
@@ -1538,7 +1533,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Del1.png Graphic file (type bmp)
 <figs/1x/Del1.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
 [][]
  []
 
@@ -1568,7 +1563,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 []\TU/LinLibertine(0)/m/n/12 Resultatet av representative deltakelsesprosesser kan betraktes som en kvalifisert
  []
 
@@ -1580,7 +1575,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-Underfull \hbox (badness 1348) in paragraph at lines 313--314
+Underfull \hbox (badness 1348) in paragraph at lines 312--313
 \TU/LinLibertine(0)/m/n/12 Den moderne historien om forsøk med borgerpaneler i vesten startet på 1970-tallet i
  []
 
@@ -1635,7 +1630,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 352.
+(Font)              scaled to size 8.4pt on input line 351.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1647,7 +1642,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 368--370
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
@@ -1673,7 +1668,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Underfull \hbox (badness 1122) in paragraph at lines 453--454
+Underfull \hbox (badness 1122) in paragraph at lines 452--453
 []\TU/LinLibertine(0)/m/n/12 når det gjelder ansettelse av politiske ledere, for eksempel, regnes det for
  []
 
@@ -1702,7 +1697,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 
-LaTeX Warning: Reference `sec:andre' on page 20 undefined on input line 502.
+LaTeX Warning: Reference `sec:andre' on page 20 undefined on input line 501.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1747,9 +1742,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 LaTeX Font Info:    Font shape `TU/LinLibertine(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 573.
+(Font)              scaled to size 14.4pt on input line 572.
 
-Underfull \hbox (badness 1769) in paragraph at lines 595--596
+Underfull \hbox (badness 1769) in paragraph at lines 598--599
 []\TU/LinLibertine(0)/m/n/12 Arrangementet ble gjennomført som et ledd i det forskningsrådsfinansierte prosjektet
  []
 
@@ -1761,7 +1756,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 616--618
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
@@ -1784,10 +1779,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27]
 
-LaTeX Warning: Reference `sec:etter' on page 28 undefined on input line 649.
+LaTeX Warning: Reference `sec:etter' on page 28 undefined on input line 652.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--658
+Underfull \hbox (badness 10000) in paragraph at lines 659--661
 
  []
 
@@ -1799,7 +1794,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 683--685
+Underfull \hbox (badness 10000) in paragraph at lines 686--688
 
  []
 
@@ -1830,7 +1825,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Deltakelsesform.png Graphic file (type bmp)
 <figs/1x/Deltakelsesform.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 715--717
+Underfull \hbox (badness 10000) in paragraph at lines 718--720
 [][]
  []
 
@@ -1900,7 +1895,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 853--855
+Underfull \hbox (badness 10000) in paragraph at lines 856--858
 
  []
 
@@ -1920,27 +1915,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 890--892
+Underfull \hbox (badness 10000) in paragraph at lines 893--895
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 892--894
+Underfull \hbox (badness 10000) in paragraph at lines 895--897
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--896
+Underfull \hbox (badness 10000) in paragraph at lines 897--899
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--898
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 898--900
+Underfull \hbox (badness 10000) in paragraph at lines 899--901
 
  []
 
@@ -2047,7 +2037,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53]
-Underfull \hbox (badness 3746) in paragraph at lines 1093--1094
+Underfull \hbox (badness 3746) in paragraph at lines 1098--1099
 []\TU/LinLibertine(0)/m/n/12 Moderatorene for gruppene var prosjektmedarbeidere og statsvitenskapsstudenter fra
  []
 
@@ -2070,17 +2060,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1152--1154
+Underfull \hbox (badness 10000) in paragraph at lines 1157--1159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1154--1156
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1161
 
  []
 
@@ -2165,7 +2155,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Del3.png Graphic file (type bmp)
 <figs/1x/Del3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1289--1291
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1296
 []
  []
 
@@ -2180,17 +2170,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Kommuneperspektivet.png Graphic file (type bmp)
 <figs/1x/Kommuneperspektivet.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1297--1299
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 1306--1308
+[][]
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 1297--1299
+Underfull \hbox (badness 1087) in paragraph at lines 1306--1308
 \TU/LinLibertine(0)/m/n/12 Dette kapitlet handler om perspektiver fra kommuneadministrasjonen om medvirkning
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 1297--1299
+Underfull \hbox (badness 1874) in paragraph at lines 1306--1308
 \TU/LinLibertine(0)/m/n/12 er de aller fleste betraktninger relevante for kommuneadministrasjonen uavhengig av
  []
 
@@ -2218,42 +2208,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 1345--1347
+Underfull \hbox (badness 10000) in paragraph at lines 1354--1356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1351
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
+Underfull \hbox (badness 10000) in paragraph at lines 1360--1362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1364
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1355--1357
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1366
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1357--1360
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1369
 
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 1365--1366
+Underfull \hbox (badness 2401) in paragraph at lines 1374--1375
 \TU/LinLibertine(0)/m/n/12 grafen i kommuneloven og bærekraftdelmål 16.7 om å «sikre lydhøre, inkluderende,
  []
 
@@ -2265,7 +2255,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [69]
-Underfull \hbox (badness 1314) in paragraph at lines 1381--1382
+Underfull \hbox (badness 1314) in paragraph at lines 1390--1391
 \TU/LinLibertine(0)/m/n/12 for den praktiske gjennomføringen og ta utgangspunkt i kommunes vurderinger mht.
  []
 
@@ -2288,12 +2278,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Andre_kommuner.png Graphic file (type bmp)
 <figs/1x/Andre_kommuner.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1398
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1407
 
  []
 
@@ -2381,7 +2371,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [81]
-Underfull \hbox (badness 2856) in paragraph at lines 1637--1639
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[82]
+Underfull \hbox (badness 2856) in paragraph at lines 1647--1649
 []\TU/LinLibertine(0)/m/n/12 Arnesen, Sveinung, Anne Lise Fimreite, and Jon Kåre Skiple. 2021. “Deliberativ
  []
 
@@ -2392,7 +2390,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82]
+[83]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2400,7 +2398,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[83]
+[84]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the haandbok.maf file.
@@ -2423,18 +2421,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[84] (./haandbok.aux)
+[85] (./haandbok.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  34081 strings out of 477738
- 658447 string characters out of 5842294
- 1044413 words of memory out of 5000000
+ 658446 string characters out of 5842294
+ 1045354 words of memory out of 5000000
  54459 multiletter control sequences out of 15000+600000
  490114 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,14n,115p,2616b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on haandbok.pdf (84 pages).
+Output written on haandbok.pdf (85 pages).
