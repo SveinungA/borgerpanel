@@ -13,10 +13,11 @@ author: |
   Jon Kåre Skiple  
   Jacob Aars 
 output:
-  pdf_document:
+  bookdown::pdf_document2:
     toc: no
     includes:
       in_header: preamble.tex
+    number_sections: yes  
   html_document:
     toc: no
     df_print: paged
@@ -30,6 +31,7 @@ biblio-style: apalike
 link-citations: yes
 description: Hvordan gjennomføre borgerpanel
 fontsize: 12pt
+lang: no
 
 ---
 
@@ -69,7 +71,7 @@ Rapportnr.: 38-2022
 ISBN: 978-82-8408-254-7  
 Antall sider:   
 Publiseringsmnd.: November, 2022  
-Denne versjonen:  02. november, 2022
+Denne versjonen:  02. november, 2022  
 Url: https://hdl.handle.net/11250/3028610
 ```{r, qrcode, include=FALSE}
 set.seed(2022)
@@ -84,24 +86,56 @@ dev.off()
 \newpage
 # FORORD
 
+> Sveinung Arnesen og Anne Lise Fimreite
+
+
+I en tid hvor demokratiet settes på prøve også i etablerte vestlige demokratier, er viktigheten av å utvikle demokratiske prosesser kanskje viktigere enn noensinne [@dahlberg2015democratic]. Internasjonalt ser vi lav, og ofte synkende, tillit til grunnleggende demokratiske institusjoner som politiske partier og regjeringer [@dalton2004democratic]. Samtidig eksisterer det store forskjeller mellom innbyggerne med tanke på hvem som involverer seg i politikk. Denne politiske ulikheten sammenfaller ofte med andre typer ulikhet i samfunnet, som økonomi, helse og utdanning. Den politiske ulikheten gir seg utslag i blant annet lavere valgdeltakelse og engasjement i politiske partier – både nasjonalt og lokalt.
+
+Norge er generelt et land med høy tillit og høy politisk deltakelse, men også i vårt land finnes det tydelige tegn på lignende mønstre. En lokaldemokratirapport fra Bergen som analyserte valgdeltakelsen til alle kommunens innbyggere med stemmerett i 2015-valget, fant store forskjeller basert på sosiale bakgrunnsvariabler som alder, utdanning og kjønn [@fimreitebyen]: Valgdeltakelsen blant unge menn uten høyere utdannelse var ned mot 30 prosent, som er halvparten så lav som den samlede valgdeltakelsen dette året. Også geografisk var det store forskjeller. I Vadmyra var valgdeltakelsen på 51 prosent, mens på Bønes var den på 72 prosent. De samme forskjellene så vi også i 2019-valget, men da var valgdeltakelsen generelt noe høyere. Valgkretsen med høyest deltakelse var den samme i begge valgene: Bønes med 77 prosent. Ved 2019-valget var det imidlertid valgkretsen Ny-Kronborg som hadde lavest deltakelse, med 57 prosent.
+
+Det er ofte ressurssterke grupper i samfunnet som benytter seg av mulighetene til å påvirke politiske prosesser. Dette er et gode. Utfordringen ligger i å øke engasjementet også blant innbyggerne som vanligvis ikke er politisk aktive. Det er viktig å sikre politisk deltakelse blant de mindre engasjerte for å sikre at alle stemmer blir hørt. Hvis undergrupper i samfunnet føler seg avskåret fra det politiske systemet, utgjør det ikke bare et problem for hver enkelt, men også for samfunnet som helhet. Hvis politisk fremmedgjorte innbyggere opplever at systemet ikke er laget for dem, kan de ende opp med å søke alternative, ikke-demokratiske løsninger for å få gjennomslag for sine interesser. Derfor er det viktig å øke deltakelsen blant alle innbyggere, hvor vanskelig det enn er. Dette er ikke noe som kan gjøres i en håndvending, men noe som krever kontinuerlig oppmerksomhet.
+
+Når borgerpaneler brukes riktig, har de potensial til å lede til bedre beslutninger. Videre kan de styrke innbyggernes oppfatning om at den demokratiske prosessen er rettferdig og tar hensyn til innbyggernes synspunkter, som i sin tur regnes som en avgjørende bestanddel av et robust og legitimt demokrati [@marien2019fair].
+
+Med denne håndboken ønsker vi å øke oppmerksomheten om borgerpaneler og være til inspirasjon for lesere som vurderer å gjennomføre et borgerpanel selv. Den er også sluttproduktet til forskningsprosjektet «Demokratisk innovasjon i praksis: Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (DEMOVATE)». Prosjektet har blitt ledet av Bergen kommune, mens forskningsinstituttet NORCE har hatt den faglige ledelsen. Håndboken baserer seg på erfaringer gjort i DEMOVATE og i forskningsaktiviteter knyttet til demokratisk innovasjon ved Universitetet i Bergen, Stanford University og NORCE. Håndbokens målgruppe er alle som er interessert i det norske demokratiet. Vi håper den kan komme til nytte for politikere, byråkrater, personer som engasjerer seg i sivilsamfunnet, og alle andre som er nysgjerrige på borgerpaneler, og som kanskje går med tanker om å sette i stand et selv.
+
+Boken er strukturert i tre deler. Den første delen tar et overordnet blikk på borgerpaneler, hva som definerer dem, og hvordan de blir brukt inn i den demokratiske beslutningsprosessen. Den andre delen løfter frem praktiske problemstillinger man må ta hensyn til under planlegging av borgerpaneler. Rådene baserer seg på tre borgerpaneler som artikkelforfatterne selv har gjennomført. Den tredje og siste delen bringer inn flere erfaringer fra andre kommuner. Vi får også innblikk i hvordan borgerpaneler og medvirkning generelt oppfattes av en ansatt i kommuneadministrasjonen.
+
+
+
 \newpage
 # DEL I: BORGERPANELER -- HVA OG HVORFOR?
 
 > Jacob Aars og Arild Ohren 
 
 ![](figs/1x/Del1.png)
+Det norske demokratiet, inkludert lokaldemokratiet, er i hovedsak et indirekte demokrati, der innbyggerne øver innflytelse over politikken gjennom valgte representanter. De folkevalgte utgjør en elite i dobbel forstand – ikke bare er de en politisk elite siden de alltid utgjør et mindretall av befolkningen, de er også en sosial elite fordi de folkevalgte ikke utgjør et tverrsnitt av befolkningen med hensyn til sosiale og demografiske bakgrunnstrekk. Høyt utdannede middelaldrende menn har tradisjonelt vært overrepresentert blant de folkevalgte sammenlignet med den øvrige befolkningen. De valgte er ikke et speilbilde av velgerne, og demokratiet har derfor et representativitetsproblem. I tillegg vil de deltakelseskanalene som eksisterer, for eksempel valgkanalen, ofte gi begrensede muligheter for meningsutveksling og diskusjon blant deltakerne. Det å avgi stemme ved valg er utvilsomt en form for meningsytring, men selve ytringen er begrenset, og det stilles heller ikke noe krav til velgerne om å begrunne det valget de tar. Vi kan derfor si at demokratiet også har et deliberasjonsproblem i den betydningen at mange deltakelseskanaler gir lite rom for overveielse og meningsutveksling.
+
+Både kommunale og statlige myndigheter har forsøkt å gjennomføre tiltak for å bøte på disse svakhetene ved demokratiet. I tillegg til bred og representativ deltakelse er det et formål med mange av disse tiltakene at deltakerne skal ha anledning til å fordype seg i en sak ved at de kan samtale og tenke seg om før de tar endelig stilling. Målet er med andre ord å forene et kvantitativt og et kvalitativt krav til demokratisk deltakelse. Samlebetegnelser for slike myndighetsinitierte tiltak er demokratipolitikk, demokratisk fornyelse eller demokratisk innovasjon. I denne håndboken retter vi oppmerksomheten mot én kategori av slike tiltak, det vi har kalt borgerpaneler.
+
+Offentlige myndigheters tiltak for å trekke innbyggerne med i politiske prosesser utenom valg bidrar ikke alltid til å jevne ut den skjeve sosiale fordelingen i deltakelsen. Et eksempel på dette er folkemøter som kommunene inviterer til, der deltakerne som regel ikke gjenspeiler befolkningen når det gjelder utdanning eller alder. Utvelgelse av deltakere til slike møter foregår i form av selvutvelgelse, det vil si at folk bestemmer selv om de vil komme eller ikke. Det er gjerne «gjengangere» som møter opp. Et folkemøte representerer en ekstra deltakelseskanal for dem som allerede er aktive. En utfordring for initiativtakerne er derfor å gi en stemme til de innbyggerne som sjelden eller aldri deltar i politikken. I de tilfellene der deltakelsen er tilnærmelsesvis representativ for befolkningen, slik som i en brukerundersøkelse, får deltakerne lite eller ingen plass til å tenke grundig gjennom de svarene de gir, eller å drøfte disse med andre.
+
+I dette kapitlet skal vi først gjøre rede for begrepet «demokratisk innovasjon» og hvilke kategorier av ordninger dette omfatter. Dernest skal vi gå nærmere inn på ordninger som sikter mot å kombinere de to hensynene vi har nevnt innledningsvis, representativitet og deliberasjon.
+
+
 
 
 ### Demokratiske innovasjoner 
+
+Når vi snakker om deliberative meningsmålinger, borgerpaneler og så videre, så refererer vi gjerne til demokratiske innovasjoner. Alt dette kan være veldig forvirrende. Så la oss bare kort og godt rydde litt opp i disse begrepene. 
 
 ```{r, out.width = "80%", fig.align = "center", fig.cap= "Familier av demokratiske innovasjoner"}
 knitr::include_graphics("figs/familier.png")
 ```
 
+Det første begrepet vi har her, er «demokratiske innovasjoner». Dette er da et vanlig begrep som ikke bare brukes innenfor fagfeltet, men også i praksis. Begrepet kommer fra Graham Smiths bok fra 2009, kalt Democratic Innovations. For å gjøre det klart da hva vi snakker om, bruker man Graham Smiths definisjon på hva en demokratisk innovasjon faktisk er. Han skriver at demokratiske innovasjoner er institusjoner som er spesielt designet for å øke og/eller forbedre deltakelse i politiske prosesser [@smith_democratic_2009]. Dette har blitt utdypet av Elstub og Escobar. De skriver at demokratiske innovasjoner er prosesser eller institusjoner som er utviklet for å omforme og utdype innbyggernes rolle i styringsprosesser, ved å øke mulighetene for deltakelse, deliberasjon og innflytelse [@escobar_defining_2019]. I bunn og grunn er demokratisk innovasjon en paraplybetegnelse for mange forskjellige metoder og prosesser, som alle har det til felles at de prøver å lage nye kanaler der folk kan påvirke beslutningsprosesser. I all hovedsak vil disse teknikkene være myndighetsinitierte. Som man ser i figur 1, har man da mange forskjellige familier av demokratiske innovasjoner. Dette kan for eksempel være deltakende budsjettering, folkeavstemninger og innbyggerinitiativ, og så videre. Disse familiene har forskjellige fokus og forskjellige teoretiske utgangspunkter, og de er også designet for å løse forskjellige typer problemer. En av disse familiene er det vi kaller deliberative borgerpaneler. Heretter kaller vi dette borgerpaneler.
+
 
 ### Nærmere om borgerpaneler 
 
-```{r, tbl-borgerpaneler}
+De forskjellige formene for borgerpaneler bygger alle på en idé om at hensynet til representativitet bør kombineres med hensynet til deliberasjon. Sagt på en annen måte søker borgerpaneler på ulikt vis å forene hensynet til bredde og dybde i deltakelsen. Deltakelsesordningene sikter mot å inkludere et bredt og representativt utvalg av befolkningen, dermed også innbyggere som vanligvis ikke er politisk aktive. Men det er lett å tenke seg hvordan de to hensynene, representativitet og deliberasjon, vil kunne komme i konflikt med hverandre. Øker man antallet deltakere, vil det bli færre muligheter for den enkelte til å delta aktivt i debatt og rådslagning. De to hensynene kan utgjøre avveininger ved at mer av det ene hensynet lett vil gå på bekostning av det andre. Ulike kombinasjoner av disse to dimensjonene ved deltakelse er vist i skjemaet nedenfor, med eksempler på deltakelsesordninger/-kanaler i hver av kategoriene.
+
+```{r tbl-borgerpaneler}
 tibble <- tibble(Samtale = c('Nei', 'Nei', 'Nei', 'Nei', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja', 'Ja'),
                  Representativitet = c('Nei', 'Nei', 'Ja', 'Ja', 'Nei', 'Nei', 'Nei', 'Nei', 'Nei', 'Ja', 'Ja'),
                  Deltakelsestiltak = c('Folkemøte/høring uten mulighet for diskusjon',
@@ -124,16 +158,33 @@ tibble %>% kableExtra::kbl(caption = 'Klassifikasjon av deltakelsestiltak/-kanal
   
 ```
 
+Skjemaet viser at forholdet mellom det kvantitative og det kvalitative kravet til deltakelse kan være motsetningsfylt. Deltakelseskanaler som er åpne for et bredt tilfang av deltakere, for eksempel valg, vil normalt ikke gi mye rom for refleksjon eller meningsbrytning. Motsatt vil deltakelseskanaler der deltakerne får god anledning til å snakke sammen og tenke seg om, for eksempel høringer eller folkemøter, vanligvis ikke omfatte et bredt antall deltakere.
+
+Det første utfallet i tabellen viser en situasjon der det ikke gis anledning til deliberasjon, samtidig som deltakerne ikke er representative for befolkningen. Eksempler her er folkemøter uten mulighet for utspørring, samtale eller diskusjon og undersøkelser der deltakerne ikke er representative for populasjonen. Den andre kategorien dekker et utfall der deltakerne utgjør et tverrsnitt av befolkningen, men har liten anledning til å drøfte de aktuelle sakene med de andre deltakerne. Bruker- eller opinionsundersøkelser er det klareste eksemplet. Under en viss tvil har vi plassert valgdeltakelse innenfor denne kategorien, men det kan argumenteres for at valg ofte innebærer en hel del debatt om de sakene som er på dagsorden, gjennom valgkampen. Samtidig kan det innvendes at de som deltar i valg, heller ikke utgjør et speilbilde av befolkningen. Blant hjemmesitterne er det betydelig flere unge og lavt utdannede enn blant de som avlegger stemme. Likevel er valgdeltakelsen jevnere sosialt fordelt enn andre, mer krevende deltakelsesformer. I den tredje kategorien finner vi deltakelsesordninger som gir rom for samtale og overveielse, men der deltakerne ikke er representative for innbyggerne. Debatt og meningsutveksling er en sentral ingrediens i et kommunestyre eller andre folkevalgte forsamlinger, selv om man kan stille spørsmål ved hvor ofte enkelte representanter skifter mening som følge av et innlegg i et kommunestyre eller i stortingssalen. Når det gjelder sammensetningen av de folkevalgte, kan vi si at kjønnsprofilen over tid har blitt likere kjønnssammensetningen i befolkningen, men de folkevalgte utgjør stadig en utdanningselite sammenlignet med velgerne. I siste kategori finner vi de deltakelsesordningene som i størst grad kombinerer bredde og dybde, det vil si representativitet og samtale. Som tidligere nevnt bruker vi samlebetegnelsen «borgerpanel» om denne typen demokratiordning. Terminologien er imidlertid noe springende i litteraturen. Her refererer begrepet borgerpanel ofte til en mindre gruppe av deltakere som sitter samlet i et antall dager, og som blir bedt om å levere noen anbefalinger om et gitt politisk spørsmål. Anbefalingene gis gjerne i form av en rapport. Et annet begrep som ofte har vært brukt om denne typen ordning, er borgerjury, der man kan se for seg at deltakerne avsier en dom i et utvalgt policyspørsmål. I denne boken omfatter borgerpanelbegrepet både ordninger med færre (men tilfeldig valgte) deltakere og ordninger der man tar sikte på at utvalget av deltakere skal være statistisk representativt for populasjonen.
+
+Knytter vi spørsmålet om deltakelsesordninger til kommunene og lokaldemokratiet, er det en sentral idé at lokalbefolkningen representerer en ressurs i lokalpolitiske beslutningsprosesser. Innbyggerne er forvaltere av kunnskap som kommunen kan dra nytte av. De kjenner de lokale forholdene og virkningene av lokal politikk og tjenesteyting. I tillegg har innbyggerne både idéer og synspunkter som det kan være viktig for kommunale beslutningstakere å kjenne til. I siste instans er innbyggerne, i kraft av å være velgere eller politiske deltakere på andre måter, kilden til legitimitet for den politikken som lokalpolitikerne er med på å utforme. Det å gjennomføre tiltak med representative befolkningsutvalg er i dette perspektivet å ta innbyggernes ressurser i bruk. Lekmannskompetanse kan være et stikkord for denne typen demokratiinitiativ. Det er ikke nødvendig med en formell utdannelse for å få denne kompetansen. En slik kompetanse utvikles gjennom erfaringer, og slike erfaringer kan være spesifikke for ulike sosiale grupper. Når antallet folkevalgte blir færre og avstanden mellom velgere og valgte blir større, blir det desto viktigere, om enn muligens vanskeligere, å utnytte lekmannskompetansen. 
+
+En mulig tolkning av idealet om lekmannskompetanse kan være at det ikke holder å avdekke overfladiske holdninger hos befolkningen. Lekmannsskjønnet utvikles nettopp i nærkontakt med andre innbyggere og i tilknytning til saker der innbyggerne gjerne har en interesse eller er berørt.
+ 
+Resultatet av representative deltakelsesprosesser kan betraktes som en kvalifisert meningsytring. Deltakernes stillingtagen er basert på argumenter og begrunnelser som andre kunne ha kommet frem til dersom de hadde hatt samme mulighet til å lære om og diskutere et saksfelt. Dermed vil en uttalelse fra en representativt sammensatt forsamling ha større legitimitet enn holdninger som kommer frem under for eksempel et ordinært folkemøte.
+
+I tillegg til målet om å trekke et mer representativt utvalg av innbyggere inn i politiske beslutningsprosesser kan et formål med slike teknikker være å gi et bedre og bredere grunnlag for å stille de folkevalgte til ansvar for politikken de fører. Politikere må argumentere foran et utvalg av innbyggere. De stilles til ansvar der og da. Videre vil deltakelse på en innbyggerhøring kunne øke medborgernes kompetanse som demokratiske kontrollører også ved senere anledninger. I de tilfellene der deliberative prosesser formidles videre til den bredere offentligheten, er det mulig at deltakelsen blant de utvalgte kan skape et engasjement hos innbyggere som ikke deltar på samlingen selv. Når kommunen arrangerer et borgerpanel, kan vi videre tenke oss at oppmerksomheten rundt lokale politiske saker øker. Ved å bidra til offentlig debatt lokalt kan representative deltakelsesordninger rette oppmerksomheten mot lokale stridsspørsmål og kanskje trenge de nasjonale sakene i bakgrunnen for en periode. Dette er en viktig forutsetning for at kommunepolitikere skal kunne holdes til ansvar for lokal politikk, og for at kommunevalg ikke blir rene avspeilinger av nasjonale valg.
+
 
 ### Borgerpanelenes opprinnelse og utvikling 
 
+Den moderne historien om forsøk med borgerpaneler i vesten startet på 1970-tallet i USA og Tyskland. I USA utviklet Ned Crosby det han kalte «Citizens’ Jury»-modellen (borgerjury), og i Tyskland utviklet Peter Dienel det han kalte «Planning Cell»-modellen (planleggingscelle/-nettverk). Fra disse tidlige eksperimentene kan vi spore noen andre viktige utviklinger: I 1985 utviklet det danske teknologirådet «Consensus Conference»-modellen (lekfolkskonferanse), på 1990-tallet utviklet James Fishkins «Deliberative Poll»-modellen (deliberativ høring/meningsmåling), i 2003–2004 ble Citizens Assembly (borgersamling) i British Columbia etablert, i 2008 ble Oregon Citizens Initiative etablert, og kanskje aller mest kjent: i 2016 ble borgersamlingen i Irland etablert. Disse kan ses på tidslinjen nedenfor.
 
 ```{r, out.width = "80%", fig.align = "center", fig.cap= "Tidslinje over viktige borgerpanel"}
 knitr::include_graphics("figs/tidslinje.png")
 #Adoptert fra Gastil og Knobloch [-@gastil_hope_2020, pp. 13]
 ```
 
-```{r, tbl-opprinnelse}
+I den senere tid har bruken av borgerpaneler økt betraktelig. OECDs rapport «den deliberative bølgen» slår fast at bruken i OECD-landene spesielt har økt etter 2010 [@oecd_innovative_2020]. Dette kan ses i sammenheng med den økende interessen rundt demokratiske innovasjoner generelt, som ofte blir sett på som et mulig demokratisk hjelpemiddel for å løse problemene som vi vil stå ovenfor. Kort sagt, det vi ser er at flere demokratier er under press, og at de nåværende demokratiske systemene har noen mangler som gjør at de kanskje ikke er så godt egnet til å løse disse utfordringene. Demokratiske innovasjoner og borgerpaneler har derfor blitt sett på som et av flere demokratiske hjelpemidler som man kan ha i verktøykassen for å styrke våre demokratiske systemer.
+
+Historisk sett har det vært delte meninger om hvilke modeller som kan passe inn i familien som vi kaller borgerpanel. Selv om det tidligere var noe uenighet rundt definisjonen, har det nå blitt en sterk enighet både i fagfeltet og i praksis om hva et borgerpanel er. Feltet har landet på en definisjon som inkluderer typer som Citizens’ Juries (borgerpanel/borgerjury), Planning Cell (planleggingscelle), Consensus Conference (lekfolkskonferanse), Citizens’ Assembly (borgerforsamling) samt Deliberative Polls (deliberative meningsmålinger). Dette er den mest aksepterte definisjonen på et borgerpanel [@curato_deliberative_2021; @escobar_forms_2017; @farrell_deliberative_2019; @lacelle-webster_citizens_2021]. Basert på dette har vi lagd tabell \@ref(tab:tbl-opprinnelse) med de forskjellige modellene som faller inn under denne definisjonen.
+
+```{r tbl-opprinnelse}
 tbl <- tibble(Type = c('Borgerjury', 'Plannleggingscelle/Planleggingsnettverk', 'Lekfolkskonferanser', 'Borgerforsamling/
 Borgersamling', 'Borgerhøring/Deliberativ meningsmåling', 'G1000'),
 Originalnavn = c('Citizen Jury/ Reference Panels/ Citizen panels', 'Planning Cell', 'Consensus Conference', 'Citizen Assembly',
@@ -153,9 +204,24 @@ tbl %>% kableExtra::kbl(caption = 'Typer av borgerpanel', booktabs = T, linesep 
 ```
 
 
+Som man kan se ut fra tabellen, varierer typene som faller inn under definisjonen av borgerpanel, i størrelse, tid og hva som blir resultatet. De har derimot følgende klare fellestrekk:
+
+> et borgerpanel består av uavhengige og fasiliterte gruppediskusjoner mellom en (nær) tilfeldig trukket ut gruppe mennesker som tar imot informasjon fra eksperter og interessegrupper» [@smith_mini-publics_2018].
+
+Ut fra dette kan man si at et borgerpanel har to kjerneelementer (jf. tabell \@ref(tab:tbl-kjerneelementer)):
+
+-	tilfeldig utvelgelse av deltakere gjennom loddtrekning  
+-	at disse deltakerne gjennomgår en deliberativ prosess  
+
+Disse sentrale elementene er det som kjennetegner prosesser som er en del av familien borgerpanel. Derfor er det viktig å gå litt nærmere inn på disse elementene.
+
+
 ### Deliberativ prosess
 
-```{r, tbl-kjerneelementer}
+Det første elementet for et borgerpanel som vi tar for oss, er den deliberative prosessen. Som nevnt ovenfor, er det slik at de som da blir tilfeldig utvalgt, kommer sammen og gjennomgår en såkalt deliberativ prosess. Deliberasjon er derfor helt sentralt i borgerpaneler, og det har også en sentral plass innenfor demokratiteori generelt. Derfor er det viktig å presisere her hva som ofte menes med deliberasjon.
+La oss ta en forklaring fra John Gastil. Han skriver at når folk delibererer, så undersøker de et problem nøye og kommer frem til en velbegrunnet løsning etter en periode med inkluderende og respektfull vurdering av ulike synspunkter [@gastil_political_2008, pp. 8]. Her er det en del ting som er pakket inn, så la oss gå gjennom denne prosessen. For John Gastil involverer dette ni viktige punkter i deliberasjon, som kan deles opp i en analytisk del og en sosial del. Disse er oppsummert i tabell \@ref(tab:tbl-kjerneelementer).
+
+```{r tbl-kjerneelementer}
 tbl <- tibble(Element = c('Lag et solid kunnskaps- og læringsgrunnlag',	
                 'Diskutér personlig og følelsesmessig erfaringer, samt kjente fakta',
                 'Prioritér verdiene som står på spill', 
@@ -183,13 +249,125 @@ tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T
   pack_rows("Sosialt", 11, 18)
 
 ```
+
+
+Den analytiske delen skjer ikke nødvendigvis stegvis, men man starter ofte med det første punktet, å lage et solid kunnskaps- og læringsgrunnlag, og man ender alltid opp på det siste punktet, å ta en avgjørelse. Den sosiale delen er ekstremt viktig, og disse punktene er gjeldende gjennom hele prosessen. Dette er altså grunnleggende punkter som må være til stede for at den analytiske delen skal fungere godt.
+
+For å si det kort, så er deliberasjon gjensidig kommunikasjon som innebærer å veie og reflektere over preferanser, verdier og interesser angående saker av felles interesse [@bachtiger_deliberative_2018]. Her må man derfor utforske alle sider av saken, som fakta, argumentasjon og erfaringer, og sette disse opp mot hverandre i en åpen, grundig og kritisk diskusjon om problemstillingen. Målet er å komme frem til det som kan sies å være den beste løsningen på problemet. Dette gjøres ved at dine egne meninger settes på prøve og modereres gjennom den deliberative prosessen.
+
+Et eksempel på en deliberativ prosess er juryordningen i rettssystemet. Her får juryen informasjon og fakta gjennom de bevisene som blir lagt frem. De får også høre argumentasjon og motargumentasjon om saken. På denne bakgrunn diskuterer juryen seg imellom alle sider av saken. Etter å ha veid alle elementene opp mot hverandre, vil de komme med sin beslutning om hva de tenker er det riktige.
+
+Dette er et ideal som man skal strekke seg etter, og det kan nok variere hvor mye deliberasjon som finner sted. I demokratiteori stilte man seg spørsmålet om hvordan man kan designe metoder og prosesser som legger til rette for at innbyggere kan deliberere om politiske spørsmål og problemstillinger. Svaret som kom ut av dette, var blant annet borgerpanelene, som er spesielt designet for deliberasjon mellom innbyggere.
+
+Selv om borgerpanelene og prosessen er noe ulikt designet, kan man grovt si at de er designet rundt de samme fasene. Disse fasene vises i tabell \@ref(tab:tbl-kjerneelementer). Den første fasen blir ofte kalt kunnskaps- og læringsfasen. Her kombineres ofte ekspertise og forskning med personlige erfaringer og interesser for at deltakerne bedre skal forstå problemet og konsekvensene. Den første fasen kan innebære at læringsmateriell skal leses på egen hånd, men vanligvis legges det opp til at det gis diverse presentasjoner til borgerpanelet når det er samlet i plenum. Her legger man også opp til at deltakerne kan stille spørsmål til personene som presenterer for borgerpanelet, og også utfordrer dem med de argumentasjonene de kommer med. Det legges også opp til at dersom det er noe man ikke forstår, skal dette påpekes, slik at det blir presentert eller diskutert nærmere.
+
+Den andre fasen kalles diskusjons- og refleksjonsfasen. Her skal deltakerne ta inn over seg det som er fremlagt, og se på mulige løsninger som de skal veie opp mot hverandre. Ofte er det da slik at borgerpanelet deles opp i mindre grupper. Hver gruppe ledes av en moderator, som ikke skal komme med sine egne synspunkter, men sørge for at gruppen ikke «går seg bort», og sørge for at alle får uttale seg og bidra. Dersom deltakerne ikke selv vil, kan moderatorene også presentere hva de har funnet ut, til resten av borgerpanelet i plenum.
+Den siste fasen kalles beslutningsfasen, der sluttproduktet blir produsert, for eksempel i form av en spørreundersøkelse eller en rapport.
+
+
 #### Tilfeldig uttrekk
 
+Det andre elementet i et borgerpanel er at de som deltar i den deliberative prosessen, er tilfeldig plukket ut gjennom loddtrekning. Dette kan kanskje høres revolusjonerende og oppsiktsvekkende ut i dag, men vi må huske på at før fremveksten av politiske massepartier på slutten av det nittende og begynnelsen av det tjuende århundre var det å bruke loddtrekning anerkjent som en mer demokratisk mekanisme for valg av representanter enn valg slik vi kjenner det i dag. Som Aristoteles skrev, 
+
+> når det gjelder ansettelse av politiske ledere, for eksempel, regnes det for demokratisk å benytte loddtrekning, mens valg er oligarkisk [@aristoteles_politikk_2007, bk. IV, Kap 9, 1294b].
+
+Det å plukke ut representanter gjennom loddtrekning har dermed en lang og tung demokratisk tradisjon. I Athen ble det trukket ut representanter fra befolkningen gjennom loddtrekning, og de som ble plukket ut, hadde stor makt og innflytelse og fikk en sentral posisjon i det politiske systemet. I det femte århundre f.Kr. ble det i Athen laget en lotterimaskin for akkurat denne funksjonen, kalt «kleroterion».
+
+I de senere år har interessen for loddtrekning som en demokratisk utvelgelsesmetode økt igjen, blant annet på grunn av arbeidet innenfor det deliberative demokratiet og eksperimenteringen med borgerpaneler. Man kan si at man igjen har begynt å bruke en demokratisk utvelgelsesmekanisme som tidligere inngikk i den demokratiske verktøykassen vår.
+
+Hvorfor bruker man loddtrekning for borgerpaneler? Her kan man peke på tre elementer: likhet, upartiskhet og mangfold.
+
+Det første aspektet er at det å gjennomføre en loddtrekning er knyttet opp til en intuitiv form for rettferdighet. I en loddtrekning vil man for eksempel ikke belønne de som er de beste til å snakke for seg. I en loddtrekning anses alle borgere som like kompetente, og alle har -– i teorien –- like stor sjanse for å bli plukket ut.
+
+Her kommer også upartiskhet inn i bildet. I mange medvirkningsprosesser har man åpne møter. De som dukker opp på disse møtene, kan være de som roper høyest, eller de som har sterke meninger om eller interesser i saken. Dette er ikke nødvendigvis et problem i seg selv, men i enkelte medvirkningsprosesser er det kanskje ikke ønskelig å at disse personene er sterkt representert. I en deliberativ prosess skal man være åpen for andres meninger, og målet er å komme frem til det som er best for samfunnet som helhet.
+
+En loddtrekning øker sjansen for at de som blir plukket ut til deliberasjon, ikke har en skjult agenda, og at de heller vil forsøke å finne ut hva som er best for samfunnet [@courant_sortition_2019]. Dette kan beskytte prosessen mot sterke interesseorganisasjoner og personer med sterke interesser, som kanskje ikke representerer det som er best for samfunnet som helhet. I og med at interesseorganisasjoner kan bli invitert til å snakke sin sak til et borgerpanel, vil de selvsagt få sagt sitt, men sjansen for at de «kupper» prosessen, vil bli betydelig mindre med en loddtrekning.
+
+Et av de viktigste argumentene som blir brukt for loddtrekning, er at man da får en mer representativ gruppe deltakere enn man ville ha fått med andre metoder. Borgerpaneler med loddtrekning blir derfor ofte nevnt som en prosess som generer deskriptiv representasjon. Det vil si at de som deltar, har de samme sosiale eller demografiske bakgrunnene som dem de representerer. Idéen her er at folk kan se for seg at en person som seg selv er representert i borgerpanelet. Dette er spesielt viktig for borgerpaneler. Som nevnt ovenfor er et av hovedelementene i et borgerpanel deliberasjon. Et av de viktigste elementene for å få til en god deliberativ prosess er mangfold – av perspektiver, meninger, livserfaringer og så videre. Det man har sett, er at det kanskje er nettopp gjennom loddtrekning, og da en mer deskriptiv representasjon, at man sikrer størst mangfold. Med loddtrekning blir personer fra alle sosiale og demografiske bakgrunner representert i borgerpanelene. Fra et av borgerpanelene i Norge observerte en moderator for eksempel at:
+
+> på mitt bord sitter det en eldre dame med innvandrerbakgrunn, en profesjonell pokerspiller og en bilmekaniker. De kunne ha bodd i samme by i 3000 år og aldri møttes. Men her er de, på samme bord, og diskuterer bærekraft sammen.
+
+Loddtrekning kan derfor være den metoden der man sikrer størst mangfold, og der denne viktige ressursen brukes i deliberasjonen for å løse komplekse problemstillinger.
+
+I definisjonen kan man merke seg at det står «(nær) tilfeldig trukket ut gruppe mennesker». Ikke alle borgerpaneler gjennomfører et helt tilfeldig utvalg, men bruker heller det som kalles stratifisert utvalg. Med et stratifisert utvalg mener man at befolkningen inndeles i grupper (strata), og at det plukkes ut deltakere fra hver gruppe. Dette kalles en tostegs loddtrekning. Det som da skjer, er at man først sender ut et visst antall invitasjoner til helt tilfeldig personer. De som da får invitasjonen, svarer så om de vil delta eller ikke. Blant de som takker ja, gjør man så en ny loddtrekning etter å ha inndelt dem i grupper (kjønn, alder, geografi, utdanning osv.) for å sikre at borgerpanelet, så godt det lar seg gjøre, utgjør en miniatyr av befolkningen.
+
+En begrunnelse for å foreta et såkalt stratifisert utvalg er antallet personer som deltar i noen av prosessene. Noen borgerpaneler har så få som 16 deltakere, og hadde man valgt ut 16 personer helt tilfeldig gjennom en ren loddtrekning, kunne man ha endt opp med et panel bestående av 15 menn og 1 kvinne. Derfor brukes disse kategoriene i loddtrekningen for å sørge for at panelet, så godt det lar seg gjøre, vil være en miniatyr av samfunnet det representerer.
+
+Det er imidlertid ikke bare de små borgerpanelene som bruker stratifisert utvalg. Også de største typene av borgerpaneler, som deliberative meningsmålinger, tar noen gang i bruk stratifisert utvalg [@fishkin_deliberative_2018]. Grunnen til dette er at den politiske deltakelsen er skeiv og ofte følger utdanningsnivå og sosial-økonomisk klasse [@farrell_sortition_2019]. Det kan altså være mange forhold som forhindrer folk i å delta, spesielt med tanke på tid, ressurser, interesse osv. Dersom man ikke er obs på dette, kan man ende opp med at større deltakelse kan øke overrepresentasjonen av dem som allerede er godt representert, og dette «kan skape et paradoks om at det å øke innbyggernes muligheter for deltakelse kan øke den politiske ulikheten» [@warren_citizen_2008, pp. 56]. I en loddtrekning kan man nå ut til dem som kanskje ikke deltar i særlig grad ellers, og siden de blir personlig invitert, vil de kunne føle seg beæret over å ha blitt plukket ut, noe som kan øke motivasjonen for å delta. Siden man vet på forhånd hvem som er plukket ut, og har mulighet til å prate med dem på forhånd, har man større mulighet for å kunne tilrettelegge for at de kan delta, med tanke på barnepass, reise til og fra osv. Ved loddtrekning kan man dermed, i hvert fall i teorien, minimere barrierene mot deltakelse. Det er imidlertid viktig å påpeke at barrierene ikke forsvinner med loddtrekning. Selv om man blir plukket ut til å delta i et borgerpanel, er det stadig frivillig om man vil delta eller ikke. Det er dermed en form for selvseleksjon, noe som kan svekke argumentet om at man med loddtrekning kanskje når ut til de som vanligvis ikke deltar. Stratifisert utvalg brukes derfor som et annet middel for å få en enda bedre utvelgelse, selv om ikke dette heller er uproblematisk.
+
+Det finnes også en annen grunn til å bruke stratifisering. I enkelte saker kan det være gode grunner for å sørge for at noen absolutt blir representert i panelet, og kanskje til og med overrepresentert i forhold til befolkningen generelt. Innenfor borgerpanelene i Canada er det for eksempel sterke tradisjoner for å sørge for å ha med personer som identifiserer seg selv som urfolk, og de er også ofte overrepresentert. Når det gjelder enkelte spørsmål, ser vi også at det finnes gode grunner for å sørge for at enkelte er (over)representert i panelene. I noen borgerpaneler om klimaspørsmålet i Storbritannia ble for eksempel visse grupper som var hardest rammet av klimakonsekvensene, overrepresentert. Dersom man søker etter en statistisk representativ gruppe, kan man ende opp med at marginaliserte grupper blir en minoritet i selve borgerpanelet, noe som kan være problematisk [@mansbridge_should_1999], spesielt siden det ofte er marginaliserte grupper som blir hardest rammet av visse beslutninger. Derfor kan det være gode argumenter for å bevege seg bort fra å lage en eksakt miniatyr av samfunnet som skal representeres, siden de forskjellene som er i samfunnet, kan bli gjenspeilet i borgerpanelene. For mer om hvordan de forskjellige borgerpanelene gjennomfører sitt lotteri, og hvem de representerer, se Ohren [-@ohren_representative_nodate].
+
+
 ### Ulike typer borgerpaneler
+
+Her skal vi se nærmere på et utvalg av teknikker, der ambisjonen er å forene bredde- og dybdehensynet, altså slike teknikker som er skissert i fjerde kategori i tabell \@ref(tab:tbl-borgerpaneler). Hvordan er ordningene designet, og hvordan søker de å løse dilemmaet mellom bred, representativ deltakelse på den ene siden og kravet om samtale og deliberasjon på den andre siden? Nærmere bestemt gir vi en kort presentasjon av henholdsvis borgerjury, planleggingscelle, lekfolkskonferanse, borgersamlinger og deliberative meningsmålinger. I forbindelse med presentasjonen av planleggingsceller gir vi også en kort fremstilling av charrette og deltakende budsjettering.
+
+#### Borgerjury
+
+Vi starter med den desidert mest brukte formen for borgerpanel, nemlig det vi kaller borgerjury. Av alle typene borgerpanel som har blitt gjennomført, er det denne modellen som har blitt brukt mest. Dette er også tilfellet i Norge.
+
+Modellen ble utviklet av Ned Crosby i USA på 1970-tallet og er som det engelske navnet tilsier, inspirert av juryordningen. I denne modellen inviteres alt fra 12 til 50 mennesker. Igjen, så er dette en for liten gruppe til å oppnå noen form for statistisk representativitet, men som tidligere forklart, bruker man diverse stratifiseringskategorier for å speile befolkningen som den er plukket ut fra, best mulig. De som blir trukket ut, samles da i 2–5 dager, enten i ett strekk eller fordelt over en lengre periode.
+
+Denne modellen følger de fasene som ble beskrevet tidligere, ganske tett. Først går man gjennom en kunnskaps- og læringsfase, så har man en refleksjon- og diskusjonsfase, før man sammenfatter dette og konkluderer i en rapport. 
+
+I en borgerjury er det fokus på at det skal lages et helhetlig dokument, i form av en borgerrapport. Den inneholder ofte anbefalinger om hva medlemmene av borgerjuryen mener er det beste for samfunnet som helhet. Man strever ikke nødvendigvis etter konsensus blant deltakerne, men fokuset er å skrive en rapport som de fleste kan stille seg bak, og at det også finnes rom for å skrive motsvar fra de som ikke er enige med flertallet i panelet. Noen ganger stemmer man også over diverse forslag. Mer vesentlig argumenter denne rapporten for hvorfor borgerjuryen har kommet frem til det de har. Dette er essensielt, siden det man vil med en borgerjury (og de metodene som brukes for å skrive en rapport), er at det skal inspirere til deliberasjon også hos de som ikke deltar. De som ikke deltar i borgerpanelet, kan lese rapporten og danne seg sine egne meninger ut fra faktagrunnlaget, informasjonen og argumentasjonen fra borgerjuryen. Ofte ønsker man også at de som har bestilt borgerjuryen, gir svar på hvorfor de velger å følge opp, eventuelt ikke å følge opp, forslaget. En slik prosess kan derfor bidra til en større diskusjon i samfunnet som helhet, og det er også poenget med de borgerpanelene som lager en rapport til sist, som borgerjuryer.
+
+Borgerjuryer har som sagt blitt brukt ofte, og de har dermed blitt brukt i mange sammenhenger og mange ulike saker. Ofte knyttes de også opp mot større prosesser og andre former for medvirkning. Et godt eksempel på hvordan slike borgerpaneler knyttes opp mot andre prosesser, er Oregon Citizens Initiative Review.
+
+I Norge er det per i dag blitt gjennomført 8 borgerjuryer, dog med litt ulike benevninger. Dette inkluderer en borgerjury om problemet med overvann, en knyttet til et områdeløft, en knyttet til samfunnsdelen av en kommuneplan, en knyttet til revisjon av en småhusplan og en med et medarbeiderpanel i en bedrift. Noen av disse vil bli diskutert nærmere i kapittel \@ref(sec:andre).
+
 #### Planleggingscelle
+
+Planleggingscellen og borgerjuryen ble utviklet mer eller mindre parallelt, men uavhengig av hverandre. Den første planleggingscellen ble avviklet i Tyskland i 1972. Samlet sett engasjeres langt flere deltakere gjennom planleggingscellene enn gjennom borgerjuryer. Normalt vil en prosess involvere 150–200 deltakere, inndelt i celler på 25 deltakere. Men i enkelte tilfeller har så mange som 600 deltakere vært involvert i én og samme prosess, fordelt på 24 planleggingsceller. Et større antall deltakere vil øke muligheten for proporsjonal representativitet, det vil si at sammensetningen av deltakerne i planleggingscellen gjenspeiler sammensetningen i befolkningen.
+
+Sammenlignet med borgerjuryen har planleggingscellen vært klarere innrettet mot fysisk planlegging. Planleggingscellen skiller seg også fra borgerjuryen ved at det legges større vekt på arbeid i smågrupper. Videre opererer planleggingscellene ikke som samlede juryer. De enkelte deltakerne roterer mellom smågruppene, slik at det ikke skal kunne feste seg en sosial struktur innad i gruppen.
+
+Sluttresultatet av prosessen er en rapport som ikke bare gir en oversikt over de synspunktene som er kommet frem, men der deltakernes holdninger også blir kvantifisert, slik at det er mulig å trekke konklusjoner om mønstre i meningsdannelsen. Sammenlignet med borgerjuryen er planleggingscellen tettere knyttet til offentlig beslutningstaking. Det offentlige finansierer planleggingscellene, og beslutningstakere for det offentlige har på forhånd forpliktet seg til å ta hensyn til rådene fra deltakerne, selv om de ikke forplikter seg til å følge dem.
+
+Planleggingscellen har en del fellestrekk med det som kalles «charrette». I Norge er det blant annet gjennomført charretter i Oslo i forbindelse med planlegging av Majorstulokket i 2004 og utbyggingen av Bjørvika i 2008. Charrette er betegnelsen på en prosess som involverer en serie folkemøter om et bestemt tema, og den kan vare i opptil en uke. Prosessen munner ut i en plan for det aktuelle arealet. I de norske eksemplene har kommunen vært initiativtaker. Men til forskjell fra planleggingscellen og borgerjuryen har rekrutteringen til charrette foregått gjennom åpen invitasjon, det vil si selvutvelgelse. En charrette er derfor en samtalebasert deltakelsesarena, men den er ikke basert på normen om representativitet.
+
+Det finnes også en del likhetstrekk mellom planleggingscelle og ordningen med deltakende budsjettering, som først ble utviklet i den brasilianske byen Porto Alegre. I Norge er det gjennomført få prosjekter med deltakende budsjettering, men det er gjort forsøk med slike prosesser i Fredrikstad kommune. Budsjetteringsprosessen tar utgangspunkt i bydelsvise allmøter, der innbyggerne diskuterer problemer og finner frem til mulige løsninger. Møtedeltakerne drøfter seg frem til hvilke oppgaver som skal prioriteres. På allmøtene velges det bydelsforsamlinger, og i denne fasen knyttes arbeidet opp mot tilsvarende prosesser i andre bydeler. I den første fasen selvrekrutteres deltakerne i budsjetteringsprosessene, mens de i neste fase velges, det vil si at deltakelsen er indirekte. Som med charrette kan man si at deltakende budsjettering gir rom for meningsbrytning, men deltakerne er ikke valgt ut med tanke på sosial og demografisk representativitet. Like fullt har det vist seg at budsjettprosessene har aktivisert mange deltakere som tidligere har vært passive. Kommuneansatte har oppsøkt bydeler og oppfordret innbyggerne til å delta. I tillegg har det vist seg at fattige bydeler er kommet bedre ut av den deltakende budsjetteringsprosessen. Prosessen har med andre ord hatt en omfordelende effekt.
+
 #### Lekfolkskonferanser
+
+På 1980-tallet utviklet det danske teknologirådet sin egen modell, kalt lekfolkskonferanse. Denne modellen ble utviklet for å deliberere over kontroversielle vitenskapelige og/eller teknologiske utviklinger [@ryan_defining_2014], men den har tatt for seg andre typer temaer også. Denne modellen ble utviklet med tanke på å oppnå to mål: Det som kom ut av deliberasjonen, skulle gi beslutningstakerne en bedre forståelse av den sosiale konteksten til fremvoksende teknologier, og prosessen skulle også stimulere til informert offentlig debatt om teknologiproblemer [@1885-53297].
+
+Som man ser ut fra tabell \@ref(tab:tbl-opprinnelse), har en lekfolkskonferanse 10–25 tilfeldig uttrukne borgere som deltar, og prosessen varer alt fra 3 til 8 dager. På en lekfolkskonferanse er det ikke fokus på å få til et representativt utvalg av befolkningen, men derimot på å sikre et så stort mangfold som mulig. Derfor bruker de stratifisert utvelgelse, men i stedet for å velge proporsjonalt fra befolkningen, er det mer fokus på å oppnå spredning. Borgerne må sende inn svar på om de ønsker å delta eller ikke, og hvis de svarer ja, må de som regel skrive et brev om seg selv. Dette brevet danner også et grunnlag for utvelgelsen, og noen ganger velges det personer som har tatt uvanlige valg i livet, eller som har et spesielt forhold til tematikken som blir diskutert.
+
+Prosessen i seg selv kan vi si er delt inn i to faser. Den første fasen kalles den forberedende fasen. I denne fasen blir det fokus på å lære om tematikken til konferansen. Det som derimot er noe annerledes her sammenlignet med de andre modellene, er at man ikke bare skal få kunnskap og lære om tematikken, men man skal også diskutere seg frem til hvilken type spørsmål lekfolkskonferansen skal ta for seg. På en lekfolkskonferanse vil det da ikke nødvendigvis være et konkret spørsmål som stilles til deltakerne fra starten av, men heller en bred tematikk. Tematikken kan for eksempel være «genteknologi», og gjennom den forberedende fasen skal de få kunnskap og lære om denne tematikken, for så å finne spørsmålet som de selv skal ta med videre inn i andre fase. Slik sett setter lekfolkskonferansen agendaen selv i mye større grad enn i noen av de andre typene borgerpanel.
+
+I den andre fasen samles deltakerne igjen. Eksperter og øvrige personer presenterer saken i et offentlig forum, og etterpå blir de blir utspurt av deltakerne på lekfolkskonferansen. Deretter trekker deltakerne seg tilbake for å drøfte det som har blitt sagt, og om noe må utdypes. I den siste fasen skal deltakerne bli enige om en rapport. En av tingene som skiller lekfolkskonferanser fra de andre modellene, er at man prøver å oppnå en konsensus. Det engelske navnet gir uttrykk for dette: Consensus Conferences. Derfor er resultatet av konferansen ofte en konsensuserklæring. Det er imidlertid viktig at det ikke er tvang for å oppnå konsensus, men at deltakerne blir «oppmuntret til å utforske hvor langt de kan følge hverandres argumenter» [@fixdal_consensus_1997, pp. 370]. Dersom gruppen ikke kommer til enighet, vil det bli laget en splittet erklæring.
+
+I Norge har vi hatt fire lekfolkskonferanser. Bruken av disse var også mye av grunnen til at det ble opprettet et norsk teknologiråd.
+I de senere år har bruken av lekfolkskonferanser vært noe dalende. De ble nok mest brukt på 1990-tallet og begynnelsen av 2000-tallet. Dette har nok sammenheng med rollen til det danske teknologirådet, som endret seg noe på den tiden. Modellen er imidlertid tatt i bruk igjen, og man kommer nok til å se en økning av denne typen borgerpanel i perioden fremover, noe som kan ses i sammenheng med den økende interessen rundt borgerpanel og demokratiske innovasjoner generelt.
+
 #### Borgersamlinger
+
+Både i faglitteraturen og i praksis blir borgersamlingsmodellen nå sett på som den mest robuste og forseggjorte modellen for borgerpanel [@elstub_mini-publics_2014]. Som @fournier_henk_van_der_kolk_when_2011 skriver, er dette den eneste modellen som klarer å kombinere at den har en stor gruppe med vanlige mennesker, en lang periode med læring og deliberasjon og en kollektiv beslutning som har stor betydning for hele det politiske systemet. Dette underbygges av trenden med at det etableres egne begreper knyttet til denne modellen (som «Climate Assemblies»), og vi har sett at det har blitt gjennomført store nasjonale borgersamlinger i Irland, Danmark, Storbritannia, Frankrike, Tyskland, Canada, Spania og Ungarn, for å nevne noen. Man har også sett dette på overstatlig nivå, for eksempel i EU, og det kanskje mest ambisiøse eksemplet var den såkalte Global Climate Assembly, som var den eneste demokratiske medvirkningsprosessen på FNs klimakonferanse i 2021 (COP26).
+
+Dette er store prosesser, der man gjerne inviterer 100–150 mennesker som skal møtes over flere helger, og i enkelte tilfeller over flere år. De tar ofte for seg komplekse saker, som grunnlovsendringer, klimapolitikk og så videre. Ofte er disse prosessene knyttet opp mot andre demokratiske innovasjoner, og da spesielt folkeavstemninger. Den mest kjente borgersamlingen er nok den irske borgersamlingen i 2016. Der ble 99 mennesker tilfeldig plukket ut gjennom en loddtrekning,  og de ble speilet på kjønn, alder og geografi. Borgersamlingen i Irland satt i to år og tok for seg en rekke spørsmål, alt fra klimasaker til abortspørsmålet.
+
+Selve prosessen i en borgersamling er ikke ulik den som vi ser hos borgerpaneler. Også her har man ofte de samme fasene, med kunnskap og læring, refleksjon og diskusjon og beslutning til slutt. De er derimot ofte mye mer grundige, og de har i tillegg en ekstra fase. Dette er også den eneste modellen som har inkorporert en fase med offentlige høringer i prosessen [@curato_deliberative_2021]. Dette kan gjøres gjennom tradisjonelle offentlige høringer eller gjennom en nettportal der man kan sende inn sine innspill, som så blir tatt opp i borgersamlingen. På den måten er det kanskje en mye sterkere kobling mellom borgersamlingen og samfunnet generelt i denne prosessen enn det er i andre borgerpaneler.
+
+I Norge har vi ikke hatt noen borgersamling enda. Det nærmeste vi har kommet, er kanskje «Trondheimspanelet», som hadde noen elementer av borgersamling, spesielt da med høringsprosessen. Men dette vil fortsatt være definert som et borgerpanel.
+
+Borgersamlinger er store prosesser som er svært kostbare og ekstremt krevende. Dette har nok sammenheng med at man trekker ut en større gruppe deltakere enn i de andre prosessene som er diskutert her, samtidig som de må de oppfylle de samme kravene til prosessen i seg selv. Dette er nok grunnen til at vi i den siste tiden hovedsakelig har sett disse på nasjonalt nivå.
+
 #### Deliberative meningsmålinger
+
+Deliberative meningsmålinger skiller seg fra de ovenstående gruppene av teknikker ved at de tar utgangspunkt i meningsmålinger som en slags modell, mens borgerjuryer og planleggingsceller heller representerer en videreføring av ulike former for gruppebeslutninger. «Deliberativ» vil si at det gis anledning til å kommunisere med andre og tenke seg om før man gjør seg opp en mening.
+
+Når folk svarer på opinionsundersøkelser, får de liten anledning til å tenke gjennom spørsmålene de besvarer. For de fleste ville det også ha vært naturlig å diskutere spørsmålene med andre før de tar endelig stilling. I en meningsmåling er det derimot et mål at intervjuobjektene ikke skal utsettes for påvirkning fra andre. Kritikerne av meningsmålinger hevder at svarene på opinionsmålinger har liten verdi, og at de bare gir uttrykk for overfladiske betraktninger hos de spurte. Da den deliberative meningsmålingen ble utviklet, var ambisjonen å fysisk samle et tilfeldig valgt utvalg av befolkningen og gi dem anledning til å drøfte de spørsmålene de skulle ta stilling til. I praksis har dette betydd at mellom 100 og 500 deltakere har blitt rekruttert. Endelig ønsket man å undersøke hvordan deltakelse på en slik samling påvirket holdningene til deltakerne.
+
+Deltakerne har besvart et identisk spørreskjema både i forkant og i etterkant av samlingen. Ved å foreta målinger på ulike tidspunkter er det mulig å etterspore hvilken effekt det har hatt på deltakerne å være med på samlingen. Det store antallet deltakere gjør det utfordrende å gjennomføre større deler av samlingen i plenum. Den deliberative meningsmålingen er derfor hovedsakelig basert på arbeid i smågrupper.
+
+Sluttresultater fra deliberative meningsmålinger er formidlet og brukt på ulike måter. For det første betraktes den samlede opinionen som kommer til uttrykk blant deltakerne etter høringen, som mer verdifull for beslutningstakerne enn den opinionen som kommer til uttrykk gjennom tradisjonelle opinionsundersøkelser. Grunnen til dette er at deltakerne presumptivt gir uttrykk for mer reflekterte holdninger etter at de har deltatt på en deliberativ meningsmåling. For det andre er det i seg selv verdifullt å se hvordan holdningene hos deltakerne har beveget seg i løpet av samlingen. Forsvarerne av deliberative meningsmålinger hevder at dette forteller noe om hvordan et hvilket som helst annet tilfeldig valgt utvalg ville ha endret holdninger dersom de hadde hatt anledning til å delta på et tilsvarende arrangement.
+
+Koblingen til formelle beslutningsarenaer har vært ulik, men i hovedsak benyttes resultatene fra deliberative meningsmålinger som innspill i en bredere politisk debatt. Derfor har formidlingen av samlingene vært viktig. For eksempel har utdrag fra flere av de deliberative meningsmålingene vært fjernsynsoverført.
+
+Siden den første deliberative meningsmålingen i Storbritannia i 1994 er det gjennomført tilsvarende arrangementer i en rekke land, deriblant Australia, Danmark, Finland, Island og USA. I Norge er det gjennomført to deliberative meningsmålinger, og disse omtales i denne håndboken. I tillegg er det gjennomført tre såkalte «utvidede folkehøringer» på lokalt nivå i Norge, men disse manglet enkelte av elementene som kreves for å være kvalifisert til den formelle (og beskyttede) betegnelsen «Deliberative Poll®».
+
+Erfaringene med deliberative meningsmålinger tilsier at det er krevende å rekruttere et fullstendig representativt utvalg av deltakere. Uten en svært målrettet rekruttering risikerer man at utvalget får mange av de samme bakgrunnstrekkene som folkevalgte forsamlinger. Imidlertid viser erfaringene også at en stor andel av deltakerne ikke hadde tidligere politisk erfaring, og for mange var det første gang de sto foran en større forsamling og holdt et politisk innlegg. Det har også skjedd en bevegelse i deltakernes holdninger som følge av at de har deltatt, men holdningsendringene skjer ikke alltid i form av en samlet opinionsendring, det vil si at mange skifter mening, men ikke nødvendigvis i samme retning.
 
 
 
@@ -251,7 +429,7 @@ tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T
 
 ### Våre erfaringer
 
-```{r, tbl-byborgerpanel}
+```{r tbl-byborgerpanel}
 tbl <- tibble(Variabel = c('Antall', 'Andel av inviterte', 'Kjønnsbalanse', 'Gjennomsnittlig alder'),
               Invitert = c('433', '100%', '49% menn, 51% kvinner', '48'),
               Påmeldt = c('87', '20%', '42% menn, 58% kvinner', '40' ),
@@ -274,7 +452,7 @@ tbl %>% kableExtra::kbl(caption = 'Inviterte og deltakende i Byborgerpanelet 201
 ### Veivalg og avveininger
 
 ### Våre erfaringer
-```{r, tbl-forslag}
+```{r tbl-forslag}
 tbl <- tibble(Tema = c('Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken', 'Arealutvikling på Dokken',
                        'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler', 'Bilfrie bydeler'),
               Forslag = c('Sjøfronten skal prioriteres til rekreasjon for mennesker', 
@@ -312,7 +490,7 @@ tbl %>% kableExtra::kbl(caption = 'Forslag som ble diskutert i den deliberative 
 
 ![](figs/1x/Gjennomføring.png)
 
-```{r, tbl-dagsplan}
+```{r tbl-dagsplan}
 dagsplan <- tibble(Starttidspunkt = c('10:00', '10:10', '11:00', '11:50', '12:30', '13:15', '14:10', '15:05', '15:50'),
                      Sluttidspunkt = c('10:10', '10:55', '11:45', '12:30', '13:15', '14:00', '14:55', '15:50', '16:00'),
                          Aktivitet = c('Velkommen', "Dokken: Første gruppesamling", "Panel", "Dokken: Andre gruppesamling", "Lunsj", "Bilfrie områder: Første gruppesamling", "Panel", "Bilfrie områder: Andre gruppesamling", 'Avslutning'),
@@ -348,7 +526,7 @@ dagsplan  %>%   kable(caption = 'Dagsplan for deliberativ meningsmåling i Berge
 
 ### Våre erfaringer
 
-```{r, tbl-design}
+```{r tbl-design}
 tbl <- tibble(Gruppe = c('Bruk av kunstig intelligens i forvaltningen',
                          'Negative utslippsteknologier'),
               Pretest = c('Spørreundersøkelse',
@@ -387,11 +565,11 @@ tbl %>% kableExtra::kbl(caption = 'Eksperimentelt design for deliberativ menings
 ![](figs/1x/Kommuneperspektivet.png)
 
 \newpage
-## Erfaringer fra andre norske kommuner
+## Erfaringer fra andre norske kommuner {#andre}
 
 ![](figs/1x/Andre_kommuner.png)
 
-```{r, tbl-borgerpanel}
+```{r tbl-borgerpanel}
 tbl <- tibble(Tittel= c('Lekfolkskonferanse om genmodifisert mat', 'Innbyggerhøring Nordland', 'Innbyggerhøring Kongsberg',
                         'Lekfolkskonferanse om genmodifisert mat', 'Lekfolkskonferanse om stamceller og terapeutisk kloning', 'Borgerpanelet for Tempe', 'Byborgerpanelet', 'Borgerkraft', 'Deliberativ meningsmåling i Bergen', 'Borgerpanel på Grefsen-Kjelsås om overvann', 'Borgerpanel på Romsås', 'Trondheimspanelet', 'Ungt Borgerpanel', 'Borgerpanel om revisjon av småhusplanen', 'Medarbeiderpanelet i Sadexxo', 'Deliberativ meningsmåling om kunstig intelligens', 'Røros borgerpanel'
 ),
