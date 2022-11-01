@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 15:58
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1935,6 +1935,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 899--901
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 901--903
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--905
+
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2425,11 +2435,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  34081 strings out of 477738
  658446 string characters out of 5842294
- 1045354 words of memory out of 5000000
+ 1045352 words of memory out of 5000000
  54459 multiletter control sequences out of 15000+600000
  490114 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
