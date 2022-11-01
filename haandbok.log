@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 14:21
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.10.30)  1 NOV 2022 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1488,7 +1488,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@lot=\write5
 \openout5 = `haandbok.lot'.
 
-(./haandbok.lof)
+(./haandbok.lof
+Underfull \hbox (badness 1460) in paragraph at lines 10--10
+ [][] [][]\TU/LinLibertine(0)/m/n/12 Medvirkningsprosess. Kristin Solhaug Næss, personlig kommunikasjon, 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `haandbok.lof'.
 
@@ -2157,6 +2162,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [64]
+File: figs/1x/Del3.png Graphic file (type bmp)
+<figs/1x/Del3.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1289--1291
+[]
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2168,6 +2180,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: figs/1x/Kommuneperspektivet.png Graphic file (type bmp)
 <figs/1x/Kommuneperspektivet.png>
 
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1299
+[]
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 1297--1299
+\TU/LinLibertine(0)/m/n/12 Dette kapitlet handler om perspektiver fra kommuneadministrasjonen om medvirkning
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 1297--1299
+\TU/LinLibertine(0)/m/n/12 er de aller fleste betraktninger relevante for kommuneadministrasjonen uavhengig av
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -2175,12 +2202,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [66]
-File: figs/1x/Andre_kommuner.png Graphic file (type bmp)
-<figs/1x/Andre_kommuner.png>
-File: figs/trondheimspanelet.png Graphic file (type bmp)
-<figs/trondheimspanelet.png>
-File: figs/røros.png Graphic file (type bmp)
-<figs/røros.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2197,8 +2218,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [68]
-Underfull \hbox (badness 2856) in paragraph at lines 1416--1418
-[]\TU/LinLibertine(0)/m/n/12 Arnesen, Sveinung, Anne Lise Fimreite, and Jon Kåre Skiple. 2021. “Deliberativ
+Underfull \hbox (badness 10000) in paragraph at lines 1345--1347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1349--1351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1351--1353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1357--1360
+
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 1365--1366
+\TU/LinLibertine(0)/m/n/12 grafen i kommuneloven og bærekraftdelmål 16.7 om å «sikre lydhøre, inkluderende,
  []
 
 
@@ -2209,6 +2265,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [69]
+Underfull \hbox (badness 1314) in paragraph at lines 1381--1382
+\TU/LinLibertine(0)/m/n/12 for den praktiske gjennomføringen og ta utgangspunkt i kommunes vurderinger mht.
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2217,6 +2277,130 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [70]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[71]
+File: figs/1x/Andre_kommuner.png Graphic file (type bmp)
+<figs/1x/Andre_kommuner.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1392
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1398
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[72]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[73]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[74]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[75]
+File: figs/trondheimspanelet.png Graphic file (type bmp)
+<figs/trondheimspanelet.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[76]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[77]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[78]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[79]
+File: figs/røros.png Graphic file (type bmp)
+<figs/røros.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[80]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[81]
+Underfull \hbox (badness 2856) in paragraph at lines 1637--1639
+[]\TU/LinLibertine(0)/m/n/12 Arnesen, Sveinung, Anne Lise Fimreite, and Jon Kåre Skiple. 2021. “Deliberativ
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[83]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the haandbok.maf file.
@@ -2239,18 +2423,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[71] (./haandbok.aux)
+[84] (./haandbok.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 34073 strings out of 477738
- 658292 string characters out of 5842294
- 1044354 words of memory out of 5000000
- 54452 multiletter control sequences out of 15000+600000
+ 34081 strings out of 477738
+ 658447 string characters out of 5842294
+ 1044413 words of memory out of 5000000
+ 54459 multiletter control sequences out of 15000+600000
  490114 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,14n,115p,2616b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on haandbok.pdf (71 pages).
+Output written on haandbok.pdf (84 pages).

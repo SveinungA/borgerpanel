@@ -860,7 +860,7 @@ Heller enn å gå inn i en vurdering av hvilke av disse oppleggene som fungerte 
 
 > Sveinung Arnesen
 
-![Hvordan måle resultater](figs/1x/måling.png)
+![](figs/1x/måling.png)
 
 ### Prinsipper/mål som veileder valgene
 
@@ -971,14 +971,95 @@ Som vi har diskutert flere steder i denne boken, har borgerpaneler mange steder 
 \newpage
 # DEL III: ANDRE ERFARINGER
 
+![](figs/1x/Del3.png)
+Denne delen bringer inn perspektiver fra to andre vinkler enn de som er presentert så langt. Det første kapitlet er forfattet av et av medlemmene i forskningsprosjektet Demovate fra kommunen side. Kapitlet gir innsikt i hvordan det å befatte seg med medvirkning oppleves av kommuneadministrasjonen. Det andre kapitlet er skrevet av en PhD-kandidat som har vært sterkt involvert i flere borgerpaneler i andre norske kommuner enn den som har blitt beskrevet så langt.
+
 \newpage
 ## Borgerpanel sett fra kommuneadministrasjonen
+
 ![](figs/1x/Kommuneperspektivet.png)
+Dette kapitlet handler om perspektiver fra kommuneadministrasjonen om medvirkning generelt, og borgerpanel spesielt. Selv om Bergen kommune har parlamentarisk styreform, er de aller fleste betraktninger relevante for kommuneadministrasjonen uavhengig av kommunens styreform. Andre deler av kommunens helhetlige lokaldemokratiarbeid omtales også for å kunne gi en bredere kontekst for hvilken funksjon borgerpaneler kan ha i det helhetlige medvirkningsarbeidet.
+
+Dette kapitlet ble skrevet en måned før overleveringen av sluttrapporten i forskningsprosjektet. Etter at forskningsprosjektet er avsluttet, vil byrådet oversende sluttrapporten til bystyret med anbefaling om videre bruk og oppfølging. Følgelig er det ikke mulig å forskuttere disse anbefalingene ennå, og dette kapitlet vil derfor legge vekt på ulike perspektiver om bruk av borgerpaneler i kommunens medvirkningsapparat, og mer strukturelle grep som Bergen kommune har jobbet med for at medvirkningsverktøyene (f.eks. borgerpanel) skal fungere best mulig. Her er sentrale elementer en gjennomgående kunnskapsbasert tilnærming til medvirkning og at det bygges og deles kompetanse både på tvers av enheter i kommunen og mellom kommuner.
+
+Som en del av kommunens fire roller som demokratisk arena, tjenesteyter, samfunnsutvikler og myndighetsutøver har medvirkning en svært viktig funksjon i lokaldemokratiet. Dette gjenspeiles i kommunelovens formålsparagraf (§ 1-1), som sier at «Loven skal legge til rette for det lokale folkestyret og et sterkt og representativt lokaldemokrati med aktiv innbyggerdeltakelse».
+
+Lokaldemokratiet er i stadig utvikling, og det setter krav til at også medvirkningen må utvikle seg. Selv om «gullstandarden» og den viktigste temperaturmåleren på lokaldemokratiet er deltakelse i (frie) valg, er tilrettelegging for innbyggernes mulighet til deltakelse og innflytelse en oppgave som kommunene må utføre hver eneste dag mellom hvert valg. Det kan også argumenteres for at jo lavere valgdeltakelsen er, desto viktigere blir det med mobiliserende og samskapende medvirkning.
+
+Hvordan passer borgerpaneler inn i det helhetlige arbeidet med medvirkning i Bergen kommune og blant øvrige medvirkningsmetoder? Og hvilke erfaringer har kommunen gjort seg, som kan være nyttige for andre kommuner? Det første og kanskje viktigste poenget er det grunnleggende positive i å ha gjennomført et prosjekt der vi ser på måter å videreutvikle lokaldemokratiet på gjennom en tidligere uprøvd medvirkningsmetodikk i Norge. Følgende sitat fra sluttrapporten til lokaldemokratiutvalget i 2017 [@fimreitebyen] beskriver ansvaret kommunene har, på en utmerket måte: 
+
+> At mye fungerer og er bra, kan ikke brukes som en sovepute for ikke å søke etter nye og innovative løsninger. Demokratiet vårt er et levende fenomen som må hegnes om og stadig fornyes.
+
+Det er fristende å omtale deliberative borgerpaneler som en parallell til at deltakelse i lokalvalg er «gullstandarden» for lokaldemokratisk deltakelse, siden disse borgerpanelene har noen særlige kvaliteter innenfor medvirkning. Dette handler blant annet om at et tilfeldig uttrukket utvalg som inviteres til å si sin mening, kan gi mer representative svar enn i åpne medvirkningsprosesser. Det andre hovedtrekket er at panelene gjennomføres som en mer opplyst diskusjon og samtale enn f.eks. ved en spørreundersøkelse. At borgerpanelene kan bidra til en mer opplyst samfunnsdebatt, er også et svært positivt trekk. Samtidig er ikke borgerpaneler den eneste formen for innbyggerinvolvering som kommunen kan holde på med. Andre ganger kan det være helt nødvendig å innrette medvirkning som et mobiliseringstiltak mot spesielt underrepresenterte grupper, eller at medvirkningen krever dyp samskaping med ekspertaktører utenfor kommuneadministrasjonen.
+
+I en parlamentarisk styreform er de politiske premissene enda mer sentrale for administrasjonens faglige arbeid enn i formannskapsmodellen. I korte trekk er årsaken at byrådet erstatter kommunedirektøren som leder av kommunens administrasjon, og at byrådet innstiller i saker som skal behandles av bystyret (kommunestyret). Siden dette kapitlet skal beskrive perspektiver fra kommuneadministrasjonen, er ikke dette mulig i et parlamentarisk styringssystem uten en viss politisk kontekst.
+
+Høsten 2015 var det byrådsskifte i Bergen, og i den politiske plattformen til det påtroppende byrådet Schjelderup ble det lansert en lokaldemokratireform med mål om økt demokrati og mer tverrfaglighet. Som del av kunnskapsgrunnlaget for arbeidet ble det utnevnt et bredt sammensatt utvalg ledet av professor Anne Lise Fimreite ved Universitetet i Bergen. Utvalgets mandat var blant annet å analysere den aktuelle situasjonen for lokaldemokratiet i Bergen. Utvalget skulle også gi mer konkrete innspill til arbeidet med lokaldemokratireformen i Bergen og komme med anbefalinger knyttet til etablering av bydelsutvalg (kommunedelsutvalg). I tillegg var det ønskelig at utvalget skulle jobbe med såpass omfattende temaer som hvordan man skal velge lokale representanter, politisk struktur sentralt i kommunen, representasjon av underrepresenterte grupper, tverrfaglig samordning, innspill fra befolkningen, erfaring fra andre byer og evaluering av den bergenske parlamentarismen.
+
+Gjennom sluttrapporten fra 2017 konkluder lokaldemokratiutvalget med at lokaldemokratiet i Bergen ikke er i krise, men det pekes på at det har visse utfordringer, bl.a. at det er visse skjevheter i valgdeltakelse mellom bydelene. Rapporten sier videre «men at det ikke er krise og utmattelse i lokaldemokratiet, er ikke det samme som helt å friskmelde systemet. At mye fungerer og er bra, kan ikke brukes som en sovepute for ikke å søke etter nye og innovative løsninger. Demokratiet vårt er et levende fenomen som må hegnes om og stadig fornyes.»
+Sluttrapporten fra lokaldemokratiutvalget har tre anbefalinger. Den første er knyttet til innretning av bydelsutvalg, mens de to siste er som følger:
+
+- Vurdere å opprette et byborgerpanel: Utvalget anbefaler at det utredes en modell hvor tilfeldig uttrukne bergensere får mulighet til reell politisk påvirkning i enkeltsaker som byrådet definerer. Vårt forslag er å gjennomføre dette som et forskningsprosjekt (…).
+
+- Uavhengig av modell: Holde fokus på de til dels store variasjonene i politisk deltakelse blant innbyggerne som er avdekket i rapporten. 
+
+- Være bevisst på valgdeltakelsens geografiske skjevhet og hvilke konsekvenser det kan ha for politikkutforming, samt deltakelsen blant yngre og grupper uten høyere utdanning. Tilrettelegge for frie nedenfra-opp, ikke-kommersielle initiativer fra borgere, som fremmer fellesskap, omfavner engasjementet og senker terskelen for medvirkning i byrommet.
+
+Forskningsprosjektet Demovate og forsøk med borgerpaneler er i så måte en direkte oppfølging av sluttrapporten. Den politiske bestillingen ble konkretisert gjennom saken «Et styrket nærdemokrati» i Bergen bystyre (bystyresak 235/18), der ett av vedtakspunktene er at «Bystyret ber om at byborgerpanel prøves videre ut som et forskningssamarbeid der det også søkes eksterne forskningsmidler.»
+
+Vi er derfor i en privilegert posisjon som kan få til et samarbeid som lager forbindelseslinjer mellom kommunesektoren og akademia i dette prosjektet, og på den måten bidra til demokratisk innovasjon. Men et prosjekt varer ikke evig, og det er avgjørende å finne metoder for å videreføre de gode erfaringene fra dette prosjektet. Det gjelder både på forskningssiden og –- ikke minst -– i praksisfeltet. Her er håndboken et grep for å mangfoldiggjøre våre erfaringer med oppsett, gjennomføring og funn fra borgerpaneler. Målet er at dette ikke bare skal være nyttig for andre enheter i den kommunen som vurderer å gjennomføre et borgerpanel, men at det også kommer til nytte for andre kommuner. Helt generelt bidrar dokumentasjon av gjennomføring av god praksis og beste praksis til at det blir lettere å dele erfaringer om medvirkning. En slik delekultur både internt og eksternt er i seg selv et godt eksempel på demokratisk innovasjon.
+
+Kommunens arbeid på lokaldemokratifeltet har grovt sett fulgt to hovedspor. Det første sporet er videre arbeid med bydelsutvalg. Det andre hovedsporet er det som generelt kan omtales som «andre former for innbyggerinvolvering». Forsøk med borgerpanel er et konkret eksempel på en medvirkningsmetode som Bergen kommune har prøvd ut. Før vi går mer konkret inn på borgerpanel, er det nødvendig å beskrive det helhetlige arbeidet Bergen kommune gjør på medvirkningsfeltet, og som er sammenhengen borgerpanel inngår i.
+
+Våren 2022 ble Bergen kommune tatt opp i et nasjonalt program for lokaldemokratiet i foregangskommuner, i regi av Kommunal- og distriktsdepartementet. I søknaden som bystyret behandlet i 2021, pekes det på at Bergen kommune gjennomfører en rekke involveringsaktiviteter som gir stor merverdi for det enkelte prosjektet hvor medvirkningsaktiviteten foregår, men det finnes et utviklingspotensial i å utnytte overføringsverdien til andre prosjekter i kommunen, få synergier mellom prosjekter og å kunne dele beste praksis med andre kommuner. Her er Demovate et godt eksempel på medvirkningsaktivitet som faktisk dokumenteres for å gis overføringsverdi.
+
+Kommunen jobber nå med å ta et helhetsgrep i arbeidet med å videreutvikle byens innbyggerinvolvering. Dette krever koordinert innsats internt og at vi legger til rette for samarbeid med innbyggerne og andre aktører. Gitt størrelsen og kompleksiteten i Bergen kommunes organisasjon må vi sikre at eksisterende og nye initiativer ikke er enkeltstående prosjekter som er enten utydelige eller ukjente for andre deler av organisasjonen. Bergen kommune vil derfor bruke foregangskommunestatusen til å etablere et konsept med en helhetlig organisering av det lokaldemokratifaglige arbeidet som allerede gjøres i de ulike avdelingene og enhetene, og som kan utgjøre en faglig plattform for samordning og videreutvikling på området.
+
+Formålet skal blant annet være å
+
+- sikre god flyt av informasjon internt i organisasjonen  
+- få en systematisk gjennomgang av kommunens nåværende tiltak  
+- sette kommunens innbyggerinvolveringsprosjekter i system for å gi synergier mellom pågående prosjekter  
+- få god oversikt over relevante nasjonale og internasjonale prosjekter  
+- dele erfaringer og videreformidle beste praksis  
+- legge til rette for kunnskapsdrevet utvikling på området  
+- videreutvikle delingskultur, bl.a. gjennom å etablere en digital kunnskapsbank som skal være åpent tilgjengelig også for andre kommuner
+koordinere nettverksaktivitet med andre kommuner m.m.  
+- identifisere aktuelle fremtidige prosjekter, initiativer og samarbeid  
+
+Selv om Bergen kommune begrunner behovet for denne systematikken med størrelsen og kompleksiteten i kommunens organisasjon, vil en grunnleggende systematikk i bunn være en forutsetning for å drive samordnet kunnskapsutvikling, uavhengig av kommunens størrelse.
+
+Et annet sentralt tema som Bergen kommune løfter i det nasjonale prosjektet, er koblingen mellom innbyggerinvolvering og politisk organisering. Her pekes det både på formålsparagrafen i kommuneloven og bærekraftdelmål 16.7 om å «sikre lydhøre, inkluderende, deltakelsesbaserte og representative beslutningsprosesser på alle nivåer». Dette har en klar parallell til synet kommunen har på borgerpanelene.
+
+Innbyggerinvolvering må skje på reelle arenaer for involvering og medvirkning, ikke bare være et avkrysningspunkt på en liste over aktiviteter som skal gjennomføres i f.eks. en planprosess. Involveringen bør derfor innrettes mot de delene av prosessen hvor det er lettest å implementere innspillene fra aktører utenfor kommuneorganisasjonen. Oppfølgingen av involveringen må være tillitsfull f.eks. gjennom de grepene som praktiseres for kommunens samfunnsplanlegging, og ved at innspillene blir forsvarlig utredet i saker som legges frem for folkevalgte organer.
+
+Innen samfunnsplanleggingen har byrådet vedtatt en egen planinstruks som er gjeldende for all planlegging som krever politiske vedtak, men som ikke er arealrelatert (der gjelder egne prosessregler, blant annet i lys av plan- og bygningsloven). Planinstruksen slår blant annet fast at bred medvirkning er viktig for å sikre forsvarlige utredninger, og at det bidrar til gode planer og et best mulig grunnlag før beslutninger blir tatt. Vi benytter ekstern medvirkning for at offentlige myndigheter, innbyggere, organisasjoner og næringsliv skal kunne si sin mening. Ekstern medvirkning kan organiseres gjennom høringer, innspillseminar, dialogmøter og lignende.
+
+Alle planer bør som hovedregel på høring, og høring skal som hovedregel være åpen for alle. Etter høringen skal høringsinnspillene oppsummeres i et merknadsskjema som skal følge den politiske saken som vedlegg. Skjemaet skal blant annet vise hvordan innspillet er vurdert, og hvordan innspill som er tatt helt eller delvis til følge, er innarbeidet i et nytt planforslag.
+
+Planinstruksen legger altså føringer både for at planer skal legges ut på høring, og for at innspill som er gitt gjennom medvirkningen, skal vurderes i sin helhet, og at vurderingene er synlige i oppfølgingen av saken frem til endelig behandling i folkevalgt organ. Dette gir grunnlag for en forsvarlig utredning av innspill i tråd med kommuneloven § 13-1, samtidig som medvirkningen blir transparent, og dermed kan innspillene også vurderes (potensielt annerledes) av bystyret.
+
+Byrådet har lagt vekt på dette perspektivet i en egen byrådssak som tar opp bruk av borgerpanel i utvalgte politiske prosesser i Demovate-prosjektet. I byrådsleders vurdering og anbefaling/konklusjon pekes det på følgende: Byrådsleder mener at bilfrie soner og arealstrategi for Dokken kan være velegnede som diskusjonstemaer i borgerpanelet, og ønsker å synliggjøre panelets innspill i den videre faglige og politiske oppfølgingen. Byrådet vil ta stilling til rådene/innspillene fra borgerpanelet i det politiske saksfremlegget som følger disse to casene, og innspillene skal være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling. Dette vil etter byrådsleders mening gi borgerpanelet høy legitimitet, samtidig som det sikrer at innspillene fra panelet blir forsvarlig utredet iht. til kravene i kommuneloven.
+
+I tillegg til begrunnelsene fra byrådssaken er det av betydning at medvirkningen skjer på et tidspunkt i de politiske prosessene hvor det ikke allerede er konkludert på bakgrunn av en lengre utredningsprosess og/eller politisk vurderinger. Dette er i tråd med poenget om at involveringen bør innrettes mot de delene av prosessen hvor det er lettest å implementere innspillene fra aktører utenfor kommuneorganisasjonen.
+
+Det siste poenget i dette kapitlet er at prosjektet ga oss innsikt i personvernutfordringer knyttet til digital gjennomføring av borgerpanel. Selv om planen i utgangspunktet var fysisk gjennomføring, var dette ikke mulig pga. pandemien. Problemstillingene om personvern er omtalt i andre kapitler i denne håndboken. Grunnen til at det trekkes frem her, er at dette ikke er en prosjektspesifikk problemstilling. Digitalisering gir store muligheter for å bruke nye verktøy som skal gi økt medvirkning. Bergen kommune har pekt på at kommunen skal være en offensiv foregangskommune for digitale løsninger. Den digitale utviklingen gir muligheter for brukervennlige og effektive kommunale tjenester og styrking av åpenhet og deltakelse. Samtidig må kommunen være en ansvarlig innovatør, der vi blant annet sikrer innbyggernes rettigheter ved bruk av nye verktøy, spesielt knyttet til informasjonssikkerhet og personvern.
+
+Dette perspektivet omtaler Bergen kommune i søknaden om å bli tatt opp i det nasjonale programmet for lokaldemokratiet i foregangskommuner. Det har tidligere blitt skrevet om hvordan beste praksis for metodevalg og gjennomføring av medvirkningsaktivitet bør dokumenteres og deles i større grad, både internt og med andre kommuner. Dette kan også gjelde hvordan nye løsninger og prosjekter vurderes opp mot personvernforordningen og kommunens krav til informasjonssikkerhet. På denne måten vil kommunen bygge en kultur for deling av systematikk knyttet til håndtering av nye og innovative forslag på medvirkningsområdet, som bidrar til at prosjektene kan prøves ut på en forsvarlig måte. En slik tilnærming skal innby til tillit i det enkelte prosjektet og gjøre det enklere å gjennomføre tilsvarende prosesser på andre områder. Det senker i tillegg terskelen for å ta i bruk løsninger som er testet i denne kommunen, for andre kommuner, siden de både kan ta i bruk metodikk for den praktiske gjennomføringen og ta utgangspunkt i kommunes vurderinger mht. forsvarlig forvaltning.
+
+Avslutningsvis vil vi takke for anledningen til å delta i et forskningsbasert og samarbeidsorientert prosjekt mellom Bergen kommune og forskningssektoren ved spesielt NORCE og Universitetet i Bergen. Prosjektet har vært et godt eksempel på hvordan vi gjennom samarbeid «tetter gapet» mellom forskning og praksisfeltet. Slike forbindelseslinjer er nødvendige for å bygge kunnskapskommunen i bred forstand, og er i så måte ikke bare et konkret eksempel på videreutvikling av demokratisk innovasjon gjennom borgerpaneler. Prosjektet representerer derfor en mer generell tilnærming til å finne merverdien i skjæringspunktet mellom forskning og praksis.
+
 
 \newpage
 ## Erfaringer fra andre norske kommuner {#andre}
 
 ![](figs/1x/Andre_kommuner.png)
+Som vi har vært inne på tidligere, så ser vi en klar definisjonsavgrensing av hva et borgerpanel er. Et borgerpanel er altså en familie av demokratiske innovasjoner, som har to kjerneelementer: 
+
+- tilfeldig utvelgelse av deltakere gjennom loddtrekning  
+- at disse deltakerne gjennomgår en deliberativ prosess  
+
+Dersom vi bruker denne definisjonen, ser vi at det har blitt gjennomført minst 17 borgerpaneler i Norge per i dag. Disse kan ses i tabell \@ref(tab:tbl-borgerpanel).
 
 ```{r tbl-borgerpanel}
 tbl <- tibble(Tittel= c('Lekfolkskonferanse om genmodifisert mat', 'Innbyggerhøring Nordland', 'Innbyggerhøring Kongsberg',
@@ -996,34 +1077,158 @@ tbl %>% kableExtra::kbl(caption = 'Borgerpanel i Norge', booktabs = T, linesep =
   kable_styling(latex_options=c("striped", "hold_position", "scale_down"))
 
 ```
- 
+
+Vi kan dele bruken av borgerpaneler inn i to perioder. Den første perioden varte fra sent på 1990-tallet til tidlig på 2000-tallet. De fleste borgerpanelene som ble gjennomført på denne tiden, var det som kalles lekfolkskonferanser og deliberative meningsmålinger. Vi kan derfor si at eksperimenteringen i den første perioden i stor grad var drevet av inspirasjon fra Danmark med det danske teknologirådet og fra USA med James Fishkins modell for deliberative meningsmålinger.
+
+I den andre perioden, fra 2018, har det vært en økning i bruken av borgerpaneler. Økningen i Norge i den senere tid kan ses i sammenheng med økningen internasjonalt. Internasjonalt har dette blitt kalt den «deliberative bølgen» [@oecd_innovative_2020]. Hvor stor denne bølgen er, kan diskuteres, men trenden med økende bruk av borgerpaneler har vi sett også her i Norge. Det er spesielt borgerjurymodellen som har stått for denne økningen, da halvparten av alle borgerpaneler i Norge har vært av denne typen.
+
+Vi ser også at borgerpaneler i Norge har vært mest brukt på kommunenivå, og at det bare har vært noen få på nasjonalt nivå. De nasjonale er lekfolkskonferanser som ble arrangert av det norske Teknologirådet. Blant kommunene ser man at borgerpaneler er mest blitt brukt av bykommuner i Norge. Vi ser også at det har vært gjennomført et medarbeiderpanel av Sadexxo.
+
+I dette kapitlet skal vi se på noen av disse borgerpanelene. Disse vil være to av borgerpanelene i Trondheim, kalt *Borgerkraft* og *Trondheimspanelet*, ett i Oslo, borgerpanelet i Stavanger og det permanente borgerpanelet på Røros.
+
 
 
 ### Borgerpanelene i Trondheim, Oslo, og Stavanger
+
 #### Trondheim – Borgerkraft 
+
+I februar 2020 troppet 16 tilfeldig uttrukkede personer fra Trondheim-Sør opp i Erkebispegården i Trondheim. De ble servert mat og fikk en omvisning i selve Erkebispegården. Selv om Trondheim hadde eksperimentert med en lekfolkskonferanse på 2000-tallet, kan vi godt si at borgerpanelet i 2020 var noe nytt for Trondheim kommune. Det er derfor på sin plass å si litt om bakgrunnen for prosjektet.
+
+I mai 2019 ble den nye strategien for medvirkning og samskaping stemt frem av bystyret i Trondheim. I den stod det blant annet at «Bystyret ønsker å øke innbyggerinvolveringen og peker spesielt på muligheten for at det systematisk settes av penger til lokale prosjekter som i stor grad er innbygger- eller brukerstyrt, eller innbyggerpanel.» [@trondheim_kommune_den_2019]. Med denne strategien ble det jobbet nøye med å bygge opp kunnskap om borgerpaneler. Kommunen hadde etablert et nært samarbeid med forskere på NTNU gjennom «Universitetskommunen», og man etablerte også et nært samarbeid med internasjonale aktører, som OECD, MASS LBP i Canada, Involve i Storbritannia og G1000 i Belgia, for å nevne noen.
+Dette la grunnlaget for arbeidet med borgerpaneler i Trondheim, og de har per i dag gjennomført to. Det første, som startet rett før pandemien, var et samarbeid mellom Trondheim kommune, NTNU og SoCentral. Dette prosjektet ble kalt «Borgerkraft» og var et borgerpanel som skulle ta for seg hva bærekraft betydde lokalt i en bydel, og hvordan kommunen bør støtte gode initiativer. Prosjektet var en liten blanding av to prosesser. Den ene delen gikk ut på å mobilisere innbyggere lokalt til å komme med forskjellige initiativer om hvordan Trondheim kunne bli mer bærekraftig. Den andre delen var borgerpanelet, som skulle diskutere mer om hvordan Trondheim kommune kunne vurdere disse forskjellige initiativene, og hvordan man skulle bestemme hvem som skulle få midler. Borgerkraft hadde derfor en blanding av to demokratiske innovasjoner: borgerpanel og elementer av deltakende budsjettering.
+
+Siden prosessen var avgrenset til de sørlige bydelene, ble den kalt *Trondheim Sør*. I borgerpanelet var det 16 deltakere som var trukket ut gjennom en loddtrekning. Måten selve loddtrekningen ble gjort på var den samme som ble gjennomført i de andre borgerpanelene (utenom Stavanger, som vi skal se senere). Metoden som ble brukt, var et såkalt «borgerlotteri», som er blitt standarden for å gjennomføre gode loddtrekninger internasjonalt, der denne prosessen ofte blir kalt *Civic Lottery* eller en *two-stage random selection* [@mass_lbp_how_2017; @oecd_innovative_2020]. Her ble det sendt ut 800 brev til tilfeldige personer i «Trondheim Sør». Blant de 800 svarte rundt 100 personer ja til å delta. Deretter ble det gjennomført en ny loddtrekning blant de som hadde sagt ja, men da etter kategoriene alder, kjønn og geografi, for å få panelet til å speile *Trondheim Sør* så godt det lot seg gjøre. I Trondheim diskuterte man lenge om man skulle trekke ut en liste fra Folkeregisteret. Til slutt ble det bestemt at man ikke skulle gjøre dette, men heller sende ut invitasjoner til tilfeldige adresser hentet fra en database fra Posten. To elementer påvirket dette valget. For det første var det enklere, siden det å trekke ut fra Folkeregisteret kan være en lang prosess. Og for det andre, som også er den viktigste grunnen, så kunne man ende opp med å ekskludere personer som bodde i området, men som ikke har sin folkeregistrerte adresse der, dersom man brukte Folkeregisteret. Dette er spesielt relevant for en studentby som Trondheim, der mange studenter ikke er folkeregistrert i nettopp Trondheim.
+```{r}
+
+```
+
+I Borgerkraft var tanken at borgerpanelet skulle møtes tre ganger med mulighet for en fjerde gang. Selve prosessen fulgte noenlunde den samme oppskriften som de andre borgerpanelene ofte har fulgt. Dvs. en lærings- og kunnskapsfase, en refleksjons- og diskusjonsfase og til slutt en beslutningsfase.
+
+I det første møtet skulle man bli orientert om prosessen, bli kjent med hverandre og få læring og kunnskap. Lærings- og kunnskapsfasen ville dreie seg om begrepet bærekraft, og tanken her var først å ta for seg disse store temaene, for så å bearbeide dem på et lokalt nivå. I det andre møtet skulle man dykke ned i tematikken og drøfte de forskjellige elementene rundt bærekraft og hva som var viktige elementer for de som deltok. Det tredje møtet skulle man fortsette, før man til slutt skulle trekke sammen alle trådene og komme med sin anbefaling, først om hva som var viktig for en bærekraftig utvikling for distriktene i «Trondheim Sør», og ut fra dette sette opp kriterier som kommunen kunne bruke for å evaluere forskjellige søknader om økonomisk støtte.
+
+Når vi ser tilbake til definisjonen på borgerpaneler, så ser vi at det er fasiliterte gruppesamtaler. Fasiliteringskompetanse er derfor sentralt i et borgerpanel. Spørsmålet i alle borgerpanelene blir derfor hvordan man løser dette. Vi kan si at dette kan løses på tre mulige måter. Man kan løse det innad ved at man finner kompetansen innad i organisasjonen. Man kan løse det eksternt ved at man henter inn kompetanse utenfra. Eller man kan gjøre en hybrid med en blanding mellom intern og ekstern kompetanse. I Borgerkraft ble det benyttet en blanding av kommuneansatte og personer fra organisasjonen SoCentral. Kompetansen innad i kommunen ble hentet fra flere plasser i organisasjonen, og dette var ikke nødvendigvis personer som var koblet til prosessen. Trondheim hadde også erfaringer med fasilitering fra før av gjennom deres arbeid med *SteinSaksPapir*-prosjektet. Denne kompetansen ble dermed brukt også i Borgerkraft.
+
+Borgerkraft-prosjektet ble derimot ikke slik som planlagt. Det første møtet fant sted i februar 2020, og på grunn av pandemien ble det gjort helt om på prosjektet. Det ble satt på vent for en lengre periode, for å se an utviklingen, før man bestemte seg for å gå videre og fullføre panelet digitalt. Det ble derfor satt opp noen flere digitale møter, og man valgte også å dele gruppen i to. Dette ble gjort fordi man da kunne holde et digitalt møte med 8 personer i stedet for at alle 16 skulle være til stede digitalt på samme tidspunkt. Dette ble også gjort for å kunne være fleksible med tanke på datoene, siden det var vanskelig å finne datoer som passet for alle. Disse møtene ble satt opp i mai 2020, en stund etter at det siste møtet egentlig var tenkt å avholdes. Borgerkraft måtte derfor endres fra å være et fysisk borgerpanel til å bli et digitalt ett. Siden endringene ikke var planlagte, var det ikke nok tid og ressurser tilgjengelig til å legge tilstrekkelig til rette for denne endringen. Man kan også se at dette hadde innvirkning på hvor inkluderende deliberasjonen var i prosessen. Det var noen som hadde ustabilt internett, og noen hadde ikke mulighet til å gå et sted der de kunne konsentrere seg om borgerpanelet uten å bli forstyrret. Noen eldre strevde også med formatet, siden et slikt format ikke var like intuitivt for dem som for andre. I Borgerkraft kan man derfor se antydninger til at digital deliberasjon kan forsterke ulikheter i samfunnet inn i deliberasjonen. Det kan favorisere personer som har stabilt internett, de som har et eget rom de kan arbeide i, og de som er vant til å ha digitale møter.
+
+Pandemien hadde derfor stor innvirkning på selve borgerpanelet. Det ble en lang pause mellom de forskjellige møtene siden man ikke helt visste om man kunne samles igjen våren 2020. Når man så at dette kom til å ta en stund, brukte man mye tid og ressurser på å prøve å finne ut hvordan man kunne gjennomføre det digitalt. Pausen hadde imidlertid stor innvirkning på deliberasjonen, siden det tok tid før deltakerne kom inn i prosessen igjen etter en så lang pause.
+
+Det er også viktig å merke seg at spørsmålet og mandatet til dette borgerpanelet ikke var helt klart, og dette hadde også innvirkning på selve prosessen. Her erfarte man at rollen til borgerpanelet ikke var godt nok avklart, og dette kunne man ha vært flinkere til å formidle – f.eks. hva vil skje med det som borgerpanelet produserer, og hvor vil man med dette? I begynnelsen var ikke de som deltok, helt sikre på hvilken rolle de hadde, og hva formålet med borgerpanelet var, noe dette sitatet fra en deltaker illustrerer:
+
+> Det tok litt tid før jeg forstod hva som var forventet av meg, og hva som var målet med møtene.
+
+Å vise tydelig helt fra starten av hvilken prosess dette er knyttet til, og hvilken rolle borgerpanelet hadde i denne prosessen, ble derfor et av de viktigste læringspunktene som kom ut fra Borgerkraft. I ettertid ser vi at andre borgerpaneler har lært av dette.
+Anbefalingen til borgerpanelet ble tatt med videre inn i arbeidet, og mye av det som kom ut av borgerpanelet, blir nå innarbeidet i et nytt system for tildeling av midler til bærekraftsprosjekter.
+
+Selv om Borgerkraft hadde utfordringer, var det samtidig et nyttig eksperiment for Trondheim kommune. Eksperimentet gjorde at kommunen ble komfortabel med denne medvirkningsmetoden, og man fikk viktig erfaring med både fasilitering og hvordan man i det hele tatt designet et borgerpanel. Erfaringen rundt Borgerkraft ble derfor viktig for det videre arbeidet med borgerpaneler, ikke bare i Trondheim, men også i Oslo og Stavanger.
+
 #### Trondheim – Trondheimpanelet
 
-```{r, out.width = "80%", fig.align = "center", fig.cap= "Medvirkningsprosess"}
+I 2021–2022 gjennomførte Trondheim kommune et borgerpanel som skulle ta for seg den nye samfunnsdelen av kommuneplanen. Problemstillingene som ble gitt til panelet, var 
+
+>Hvordan passer det gode liv i et Trondheimssamfunn inn i diskusjonen om planetens tåleevne og miljø- og klimadebatten? Hvilke smarte grep må vi gjøre fremover?
+
+50 personer ble trukket ut til å delta i prosessen, noe som gjorde den til en av de større borgerpanelene vi har hatt i Norge. Også her ble «borgerlotteri»-metodikken fulgt. Først ble det sendt ut 4000 tekstmeldinger til tilfeldige personer i Trondheim. Av disse meldte rundt 400 seg til å være med. Blant disse 400 ble det foretatt en ny loddtrekning, men denne gangen etter kategoriene kjønn, alder, geografi og utdanning for at Trondheims befolkning skulle speiles så godt som mulig.
+
+Borgerpanelet ble gjennomført under pandemien. Selv om det på det tidspunktet var lov å samle 50 deltakere, gjorde pandemien det vanskelig for noen å delta. Av hensyn til blant annet personer i helsevesenet, studenter og de som naturlig nok var bekymret for covid-19, la man til rette for at man kunne delta digitalt i hele eller deler av prosessen om man ville. Andre former for tilrettelegging ble også gjort, da spesielt med tanke på transport og tolketjeneste.
+
+Trondheimspanelet var linket opp til en større prosess med flere former for medvirkning og representasjon involvert. I prosessen med å lage en ny samfunnsdel av kommuneplanen gjennomførte Trondheim kommune tre medvirkningsfaser, der Trondheimspanelet var en av disse. Dette kan man se nedenfor:
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Medvirkningsprosess. Kristin Solhaug Næss, personlig kommunikasjon, 07.09.2022"}
 knitr::include_graphics("figs/trondheimspanelet.png")
-#Kristin Solhaug Næss, personlig kommunikasjon, 07.09.2022
+
 ```
+
+I første fase gjennomførte de et såkalt innsiktsarbeid. Her gjennomførte Trondheim kommune en hel rekke av ulike typer aktiviteter, hvor de benyttet biblioteker, arrangementer, workshops, spørreundersøkelser, intervjuer, ønsketrær osv. Gjennom denne prosessen fikk de til sammen inn 2000 ulike typer innspill. Dette var dermed en veldig bred medvirkningsprosess for å få så mange stemmer som mulig inn i prosessen med å lage en ny samfunnsdel.
+
+Den andre fasen var borgerpanelet. Dette panelet ble designet rundt den samme idéen som borgerpanelene vanligvis gjør, med læring og kunnskap, refleksjon og diskusjon og til slutt en anbefaling. Innspillene fra den første medvirkningsfasen ble dokumentert og sortert, og dette ble en ressurs for Trondheimspanelet. Selve borgerpanelet var delt opp i fem samlinger. Den første samlingen tok for seg problemstillingen, og man lærte og fikk kunnskap om tematikken gjennom innspillene og gjennom de forskjellige presentasjonene. Takket være læringen fra det forrige borgerpanelet brukte man tid på å gjøre helt klart hvilket mandat Trondheimspanelet hadde, på den første samlingen. Trondheimspanelet var også linket til en planprosess i kommunen, noe som gjorde at rollen til panelet var enklere å forklare og vise til deltakerne. På den andre og tredje samlingen fortsatte deltakerne med å utveksle idéer om hvordan man vil ha det i Trondheim. Så veide man de forskjellige idéene opp mot hverandre og diskuterte hvordan man skulle oppnå det man ønsket. Den fjerde samlingen gikk ut på å sammenfatte alt dette i konkrete anbefalinger om hvilken by Trondheim skal være. Den femte samlingen var nokså unik. Her var borgerpanelet og formannskapet i kommunen samlet, og de diskuterte anbefalingene og dilemmaene fra borgerpanelet i fellesskap.
+
+Trondheimspanelet bygde videre på arbeidet fra Borgerkraft, spesielt med tanke på fasiliteringen. I dette panelet ble all fasilitering løst innad i kommunen, og fasilitatorene som var med i Borgerkraft-prosjektet, hadde en sentral rolle i Trondheimspanelet. Slik sett har Trondheim kommune jobbet med å bygge opp en kompetanse rundt denne metodikken.
+
+I den tredje medvirkningsfasen ble Trondheimspanelets anbefalinger tatt inn i et strategidokument, som ble sendt på en høringsrunde. Her fikk de innspill fra ulike aktører og bydelsgrupper.
+
+Den nye samfunnsdelen av kommuneplanen har nå blitt delt inn i tre hovedområder: et grønnere samfunn, sterkere fellesskap og teknologihovedstaden. Borgerpanelets anbefalinger har satt preg på alle områdene. For eksempel har nesten alle delmålene under «et grønnere samfunn» blitt påvirket av anbefalingene fra borgerpanelet, og kanskje spesielt delmålet om at Trondheim skal gjøre det lettere å leve miljøvennlig.
+
+Trondheimspanelet er et eksempel på hvordan man kan linke et borgerpanel opp mot en større medvirkningsprosess. Styrken med dette er at man da får både *bredde* i form av andre typer medvirkning og *dybde* i form av deliberasjon i borgerpanelet. Man får også andre former for representasjon inn i prosessen ved at interesseorganisasjoner og andre aktører får komme med sine innspill i høringsrunden.
+Trondheimspanelet tok for seg en svært bred problemstilling. Dette er ikke nødvendigvis et problem i seg selv, siden man vil gi borgerpanelet rom til å utforske saken grundig, men samtidig bør man ikke gi borgerpanelet et for bredt spørsmål, siden det kan gjøre arbeidet vanskelig for dem. Derfor er det viktig å gjøre en avveining mellom disse to aspektene. I designet av Trondheimspanelet ble det diskutert om man skulle spisse inn problemstillingen til å ta for seg et mer konkret dilemma og mer konkrete verdispørsmål som kunne inngå i samfunnsdelen av kommuneplanen, men man valgte heller å gå for en bredere problemstilling. En slik bred problemstilling krevde mye fra personene som ledet prosessen, og det var nødvendig med nøye planlegging for å komme «i mål».
 
  
 #### Stavanger – ungt borgerpanel
+
+I 2021 bestemte Stavanger seg for å arrangere et ungt borgerpanel. Dette var et initiativ fra organisasjonen Grønn by. Prosjektet ble til et samarbeid mellom Grønn by, Smartby Stavanger, Stavanger kommune, SoCentral og NTNU.
+
+Det var Smartby Stavanger som eide prosessen, mens andre deler av kommunen ble koblet på ved at de var med i arbeidsgruppen for borgerpanelet. Dette var et borgerpanel som hadde som mål å ta unge seriøst i diskusjonen om planprosessen for Hillevåg. Spørsmålet de skulle ta for seg, var: 
+
+> Hvordan kan vi sammen skape et trygt og attraktivt nabolag?
+
+Flere elementer gjorde dette til et annerledes prosjekt enn de andre borgerpanelene. Dette var et borgerpanel for unge, og dette krevde en noe annerledes inngang til for eksempel lærings- og kunnskapsfasen og til fasilitering i borgerpanelet. Et annet element var at dette ble koblet til to skoler som har en skolekrets som dekker Hillevåg, Kristianlyst og Ullandhaug ungdomsskole. Derfor ble det også inngått et samarbeid med disse skolene, hvor man gjennomførte fysisk loddtrekning på to av dem.
+
+Grunnen til at man gjennomførte et ungt borgerpanel i Stavanger, var i hovedsak at de ville gi de unge en stemme inn i prosessene. Det ble også påpekt at det er kanskje de unge som bruker nabolagene mest, noe som også ble påpekt av en av deltakerne i borgerpanelet: «… viktig at de unge blir hørt, det er vi som skal vokse opp i nabolaget og bruker nabolaget masse» [@noauthor_ungt_2022].
+
+Et av de mest interessante elementene var at man gjennomførte loddtrekningen fysisk på to skoler. Hovedinspirasjonen til dette var læringen fra «Democracy in Practice», en organisasjon som har jobbet med skoler i Bolivia, hvor det ble brukt et design med at elevrådet ble valgt ut gjennom loddtrekning. Arbeidet til organisasjonen har også inspirert Vika VGS i Oslo, som nettopp hadde begynt med å eksperimentere med å velge ut sine representanter til elevrådet gjennom en loddtrekning i stedet for at de skulle bli stemt frem. Den fysiske loddtrekningen ble gjennomført på to av skolene. Selve loddtrekningen ble koblet opp mot en introduksjon til det deliberative demokratiet og til en presentasjon av borgerpanelet, slik at alle på skolen fikk vite hva dette gikk ut på. Man skulle velge fire representanter fra hvert kull – to gutter og to jenter. Til sammen ville man da ende opp med 24 deltakere, siden det var tre trinn på begge skolene. Siden skolene ble brukt, ble det bestemt at man ikke skulle bruke stratifisering i loddtrekningen. Ved å trekke to gutter og to jenter fra hvert klassetrinn på de to skolene oppnådde man spredning på alder, kjønn og geografi.
+
+Det å gjennomføre en fysisk loddtrekning hadde nokså stor symbolikk. Selvsagt er det ikke alltid at en fysisk loddtrekning er å foretrekke (for eksempel ikke dersom problemstillingen hadde tatt for seg et svært kontroversielt tema), men erfaringen fra Stavanger har vært veldig positiv. Det at man også åpner opp om prosessen rundt selve borgerlotteriet, er noe man diskuterer også i fagfeltet. Det var stor entusiasme rundt selve lotteriet, og de som ble plukket ut, fikk med seg en gullbillett og et informasjonsskriv hjem. Det ble så opp til disse elevene og deres foresatte å si ja eller nei til å delta i borgerpanelet. Til slutt var det 21 elever som deltok i borgerpanelet, og disse ble betalt på samme nivå som ungdommens bystyre i Stavanger.
+
+Det ble satt opp 5 samlinger på 3 timer hver, som skulle foregå etter skoletid. Prosessen var lik de tidligere borgerpanelene med de samme fasene. Det ble imidlertid gjort en rekke tilpasninger med tanke på at det var unge som deltok i panelet (Kristin Kverneland, personlig kommunikasjon, 20.09.2022). For det første var det fokus på å ha korte presentasjoner, på maks 15 minutter hver. Man fokuserte også på å bruke ord og uttrykk som var tilpasset ungdom i alderen 13–15 år. Det ble ikke lagt opp til at man måtte lese lange tekster, siden man kunne ha med ungdommer med lese- og skrivevansker. Og man hadde oppvarmingsaktiviteter som var tilpasset alderen, med fasilitering av frivillige som jobbet på KFUK/KFUM Forandringshuset (rettet mot ungdom). Når det gjaldt fasiliteringen, ble dette løst i en hybridform. Her ble fasiliteringen gjort av personer fra Smartby Stavanger, Grønn by, Forandringshuset og SoCentral. Det ble dermed innhentet fasiliteringskompetanse fra en rekke forskjellige aktører. Et interessant aspekt her er at de fleste av personene som var fasilitatorer, deltok på et fasiliteringskurs arrangert av MASS LBP, en Canadisk organisasjon, i forkant. Derfor ble det fokus på å bygge opp kompetanse før prosessen.
+
+Det ble også litt endringer i prosessen siden man merket at det å holde foredrag ikke var så effektivt. Det å gå på befaring i nabolaget var en mye mer effektiv metode for læring. Dette er noe man ser også internasjonalt, og ikke bare i borgerpaneler for unge. For eksempel har borgerpanelet i Irland om biomangfold tatt i bruk befaring i stor grad i deres kunnskaps- og læringsfase (Clodagh Harris, personlig kommunikasjon, 28.09.2022).
+
 #### Oslo – Borgerpanel på Grefsen og Kjelsås
+
+I januar og februar 2021 ble borgerpanelet på Grefsen og Kjelsås gjennomført. Dette var et borgerpanel som ble gjennomført som del av forskningsprosjektet «New Water Ways», som var ledet av Norsk institutt for vannforskning i samarbeid med SoCentral og Vann- og avløpsetaten i Oslo. Selve borgerpanelprosessen var det SoCentral som hadde ansvar for. Problemet de skulle ta for seg, var 
+
+> hvordan kan kommunen legge til rette for at dere som innbyggere best involveres i håndteringen av overvann på Grefsen-Kjelsås? [@skar_borgerpanel_2021, pp. 6].
+
+Loddtrekningen fulgte den samme prosessen som ellers (borgerlotteri), men i dette borgerpanelet ble det for første gang eksperimentert med å sende ut invitasjonene via tekstmelding i stedet for brev. Det ble sendt ut 3000 tekstmeldinger til tilfeldig uttrukkede beboere på Grefsen og Kjelsås, og av disse svarte 267 personer ja til å delta. Blant de som takket ja, ble det trukket ut 20 personer ut fra alder, kjønn og geografi.
+
+Prosessen i borgerpanelet var delt inn i fire møter, som hadde hvert sitt fokus: innsikt, refleksjon, vurdering og anbefaling. Dermed kan vi si at den samme formelen som borgerpaneler vanligvis har, ble fulgt også her.
+
+Dette var et rent digitalt borgerpanel. Det var en rekke spørsmål knyttet til dette. Det viktigste spørsmålet var kanskje om man klarte å skape en god stemning og kultur for god deliberasjon? [@skar_borgerpanel_2021, pp. 16]. Som tidligere nevnt var en av utfordringene til Borgerkraft i Trondheim nettopp overgangen til et digitalt borgerpanel. Til sammenligning var planlagt fra starten av at dette borgerpanelet skulle være heldigitalt. En av styrkene i denne prosessen var at aktøren som designet og ledet arbeidet, SoCentral, hadde opparbeidet seg en god kompetanse på digitale møter og workshops før dette borgerpanelet kom i stand, og denne erfaringen ble definitivt innarbeidet i denne prosessen. SoCentral ringte til deltakerne en måned før borgerpanelet skulle starte, for å svare på eventuelle spørsmål deltakerne måtte ha, samt for å finne ut hvilken tilrettelegging som var nødvendig. Dette gjorde at de digitale utfordringene, som kan være ekskluderende, ble så godt som eliminert. Et annet element som bidro til dette, var en nøye planlagt kjøreplan, som rammet inn hele prosessen. Før hver samling ble deltakerne informert om hvor de var nå, og hva de skulle med dette møtet. Slik sett ble det enkelt for deltakerne å følge med på prosessen og å vite hvor man ville til slutt.
+
+Digital deliberasjon kan med andre ord forsterke enkelte ulikheter i samfunnet dersom man ikke aktivt motvirker disse trendene. Det gjelder å jobbe aktivt med tilrettelegging før møtene skal finne sted, ved å kontakte deltakerne og sammen teste ut plattformen som skal brukes. Før man begynner, må man også ha en nøye planlagt kjøreplan, siden digitale møter ofte oppleves som mer slitsomme. Under møtene må man ha personer tilgjengelig som kan gi teknisk hjelp, og man må ha testet ut de forskjellige funksjonene på forhånd. Man kan også stille seg spørsmålet om kanskje en hybridmodell (en kombinasjon av digital og fysisk) kan være et alternativ, for å få inn noen av de sosiale elementene som det er vanskelig å skape i en digital versjon.
+
+Spesielt viktig å merke seg er det at man gjorde mye arbeid i forkant med de som skulle presentere informasjon til borgerpanelet i kunnskaps- og læringsfasen. De la opp til korte presentasjoner med fokus på interaksjon mellom personen som holdt presentasjonen, og deltakerne i borgerpanelet. Interessant nok oppfordret man også i dette borgerpanelet deltakerne til å etterspørre mer informasjon dersom de følte at det var nødvendig. Medlemmene etterspurte da mer informasjon rundt de største utfordringene med overvann i deres område og kommunens plan for dette arbeidet [@skar_borgerpanel_2021]. Derfor ble det gitt en ny presentasjon med dette temaet på neste samling. Slik sett er dette et eksempel på at man ga deltakerne i borgerpanelet en mer aktiv rolle også i designet av selve prosessen. Ved modeller som har en prosess som går over flere samlinger, som borgerjurymodellen, er dette en praksis som burde ha være mer bakt inn i designet.
+
+I selve prosessen ble det bestemt regler for bruken av møteledere og fasilitatorer. Møtelederen hadde ansvaret for alt som skjedde i plenum, mens fasilitatorene ledet gruppene i deres diskusjoner. Det var en fasilitator per gruppe på 5–6 deltakere. Man laget også kjøreregler for gruppefasilitatorene for å sørge for at prosessen opprettholdt standardene for god deliberasjon [@skar_borgerpanel_2021]. Man hadde også en egen person som var teknisk ansvarlig som kunne ta for seg eventuelle tekniske problemer.
+
+Borgerpanelet på Grefsen og Kjelsås var en svært godt planlagt prosess med klare rolleforståelser og klare mål for hver samling. Det er imidlertid verdt å merke seg at dette var en ekstremt krevende prosess, og de personene som var med i prosessen, jobbet intenst med prosessdesign og fasiliteringene for å levere den prosessen de gjorde. De hadde god kunnskap om fasilitering fra før og hadde også tilegnet seg mer kunnskap fra kontakter internasjonalt om hvordan man designet nettopp deliberative prosesser.
+
 #### Røros – Permanent borgerpanel
+
+Borgerpanelet på Røros er per dags dato ikke blitt gjennomført enda. Dette borgerpanelet er imidlertid interessant av flere grunner, først og fremst fordi dette ikke er en stor bykommune, og fordi det er politisk vedtatt å etablere et permanent borgerpanel i kommunen.
+
+I Røros begynte man i 2019 å se på nye måter å involvere innbyggerne på. Det var et ønske om å få flere inn i de politiske prosessene og å ha mer dialog med borgerne. Et av elementene som det ble pekt på, var det å skape et borgerpanel. I mai 2020 ble det vedtatt i kommunestyret å etablere et permanent borgerpanel.
 
 ```{r, out.width = "80%", fig.align = "center", fig.cap= "Mulig struktur for borgerpaneler på Røros"}
 knitr::include_graphics("figs/røros.png")
 ```
 
+Borgerpanelet skal bestå av 16–30 personer, og deltakerne skal sitte i to år om gangen. Deltakerne blir plukket ut gjennom en loddtrekning, og man skal sørge for at disse personene speiler Røros så godt det lar seg gjøre. I startfasen skal dette borgerpanelet få to saker i året som de skal deliberere over – én sak på våren og én på høsten. Sakene blir gitt til borgerpanelet av kommunestyret/formannskapet. Etter deliberasjonsprosessen skal de komme med sin rapport, som sendes tilbake til kommunestyret for behandling. I den forstand har den likheter med modellen som ble designet for mulig institusjonalisering i Trondheim kommune [-@trondheim_kommune_den_2019].
+
+En mulig struktur i Røros er at hvert år, under budsjettkonferansen fra september til november, blir det bestemt problemstillinger og dilemmaer som de to borgerpanelene skal ta for seg neste år. Det første borgerpanelet blir da startet opp i januar hvert år, mens det andre starter i august hvert år. Prosessene til de to borgerpanelene kan ses i figuren nedenfor.
+
+Borgerpanelet i Røros skal ha en rådgivende rolle. Det er også bestemt at den digitale plattformen Decidim skal brukes aktivt. Den kan både brukes under selve borgerpanelet for å gjennomføre digitale møter og gjøre det mulig for resten av befolkningen å komme med innspill om hva de tenker vil være viktige spørsmål og dilemmaer. Slik sett kan vi se at borgerpanelet på Røros vil bli koblet opp mot andre medvirkningsprosesser, slik man gjorde med blant annet Trondheimspanelet.
+
+Røros er en forholdsvis liten kommune, og derfor er det noen utfordringer knyttet til å etablere et fast borgerpanel. Et av elementene er fasiliteringskompetanse og oppbygging av en kultur rundt borgerpanelet. Som vi ser av de tidligere nevnte eksemplene ble fasiliteringskompetansen, og hvor man hentet den fra, løst på forskjellige måter i de forskjellige borgerpanelene. Et fellestrekk er imidlertid at kommunene prøvde, så langt det var mulig, å spille på de ressursene de hadde selv, og la til kompetanse fra eksterne aktører der det var mulig og nødvendig. Når kompetanseheving var nødvendig, ble det arrangert kurs for fasilitering. For en kommune som Røros vil det være sentralt at man får mulighet og tilgang til kompetanseheving for å gjennomføre gode deliberasjonsprosesser.
+
+Internasjonalt har man begynt å se etablering av mer permanente borgerpaneler, eller en institusjonalisering, som OECD kaller det. Om dette er veien å gå når det gjelder borgerpaneler, er for tidlig å si. De fleste borgerpaneleksemplene vi har sett, har vært etablert ad hoc om enkeltsaker. Røros vil derfor være et interessant eksempel på hvordan et slikt permanent borgerpanel kan se ut, og hvordan det vil fungere.
+
 # Om forfatterne
 
-Arild Ohren er PhD kandidat ved NTNU. 
+**Sveinung Arnesen** er statsviter med PhD fra Institutt for sammenlignende politikk ved Universitetet i Bergen. Han er fagleder for Demokrati og innovasjon ved forskningsinstituttet NORCE og førsteamanuensis ved Institutt for politikk og forvaltning, UiB. Arnesen er nasjonal koordinator for Den europeiske samfunnsundersøkelsen (ESS) og forsker på tematikk knyttet til valg, opinion og demokrati.
+
+**Henrik Litleré Bentsen** er statsviter med doktorgrad fra Institutt for sammenlignende politikk ved Universitetet i Bergen. I dag arbeider han som forsker ved NORCE Helse og Samfunn. Bentsen arbeider med ulike temaer innenfor dommeradferd og offentlig opinion om domstoler, beslutningsprosedyrer og demokratisk legitimitet, virkningen av byborgerpaneler på offentlige oppfatninger om styring og demokrati, offentlige oppfatninger om hydrogen og energiomstilling samt deltakelse i arbeidslivet.
+
+**Pål Bjørseth** jobber som rådgiver på byrådsleders avdeling i Bergen kommune, og han jobber spesielt med spørsmål knyttet til parlamentarisme, lokaldemokratiutvikling, samfunnsplanlegging og samordning på FoU-området.
+
+**Anne Lise Fimreite** er utdannet statsviter og er professor ved Institutt for politikk og forvaltning, UiB. I sin forskning har Fimreite konsentrert seg om offentlig forvaltning og offentlig politikk. Hun er særlig opptatt av statlig styring og kommunenes handlingsrom, kommunenes økonomiske situasjon og offentlig reformvirksomhet, samt forholdet mellom forvaltningsnivåene. Hun har blant annet ledet den forskningsbaserte evalueringen av NAV-reformen (2007–2012) og prosjektet «Styringssystem i storby» (2002–2003), og i 2016–2017 ledet hun det byrådsoppnevnte lokaldemokratiutvalget i Bergen kommune som la frem rapporten «Byen og nærdemokratiet».
+
+**Arild Ohren** er PhD-kandidat ved NTNU. 
 Hans forskning fokuserer på borgerpaneler og hvilken type form for politisk representasjon de representerer. 
 Arild er medlem av OECDs «Innovative Citizen Participation Network», samt også medlem av forskningsklyngen om demokratisk representasjon i Participedia. 
 
-Jacob Aars er professor ved Institutt for politikk og forvaltning, Universitetet i Bergen. 
+**Jon Kåre Skiple** er utdannet statsviter med doktorgrad fra Institutt for sammenlignende politikk ved Universitetet i Bergen. Hans forskningsinteresser er knyttet til domstoler, politisk deltakelse og offentlig opinion.
+
+**Jacob Aars** er professor ved Institutt for politikk og forvaltning, Universitetet i Bergen. 
 Aars har arbeidet med lokalstyre og lokalt demokrati. 
 Han har blant annet publisert flere artikler om kommuners tiltak for å styrke deltakelse i lokalpolitikken. 
 Han har også bistått mange kommuner i deres arbeid med å utvikle og designe borgerpaneler i Norge. 
