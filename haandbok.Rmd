@@ -55,14 +55,16 @@ if(!require("qrcode")){install.packages("qrcode");  library(qrcode)}
 
 Prosjekttittel: Demokratisk innovasjon i praksis -- Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser      
 Institusjon: NORCE Helse og samfunn  
-Oppdragsgiver(e): Norges forskningsråd (prosjektnummer 295892)  
+Bidragsgiver(e): Norges forskningsråd (prosjektnummer 295892)  
 Gradering: Åpen   
 Rapportnr.: 38-2022    
 ISBN: 978-82-8408-254-7  
 Antall sider: 85   
 Publiseringsmnd.: November, 2022  
 Denne versjonen:  02. november, 2022  
-Url: https://hdl.handle.net/11250/3028610
+Url vitenarkiv: https://hdl.handle.net/11250/3028610  
+GitHub: https://github.com/SveinungA/borgerpanel
+
 ```{r, qrcode, include=FALSE, eval=FALSE}
 set.seed(2022)
 qr <- qr_code(" https://hdl.handle.net/11250/3028610")
@@ -79,13 +81,10 @@ dev.off()
 > Sveinung Arnesen og Anne Lise Fimreite
 
 
-I en tid hvor demokratiet settes på prøve også i etablerte vestlige demokratier, er viktigheten av å utvikle demokratiske prosesser kanskje viktigere enn noensinne [@dahlberg2015democratic]. Internasjonalt ser vi lav, og ofte synkende, tillit til grunnleggende demokratiske institusjoner som politiske partier og regjeringer [@dalton2004democratic]. Samtidig eksisterer det store forskjeller mellom innbyggerne med tanke på hvem som involverer seg i politikk. Denne politiske ulikheten sammenfaller ofte med andre typer ulikhet i samfunnet, som økonomi, helse og utdanning. Den politiske ulikheten gir seg utslag i blant annet lavere valgdeltakelse og engasjement i politiske partier – både nasjonalt og lokalt.
+I en tid hvor demokratiet settes på prøve også i etablerte vestlige demokratier, er viktigheten av å utvikle demokratiske prosesser kanskje viktigere enn noensinne [@dahlberg2015democratic]. Internasjonalt ser vi lav, og ofte synkende, tillit til grunnleggende demokratiske institusjoner som politiske partier og regjeringer [@dalton2004democratic]. Noen oppfatter borgerpaneler som del av redningen for å sikre oppslutningen om demokratisk styresett. Virkeligheten er nok mer komplisert, men likevel, når det blir gjort riktig kan borgerpaneler føre til både bedre og mer legitime beslutninger.
 
-Norge er generelt et land med høy tillit og høy politisk deltakelse, men også i vårt land finnes det tydelige tegn på lignende mønstre. En lokaldemokratirapport fra Bergen som analyserte valgdeltakelsen til alle kommunens innbyggere med stemmerett i 2015-valget, fant store forskjeller basert på sosiale bakgrunnsvariabler som alder, utdanning og kjønn [@fimreitebyen]: Valgdeltakelsen blant unge menn uten høyere utdannelse var ned mot 30 prosent, som er halvparten så lav som den samlede valgdeltakelsen dette året. Også geografisk var det store forskjeller. I Vadmyra var valgdeltakelsen på 51 prosent, mens på Bønes var den på 72 prosent. De samme forskjellene så vi også i 2019-valget, men da var valgdeltakelsen generelt noe høyere. Valgkretsen med høyest deltakelse var den samme i begge valgene: Bønes med 77 prosent. Ved 2019-valget var det imidlertid valgkretsen Ny-Kronborg som hadde lavest deltakelse, med 57 prosent.
-
-Det er ofte ressurssterke grupper i samfunnet som benytter seg av mulighetene til å påvirke politiske prosesser. Dette er et gode. Utfordringen ligger i å øke engasjementet også blant innbyggerne som vanligvis ikke er politisk aktive. Det er viktig å sikre politisk deltakelse blant de mindre engasjerte for å sikre at alle stemmer blir hørt. Hvis undergrupper i samfunnet føler seg avskåret fra det politiske systemet, utgjør det ikke bare et problem for hver enkelt, men også for samfunnet som helhet. Hvis politisk fremmedgjorte innbyggere opplever at systemet ikke er laget for dem, kan de ende opp med å søke alternative, ikke-demokratiske løsninger for å få gjennomslag for sine interesser. Derfor er det viktig å øke deltakelsen blant alle innbyggere, hvor vanskelig det enn er. Dette er ikke noe som kan gjøres i en håndvending, men noe som krever kontinuerlig oppmerksomhet.
-
-Når borgerpaneler brukes riktig, har de potensial til å lede til bedre beslutninger. Videre kan de styrke innbyggernes oppfatning om at den demokratiske prosessen er rettferdig og tar hensyn til innbyggernes synspunkter, som i sin tur regnes som en avgjørende bestanddel av et robust og legitimt demokrati [@marien2019fair].
+Målet med borgerpaneler er å legge til rette for at innbyggere fra alle samfunnslag kommer sammen og diskuterer politikk med hverandre. 
+Denne håndboken gir råd om hvordan man best kan få til dette i praksis.
 
 Med denne håndboken ønsker vi å øke oppmerksomheten om borgerpaneler og være til inspirasjon for lesere som vurderer å gjennomføre et borgerpanel selv. Den er også sluttproduktet til forskningsprosjektet «Demokratisk innovasjon i praksis: Forskning på medvirkning og legitimitet i kommunale beslutningsprosesser (DEMOVATE)». Prosjektet har blitt ledet av Bergen kommune, mens forskningsinstituttet NORCE har hatt den faglige ledelsen. Håndboken baserer seg på erfaringer gjort i DEMOVATE og i forskningsaktiviteter knyttet til demokratisk innovasjon ved Universitetet i Bergen, Stanford University og NORCE. Håndbokens målgruppe er alle som er interessert i det norske demokratiet. Vi håper den kan komme til nytte for politikere, byråkrater, personer som engasjerer seg i sivilsamfunnet, og alle andre som er nysgjerrige på borgerpaneler, og som kanskje går med tanker om å sette i stand et selv.
 
@@ -114,11 +113,11 @@ I dette kapitlet skal vi først gjøre rede for begrepet «demokratisk innovasjo
 
 Når vi snakker om deliberative meningsmålinger, borgerpaneler og så videre, så refererer vi gjerne til demokratiske innovasjoner. Alt dette kan være veldig forvirrende. Så la oss bare kort og godt rydde litt opp i disse begrepene. 
 
-```{r, out.width = "80%", fig.align = "center", fig.cap= "Familier av demokratiske innovasjoner"}
-knitr::include_graphics("figs/familier.png")
+```{r, out.width = "100%", fig.align = "center", fig.cap= "Familier av demokratiske innovasjoner"}
+knitr::include_graphics("figs/familier.pdf")
 ```
 
-Det første begrepet vi har her, er «demokratiske innovasjoner». Dette er da et vanlig begrep som ikke bare brukes innenfor fagfeltet, men også i praksis. Begrepet kommer fra Graham Smiths bok fra 2009, kalt Democratic Innovations. For å gjøre det klart da hva vi snakker om, bruker man Graham Smiths definisjon på hva en demokratisk innovasjon faktisk er. Han skriver at demokratiske innovasjoner er institusjoner som er spesielt designet for å øke og/eller forbedre deltakelse i politiske prosesser [@smith_democratic_2009]. Dette har blitt utdypet av Elstub og Escobar. De skriver at demokratiske innovasjoner er prosesser eller institusjoner som er utviklet for å omforme og utdype innbyggernes rolle i styringsprosesser, ved å øke mulighetene for deltakelse, deliberasjon og innflytelse [@escobar_defining_2019]. I bunn og grunn er demokratisk innovasjon en paraplybetegnelse for mange forskjellige metoder og prosesser, som alle har det til felles at de prøver å lage nye kanaler der folk kan påvirke beslutningsprosesser. I all hovedsak vil disse teknikkene være myndighetsinitierte. Som man ser i figur 1, har man da mange forskjellige familier av demokratiske innovasjoner. Dette kan for eksempel være deltakende budsjettering, folkeavstemninger og innbyggerinitiativ, og så videre. Disse familiene har forskjellige fokus og forskjellige teoretiske utgangspunkter, og de er også designet for å løse forskjellige typer problemer. En av disse familiene er det vi kaller deliberative borgerpaneler. Heretter kaller vi dette borgerpaneler.
+Det første begrepet vi har her, er «demokratiske innovasjoner». Dette er da et vanlig begrep som ikke bare brukes innenfor fagfeltet, men også i praksis. Begrepet kommer fra Graham Smiths bok fra 2009, kalt *Democratic Innovations*. For å gjøre det klart da hva vi snakker om, bruker man Graham Smiths definisjon på hva en demokratisk innovasjon faktisk er. Han skriver at demokratiske innovasjoner er institusjoner som er spesielt designet for å øke og/eller forbedre deltakelse i politiske prosesser [@smith_democratic_2009]. Dette har blitt utdypet av Elstub og Escobar. De skriver at demokratiske innovasjoner er prosesser eller institusjoner som er utviklet for å omforme og utdype innbyggernes rolle i styringsprosesser, ved å øke mulighetene for deltakelse, deliberasjon og innflytelse [@escobar_defining_2019]. I bunn og grunn er demokratisk innovasjon en paraplybetegnelse for mange forskjellige metoder og prosesser, som alle har det til felles at de prøver å lage nye kanaler der folk kan påvirke beslutningsprosesser. I all hovedsak vil disse teknikkene være myndighetsinitierte. Som man ser i figur 1, har man da mange forskjellige familier av demokratiske innovasjoner. Dette kan for eksempel være deltakende budsjettering, folkeavstemninger og innbyggerinitiativ, og så videre. Disse familiene har forskjellige fokus og forskjellige teoretiske utgangspunkter, og de er også designet for å løse forskjellige typer problemer. En av disse familiene er det vi kaller deliberative borgerpaneler. Heretter kaller vi dette borgerpaneler.
 
 
 ### Nærmere om borgerpaneler 
@@ -163,7 +162,7 @@ I tillegg til målet om å trekke et mer representativt utvalg av innbyggere inn
 
 ### Borgerpanelenes opprinnelse og utvikling 
 
-Den moderne historien om forsøk med borgerpaneler i vesten startet på 1970-tallet i USA og Tyskland. I USA utviklet Ned Crosby det han kalte «Citizens’ Jury»-modellen (borgerjury), og i Tyskland utviklet Peter Dienel det han kalte «Planning Cell»-modellen (planleggingscelle/-nettverk). Fra disse tidlige eksperimentene kan vi spore noen andre viktige utviklinger: I 1985 utviklet det danske teknologirådet «Consensus Conference»-modellen (lekfolkskonferanse), på 1990-tallet utviklet James Fishkins «Deliberative Poll»-modellen (deliberativ høring/meningsmåling), i 2003–2004 ble Citizens Assembly (borgersamling) i British Columbia etablert, i 2008 ble Oregon Citizens Initiative etablert, og kanskje aller mest kjent: i 2016 ble borgersamlingen i Irland etablert. Disse kan ses på tidslinjen nedenfor.
+Den moderne historien om forsøk med borgerpaneler i vesten startet på 1970-tallet i USA og Tyskland. I USA utviklet Ned Crosby det han kalte «Citizens’ Jury»-modellen (borgerjury), og i Tyskland utviklet Peter Dienel det han kalte «Planning Cell»-modellen (planleggingscelle/-nettverk). Fra disse tidlige eksperimentene kan vi spore noen andre viktige utviklinger: I 1985 utviklet det danske teknologirådet «Consensus Conference»-modellen (lekfolkskonferanse), på 1990-tallet utviklet James Fishkins «Deliberative Poll»-modellen (deliberativ høring/meningsmåling), i 2003–2004 ble Citizens Assembly (borgersamling) i British Columbia etablert, i 2008 ble Oregon Citizens Initiative etablert, og kanskje aller mest kjent: i 2016 ble borgersamlingen i Irland etablert. Disse kan ses på tidslinjen nedenfor, basert på Gastil og Knobloch [-@gastil_hope_2020, s. 13].
 
 ```{r, out.width = "80%", fig.align = "center", fig.cap= "Tidslinje over viktige borgerpanel"}
 knitr::include_graphics("figs/tidslinje.png")
@@ -211,31 +210,21 @@ Det første elementet for et borgerpanel som vi tar for oss, er den deliberative
 La oss ta en forklaring fra John Gastil. Han skriver at når folk delibererer, så undersøker de et problem nøye og kommer frem til en velbegrunnet løsning etter en periode med inkluderende og respektfull vurdering av ulike synspunkter [@gastil_political_2008, pp. 8]. Her er det en del ting som er pakket inn, så la oss gå gjennom denne prosessen. For John Gastil involverer dette ni viktige punkter i deliberasjon, som kan deles opp i en analytisk del og en sosial del. Disse er oppsummert i tabell \@ref(tab:tbl-kjerneelementer).
 
 ```{r tbl-kjerneelementer}
-tbl <- tibble(Element = c('Lag et solid kunnskaps- og læringsgrunnlag',	
-                'Diskutér personlig og følelsesmessig erfaringer, samt kjente fakta',
-                'Prioritér verdiene som står på spill', 
-                'Reflektér over dine egne verdier samt også verdiene til de andre', 
-                'Identifisér et bredt spekter av løsninger',	
-                'Brainstorm på en rekke måter å løse problemet', 
-                'Vei fordeler, ulemper og avveininger',	
-                'Se begrensningene i løsningene som du foretrekker, og fordelene i andres løsninger', 
-                'Ta den best mulige avgjørelsen',
-                'Oppdatér din egen mening i lys av det du har lært. Det er ikke nødvendig å ta en felles beslutning',
-                'Sørg for at alle får snakke', 
-                'Bytt på i samtalen eller ta andre handlinger for å sikre en balansert diskusjon', 
-                'Sørg for at alle forstår',	
-                'Snakk tydelig til hverandre og be om avklaring når du er forvirret',
-                'Vurder andres ideer og erfaringer', 
-                'Lytt nøye til hva andre sier, spesielt når du er uenig', 
-                'Respektér andre deltakere',
-                'Anta at andre deltakere er ærlige og at de mener vel. Anerkjenn deres unike livserfaringer og perspektiver')
+tbl <- tibble(Element = c('Lag et solid kunnskaps- og læringsgrunnlag: Diskutér personlig og følelsesmessig erfaringer, samt kjente fakta',
+                'Prioritér verdiene som står på spill: Reflektér over dine egne verdier samt også verdiene til de andre', 
+                'Identifisér et bredt spekter av løsninger: Brainstorm på en rekke måter å løse problemet', 
+                'Vei fordeler, ulemper og avveininger: Se begrensningene i løsningene som du foretrekker, og fordelene i andres løsninger',                 'Ta den best mulige avgjørelsen: Oppdatér din egen mening i lys av det du har lært. Det er ikke nødvendig å ta en felles beslutning',
+                'Sørg for at alle får snakke: Bytt på i samtalen eller ta andre handlinger for å sikre en balansert diskusjon', 
+                'Sørg for at alle forstår: Snakk tydelig til hverandre og be om avklaring når du er forvirret',
+                'Vurder andres ideer og erfaringer: Lytt nøye til hva andre sier, spesielt når du er uenig', 
+                'Respektér andre deltakere: Anta at andre deltakere er ærlige og at de mener vel. Anerkjenn deres unike livserfaringer og perspektiver')
 )
 
 tbl %>% kableExtra::kbl(caption = 'Kjerneelementer i deliberasjon', booktabs = T, linesep = ' ') %>%  
   footnote(number = 'Basert på Gastil (2008).') %>% 
   kable_styling(latex_options = c('striped', 'hold_position', 'scale_down')) %>% 
-  pack_rows("Analytisk",1,10) %>% 
-  pack_rows("Sosialt", 11, 18)
+  pack_rows("Analytisk",1,5) %>% 
+  pack_rows("Sosialt", 6, 9)
 
 ```
 
@@ -303,7 +292,7 @@ I en borgerjury er det fokus på at det skal lages et helhetlig dokument, i form
 
 Borgerjuryer har som sagt blitt brukt ofte, og de har dermed blitt brukt i mange sammenhenger og mange ulike saker. Ofte knyttes de også opp mot større prosesser og andre former for medvirkning. Et godt eksempel på hvordan slike borgerpaneler knyttes opp mot andre prosesser, er Oregon Citizens Initiative Review.
 
-I Norge er det per i dag blitt gjennomført 8 borgerjuryer, dog med litt ulike benevninger. Dette inkluderer en borgerjury om problemet med overvann, en knyttet til et områdeløft, en knyttet til samfunnsdelen av en kommuneplan, en knyttet til revisjon av en småhusplan og en med et medarbeiderpanel i en bedrift. Noen av disse vil bli diskutert nærmere i kapittel \@ref(sec:andre).
+I Norge er det per i dag blitt gjennomført 8 borgerjuryer, dog med litt ulike benevninger. Dette inkluderer en borgerjury om problemet med overvann, en knyttet til et områdeløft, en knyttet til samfunnsdelen av en kommuneplan, en knyttet til revisjon av en småhusplan og en med et medarbeiderpanel i en bedrift.
 
 #### Planleggingscelle
 
@@ -381,7 +370,7 @@ Utvalget, som utførte sitt arbeid våren 2017, var organisatorisk uavhengig av 
 
 Et panel basert på tilfeldig uttrekk blant kommunens innbyggere var ett av utvalgets forslag for å øke lokal deltakelse og medvirkning. Forslaget vakte interesse i byens politiske miljø, og i september 2017 fattet bystyret vedtak om et forsøk med innbyggerpanel. Bystyret bestemte samtidig at panelet skulle gi konkrete innspill i saken om innføring av politiske bydelsstyrer i kommunen fra 2020 (byrådssak 245/17 og bystyresak 231/17). Bergen kommune har siden 1970-årene hatt ulike former for bydelsorganisering – både politisk og administrativt. Fra 2011 ble ordningen med politiske bydelsutvalg avskaffet. I samarbeidsplattformen til partiene som utgjorde byrådet i perioden 2015–2019, sto det imidlertid at gjeninnføring av slike utvalg skulle vurderes. Derfor var bydeler også et viktig tema i Nærdemokratiutvalgets arbeid [@fimreitebyen].
 
-Byborgerpanelet ble organisert som et samarbeidsprosjekt mellom Bergen kommune, Universitetet i Bergen og NORCE og ble gjennomført i slutten av april 2018. Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) ble fire dimensjoner ved bydelsorganisering presentert for panelet. Det gjaldt hvor mange bydeler skal kommunen ha; hvilke oppgaver bydelene skal ta seg av; i hvor stor grad skal bydelene selv bestemme hva pengene de får overført skal brukes til; hvordan representantene til bydelsstyrene skal rekrutteres.
+Byborgerpanelet ble organisert som et samarbeidsprosjekt mellom Bergen kommune, Universitetet i Bergen og NORCE og ble gjennomført i slutten av april 2018. Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) ble fire dimensjoner ved bydelsorganisering presentert for panelet. Det gjaldt hvor mange bydeler skal kommunen ha; hvilke oppgaver bydelene skal ta seg av; i hvor stor grad skal bydelene selv bestemme hva pengene de får overført skal brukes til; hvordan representantene til bydelsstyrene skal rekrutteres. Et notat ble oversendt byrådet med resultatene fra Byborgerpanelet.
 
 
 ### Deliberativ meningsmåling i Bergen 2021 
@@ -445,9 +434,10 @@ Kvaliteten kan knyttes til panelenes legitimitet -– både overfor de som delta
 Byborgerpanelet 2018 dreide seg om en sakstype som det gjerne *ikke* anbefales å ta inn i et borgerpanel, nemlig organisatoriske forhold. Panelet tok opp gjeninnføring av bydeler i kommunens styringsstruktur. Saken hadde ikke hatt noe særlig offentlig oppmerksomhet, og det var derfor ikke gitt at de som deltok i panelet, hadde noen form for kjennskap til den. Utenom en kort omtale om at det var denne saken som skulle tas opp, ble det ikke gitt noe informasjon om sakskomplekset i invitasjonsbrevet. All informasjon ble gitt ved innledningen til selve panelet. Informasjonen var utarbeidet i samarbeid mellom representanter for Bergen kommune og forskerne. Det ble utformet et manus som ble lest opp til deltakerne, der fire dimensjoner ved bydeler ble presentert. 
 
 Med utgangspunkt i byrådets forslag til videre arbeid med reformen (Byrådssak 245/17) skulle deltakerne ta stilling til 
-- Hvor mange bydeler skal kommunen ha?  
-- Hvilke oppgaver skal bydelene ta seg av?  
-- I hvor stor grad skal bydelene selv bestemme hva pengene de får overført, skal brukes til?  
+
+- Hvor mange bydeler skal kommunen ha?   
+- Hvilke oppgaver skal bydelene ta seg av?   
+- I hvor stor grad skal bydelene selv bestemme hva pengene de får overført, skal brukes til?   
 - Hvordan skal representantene til bydelsstyrene rekrutteres? 
 
 I tråd med erfaringene fra paneler i andre land som har behandlet organisatoriske og strukturelle forhold, var redegjørelsen for dimensjonene gjort nokså konkret. Det ble også understreket overfor deltakerne at situasjonen de skulle forholde seg til, var at bydelsstyrer skulle gjeninnføres, og at det de skulle ta stilling til, var hvordan de da ønsket at dette skulle organiseres. Panelets tema var ikke for eller imot bydeler, men organiseringen av bydeler i kommunens styringsstruktur.
@@ -543,15 +533,15 @@ Kostnadsbesparelsene ved å arrangere den deliberative meningsmålingen i Norge 
 
 Deltakelsen på de digitale arrangementene var vesentlig lavere enn på det fysiske. Av de inviterte til det fysiske arrangementet var det nærmere 20 prosent som fullførte deltakelsen, mens det for de digitale arrangementene i 2021 og 2022 var henholdsvis 5 prosent og 1 prosent som fullførte. Når det er sagt, er det ikke mulig å slå fast uten videre at det var det digitale formatet som trakk ned deltakelsen på de digitale arrangementene. Til det var det for mange andre ting som varierte. Det fysiske arrangementet ga også deltakerne dobbelt så høy økonomisk kompensasjon (2000 kroner vs. 1000 kroner), og det varte også vesentlig kortere (2 timer vs. henholdsvis 6 og 5 timer). Det trengs mer forskning – helst randomiserte kontrollerte studier – før vi kan isolere effekten av fysisk vs. digitalt format på deltakelsen.
 
-Personvernhensyn skulle vise seg å bli kimen til mange utfordringer for de digitale arrangementene. I 2020 kom den såkalte Schrems II-dommen i EU, som la sterke begrensninger på overføring av personopplysninger ut av EU/EØS-området. [^ Omtalen av personvernutfordringene er hentet fra rapporten «Deliberativ meningsmåling i Bergen» @arnesendelib2021.] Den deliberative meningsmålingen i Bergen 2021 var opprinnelig ment å gjennomføres fysisk sommeren 2020, men ble på grunn av covid 19-pandemien utsatt ett år. I løpet av senhøsten 2020 ble det klart at denne samlingen ikke kunne planlegges som fysisk arrangement i 2021 heller. Arbeidet med alternative måter å avholde innbyggerpanel på ble intensivert. Nettbaserte løsninger ble her – som på så mange andre felt – det åpenbare alternativet.
+Personvernhensyn skulle vise seg å bli kimen til mange utfordringer for de digitale arrangementene. I 2020 kom den såkalte Schrems II-dommen i EU, som la sterke begrensninger på overføring av personopplysninger ut av EU/EØS-området. Omtalen av personvernutfordringene er hentet fra rapporten «Deliberativ meningsmåling i Bergen» [@arnesendelib2021]. Den deliberative meningsmålingen i Bergen 2021 var opprinnelig ment å gjennomføres fysisk sommeren 2020, men ble på grunn av covid 19-pandemien utsatt ett år. I løpet av senhøsten 2020 ble det klart at denne samlingen ikke kunne planlegges som fysisk arrangement i 2021 heller. Arbeidet med alternative måter å avholde innbyggerpanel på ble intensivert. Nettbaserte løsninger ble her – som på så mange andre felt – det åpenbare alternativet.
 
 Våre samarbeidspartnere ved Stanford University i California –- som har merkevarepatent på deliberativ meningsmåling –- har utviklet en nettbasert løsning for en slik meningsmåling kalt Stanford Online Deliberation Platform (SODP). Plattformen ligner i sitt uttrykk på Zoom eller Microsoft Teams, men den har i tillegg mer skreddersydde funksjoner for gjennomføring av meningsmålingen. SODP var vårt førstevalg for å arrangere en nettbasert meningsmåling i regi av DEMOVATE-prosjektet i Bergen.
 
-Forskningsinstituttet NORCE sitt personvernombud vurderte at SODP var en løsning som kunne velges, gitt de spesielle forholdene pandemien gav, men Bergen kommunens personvernombud vurderte dette annerledes. Vurderingen var basert på at løsningen ikke ivaretok deltakernes personvern godt nok, blant annet fordi dataene som ble samlet inn (innloggingsdata, innholdsdata og tekniske data), ville ha blitt overført til og oppbevart på en server i USA. Dette ble vurdert å være i strid med EUs personvernforordning (GDPR).
+Forskningsinstituttet NORCE sitt personvernombud vurderte at SODP var en løsning som kunne velges, gitt de spesielle forholdene pandemien gav, men Bergen kommunes personvernombud vurderte dette annerledes. Vurderingen var basert på at løsningen ikke ivaretok deltakernes personvern godt nok, blant annet fordi dataene som ble samlet inn (innloggingsdata, innholdsdata og tekniske data), ville ha blitt overført til og oppbevart på en server i USA. Dette ble vurdert å være i strid med EUs personvernforordning (GDPR).
 
 SODP-løsningen måtte dermed forkastes i denne omgang, og valget falt på å gjennomføre arrangementet på nettet ved bruk av videokonferanseplattformen Zoom. Basert på blant annet nærmere ett års erfaring med undervisning på Zoom anbefalte personvernombudet hos NORCE denne løsningen som datamessig sikker. Oppsettet av meningsmålingen via Zoom-plattformen og håndteringen av de innsamlede dataene i ettertid ble teknisk og sikkerhetsmessig håndtert av NORCE sin IT-avdeling. Dataene er lagret på sikre servere ved hhv. UiB (SAFE) og UiO (TSD). IT-avdelingen sto også for den tekniske støtten i forbindelse med gjennomføringen av panelet 12. juni 2021.
 
-Beslutning om å velge denne løsningen ble tatt relativt sent i prosessen, gitt at arrangementet var satt til juni 2021. For å lette ansvarsstrukturen knyttet til behandling av personopplysninger overtok NORCE også de delene av arbeidet med å rekruttere deltakere som Bergen kommune var tiltenkt å gjennomføre.
+Beslutningen om å velge denne løsningen ble tatt sent i prosessen, og forsinket arrangementet med to måneder. For å lette ansvarsstrukturen knyttet til behandling av personopplysninger og sikre framdrift overtok NORCE også de delene av arbeidet med å rekruttere deltakere som Bergen kommune var tiltenkt å gjennomføre.
 
 Den deliberative meningsmålingen i Norge 2022 året etter var et rent forskningsprosjekt, og ansvarsstrukturen for behandling av personopplysninger var dermed enklere å forholde seg til. Etter en personvernkonsekvensutredning gjennomført av Sikt – kunnskapssektorens tjenesteleverandør – kunne vi som de første i Europa benytte oss av SODP-løsningen.
 
@@ -577,6 +567,11 @@ I dette kapitlet beskriver vi de valgene man står ovenfor som arrangør av borg
 ### Viktige steg og valg i rekrutteringsprosessen
 
 Arbeidet med å rekruttere deltakere til borgerpaneler kan brytes opp i en stegvis prosess. For hvert enkelt steg står man ovenfor valg og avveininger som kan ha viktige konsekvenser ikke bare for idealene om demokratisk likhet og representativitet, men også for den praktiske gjennomføringen av borgerpanelet.
+
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Viktige steg og valg i rekrutteringsprosessen"}
+knitr::include_graphics("figs/rekruttering-steg.pdf")
+```
+
 
 #### Definere populasjonen
 
@@ -681,6 +676,10 @@ Vårt mål var å rekruttere et tilstrekkelig antall personer til både borgerpa
 
 For å øke insentivet for å delta hadde vi på forhånd bestemt at hver enkelt deltaker i borgerpanelet skulle motta en økonomisk kompensasjon på 500 kroner, og at de var med i trekningen av en pengepremie på 10 000 kroner. For å gi et økonomisk insentiv til deltakelse også i kontrollgruppen var alle deltakere (både i borgerpanelet og kontrollgruppen) også med i trekningen av en pengepremie på 5000 kroner. Vi utformet også invitasjonsbrevet med tanke på å øke sannsynligheten for deltakelse, blant annet ved å poengtere at deltakelse i borgerpanelet gir mulighet til å gi politikerne innspill i viktige lokalpolitiske spørsmål. Et utsnitt av første del av invitasjonsbrevet er gjengitt i tekstboksen nedenfor.
 
+```{r, out.width = "80%", fig.align = "center", fig.cap= "Invitasjonsbrev"}
+knitr::include_graphics("figs/invitasjonsbrev.png")
+```
+
 Tilfeldig uttrekk var den eneste aktuelle rekrutteringsformen, særlig fordi vi i tillegg til å arrangere et borgerpanel skulle forske på hvem som deltar, og hvem som ikke deltar i borgerpaneler. Vi søkte Skatteetaten om å få gjøre et tilfeldig uttrekk av innbyggere med bostedsadresse i Bergen fra Folkeregisteret og betalte den eksterne tilbyderen Tietoevry for å gjøre uttrekket og oversende listene til oss. Deretter sendte vi ut individuelle invitasjoner til personene i uttrekket i mai 2021. Ett brev inviterte kun til deltakelse i spørreundersøkelsen (kontrollgruppen), mens det andre inviterte i tillegg til å være med på den deliberative meningsmålingen i juni.
 
 Vi rekrutterte deltakere til et nettbasert borgerpanel midt i koronapandemien. Derfor var vi svært usikre på hvilken svarprosent vi kunne forvente. Byborgerpanelet 2018 hadde en deltakelse på 20 prosent, men i hvilken grad dette tallet var dekkende for deltakelsesvilligheten i populasjonen vi nå skulle rekruttere fra, var uklart. Dessuten var det uklart i hvilken grad svarprosenten ville variere mellom de to invitasjonene. Vi antok at svarprosenten til borgerpanelet ville være lavere enn til kontrollgruppen, men var usikre på hvor mye. Vi begynte derfor med et uttrekk på 2500 personer. Med en svarprosent på 16 prosent for begge invitasjonene ville vi da oppnå 200 per gruppe. Denne svarprosenten var ikke urimelig høy gitt forhåndskunnskapen vår.
@@ -691,7 +690,7 @@ Disse tiltakene økte rekrutteringen, selv om det ikke er klart i hvilken grad h
 
 Vi har ikke analysert direkte sammenlignbare tall for hele populasjonen og kan derfor ikke med sikkerhet bekrefte nøyaktig hvor representativ gruppen er med tanke på deskriptiv representasjon. Når det er sagt, stemmer profilen til gruppen tilsynelatende godt overens med innbyggerne i Bergen med tanke på kjønnsfordeling, statsborgerskap og alder. Vi noterer oss at det er god deltakelse blant de yngre, en gruppe som ellers har tendens til å være underrepresentert på kommunevalg. Dette kan skyldes at yngre er mer komfortable med digital gjennomføring. Pandemien har økt bruken av nettbasert kommunikasjon og med dette senket terskelen for deltakelse i alle aldersgrupper, men vi tror fortsatt at det finnes en forskjell i teknologisk kunnskap som påvirker aldersgruppene ulikt.
 
-Av våre tre eksempler var det den deliberative meningsmålingen i Norge 2022 som hadde høyest deltakelse i form av antall, med 218 deltakere. På samme tid var det den med lavest prosentvis deltakelse, på 1 prosent. I likhet med i 2021 trakk vi ut personer tilfeldig fra Folkeregisteret, men i stedet for å sende fysiske brev overlot vi til et rekrutteringsbyrå å ringe opp mulige deltakere fra listen. 435 personer takket ja til å delta, og blant dem var det xx som faktisk gjennomførte. Dette antallet var ikke tilstrekkelig til å kunne gjøre de statistiske analysene vi hadde planlagt, og vi bestemte oss derfor for å gjøre en oppfølgingsrunde i september 2022. Denne gangen sendte vi digitale brev via Digipost. Dette viste seg å være en kostnadseffektiv løsning. Deltakelsesraten var omtrent den samme, og til slutt endte vi opp med totalt 218 personer som hadde fullført deltakelse i denne deliberative meningsmålingen. I skrivende stund er det søkt om å få koblet på data fra Statistisk sentralbyrå (SSB) for å gjøre en frafallsanalyse av hvilke sosiodemografiske kjennetegn deltakerne har, og om de skiller seg fra dem som ikke ønsket å delta.
+Av våre tre eksempler var det den deliberative meningsmålingen i Norge 2022 som hadde høyest deltakelse i form av antall, med 218 deltakere. På samme tid var det den med lavest prosentvis deltakelse, på 1 prosent. I likhet med i 2021 trakk vi ut personer tilfeldig fra Folkeregisteret, men i stedet for å sende fysiske brev overlot vi til et rekrutteringsbyrå å ringe opp mulige deltakere fra listen. 435 personer takket ja til å delta, men blant dem var det antallet faktisk gjennomførte ikke tilstrekkelig til å kunne gjøre de statistiske analysene vi hadde planlagt. Vi bestemte oss derfor for å gjøre en oppfølgingsrunde i september 2022. Denne gangen sendte vi digitale brev via Digipost. Dette viste seg å være en kostnadseffektiv løsning. Deltakelsesraten var omtrent den samme, og til slutt endte vi opp med totalt 218 personer som hadde fullført deltakelse i denne deliberative meningsmålingen. I skrivende stund er det søkt om å få koblet på data fra Statistisk sentralbyrå (SSB) for å gjøre en frafallsanalyse av hvilke sosiodemografiske kjennetegn deltakerne har, og om de skiller seg fra dem som ikke ønsket å delta.
 
 
 
@@ -893,6 +892,8 @@ Datamaterialet kan imidlertid fungere godt for å eksemplifisere holdninger som 
 
 I alle våre tre eksempler har vi benyttet oss av spørreundersøkelser både før og etter gruppediskusjonene. Vi brukte Qualtrics, som er en internasjonal leverandør av spørreundersøkelser. Qualtrics er bare ett av flere selskaper som leverer denne typen tjenester. Vi valgte dem fordi vi hadde kjennskap til dem fra før, og fordi de kunne levere enkelte spesialtjenester som vi hadde behov for i våre undersøkelser.
 
+Selve programmeringen av spørsmålene går fort, men å lage gode spørsmål som kunne fungere både i gruppediskusjoner og i en spørreundersøkelse er utfordrende. Det ble derfor satt av god tid til å utforme spørsmålene, og spesielt lang tid brukte vi i den deliberative meningsmålingen i Bergen 2021. Dette delvis fordi pandemien gjorde deler av tematikken mindre relevant, men også fordi det var flere aktører involvert i prosessen. Spørsmålene ble pilotert og kvalitetssikret for å unngå alt fra grammatiske feil til programmeringsfeil. Vår erfaring viser at det nytter å gå en ekstra runde med kvalitetssikring for å sikre at man ikke gjør feil som kan ødelegge den viktigste delen av datainnsamlingen.
+
 Det ble lagt opp til et såkalt pretest/posttest-kontrollgruppedesign. Det vil si at vi målte holdningene til deltakerne både før og etter arrangementet. På denne måten kan vi måle om deltakernes holdninger endrer seg etter å ha diskutert sakene og fått tid til å tenke seg om. For å utelate at eventuelle holdningsendringer kommer som en konsekvens av andre forhold som har skjedd i mellomtiden, hadde vi med en kontrollgruppe som også gjennomførte spørreundersøkelsene, men som ikke deltok på selve arrangementet. Et slikt oppsett er et av de mest vanlige eksperimentelle designene [@cook2002experimental].
 
 ```{r tbl-design}
@@ -975,7 +976,7 @@ Denne delen bringer inn perspektiver fra to andre vinkler enn de som er presente
 ![](figs/1x/Kommuneperspektivet.png)
 Dette kapitlet handler om perspektiver fra kommuneadministrasjonen om medvirkning generelt, og borgerpanel spesielt. Selv om Bergen kommune har parlamentarisk styreform, er de aller fleste betraktninger relevante for kommuneadministrasjonen uavhengig av kommunens styreform. Andre deler av kommunens helhetlige lokaldemokratiarbeid omtales også for å kunne gi en bredere kontekst for hvilken funksjon borgerpaneler kan ha i det helhetlige medvirkningsarbeidet.
 
-Dette kapitlet ble skrevet en måned før overleveringen av sluttrapporten i forskningsprosjektet. Etter at forskningsprosjektet er avsluttet, vil byrådet oversende sluttrapporten til bystyret med anbefaling om videre bruk og oppfølging. Følgelig er det ikke mulig å forskuttere disse anbefalingene ennå, og dette kapitlet vil derfor legge vekt på ulike perspektiver om bruk av borgerpaneler i kommunens medvirkningsapparat, og mer strukturelle grep som Bergen kommune har jobbet med for at medvirkningsverktøyene (f.eks. borgerpanel) skal fungere best mulig. Her er sentrale elementer en gjennomgående kunnskapsbasert tilnærming til medvirkning og at det bygges og deles kompetanse både på tvers av enheter i kommunen og mellom kommuner.
+Dette kapitlet ble skrevet en måned før overleveringen av sluttrapporten i forskningsprosjektet. Etter at forskningsprosjektet er avsluttet, vil byrådet oversende sluttrapporten til bystyret med anbefaling om videre bruk og oppfølging. Derfor er det ikke mulig å forskuttere disse anbefalingene ennå, og dette kapitlet vil derfor legge vekt på ulike perspektiver om bruk av borgerpaneler i kommunens medvirkningsapparat, og mer strukturelle grep som Bergen kommune har jobbet med for at medvirkningsverktøyene (f.eks. borgerpanel) skal fungere best mulig. Her er sentrale elementer en gjennomgående kunnskapsbasert tilnærming til medvirkning og at det bygges og deles kompetanse både på tvers av enheter i kommunen og mellom kommuner.
 
 Som en del av kommunens fire roller som demokratisk arena, tjenesteyter, samfunnsutvikler og myndighetsutøver har medvirkning en svært viktig funksjon i lokaldemokratiet. Dette gjenspeiles i kommunelovens formålsparagraf (§ 1-1), som sier at «Loven skal legge til rette for det lokale folkestyret og et sterkt og representativt lokaldemokrati med aktiv innbyggerdeltakelse».
 
@@ -994,15 +995,13 @@ Høsten 2015 var det byrådsskifte i Bergen, og i den politiske plattformen til 
 Gjennom sluttrapporten fra 2017 konkluder lokaldemokratiutvalget med at lokaldemokratiet i Bergen ikke er i krise, men det pekes på at det har visse utfordringer, bl.a. at det er visse skjevheter i valgdeltakelse mellom bydelene. Rapporten sier videre «men at det ikke er krise og utmattelse i lokaldemokratiet, er ikke det samme som helt å friskmelde systemet. At mye fungerer og er bra, kan ikke brukes som en sovepute for ikke å søke etter nye og innovative løsninger. Demokratiet vårt er et levende fenomen som må hegnes om og stadig fornyes.»
 Sluttrapporten fra lokaldemokratiutvalget har tre anbefalinger. Den første er knyttet til innretning av bydelsutvalg, mens de to siste er som følger:
 
-- Vurdere å opprette et byborgerpanel: Utvalget anbefaler at det utredes en modell hvor tilfeldig uttrukne bergensere får mulighet til reell politisk påvirkning i enkeltsaker som byrådet definerer. Vårt forslag er å gjennomføre dette som et forskningsprosjekt (…).
-
-- Uavhengig av modell: Holde fokus på de til dels store variasjonene i politisk deltakelse blant innbyggerne som er avdekket i rapporten. 
+- Vurdere å opprette et byborgerpanel: Utvalget anbefaler at det utredes en modell hvor tilfeldig uttrukne bergensere får mulighet til reell politisk påvirkning i enkeltsaker som byrådet definerer. Vårt forslag er å gjennomføre dette som et forskningsprosjekt (…). Uavhengig av modell: Holde fokus på de til dels store variasjonene i politisk deltakelse blant innbyggerne som er avdekket i rapporten. 
 
 - Være bevisst på valgdeltakelsens geografiske skjevhet og hvilke konsekvenser det kan ha for politikkutforming, samt deltakelsen blant yngre og grupper uten høyere utdanning. Tilrettelegge for frie nedenfra-opp, ikke-kommersielle initiativer fra borgere, som fremmer fellesskap, omfavner engasjementet og senker terskelen for medvirkning i byrommet.
 
 Forskningsprosjektet Demovate og forsøk med borgerpaneler er i så måte en direkte oppfølging av sluttrapporten. Den politiske bestillingen ble konkretisert gjennom saken «Et styrket nærdemokrati» i Bergen bystyre (bystyresak 235/18), der ett av vedtakspunktene er at «Bystyret ber om at byborgerpanel prøves videre ut som et forskningssamarbeid der det også søkes eksterne forskningsmidler.»
 
-Vi er derfor i en privilegert posisjon som kan få til et samarbeid som lager forbindelseslinjer mellom kommunesektoren og akademia i dette prosjektet, og på den måten bidra til demokratisk innovasjon. Men et prosjekt varer ikke evig, og det er avgjørende å finne metoder for å videreføre de gode erfaringene fra dette prosjektet. Det gjelder både på forskningssiden og –- ikke minst -– i praksisfeltet. Her er håndboken et grep for å mangfoldiggjøre våre erfaringer med oppsett, gjennomføring og funn fra borgerpaneler. Målet er at dette ikke bare skal være nyttig for andre enheter i den kommunen som vurderer å gjennomføre et borgerpanel, men at det også kommer til nytte for andre kommuner. Helt generelt bidrar dokumentasjon av gjennomføring av god praksis og beste praksis til at det blir lettere å dele erfaringer om medvirkning. En slik delekultur både internt og eksternt er i seg selv et godt eksempel på demokratisk innovasjon.
+Vi er derfor i en privilegert posisjon som kan få til et samarbeid som lager forbindelseslinjer mellom kommunesektoren og akademia i dette prosjektet, og på den måten bidra til demokratisk innovasjon. Men et prosjekt varer ikke evig, og det er avgjørende å finne metoder for å videreføre de gode erfaringene fra dette prosjektet. Det gjelder både på forskningssiden og i praksisfeltet. Her er håndboken et grep for å mangfoldiggjøre våre erfaringer med oppsett, gjennomføring og funn fra borgerpaneler. Målet er at dette ikke bare skal være nyttig for andre enheter i Bergen kommune som vurderer å gjennomføre et borgerpanel, men at det også kommer til nytte for andre kommuner. Helt generelt bidrar dokumentasjon av gjennomføring av god praksis og beste praksis til at det blir lettere å dele erfaringer om medvirkning. En slik delekultur både internt og eksternt er i seg selv et godt eksempel på demokratisk innovasjon.
 
 Kommunens arbeid på lokaldemokratifeltet har grovt sett fulgt to hovedspor. Det første sporet er videre arbeid med bydelsutvalg. Det andre hovedsporet er det som generelt kan omtales som «andre former for innbyggerinvolvering». Forsøk med borgerpanel er et konkret eksempel på en medvirkningsmetode som Bergen kommune har prøvd ut. Før vi går mer konkret inn på borgerpanel, er det nødvendig å beskrive det helhetlige arbeidet Bergen kommune gjør på medvirkningsfeltet, og som er sammenhengen borgerpanel inngår i.
 
@@ -1032,9 +1031,9 @@ Innen samfunnsplanleggingen har byrådet vedtatt en egen planinstruks som er gje
 
 Alle planer bør som hovedregel på høring, og høring skal som hovedregel være åpen for alle. Etter høringen skal høringsinnspillene oppsummeres i et merknadsskjema som skal følge den politiske saken som vedlegg. Skjemaet skal blant annet vise hvordan innspillet er vurdert, og hvordan innspill som er tatt helt eller delvis til følge, er innarbeidet i et nytt planforslag.
 
-Planinstruksen legger altså føringer både for at planer skal legges ut på høring, og for at innspill som er gitt gjennom medvirkningen, skal vurderes i sin helhet, og at vurderingene er synlige i oppfølgingen av saken frem til endelig behandling i folkevalgt organ. Dette gir grunnlag for en forsvarlig utredning av innspill i tråd med kommuneloven § 13-1, samtidig som medvirkningen blir transparent, og dermed kan innspillene også vurderes (potensielt annerledes) av bystyret.
+Planinstruksen legger altså føringer både for at planer skal legges ut på høring, og for at innspill som er gitt gjennom medvirkningen, skal vurderes i sin helhet, og at vurderingene er synlige i oppfølgingen av saken frem til endelig behandling i folkevalgt organ. Dette gir grunnlag for en forsvarlig utredning av innspill i tråd med kommuneloven § 13-1, samtidig som medvirkningen blir transparent, og dermed kan innspillene også vurderes (potensielt annerledes) av bystyret. Kommuneloven § 13-1 sier at «Kommunedirektøren skal påse at saker som legges fram for folkevalgte organer, er forsvarlig utredet. Utredningen skal gi et faktisk og rettslig grunnlag for å treffe vedtak.»
 
-Byrådet har lagt vekt på dette perspektivet i en egen byrådssak som tar opp bruk av borgerpanel i utvalgte politiske prosesser i Demovate-prosjektet. I byrådsleders vurdering og anbefaling/konklusjon pekes det på følgende: Byrådsleder mener at bilfrie soner og arealstrategi for Dokken kan være velegnede som diskusjonstemaer i borgerpanelet, og ønsker å synliggjøre panelets innspill i den videre faglige og politiske oppfølgingen. Byrådet vil ta stilling til rådene/innspillene fra borgerpanelet i det politiske saksfremlegget som følger disse to casene, og innspillene skal være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling. Dette vil etter byrådsleders mening gi borgerpanelet høy legitimitet, samtidig som det sikrer at innspillene fra panelet blir forsvarlig utredet iht. til kravene i kommuneloven.
+Byrådet har lagt vekt på dette perspektivet i en egen byrådssak som tar opp bruk av borgerpanel i utvalgte politiske prosesser i Demovate-prosjektet [(byrådsak 1135/21)](https://www.bergen.kommune.no/politikere-utvalg/api/fil/bk360/4325547/Framstilling-Demovate-forskningsprosjekt-om-demokratisk-innovasjon-Bruk-av-borgerpanel-i-utvalgte-politiske-prosesser). I byrådsleders vurdering og anbefaling/konklusjon pekes det på følgende: Byrådsleder mener at bilfrie soner og arealstrategi for Dokken kan være velegnede som diskusjonstemaer i borgerpanelet, og ønsker å synliggjøre panelets innspill i den videre faglige og politiske oppfølgingen. Byrådet vil ta stilling til rådene/innspillene fra borgerpanelet i det politiske saksfremlegget som følger disse to casene, og innspillene skal være selvstendige vedlegg i saksgrunnlaget frem mot endelig politisk behandling. Dette vil etter byrådsleders mening gi borgerpanelet høy legitimitet, samtidig som det sikrer at innspillene fra panelet blir forsvarlig utredet iht. til kravene i kommuneloven.
 
 I tillegg til begrunnelsene fra byrådssaken er det av betydning at medvirkningen skjer på et tidspunkt i de politiske prosessene hvor det ikke allerede er konkludert på bakgrunn av en lengre utredningsprosess og/eller politisk vurderinger. Dette er i tråd med poenget om at involveringen bør innrettes mot de delene av prosessen hvor det er lettest å implementere innspillene fra aktører utenfor kommuneorganisasjonen.
 
