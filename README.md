@@ -1,5 +1,7 @@
 # Hvordan gjennomføre borgerpanel
 
+Målet med borgerpaneler er å skape et forum hvor innbyggere fra alle samfunnslag kan møtes og diskutere politikk. Denne håndboken gir råd om hvordan man kan få til dette i praksis. Boken er delt inn i tre deler: en generell introduksjon til borgerpaneler, praktiske råd basert på borgerpaneler artikkelforfatterne selv har arrangert, og til slutt erfaringer fra andre kommuner og en ansatt i kommuneadministrasjonen
+
 Prosjekttittel: Demokratisk innovasjon i praksis – Forskning på medvirkning og legitimitet i
 kommunale beslutningsprosesser
 Institusjon: NORCE Helse og samfunn
@@ -12,6 +14,7 @@ Publiseringsmnd.: November, 2022
 Denne versjonen: 02. november, 2022
 Url: https://hdl.handle.net/11250/3028610
 
+Bakgrunn:
 I en tid hvor demokratiet settes på prøve også i etablerte vestlige demokratier, er viktigheten av å utvikle demokratiske prosesser kanskje viktigere enn noensinne (Dahlberg, Linde, and Holmberg 2015). 
 Internasjonalt ser vi lav, og ofte synkende, tillit til grunnleggende demokratiske institusjoner som politiske partier og regjeringer (Dalton 2004).
 Samtidig eksisterer det store forskjeller mellom innbyggerne med tanke på hvem som involverer seg i politikk. 
