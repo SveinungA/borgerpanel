@@ -1,5 +1,4 @@
-# borgerpanel
-Hvordan gjennomføre borgerpanel
+# Hvordan gjennomføre borgerpanel
 
 Prosjekttittel: Demokratisk innovasjon i praksis – Forskning på medvirkning og legitimitet i
 kommunale beslutningsprosesser
